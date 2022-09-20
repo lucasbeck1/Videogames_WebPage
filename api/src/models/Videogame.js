@@ -12,17 +12,17 @@ module.exports = (s) => {
     },
     name:{
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     description:{
       type: DataTypes.TEXT,
-      allowNull: false,
+      allowNull: false
     },
     released:{
-      type: DataTypes.STRING,
+      type: DataTypes.STRING
     },
     rating:{
-      type: DataTypes.FLOAT,
+      type: DataTypes.FLOAT
     },
     platforms:{
       type: DataTypes.STRING,
