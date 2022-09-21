@@ -6,8 +6,8 @@ export class SearchBar extends Component{
 
 render(){
 return(
-    <React.Component>
+    <React.Fragment>
         <h1>SearchBar</h1>
-    </React.Component>
+    </React.Fragment>
 )};
 };

@@ -6,8 +6,8 @@ export class Paginado extends Component{
 
 render(){
 return(
-    <React.Component>
+    <React.Fragment>
         <h1>Paginado</h1>
-    </React.Component>
+    </React.Fragment>
 )};
 };

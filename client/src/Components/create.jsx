@@ -6,8 +6,8 @@ export class Form extends Component{
 
 render(){
 return(
-    <React.Component>
+    <React.Fragment>
         <h1>FORMULARIO</h1>
-    </React.Component>
+    </React.Fragment>
 )};
 };
