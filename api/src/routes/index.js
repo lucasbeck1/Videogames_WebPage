@@ -12,7 +12,13 @@ const router = Router();
 // Ejemplo: router.use('/auth', authRouter);
 
 
-// --- GetInfo Functions ---
+
+
+// ----------------- GET Functions ------------------
+// IMPORTANTE: axios por default hace un get, entonces;
+// let apiInfo = await axios.get(`https://api.rawg.io/api/games`)
+// ===
+// let apiInfo = await axios(`https://api.rawg.io/api/games`)
 
 
 const getApiInfo = async () => {
@@ -66,7 +72,9 @@ const getGenres = async (id) => {
 };
 
 
-// --- Routes ---
+
+
+// ---------------------- Routes ----------------------
 
 
 router.get('/videogames', async function(req, res, next){
