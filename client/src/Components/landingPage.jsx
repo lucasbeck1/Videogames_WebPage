@@ -1,9 +1,8 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 
-export class LandingPage extends Component{
+export function LandingPage (){
 
-render(){
 return(
     <React.Fragment>
         <h1>LandingPage</h1>
@@ -12,5 +11,4 @@ return(
             <button>PRESS START</button>
         </Link>
     </React.Fragment>
-)}    
-};
+)};

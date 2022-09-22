@@ -2,12 +2,10 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 
 
-export class Paginado extends Component{
+export function Paginado(){
 
-render(){
 return(
     <React.Fragment>
         <h1>Paginado</h1>
     </React.Fragment>
 )};
-};

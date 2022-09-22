@@ -2,16 +2,15 @@ import React, {Component} from "react";
 import { Link } from "react-router-dom";
 
 
-export class Game extends Component{
+export function Game ({name, img, genres}){
 
-render(){
 return(
     <React.Fragment>
-        <h1>GAME</h1>
-        <h5>{this.props.img}</h5>
-        <h5>{this.props.name}</h5>
-        <h5>{this.props.genres}</h5>
-        <Link exact to={'/detail'}>Detail</Link>
+        <br/>
+        <h4>{name}</h4>
+        <p>{genres}</p>
+        <img src={img} alt="Img Not Found" width='400px' height='400px'/>
+        <Link exact to='/detail/ID'>Detail</Link>
+        <br/>
     </React.Fragment>
 )};
-};
