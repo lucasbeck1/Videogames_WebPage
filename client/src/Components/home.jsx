@@ -10,6 +10,7 @@ export function Home (){
 // Global states
 const allGames = useSelector(state => state.videogamesList);
 const dispatch = useDispatch();
+//const [state, dispatch] = useReducer(reducer, initialState);
 //useEffect(()=>{dispatch(getVideogames())},[dispatch]);
 
 // Local states (paginated)
