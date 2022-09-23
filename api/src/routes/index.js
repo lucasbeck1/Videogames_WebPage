@@ -43,7 +43,7 @@ const getApiInfo = async () => {
 
 const getDetailInfo = async (id) => {
     const det = await axios.get(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`);
-    return (det.data.description);
+    return (det.data.description_raw);
 };
 
 const getDbInfo = async () => {

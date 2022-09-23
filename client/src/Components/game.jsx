@@ -9,7 +9,7 @@ return(
         <br/>
         <h4>{name}</h4>
         <p>{genres}</p>
-        <img src={img} alt="Img Not Found" width='400px' height='400px'/>
+        <img src={img} alt="Img Not Found" width='100px' height='100px'/>
         <Link exact to='/detail/ID'>Detail</Link>
         <br/>
     </React.Fragment>
