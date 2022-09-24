@@ -9,7 +9,7 @@ export const FILTER_GAMES = 'FILTER_GAMES';
 
 export function getVideogames(){
     return(async function (dispatch){
-        let info = await (axios(`https://api.rawg.io/api/games?key=183c5c4cee1c4bccb3496db9db6198e0&page=1`));
+        let info = await (axios(`https://api.rawg.io/api/games?page_size=40&key=183c5c4cee1c4bccb3496db9db6198e0&page=1`));
        
         //let info = await (axios('http://localhost:3001/videogames').data);
         //let info = await (fetch('http://localhost:3001/videogames').json());
