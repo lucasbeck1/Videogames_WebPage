@@ -1,7 +1,11 @@
 import axios from 'axios';
 
-export const GET_VIDEOGAMES = 'GET_VIDEOGAMES'
-export const ORDER_GAMES = 'ORDER_GAMES'
+export const GET_VIDEOGAMES = 'GET_VIDEOGAMES';
+export const ORDER_GAMES = 'ORDER_GAMES';
+export const GET_GENRES = 'GET_GENRES';
+export const FILTER_GAMES = 'FILTER_GAMES';
+
+
 
 export function getVideogames(){
     return(async function (dispatch){
@@ -19,9 +23,27 @@ export function getVideogames(){
     });
 };
 
-export function orderName(payload){
+export function getGenres(){
+    return(async function (dispatch){
+        let info = await (axios(`https://api.rawg.io/api/genres?key=183c5c4cee1c4bccb3496db9db6198e0`));
+        const Genres = info.data.results.map(g => g.name);
+        return(dispatch({
+            type: GET_GENRES,
+            payload: Genres
+        }));
+    });
+};
+
+export function orders(payload){
     return({
         type: ORDER_GAMES,
+        payload
+    });
+};
+
+export function filters(payload){
+    return({
+        type: FILTER_GAMES,
         payload
     });
 };
