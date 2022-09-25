@@ -1,7 +1,7 @@
 import React, {Component, useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getVideogames, orders, getGenres, filters } from "../Redux/actions";
+import { getVideogames, orders, getGenres, filters, getVideogamesByName } from "../Redux/actions";
 import { Game } from "./Game";
 import { Paginated } from "./Paginated";
 
@@ -25,13 +25,25 @@ const currentGames = allGames.slice(ixdexFirstGame, indexLastGame);
 
 const paged = (pageNumber) => {setCurrentPage(pageNumber)};
 
-const [orden, setOrden] = useState('Sin Ordenar')
+const [orden, setOrden] = useState('Sin Ordenar');
+
+const [name, setName] = useState('');
 
 // Button Functions
 function handleClick(e){
     e.preventDefault();
     dispatch(getVideogames());
 };
+
+function handleInput(e){
+    e.preventDefault()
+    setName(e.target.value)
+}
+
+function handleSubmit(e){
+    e.preventDefault()
+    dispatch(getVideogamesByName(name))
+}
 
 function orderG(e){
     e.preventDefault()
@@ -53,6 +65,9 @@ return(
         <h1>Home</h1>
         <button onClick={e => handleClick(e)}>GET Videogames List</button>
         <br/>
+        <input onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
+        <button onClick={e => handleSubmit(e)} type="submit">Buscar</button>
+        <br/>
         <h4>Filters</h4>
         <span>Storage</span>
         <select>
@@ -70,13 +85,13 @@ return(
         <h4>Order by</h4>
         <span>Name</span>
         <select onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
-            <option value='DEFAULT' disabled>Filter By Name</option>
+            <option value='DEFAULT' disabled>Order by Name</option>
             <option value='A-Z'>A-Z</option>
             <option value='Z-A'>Z-A</option>
         </select>
         <span>Rating</span>
         <select onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
-            <option value='DEFAULT' disabled>Filter By Rating</option>
+            <option value='DEFAULT' disabled>Order by Rating</option>
             <option value='High Rating'>High Rating</option>
             <option value='Low Rating'>Low Rating</option>
         </select>

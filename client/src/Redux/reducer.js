@@ -1,4 +1,4 @@
-import {GET_VIDEOGAMES, ORDER_GAMES, GET_GENRES, FILTER_GAMES} from './actions';
+import {GET_VIDEOGAMES, ORDER_GAMES, GET_GENRES, FILTER_GAMES, GET_VIDEOGAMES_BY_NAME} from './actions';
 
 let initialState = {
   videogamesList: [],
@@ -10,6 +10,8 @@ let initialState = {
 export default function rootReducer(state=initialState, action){
   switch(action.type){
     case GET_VIDEOGAMES: return({...state, videogamesList: action.payload, videogamesListCOMPLETE:action.payload});
+
+    case GET_VIDEOGAMES_BY_NAME: return({...state, videogamesList: action.payload});
 
     case ORDER_GAMES: 
       let games = state.videogamesList;
