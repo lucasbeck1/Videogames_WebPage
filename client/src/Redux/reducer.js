@@ -1,8 +1,8 @@
-import {GET_VIDEOGAMES, ORDER_GAMES, GET_GENRES, FILTER_GAMES, GET_VIDEOGAMES_BY_NAME} from './actions';
+import {GET_VIDEOGAMES, ORDER_GAMES, GET_GENRES, FILTER_GAMES, GET_VIDEOGAMES_BY_NAME, GET_DETAIL} from './actions';
 
 let initialState = {
-  videogamesList: [],
   videogamesListCOMPLETE: [],
+  videogamesList: [],
   genres: [],
   detail: {}
 };
@@ -81,11 +81,18 @@ export default function rootReducer(state=initialState, action){
       return({
         ...state,
         videogamesList: filtered
+      });
+
+    case GET_DETAIL:
+      const allVideogames1 = state.videogamesList;
+      const idOfGame = action.payload;
+      const gameSelected = allVideogames1.find(g=> g.id === idOfGame);
+      return({
+        ...state,
+        detail: gameSelected
       })
-
-
           
 
-      default: return(state)
+    default: return(state)
   };
 };

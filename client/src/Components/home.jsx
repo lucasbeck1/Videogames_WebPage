@@ -1,7 +1,7 @@
 import React, {Component, useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getVideogames, orders, getGenres, filters, getVideogamesByName } from "../Redux/actions";
+import { getVideogames, orders, getGenres, filters, getVideogamesByName, getDetail } from "../Redux/actions";
 import { Game } from "./Game";
 import { Paginated } from "./Paginated";
 
@@ -33,6 +33,7 @@ const [name, setName] = useState('');
 function handleClick(e){
     e.preventDefault();
     dispatch(getVideogames());
+    setCurrentPage(1);
 };
 
 function handleInput(e){
@@ -98,7 +99,7 @@ return(
         <br/>
         <Paginated gamesPage={gamesPerPage} games={allGames.length} pag={paged}/>
         {currentGames?.map(g => {return (
-        <Game name={g.name} img={g.background_image} genres={g.genres.map(e => e.name).join(', ')}/>
+        <Game name={g.name} img={g.background_image} genres={g.genres.map(e => e.name).join(', ')} id={g.id}/>
         )})}
     </React.Fragment>
 )};
