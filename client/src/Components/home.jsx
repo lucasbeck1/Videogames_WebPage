@@ -18,16 +18,16 @@ useEffect(()=>{dispatch(getGenres())},[dispatch]);
 
 // Local states (paginated)
 const [currentPage, setCurrentPage] = useState(1);
+const paged = (pageNumber) => {setCurrentPage(pageNumber)};
 const [gamesPerPage, setGamesPerPage] = useState(15);
 const indexLastGame = currentPage * gamesPerPage;
 const ixdexFirstGame = indexLastGame - gamesPerPage;
 const currentGames = allGames.slice(ixdexFirstGame, indexLastGame);
 
-const paged = (pageNumber) => {setCurrentPage(pageNumber)};
-
+// Local states (Order)
 const [orden, setOrden] = useState('Sin Ordenar');
-
 const [name, setName] = useState('');
+
 
 // Button Functions
 function handleClick(e){
@@ -38,26 +38,26 @@ function handleClick(e){
 function handleInput(e){
     e.preventDefault()
     setName(e.target.value)
-}
+};
 
 function handleSubmit(e){
     e.preventDefault()
     dispatch(getVideogamesByName(name))
-}
+};
 
 function orderG(e){
     e.preventDefault()
     dispatch(orders(e.target.value))
     setCurrentPage(1)
     setOrden(`Ordenado de ${e.target.value}`)
-}
+};
 
 function filterG(e){
     e.preventDefault()
     dispatch(filters(e.target.value))
     setCurrentPage(1)
     setOrden(`Filtrado de ${e.target.value}`)
-}
+};
 
 
 return(
@@ -103,4 +103,3 @@ return(
     </React.Fragment>
 )};
 
-// Miercoles: Minuto 40

@@ -94,7 +94,7 @@ router.get('/videogames', async function(req, res, next){
 router.get('/videogames/:idgame', async function(req, res, next){
     const allGames = await getAllGames();
     const {idgame} = req.params;
-    const findById = allGames.find(g => g.id === Number(idgame));
+    const findById = allGames.find(g => g.id.toString() === idgame);
    
     if(!findById) return res.send('Id no encotrado');
     if(findById.createdInDatabase === true) return res.json(findById);
@@ -111,22 +111,29 @@ router.get('/genres', async function(req, res, next){
     for(let i=0; i < allGenres.length; i++){
         let gen = allGenres[i]
         Genre.findOrCreate({
-            where:{gen}
+            where:{name: gen}
         })
     };
-    const genresDB = Genre.findAll();
+    const genresDB = await Genre.findAll();
     res.json(genresDB);
 });
 
 
-router.post('/videogames', function(req, res, next){
-    const {name, description, released, rating} = req.body;
-    const gameNew = {name, description, released, rating};
-    Videogame.findOrCreate({
-        where:{name},
-        defaults:{gameNew}
-    });
-    res.send('The videogame was successfully created')
+router.post('/videogames', async function(req, res, next){
+    const {name, description, released, rating, platforms, image, genres} = req.body;
+    //const gameNew = {description, released, rating, platforms, image};
+    try{
+        await Videogame.findOrCreate({
+            where:{name},
+            defaults:{description, released, rating, platforms, image}
+            //defaults:{gameNew}
+        });
+        res.send('The videogame was successfully created')
+    }catch(e){
+        console.log(e)
+        res.send('Error in the process, sorry cheap')
+    }
+    
 });
 
 
