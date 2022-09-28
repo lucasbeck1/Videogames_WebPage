@@ -12,17 +12,16 @@ export function Paginated({games, gamesPage, pag}){
 return(
     <React.Fragment>
         <nav>
-            {pageNumber && pageNumber.map( number =>  { return(
+            {pageNumber && pageNumber.map( number => { return(
                 <button onClick={()=>pag(number)}>{number}</button>
-            )}
-            )}
+            )}  )}
         </nav>
     </React.Fragment>
 )};
 
 /* 
 
-games = 100
+if games = 100
 game per page = 15
 
 100/15 = 6.66 --> 7
