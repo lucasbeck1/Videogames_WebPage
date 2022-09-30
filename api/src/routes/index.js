@@ -1,10 +1,10 @@
-const { Router } = require('express');
 // Importar todos los routers;
 // Ejemplo: const authRouter = require('./auth.js');
-const {Videogame, Genre} = require('../db')
+const { Router } = require('express');
+const { Videogame, Genre } = require('../db')
 const axios = require('axios');
 const { get } = require('superagent');
-const {API_KEY} = process.env;
+const { API_KEY}  = process.env;
 
 const router = Router();
 
@@ -23,8 +23,8 @@ const router = Router();
 
 const getApiInfo = async () => {
     const firstHundredGames = [];
-    for (let i = 1; i < 6; i++) {
-        let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page=${i}`)
+    for (let i = 1; i <= 3; i++) {
+        let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=40&page=${i}`)
         apiInfo.data.results.map(e => 
             firstHundredGames.push({
                 id : e.id,
@@ -107,6 +107,9 @@ router.get('/videogames/:idgame', async function(req, res, next){
 
 
 router.get('/genres', async function(req, res, next){
+    const genresDB1 = await Genre.findAll();
+    if(genresDB1) return (genresDB1);
+
     const allGenres = await getGenres();
     for(let i=0; i < allGenres.length; i++){
         let gen = allGenres[i]
@@ -114,18 +117,18 @@ router.get('/genres', async function(req, res, next){
             where:{name: gen}
         })
     };
-    const genresDB = await Genre.findAll();
-    res.json(genresDB);
+    const genresDB2 = await Genre.findAll();
+    res.json(genresDB2);
 });
 
 
 router.post('/videogames', async function(req, res, next){
     const {name, description, released, rating, platforms, image, genres} = req.body;
-    //const gameNew = {description, released, rating, platforms, image};
+    //const gameNew = {description, released, rating, platforms, image, genres};
     try{
         await Videogame.findOrCreate({
             where:{name},
-            defaults:{description, released, rating, platforms, image}
+            defaults:{description, released, rating, platforms, image, genres}
             //defaults:{gameNew}
         });
         res.send('The videogame was successfully created')
@@ -133,7 +136,6 @@ router.post('/videogames', async function(req, res, next){
         console.log(e)
         res.send('Error in the process, sorry cheap')
     }
-    
 });
 
 

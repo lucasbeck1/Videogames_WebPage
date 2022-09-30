@@ -26,7 +26,7 @@ module.exports = (s) => {
     },
     platforms:{
       type: DataTypes.STRING,
-      allowNull: null
+      allowNull: false
     },
     image:{
       type: DataTypes.STRING

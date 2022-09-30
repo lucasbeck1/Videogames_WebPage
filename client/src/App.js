@@ -12,8 +12,8 @@ export default function App() {
       <h1>Henry Videogames</h1>
       <Route exact path='/' component={LandingPage}/>
       <Route exact path='/home' component={Home}/>
+      <Route exact path='/create' component={CreateForm}/>
       <Route exact path='/detail/:id' component={Detail}/>
-      <Route exact path='/detail/:id' component={CreateForm}/>
     </div>
   );
 };

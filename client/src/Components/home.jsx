@@ -4,16 +4,19 @@ import { Link } from "react-router-dom";
 import { getVideogames, orders, getGenres, filters, getVideogamesByName, getDetail } from "../Redux/actions";
 import { Game } from "./Game";
 import { Paginated } from "./Paginated";
+import { CreateForm } from "./CreateForm";
 
 export function Home (){
 
 // Global states
-const allGames = useSelector(state => state.videogamesList);
 const dispatch = useDispatch();
-//const [state, dispatch] = useReducer(reducer, initialState);
-useEffect(()=>{dispatch(getVideogames())},[dispatch]);
+const allGames = useSelector(state => state.videogamesList);
 const allgenres = useSelector(state => state.genres)
-useEffect(()=>{dispatch(getGenres())},[dispatch]);
+//const [state, dispatch] = useReducer(reducer, initialState);
+useEffect(()=>{
+    dispatch(getVideogames())
+    dispatch(getGenres())
+},[dispatch]);
 
 
 // Local states (paginated)
@@ -65,6 +68,8 @@ return(
     <React.Fragment>
         <h1>Home</h1>
         <button onClick={e => handleClick(e)}>GET Videogames List</button>
+        <br/>
+        <Link to='/create'><button>Define New Videogame</button></Link>
         <br/>
         <input onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
         <button onClick={e => handleSubmit(e)} type="submit">Buscar</button>

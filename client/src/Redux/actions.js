@@ -5,7 +5,9 @@ export const ORDER_GAMES = 'ORDER_GAMES';
 export const GET_GENRES = 'GET_GENRES';
 export const FILTER_GAMES = 'FILTER_GAMES';
 export const GET_VIDEOGAMES_BY_NAME = 'GET_VIDEOGAMES_BY_NAME';
-export const GET_DETAIL = 'GET_DETAIL' 
+export const GET_DETAIL = 'GET_DETAIL';
+export const CREATE_VIDEOGAME = 'CREATE_VIDEOGAME'; 
+
 
 
 
@@ -70,5 +72,13 @@ export function getDetail(payload){
     return({
         type: GET_DETAIL,
         payload
+    });
+};
+
+export function createGame(payload){
+    return( async function(dispatch){
+       const response = await axios.post('http://localhost:3001/videogames', payload);
+       console.log(response);
+       return (response);
     });
 };
