@@ -125,6 +125,7 @@ router.get('/genres', async function(req, res, next){
 router.post('/videogames', async function(req, res, next){
     const {name, description, released, rating, platforms, image, genres} = req.body;
     //const gameNew = {description, released, rating, platforms, image, genres};
+  
     try{
         await Videogame.findOrCreate({
             where:{name},

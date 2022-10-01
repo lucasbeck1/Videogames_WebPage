@@ -1,7 +1,7 @@
 import React, {Component, useState, useEffect} from "react";
 import { createGame, getGenres,getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
-import { useHisrtory, Link } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 
 export function CreateForm (){
@@ -10,13 +10,14 @@ export function CreateForm (){
 const dispatch = useDispatch();
 const genresList = useSelector(state => state.genres);
 const gamesList = useSelector(state => state.videogamesListCOMPLETE);
+const history = useHistory();
 
-/* 
+
 useEffect(()=>{
     dispatch(getVideogames())
     dispatch(getGenres())
 },[dispatch]);
-*/
+
 
 // Local state
 const [input, setInput] = useState({
@@ -26,11 +27,10 @@ const [input, setInput] = useState({
     released: '',
     rating: '',
     genres: [],
-    platforms: [],
+    platforms: []
 });
 
-const platformsList = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable',
-'PlayStation Vita']
+const platformsList = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web']
 
 
 // Functions
@@ -74,11 +74,37 @@ function handleCheckbox(e){
     }
 };
 
+function handleSubmit(e){
+    e.preventDefault();
+    if(gamesList.includes(input.name)){
+        dispatch(createGame({
+            ...input,
+            genres: input.genres.join(', '),
+            platforms: input.platforms.join(', ')
+            }
+        ));
+        setInput({
+            name:'',
+            description: '',
+            image: '',
+            released: '',
+            rating: '',
+            genres: [],
+            platforms: []
+        });
+        alert('Game Sucesfully Created');
+        history.push('/home');
+    }
+    else {
+        alert('The Game already exist');
+    }
+};
+
 
 return(
     <React.Fragment>
         <h3>Create Your GAME !</h3>
-        <form>
+        <form onSubmit={e=> handleSubmit(e)}>
             <label>Name: </label>
             <input
             type='text'
@@ -97,7 +123,7 @@ return(
             <br/>
             <label>Date of release: </label>
             <input
-            type='text'
+            type='date'
             value={input.released}
             name='released'
             onChange={e => handleChange(e)}
