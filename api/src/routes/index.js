@@ -65,10 +65,16 @@ const getAllGames = async () => {
     return (apiGames.concat(DbGames));
 };
 
-const getGenres = async (id) => {
+const getGenres = async () => {
     const apiG = await axios.get(`https://api.rawg.io/api/genres?key=${API_KEY}`);
     const Genres = apiG.data.results.map(g => g.name);
     return (Genres);
+};
+
+const getPlatforms = async () => {
+    const apiP = await axios.get(`https://api.rawg.io/api/platforms?key=${API_KEY}`);
+    const Platforms = apiP.data.results.map(g => g.name).sort();
+    return (Platforms);
 };
 
 
@@ -84,7 +90,7 @@ router.get('/videogames', async function(req, res, next){
     try {
         const gamefilter = allGames.filter(game => game.name.toLowerCase().includes(name.toLowerCase())).slice(0,15);
         if(gamefilter.length) {return res.json(gamefilter)}
-        else {return res.status(404).send('Nombre no encotrado')};
+        else {return res.status(404).send('Sorry, name not found')};
     }catch(e){
         res.send(e);
     };
@@ -96,7 +102,7 @@ router.get('/videogames/:idgame', async function(req, res, next){
     const {idgame} = req.params;
     const findById = allGames.find(g => g.id.toString() === idgame);
    
-    if(!findById) return res.send('Id no encotrado');
+    if(!findById) return res.send('Id not found');
     if(findById.createdInDatabase === true) return res.json(findById);
     else {
         const detGame = await getDetailInfo(idgame);
@@ -107,8 +113,8 @@ router.get('/videogames/:idgame', async function(req, res, next){
 
 
 router.get('/genres', async function(req, res, next){
-    const genresDB1 = await Genre.findAll();
-    if(genresDB1) return (genresDB1);
+    //const genresDB1 = await Genre.findAll();
+    //if(genresDB1) return (genresDB1);
 
     const allGenres = await getGenres();
     for(let i=0; i < allGenres.length; i++){
@@ -124,19 +130,24 @@ router.get('/genres', async function(req, res, next){
 
 router.post('/videogames', async function(req, res, next){
     const {name, description, released, rating, platforms, image, genres} = req.body;
-    //const gameNew = {description, released, rating, platforms, image, genres};
+    //const gameNew = {description, released, rating, platforms, image};
   
     try{
-        await Videogame.findOrCreate({
+        let myGame = await Videogame.findOrCreate({
             where:{name},
-            defaults:{description, released, rating, platforms, image, genres}
+            defaults:{description, released, rating, platforms, image}
             //defaults:{gameNew}
         });
-        res.send('The videogame was successfully created')
+        for(let i=0; i<genres.length; i++){
+            let gen = genres[i];
+            let gendb = await Genre.findOne({ where:{gen}});
+            myGame.addGenre(gendb);
+        };
+        res.send('The videogame was successfully created');
     }catch(e){
         console.log(e)
         res.send('Error in the process, sorry cheap')
-    }
+    };
 });
 
 

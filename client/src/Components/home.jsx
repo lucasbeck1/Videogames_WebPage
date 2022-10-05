@@ -11,7 +11,9 @@ export function Home (){
 // Global states
 const dispatch = useDispatch();
 const allGames = useSelector(state => state.videogamesList);
-const allgenres = useSelector(state => state.genres)
+const allgenres = useSelector(state => state.genres);
+
+
 //const [state, dispatch] = useReducer(reducer, initialState);
 useEffect(()=>{
     dispatch(getVideogames())
@@ -104,7 +106,7 @@ return(
         <br/>
         <Paginated gamesPage={gamesPerPage} games={allGames.length} pag={paged}/>
         {currentGames?.map(g => {return (
-        <Game name={g.name} img={g.background_image} genres={g.genres.map(e => e.name).join(', ')} id={g.id}/>
+        <Game name={g.name} img={g.img} genres={g.genres} id={g.id}/>
         )})}
     </React.Fragment>
 )};

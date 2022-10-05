@@ -9,7 +9,7 @@ let initialState = {
 
 export default function rootReducer(state=initialState, action){
   switch(action.type){
-    case GET_VIDEOGAMES: return({...state, videogamesList: action.payload, videogamesListCOMPLETE:action.payload});
+    case GET_VIDEOGAMES: return({...state, videogamesList: action.payload, videogamesListCOMPLETE: action.payload});
 
     case GET_VIDEOGAMES_BY_NAME: return({...state, videogamesList: action.payload});
 
@@ -37,7 +37,6 @@ export default function rootReducer(state=initialState, action){
           if (a.name.toLowerCase() > b.name.toLowerCase()) {
             return -1;
           }
-          // a must be equal to b
           return 0;
         });
       }
@@ -49,7 +48,6 @@ export default function rootReducer(state=initialState, action){
             if (a.rating > b.rating) {
               return -1;
             }
-            // a must be equal to b
             return 0;
         });
       }
@@ -61,13 +59,14 @@ export default function rootReducer(state=initialState, action){
           if (a.rating < b.rating) {
             return -1;
           }
-          // a must be equal to b
           return 0;
         });
       }
       return({...state, videogamesList: games});
 
-    case GET_GENRES: return({...state, genres: action.payload});
+    case GET_GENRES: 
+      const genresDB = action.payload.map(g => g.name)
+      return({...state, genres: genresDB});
 
     case FILTER_GAMES:
       const allVideogames = state.videogamesListCOMPLETE;
@@ -76,7 +75,7 @@ export default function rootReducer(state=initialState, action){
       let genres = state.genres;
       if(filter1 === 'Api'){filtered = allVideogames.filter(g => g.createdInDatabase === false)}
       else if(filter1 === 'Db'){filtered = allVideogames.filter(g => g.createdInDatabase === true)}
-      else if(genres.includes(filter1)){filtered = allVideogames.filter(g => g.genres.some(d => d.name === filter1))}
+      else if(genres.includes(filter1)){filtered = allVideogames.filter(g => g.genres.includes(filter1))}
 
       return({
         ...state,

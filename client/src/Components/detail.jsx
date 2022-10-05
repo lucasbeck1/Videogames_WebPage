@@ -9,10 +9,10 @@ export function Detail (){
 return(
     <React.Fragment>
         <h2>{detailG.name}</h2>
-        <p>Géneros: {detailG.genres.map(e => e.name).join(', ')}</p>
+        <p>Géneros: {detailG.genres}</p>
         <p>Lanzamiento: {detailG.released}</p>
         <p>Rating: {detailG.rating}</p>
-        <img src={detailG.background_image} alt="Img Not Found" width='200px' height='200px'/>
+        <img src={detailG.img} alt="Img Not Found" width='200px' height='200px'/>
         <p>{detailG.Description}</p>
     </React.Fragment>
 )};

@@ -13,7 +13,7 @@ export const CREATE_VIDEOGAME = 'CREATE_VIDEOGAME';
 
 export function getVideogames(){
     return(async function (dispatch){
-        let info = await (axios(`https://api.rawg.io/api/games?page_size=40&key=183c5c4cee1c4bccb3496db9db6198e0&page=1`));
+        let info = await (axios(`http://localhost:3001/videogames`));
        
         //let info = await (axios('http://localhost:3001/videogames').data);
         //let info = await (fetch('http://localhost:3001/videogames').json());
@@ -22,34 +22,28 @@ export function getVideogames(){
         //let info2 = JSON.parse(info1)
         return(dispatch({
             type: GET_VIDEOGAMES,
-            payload: info.data.results
+            payload: info.data
         }));
     });
 };
 
 export function getVideogamesByName(name){
     return(async function (dispatch){
-        let info = await (axios(`https://api.rawg.io/api/games?search=${name}&key=183c5c4cee1c4bccb3496db9db6198e0`));
+        let info = await (axios(`http://localhost:3001/videogames/${name}`));
        
-        //let info = await (axios('http://localhost:3001/videogames').data);
-        //let info = await (fetch('http://localhost:3001/videogames').json());
-        //let info = await (await fetch('http://localhost:3001/videogames')).json();
-        //let info1 = await (await fetch('http://localhost:3001/videogames'));
-        //let info2 = JSON.parse(info1)
         return(dispatch({
             type: GET_VIDEOGAMES_BY_NAME,
-            payload: info.data.results
+            payload: info.data
         }));
     });
 };
 
 export function getGenres(){
     return(async function (dispatch){
-        let info = await (axios(`https://api.rawg.io/api/genres?key=183c5c4cee1c4bccb3496db9db6198e0`));
-        const Genres = info.data.results.map(g => g.name);
+        let info = await (axios(`http://localhost:3001/genres`));
         return(dispatch({
             type: GET_GENRES,
-            payload: Genres
+            payload: info.data
         }));
     });
 };
