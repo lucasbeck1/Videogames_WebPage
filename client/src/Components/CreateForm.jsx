@@ -79,7 +79,6 @@ function handleSubmit(e){
     if(gamesList.includes(input.name)){
         dispatch(createGame({
             ...input,
-            genres: input.genres.join(', '),
             platforms: input.platforms.join(', ')
             }
         ));

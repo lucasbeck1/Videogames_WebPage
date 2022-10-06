@@ -133,16 +133,24 @@ router.post('/videogames', async function(req, res, next){
     //const gameNew = {description, released, rating, platforms, image};
   
     try{
-        let myGame = await Videogame.findOrCreate({
-            where:{name},
-            defaults:{description, released, rating, platforms, image}
-            //defaults:{gameNew}
-        });
+        //let myGame = await Videogame.findOrCreate({
+        //    where:{name},
+        //    defaults:{description, released, rating, platforms, image}
+        //    //defaults:{gameNew}
+        //});
+        let myGame = await Videogame.create({ name: name, description: description, released: released, rating: rating, image: image, platforms: platforms });
+
+        /*   
         for(let i=0; i<genres.length; i++){
-            let gen = genres[i];
-            let gendb = await Genre.findOne({ where:{gen}});
+            let gendb = await Genre.findOne({ where:{name: genres[i]}});
+            console.log(gendb)
             myGame.addGenre(gendb);
         };
+        */
+        let gendb = await Genre.findAll({ where:{name: genres}});
+        console.log(gendb)
+        myGame.addGenre(gendb);
+
         res.send('The videogame was successfully created');
     }catch(e){
         console.log(e)
@@ -150,7 +158,7 @@ router.post('/videogames', async function(req, res, next){
     };
 });
 
-
+//
 
 
 
