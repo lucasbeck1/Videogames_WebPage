@@ -76,7 +76,7 @@ function handleCheckbox(e){
 
 function handleSubmit(e){
     e.preventDefault();
-    if(gamesList.includes(input.name)){
+    if(!gamesList.includes(input.name)){
         dispatch(createGame({
             ...input,
             platforms: input.platforms.join(', ')

@@ -4,13 +4,16 @@ import { Link } from "react-router-dom";
 import { getDetail } from "../Redux/actions";
 
 
-export function Game ({name, img, genres, id}){
+export function Game ({name, img, genres, CIDB, id}){
 
     const dispatch = useDispatch();
 
     function detailG(e){
-        //e.preventDefault()
         dispatch(getDetail(id))
+    };
+    
+    if(CIDB === true){
+        genres = genres.map(g=>g.name).join(', ');
     };
 
 return(

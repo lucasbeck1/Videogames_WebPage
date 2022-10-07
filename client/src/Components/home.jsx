@@ -106,7 +106,7 @@ return(
         <br/>
         <Paginated gamesPage={gamesPerPage} games={allGames.length} pag={paged}/>
         {currentGames?.map(g => {return (
-        <Game name={g.name} img={g.img} genres={g.genres} id={g.id}/>
+        <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id}/>
         )})}
     </React.Fragment>
 )};

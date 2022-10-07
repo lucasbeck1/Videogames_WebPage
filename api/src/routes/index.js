@@ -29,11 +29,11 @@ const getApiInfo = async () => {
             firstHundredGames.push({
                 id : e.id,
                 name: e.name,
-                img: e.background_image,
+                image: e.background_image,
                 genres: e.genres.map(e => e.name).join(', '),
                 released: e.released,
                 rating: e.rating,
-                platform: e.platforms.map((e) => e.platform.name).join(', '),
+                platforms: e.platforms.map((e) => e.platform.name).join(', '),
                 createdInDatabase: false
             })
         );
@@ -55,10 +55,9 @@ const getDbInfo = async () => {
                 attributes: [],
             }
         }
-    });
+    });    
     return (dbinfo);
 };
-
 const getAllGames = async () => {
     const apiGames = await getApiInfo();
     const DbGames = await getDbInfo();
@@ -133,23 +132,25 @@ router.post('/videogames', async function(req, res, next){
     //const gameNew = {description, released, rating, platforms, image};
   
     try{
-        //let myGame = await Videogame.findOrCreate({
-        //    where:{name},
-        //    defaults:{description, released, rating, platforms, image}
-        //    //defaults:{gameNew}
-        //});
-        let myGame = await Videogame.create({ name: name, description: description, released: released, rating: rating, image: image, platforms: platforms });
-
-        /*   
-        for(let i=0; i<genres.length; i++){
-            let gendb = await Genre.findOne({ where:{name: genres[i]}});
-            console.log(gendb)
-            myGame.addGenre(gendb);
+        /* 
+        let myGame = await Videogame.findOrCreate({
+            where:{name},
+            defaults:{description, released, rating, platforms, image}
+            //defaults:{gameNew}
+        });
+        */
+       
+       /*   
+       for(let i=0; i<genres.length; i++){
+           let gendb = await Genre.findOne({ where:{name: genres[i]}});
+           myGame.addGenre(gendb);
         };
         */
+
+        let myGame = await Videogame.create({ name, description, released, rating, image,        platforms});
+
         let gendb = await Genre.findAll({ where:{name: genres}});
-        console.log(gendb)
-        myGame.addGenre(gendb);
+        await myGame.addGenre(gendb);
 
         res.send('The videogame was successfully created');
     }catch(e){
@@ -158,7 +159,7 @@ router.post('/videogames', async function(req, res, next){
     };
 });
 
-//
+
 
 
 
