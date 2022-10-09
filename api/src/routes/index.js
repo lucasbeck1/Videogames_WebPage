@@ -113,14 +113,14 @@ router.get('/videogames/:idgame', async function(req, res, next){
 
 router.get('/genres', async function(req, res, next){
     //const genresDB1 = await Genre.findAll();
-    //if(genresDB1) return (genresDB1);
+    //if(genresDB1.length < 0) return (genresDB1);
 
     const allGenres = await getGenres();
     for(let i=0; i < allGenres.length; i++){
         let gen = allGenres[i]
         Genre.findOrCreate({
             where:{name: gen}
-        })
+        });
     };
     const genresDB2 = await Genre.findAll();
     res.json(genresDB2);
@@ -147,7 +147,7 @@ router.post('/videogames', async function(req, res, next){
         };
         */
 
-        let myGame = await Videogame.create({ name, description, released, rating, image,        platforms});
+        let myGame = await Videogame.create({name, description, released, rating, platforms, image});
 
         let gendb = await Genre.findAll({ where:{name: genres}});
         await myGame.addGenre(gendb);

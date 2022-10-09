@@ -83,12 +83,9 @@ export default function rootReducer(state=initialState, action){
       });
 
     case GET_DETAIL:
-      const allVideogames1 = state.videogamesList;
-      const idOfGame = action.payload;
-      const gameSelected = allVideogames1.find(g=> g.id === idOfGame);
       return({
         ...state,
-        detail: gameSelected
+        detail: action.payload
       })
           
 

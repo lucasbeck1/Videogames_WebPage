@@ -29,7 +29,7 @@ export function getVideogames(){
 
 export function getVideogamesByName(name){
     return(async function (dispatch){
-        let info = await (axios(`http://localhost:3001/videogames/${name}`));
+        let info = await (axios(`http://localhost:3001/videogames?name=${name}`));
        
         return(dispatch({
             type: GET_VIDEOGAMES_BY_NAME,
@@ -62,10 +62,13 @@ export function filters(payload){
     });
 };
 
-export function getDetail(payload){
-    return({
-        type: GET_DETAIL,
-        payload
+export function getDetail(id){
+    return(async function (dispatch) {
+        let info = await (axios(`http://localhost:3001/videogames/${id}`));
+        return(dispatch({
+            type: GET_DETAIL,
+            payload: info.data
+        }));
     });
 };
 
