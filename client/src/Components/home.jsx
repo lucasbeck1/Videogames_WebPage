@@ -1,10 +1,9 @@
-import React, {Component, useEffect, useState} from "react";
+import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getVideogames, orders, getGenres, filters, getVideogamesByName, getDetail } from "../Redux/actions";
 import { Game } from "./Game";
 import { Paginated } from "./Paginated";
-import { CreateForm } from "./CreateForm";
 
 export function Home (){
 
@@ -78,7 +77,8 @@ return(
         <br/>
         <h4>Filters</h4>
         <span>Storage</span>
-        <select>
+        <select onChange={(e) => filterG(e)} defaultValue={'DEFAULT'}>
+            <option value='DEFAULT' disabled>Filter by storage</option>
             <option value='All'>All</option>
             <option value='Api'>Api</option>
             <option value='Db'>Library</option>

@@ -1,4 +1,4 @@
-import React, {Component, useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import { createGame, getGenres,getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
@@ -30,7 +30,9 @@ const [input, setInput] = useState({
     platforms: []
 });
 
-const platformsList = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web']
+const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web'];
+
+const platformsList = ['PC', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5', 'Xbox 360', 'Xbox One' ,'Xbox Series S/X', 'Nintendo Switch'];
 
 
 // Functions
@@ -76,7 +78,7 @@ function handleCheckbox(e){
 
 function handleSubmit(e){
     e.preventDefault();
-    if(!gamesList.includes(input.name)){
+    if(!gamesList.some(g => g.name.toLowerCase() === input.name.toLowerCase())){
         dispatch(createGame({
             ...input,
             platforms: input.platforms.join(', ')
@@ -95,7 +97,17 @@ function handleSubmit(e){
         history.push('/home');
     }
     else {
+        setInput({
+            name:'',
+            description: '',
+            image: '',
+            released: '',
+            rating: '',
+            genres: [],
+            platforms: []
+        });
         alert('The Game already exist');
+        history.push('/home');
     }
 };
 
