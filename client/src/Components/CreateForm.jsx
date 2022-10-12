@@ -12,14 +12,15 @@ const genresList = useSelector(state => state.genres);
 const gamesList = useSelector(state => state.videogamesListCOMPLETE);
 const history = useHistory();
 
-
+ 
 useEffect(()=>{
     dispatch(getVideogames())
     dispatch(getGenres())
 },[dispatch]);
 
 
-// Local state
+
+// Local states
 const [input, setInput] = useState({
     name:'',
     description: '',
@@ -29,6 +30,7 @@ const [input, setInput] = useState({
     genres: [],
     platforms: []
 });
+const [error, setError] = useState({});
 
 const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web'];
 
@@ -43,6 +45,10 @@ function handleChange(e){
     });
     // console.log(input)
     // Como la actualizacion del estado es algo asincrónico lo voy a ver reflejado "tarde" a los cambios
+    setError(validate({
+        ...input,
+        [e.target.name]: e.target.value
+    }));
 };
 
 function handleSelect(e){
@@ -51,6 +57,10 @@ function handleSelect(e){
             ...input,
             genres: [...input.genres, e.target.value]
         })
+        setError(validate({
+            ...input,
+            genres: [...input.genres, e.target.value]
+        }));
     };
 };
 
@@ -58,7 +68,11 @@ function handleDeSelect(e){
     setInput({
         ...input,
         genres: input.genres.filter(gen => gen !== e.target.value)
-    })
+    });
+    setError(validate({
+        ...input,
+        genres: input.genres.filter(gen => gen !== e.target.value)
+    }));
 };
 
 function handleCheckbox(e){
@@ -66,19 +80,56 @@ function handleCheckbox(e){
         setInput({
             ...input,
             platforms: [...input.platforms, e.target.value]
-        })
+        });
+        setError(validate({
+            ...input,
+            platforms: [...input.platforms, e.target.value]
+        }));
     }
     else{
         setInput({
             ...input,
             platforms: input.platforms.filter(plat => plat !== e.target.value)
-        })
+        });
+        setError(validate({
+            ...input,
+            platforms: input.platforms.filter(plat => plat !== e.target.value)
+        }));
     }
+};
+
+function validate(input){
+    let error = {};
+    if(!input.name){error.name = 'Please write a name'};
+    if(input.name.length > 70){error.name = 'The name is too long'};
+    if(gamesList.some(g => g.name.toLowerCase() === input.name.toLowerCase())){error.name = 'The Game already exist'}
+
+    if(input.description.length === 0){error.description = 'Please write a description'};
+    if(input.description.length > 0 && input.description.length < 15){error.description = 'The description is too short'};
+    if(input.description.length > 1200){error.description = 'The description is too long'};
+
+    if(!input.image){error.image = 'Please insert the link of an image'};
+
+    
+    if(!input.released){error.release = 'Please select a date of released'};
+    
+    if(!input.rating){error.rating = 'Please rate the game with a score from 1 to 5'};
+    if(input.rating < 1){error.rating = 'The minimum score is 1'};
+    if(input.rating.toString().length > 4){error.rating = 'The score can only have 2 decimal places'};
+    if(input.rating > 5){error.rating = 'The maximum score is 5'};
+
+    //if(!input.genres.length){error.genre = 'Select at least one genre'};
+    if(!input.genres[0]){error.genre = 'Select at least one genre'};
+
+    //if(!input.platforms.length === 0){error.platforms = 'Select at least one platform'};
+    if(!input.platforms[0]){error.platforms = 'Select at least one platform'};
+    
+    return (error);
 };
 
 function handleSubmit(e){
     e.preventDefault();
-    if(!gamesList.some(g => g.name.toLowerCase() === input.name.toLowerCase())){
+    if(input.name){
         dispatch(createGame({
             ...input,
             platforms: input.platforms.join(', ')
@@ -93,21 +144,11 @@ function handleSubmit(e){
             genres: [],
             platforms: []
         });
-        alert('Game Sucesfully Created');
+        alert('Game Created Successfully');
         history.push('/home');
     }
-    else {
-        setInput({
-            name:'',
-            description: '',
-            image: '',
-            released: '',
-            rating: '',
-            genres: [],
-            platforms: []
-        });
-        alert('The Game already exist');
-        history.push('/home');
+    else{
+        alert('Please complete all the cases'); 
     }
 };
 
@@ -159,7 +200,7 @@ return(
             <label>Platforms: </label>
             {platformsList.map((pl => (
                 <label>
-                    <input type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)}/>
+                    <input key={pl} type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)}/>
                     {pl}
                 </label>
             )))}
@@ -169,12 +210,16 @@ return(
             <select onChange={e=> handleSelect(e)} defaultValue={'DEFAULT'}>
                 <option value='DEFAULT' disabled>Select a genre</option>
                 {genresList.map((el)=>(
-                    <option value={el} name={el}>{el}</option>
+                    <option key={el} value={el} name={el}>{el}</option>
                 ))}
             </select>
             <br/>
             </label>
-            <button type='submit'>Create</button>
+            {Object.keys(error).length ? 
+                (<input type="submit" disabled name="Send" />) 
+                :
+                (<input type="submit" name="Send" />)
+            }
         </form>
         <p>The game genres are:</p>
         <ul>
