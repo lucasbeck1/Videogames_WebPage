@@ -21,7 +21,7 @@ return(
         <br/>
         <h4>{name}</h4>
         <p>{genres}</p>
-        <img src={img} alt="Img Not Found" width='100px' height='100px'/>
+        <img src={img} alt="Img Not Found" width='170px' height='100px'/>
         <Link to={`/detail/${id}`}>
             <button onClick={e => detailG(e)}>Detail</button>
         </Link>

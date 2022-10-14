@@ -32,7 +32,7 @@ const [input, setInput] = useState({
 });
 const [error, setError] = useState({});
 
-const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web'];
+//const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web'];
 
 const platformsList = ['PC', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5', 'Xbox 360', 'Xbox One' ,'Xbox Series S/X', 'Nintendo Switch'];
 
@@ -105,24 +105,24 @@ function validate(input){
     if(gamesList.some(g => g.name.toLowerCase() === input.name.toLowerCase())){error.name = 'The Game already exist'}
 
     if(input.description.length === 0){error.description = 'Please write a description'};
-    if(input.description.length > 0 && input.description.length < 15){error.description = 'The description is too short'};
+    if(input.description.length > 0 && input.description.length < 25){error.description = 'The description is too short'};
     if(input.description.length > 1200){error.description = 'The description is too long'};
 
     if(!input.image){error.image = 'Please insert the link of an image'};
 
     
-    if(!input.released){error.release = 'Please select a date of released'};
+    if(!input.released){error.released = 'Please select a date of released'};
     
-    if(!input.rating){error.rating = 'Please rate the game with a score from 1 to 5'};
-    if(input.rating < 1){error.rating = 'The minimum score is 1'};
+    if(!input.rating){error.rating = 'Please rate the game with a score from 1 to 5'}
+    else if(input.rating < 1){error.rating = 'The minimum score is 1'};
     if(input.rating.toString().length > 4){error.rating = 'The score can only have 2 decimal places'};
     if(input.rating > 5){error.rating = 'The maximum score is 5'};
 
-    //if(!input.genres.length){error.genre = 'Select at least one genre'};
-    if(!input.genres[0]){error.genre = 'Select at least one genre'};
+    if(!input.genres.length){error.genres = 'Select at least one genre'};
+    //if(!input.genres[0]){error.genres = 'Select at least one genre'};
 
-    //if(!input.platforms.length === 0){error.platforms = 'Select at least one platform'};
-    if(!input.platforms[0]){error.platforms = 'Select at least one platform'};
+    if(!input.platforms.length){error.platforms = 'Select at least one platform'};
+    //if(!input.platforms[0]){error.platforms = 'Select at least one platform'};
     
     return (error);
 };
@@ -155,6 +155,7 @@ function handleSubmit(e){
 
 return(
     <React.Fragment>
+        <Link to='/home'>Home</Link>
         <h3>Create Your GAME !</h3>
         <form onSubmit={e=> handleSubmit(e)}>
             <label>Name: </label>
@@ -164,6 +165,7 @@ return(
             name='name'
             onChange={e => handleChange(e)}
             />
+            {error.name && (<p>{error.name}</p>)}
             <br/>
             <label>Description: </label>
             <input
@@ -172,6 +174,7 @@ return(
             name='description'
             onChange={e => handleChange(e)}
             />
+            {error.description && (<p>{error.description}</p>)}
             <br/>
             <label>Date of release: </label>
             <input
@@ -180,14 +183,18 @@ return(
             name='released'
             onChange={e => handleChange(e)}
             />
+            {error.released && (<p>{error.released}</p>)}
             <br/>
             <label>Rating: </label>
             <input
-            type='text'
+            type='number'
+            min="1" 
+            max="5"
             value={input.rating}
             name='rating'
             onChange={e => handleChange(e)}
             />
+            {error.rating && (<p>{error.rating}</p>)}
             <br/>
             <label>Image Link: </label>
             <input
@@ -196,6 +203,7 @@ return(
             name='image'
             onChange={e => handleChange(e)}
             />
+            {error.image && (<p>{error.image}</p>)}
             <br/>
             <label>Platforms: </label>
             {platformsList.map((pl => (
@@ -205,6 +213,7 @@ return(
                 </label>
             )))}
             <br/>
+            {error.platforms && (<p>{error.platforms}</p>)}
             <label>Genres: </label>
             <label> 
             <select onChange={e=> handleSelect(e)} defaultValue={'DEFAULT'}>
@@ -213,6 +222,7 @@ return(
                     <option key={el} value={el} name={el}>{el}</option>
                 ))}
             </select>
+            {error.genres && (<p>{error.genres}</p>)}
             <br/>
             </label>
             {Object.keys(error).length ? 
@@ -223,7 +233,7 @@ return(
         </form>
         <p>The game genres are:</p>
         <ul>
-            {input.genres.map((gen => (
+            {input.genres?.map((gen => (
                 <>
                     <li>{gen}</li>
                     <button onClick={e => handleDeSelect(e)} value={gen}>X</button>
@@ -232,7 +242,7 @@ return(
         </ul>
         <p>The game platforms are:</p>
         <ul>
-            {input.platforms.map((gen => (
+            {input.platforms?.map((gen => (
                 <li>
                     <span>{gen}</span>
                 </li>

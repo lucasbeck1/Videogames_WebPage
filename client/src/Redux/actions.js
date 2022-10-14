@@ -73,7 +73,7 @@ export function getDetail(id){
 };
 
 export function createGame(payload){
-    return( async function(dispatch){
+    return( async function(){
        const response = await axios.post('http://localhost:3001/videogames', payload);
        console.log(response);
        return (response);

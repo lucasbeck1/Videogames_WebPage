@@ -68,7 +68,7 @@ function filterG(e){
 return(
     <React.Fragment>
         <h1>Game Browser</h1>
-        <button onClick={e => handleClick(e)}>GET Videogames List</button>
+        <button onClick={e => handleClick(e)}>Reload List</button>
         <br/>
         <Link to='/create'><button>Define New Videogame</button></Link>
         <br/>
