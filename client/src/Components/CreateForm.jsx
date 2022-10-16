@@ -119,10 +119,8 @@ function validate(input){
     if(input.rating > 5){error.rating = 'The maximum score is 5'};
 
     if(!input.genres.length){error.genres = 'Select at least one genre'};
-    //if(!input.genres[0]){error.genres = 'Select at least one genre'};
 
     if(!input.platforms.length){error.platforms = 'Select at least one platform'};
-    //if(!input.platforms[0]){error.platforms = 'Select at least one platform'};
     
     return (error);
 };
@@ -190,6 +188,7 @@ return(
             type='number'
             min="1" 
             max="5"
+            step="0.01"
             value={input.rating}
             name='rating'
             onChange={e => handleChange(e)}

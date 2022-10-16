@@ -1,9 +1,10 @@
 import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getVideogames, orders, getGenres, filters, getVideogamesByName, getDetail } from "../Redux/actions";
+import { getVideogames, orders, getGenres, filters, getVideogamesByName } from "../Redux/actions";
 import { Game } from "./Game";
 import { Paginated } from "./Paginated";
+import s from "./Home.module.css";
 
 export function Home (){
 
@@ -73,7 +74,7 @@ return(
         <Link to='/create'><button>Define New Videogame</button></Link>
         <br/>
         <input onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
-        <button onClick={e => handleSubmit(e)} type="submit">Buscar</button>
+        <button onClick={e => handleSubmit(e)} type="submit">Search</button>
         <br/>
         <h4>Filters</h4>
         <span>Storage</span>
@@ -105,9 +106,11 @@ return(
         </select>
         <br/>
         <Paginated gamesPage={gamesPerPage} games={allGames.length} pag={paged}/>
+        <div className={s.list}>
         {currentGames?.map(g => {return (
         <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id}/>
         )})}
+         </div>
     </React.Fragment>
 )};
 
