@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { createGame, getGenres,getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
-
+import s from "./CreateForm.module.css";
 
 export function CreateForm (){
 
@@ -153,7 +153,7 @@ function handleSubmit(e){
 
 return(
     <React.Fragment>
-        <Link to='/home'>Home</Link>
+        <Link to='/home'><button className={s.homeButton}>Back Home</button></Link>
         <h3>Create Your GAME !</h3>
         <form onSubmit={e=> handleSubmit(e)}>
             <label>Name: </label>
