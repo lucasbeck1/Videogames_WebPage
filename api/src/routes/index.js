@@ -30,9 +30,9 @@ const getApiInfo = async () => {
                 id : e.id,
                 name: e.name,
                 image: e.background_image,
-                genres: e.genres.map(e => e.name).join(', '),
                 released: e.released,
                 rating: e.rating,
+                genres: e.genres.map(e => e.name).join(', '),
                 platforms: e.platforms.map((e) => e.platform.name).join(', '),
                 createdInDatabase: false
             })
@@ -55,8 +55,19 @@ const getDbInfo = async () => {
                 attributes: [],
             }
         }
-    });    
-    return (dbinfo);
+    });
+
+    let data = JSON.stringify(dbinfo);
+    let data2 = JSON.parse(data);
+
+    for(let i=0; i<data2.length; i++){
+        data2[i]={
+            ...data2[i],
+            genres: data2[i].genres.map(g=>g.name).join(', ')
+        };
+    };
+
+    return (data2);
 };
 const getAllGames = async () => {
     const apiGames = await getApiInfo();

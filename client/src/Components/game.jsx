@@ -5,25 +5,20 @@ import { getDetail } from "../Redux/actions";
 import s from "./Game.module.css";
 
 
-export function Game ({name, img, genres, CIDB, id}){
-
+export function Game ({name, img, genres, id}){
     const dispatch = useDispatch();
 
     function detailG(e){
         dispatch(getDetail(id))
     };
     
-    if(CIDB === true){
-        genres = genres.map(g=>g.name).join(', ');
-    };
-
     if(genres.split(', ').length > 4){
         genres = genres.split(', ').slice(0,4).join(', ');
     };
 
 return(
     <React.Fragment>
-    <Link to={`/detail/${id}`}>
+    <Link to={`/detail/${id}`} className={s.algo}>
     <div className={s.card} onClick={e => detailG(e)}>
         <div className={s.title}>
             <h4>{name}</h4>

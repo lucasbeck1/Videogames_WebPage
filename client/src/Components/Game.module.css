@@ -1,3 +1,7 @@
+.algo{
+    text-decoration: none;
+}
+
 .card{
     border:2px solid rgb(72, 17, 175);
     border-radius: 5px;
@@ -6,8 +10,7 @@
     align-items: center;
     background-color: #969090b9;
     width:340px;
-    height: 282px;
-    text-decoration: none;
+    height: 282px
 }
 
 .title{
@@ -21,18 +24,19 @@
     color: rgb(0, 0, 0);
     padding: 15px rgb(10, 64, 134);
     margin: 0px;
-    border-bottom: 2px solid rgb(72, 17, 175);
+    border-bottom: 2px solid rgb(72, 17, 175)
 }
 
 .genres{
-    width:340px; 
+    width:340px;
+    height: 20px;
     color:rgb(0, 0, 0);
     padding: 5px;
-    margin: 0%;
+    margin: 0%
 }
 
 img{
     width:340px; 
     height:200px;
-    border-radius: 5px;
+    border-radius: 3px
 }
