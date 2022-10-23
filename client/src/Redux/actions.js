@@ -6,6 +6,7 @@ export const GET_GENRES = 'GET_GENRES';
 export const FILTER_GAMES = 'FILTER_GAMES';
 export const GET_VIDEOGAMES_BY_NAME = 'GET_VIDEOGAMES_BY_NAME';
 export const GET_DETAIL = 'GET_DETAIL';
+export const CLEAR_DETAIL = 'CLEAR_DETAIL';
 export const CREATE_VIDEOGAME = 'CREATE_VIDEOGAME'; 
 
 
@@ -69,6 +70,12 @@ export function getDetail(id){
             type: GET_DETAIL,
             payload: info.data
         }));
+    });
+};
+
+export function clearDetail(){
+    return({
+        type: CLEAR_DETAIL,
     });
 };
 

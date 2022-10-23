@@ -12,12 +12,12 @@ export function Home (){
 const dispatch = useDispatch();
 const allGames = useSelector(state => state.videogamesList);
 const allgenres = useSelector(state => state.genres);
-
-
 //const [state, dispatch] = useReducer(reducer, initialState);
+
+
 useEffect(()=>{
-    dispatch(getVideogames())
     dispatch(getGenres())
+    dispatch(getVideogames())
 },[dispatch]);
 
 
@@ -68,7 +68,10 @@ function filterG(e){
 
 return(
     <React.Fragment>
-        <h1>Game Browser</h1>
+        {allGames.length > 0 ? (
+        <>
+        <Link to='/'><button>TO LANDING</button></Link>
+        <h1>Lucky Game Browser</h1>
         <button onClick={e => handleClick(e)}>Reload List</button>
         <br/>
         <Link to='/create'><button>Define New Videogame</button></Link>
@@ -110,7 +113,10 @@ return(
         {currentGames?.map(g => {return (
         <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id}/>
         )})}
-         </div>
+        </div>
+        </>) 
+        : (<h3>Loading</h3>)}
+        
     </React.Fragment>
 )};
 

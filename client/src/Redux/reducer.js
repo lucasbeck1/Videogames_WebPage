@@ -1,4 +1,4 @@
-import { GET_VIDEOGAMES, ORDER_GAMES, GET_GENRES, FILTER_GAMES, GET_VIDEOGAMES_BY_NAME, GET_DETAIL } from './actions';
+import { GET_VIDEOGAMES, ORDER_GAMES, GET_GENRES, FILTER_GAMES, GET_VIDEOGAMES_BY_NAME, GET_DETAIL, CLEAR_DETAIL } from './actions';
 
 let initialState = {
   videogamesListCOMPLETE: [],
@@ -88,7 +88,13 @@ export default function rootReducer(state=initialState, action){
         detail: action.payload
       })
           
+    case CLEAR_DETAIL:
+      return({
+        ...state,
+        detail: {}
+      })
 
+      
     default: return(state)
   };
 };
