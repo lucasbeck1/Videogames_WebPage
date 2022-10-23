@@ -3,14 +3,14 @@
 }
 
 .card{
-    border:2px solid rgb(72, 17, 175);
+   /*  border:2px solid rgb(72, 17, 175); */
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #969090b9;
     width:340px;
-    height: 282px
+    height: 280px
 }
 
 .title{
@@ -22,9 +22,9 @@
     width:340px;
     height: 50px;
     color: rgb(0, 0, 0);
-    padding: 15px rgb(10, 64, 134);
     margin: 0px;
-    border-bottom: 2px solid rgb(72, 17, 175)
+    /* padding: 15px rgb(10, 64, 134);
+    border-bottom: 2px solid rgb(72, 17, 175) */
 }
 
 .genres{

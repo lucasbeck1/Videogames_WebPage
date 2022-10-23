@@ -32,9 +32,9 @@ const [input, setInput] = useState({
 });
 const [error, setError] = useState({});
 
-//const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web'];
 
 const platformsList = ['PC', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5', 'Xbox 360', 'Xbox One' ,'Xbox Series S/X', 'Nintendo Switch'];
+//const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web'];
 
 
 // Functions
@@ -165,9 +165,15 @@ return(
             />
             {error.name && (<p>{error.name}</p>)}
             <br/>
-            <label>Description: </label>
-            <input
+            <label for='desc'>Description: </label>
+            <textarea
+            id='desc'
             type='text'
+            placeholder='Tell about the history or the mechanics of the game'
+            cols='60'
+            rows='5'
+            maxlength='1210'
+            required
             value={input.description}
             name='description'
             onChange={e => handleChange(e)}
