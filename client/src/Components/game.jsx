@@ -12,8 +12,8 @@ export function Game ({name, img, genres, id}){
         dispatch(getDetail(id))
     };
     
-    if(genres.split(', ').length > 4){
-        genres = genres.split(', ').slice(0,4).join(', ');
+    if(genres.split(', ').length > 3){
+        genres = genres.split(', ').slice(0,3).join(', ');
     };
 
 return(

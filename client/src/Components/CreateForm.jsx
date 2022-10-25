@@ -110,7 +110,6 @@ function validate(input){
 
     if(!input.image){error.image = 'Please insert the link of an image'};
 
-    
     if(!input.released){error.released = 'Please select a date of released'};
     
     if(!input.rating){error.rating = 'Please rate the game with a score from 1 to 5'}

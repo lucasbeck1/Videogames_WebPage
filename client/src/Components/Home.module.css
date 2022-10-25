@@ -1,9 +1,29 @@
+.header{
+    background-color: rgba(125, 126, 97, 0.555);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: rgba(166, 167, 114, 0.212);
+    position: fixed;
+    left:0%;
+    width: 10%;
+    margin-top: 1rem;
+}
+
 .list{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 80%;
     grid-gap: 1rem;
     gap: 2rem;
     justify-content: center;
     padding: 20px 0;
+    right: 0px;
+    margin-left: 20rem;
 }
