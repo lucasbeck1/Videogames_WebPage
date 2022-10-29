@@ -3,6 +3,8 @@ import { createGame, getGenres,getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
 import s from "./CreateForm.module.css";
+import {Game} from "./Game"
+
 
 export function CreateForm (){
 
@@ -12,7 +14,7 @@ const genresList = useSelector(state => state.genres);
 const gamesList = useSelector(state => state.videogamesListCOMPLETE);
 const history = useHistory();
 
- 
+
 useEffect(()=>{
     dispatch(getVideogames())
     dispatch(getGenres())
@@ -55,13 +57,14 @@ function handleSelect(e){
     if(!input.genres.includes(e.target.value)){
         setInput({
             ...input,
-            genres: [...input.genres, e.target.value]
+            genres: [...input.genres, e.target.value],
         })
         setError(validate({
             ...input,
             genres: [...input.genres, e.target.value]
         }));
     };
+    document.getElementById('SelectGenres').selectedIndex = 'DEFAULT';
 };
 
 function handleDeSelect(e){
@@ -108,7 +111,7 @@ function validate(input){
     if(input.description.length > 0 && input.description.length < 25){error.description = 'The description is too short'};
     if(input.description.length > 1200){error.description = 'The description is too long'};
 
-    if(!input.image){error.image = 'Please insert the link of an image'};
+    if(!input.image){error.image = 'Please insert the image link'};
 
     if(!input.released){error.released = 'Please select a date of released'};
     
@@ -154,103 +157,173 @@ return(
     <React.Fragment>
         <Link to='/home'><button className={s.homeButton}>Back Home</button></Link>
         <h3>Create Your GAME !</h3>
-        <form onSubmit={e=> handleSubmit(e)}>
-            <label>Name: </label>
-            <input
-            type='text'
-            value={input.name}
-            name='name'
-            onChange={e => handleChange(e)}
-            />
-            {error.name && (<p>{error.name}</p>)}
-            <br/>
-            <label for='desc'>Description: </label>
-            <textarea
-            id='desc'
-            type='text'
-            placeholder='Tell about the history or the mechanics of the game'
-            cols='60'
-            rows='5'
-            maxlength='1210'
-            required
-            value={input.description}
-            name='description'
-            onChange={e => handleChange(e)}
-            />
-            {error.description && (<p>{error.description}</p>)}
-            <br/>
-            <label>Date of release: </label>
-            <input
-            type='date'
-            value={input.released}
-            name='released'
-            onChange={e => handleChange(e)}
-            />
-            {error.released && (<p>{error.released}</p>)}
-            <br/>
-            <label>Rating: </label>
-            <input
-            type='number'
-            min="1" 
-            max="5"
-            step="0.01"
-            value={input.rating}
-            name='rating'
-            onChange={e => handleChange(e)}
-            />
-            {error.rating && (<p>{error.rating}</p>)}
-            <br/>
-            <label>Image Link: </label>
-            <input
-            type='text'
-            value={input.image}
-            name='image'
-            onChange={e => handleChange(e)}
-            />
-            {error.image && (<p>{error.image}</p>)}
-            <br/>
-            <label>Platforms: </label>
-            {platformsList.map((pl => (
-                <label>
-                    <input key={pl} type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)}/>
-                    {pl}
-                </label>
-            )))}
-            <br/>
-            {error.platforms && (<p>{error.platforms}</p>)}
-            <label>Genres: </label>
-            <label> 
-            <select onChange={e=> handleSelect(e)} defaultValue={'DEFAULT'}>
-                <option value='DEFAULT' disabled>Select a genre</option>
-                {genresList.map((el)=>(
-                    <option key={el} value={el} name={el}>{el}</option>
-                ))}
-            </select>
-            {error.genres && (<p>{error.genres}</p>)}
-            <br/>
-            </label>
-            {Object.keys(error).length ? 
-                (<input type="submit" disabled name="Send" />) 
-                :
-                (<input type="submit" name="Send" />)
-            }
-        </form>
-        <p>The game genres are:</p>
-        <ul>
-            {input.genres?.map((gen => (
-                <>
-                    <li>{gen}</li>
-                    <button onClick={e => handleDeSelect(e)} value={gen}>X</button>
-                </>
-            )))}
-        </ul>
-        <p>The game platforms are:</p>
-        <ul>
-            {input.platforms?.map((gen => (
-                <li>
-                    <span>{gen}</span>
-                </li>
-            )))}
-        </ul>
+        
+        <div className={s.form}>
+            <form onSubmit={e=> handleSubmit(e)}>
+                <p>Name: </p>
+                <input
+                type='text'
+                value={input.name}
+                name='name'
+                placeholder='Game Name'
+                maxlength='100'
+                onChange={e => handleChange(e)}
+                className={s.inputs1}
+                />
+                {error.name? (<p className={s.error}>{error.name}</p>) :
+                (<div>
+                    <br/>
+                    <br/>
+                </div>)}
+
+                <p for='desc'>Description: </p>
+                <textarea
+                id='desc'
+                type='text'
+                placeholder='Write about the history and the mechanics of the game'
+                cols='60'
+                rows='5'
+                maxlength='1210'
+                /* required */ /* Validación Html */
+                value={input.description}
+                name='description'
+                onChange={e => handleChange(e)}
+                className={s.inputs1}
+                />
+                {error.description ? (<p className={s.error}>{error.description}</p>) :
+                (<div>
+                    <br/>
+                    <br/>
+                </div>)}
+
+                <p>Date of release: </p>
+                <input
+                type='date'
+                value={input.released}
+                name='released'
+                onChange={e => handleChange(e)}
+                className={s.inputs1}
+                />
+                {error.released ? (<p className={s.error}>{error.released}</p>) :
+                (<div>
+                    <br/>
+                    <br/>
+                </div>)}
+
+                <p>Rate it: </p>
+                <input
+                type='range'
+                min="1" 
+                max="5"
+                step="0.01"
+                value={input.rating}
+                name='rating'
+                placeholder='From 1 to 5'
+                onChange={e => handleChange(e)}
+                className={s.inputs1}
+                />
+                {/* <input
+                type='number'
+                min="1" 
+                max="5"
+                step="0.01"
+                value={input.rating}
+                name='rating'
+                placeholder='From 1 to 5'
+                onChange={e => handleChange(e)}
+                className={s.inputs1}
+                /> */}
+                {error.rating ? (<p className={s.error}>{error.rating}</p>) : 
+                    (input.rating ? 
+                    (<p>{input.rating}</p>)  :
+                    (<div>
+                        <br/>
+                        <br/>
+                    </div>))
+                }
+
+                <p>Image Link: </p>
+                <input
+                type='url'
+                value={input.image}
+                name='image'
+                placeholder='http//www...'
+                onChange={e => handleChange(e)}
+                className={s.inputs1}
+                />
+                
+                {error.image ? (<p className={s.error}>{error.image}</p>) :
+                (<div>
+                    <br/>
+                    <br/>
+                </div>)}
+                
+                <p>Genres: </p>
+                {
+                <select id='SelectGenres' onChange={e=> handleSelect(e)} defaultValue={'DEFAULT'}>
+                    <option value='DEFAULT' disabled>Select a genre</option>
+                    {genresList.map((el)=>(
+                        <option key={el} value={el} name={el}>{el}</option>
+                    ))}
+                </select>
+                }
+                
+                {error.genres ? (<p className={s.error}>{error.genres}</p>) :
+                (<div>
+                    <br/>
+                    <br/>
+                </div>)}
+
+                { 
+                <div className={s.listGenres}>
+                {genresList.map((gen => (
+                   
+                    input.genres.includes(gen) ? 
+                    (<div>
+                        <button onClick={e => handleDeSelect(e)} value={gen}>{gen}</button>
+                    </div>) 
+                    : 
+                    (<div>
+                        <button disabled onClick={e => handleDeSelect(e)} value={gen}>{gen}</button>
+                    </div>)
+                
+                )))}
+                </div>
+                }
+                
+
+                <p>Platforms: </p>
+                <div className={s.listPlatforms}>
+                    {platformsList.map((pl => (
+                        <label>
+                            <input key={pl} type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)}/>
+                            {pl}
+                        </label>
+                    )))}
+                </div>
+                {error.platforms ? (<p className={s.error}>{error.platforms}</p>) :
+                (<div>
+                    <br/>
+                    <br/>
+                </div>)}
+                
+                {Object.keys(error).length ? 
+                    (<input type="submit" disabled name="Send" className={s.submittButton2}/>) 
+                    :
+                    (<input type="submit" name="Send" className={s.submittButton1}/>)
+                }
+            </form>
+        </div>
+
+
+        <div className={s.gamePreview}>
+            <Game 
+            name={input.name? <p>{input.name}</p> : <p>YOUR GAME</p>} 
+            img={input.image? (input.image) : ('https://media.istockphoto.com/vectors/glowing-neon-line-gamepad-icon-isolated-on-black-background-game-vector-id1248994605?k=20&m=1248994605&s=170667a&w=0&h=B8ZwAV5gk6jmZjRdv8GtalebM3LI50DCcUT4QQ8DEB4=')}
+            genres={input.genres.length > 0? (input.genres.join(', ')) : ('Genres')} 
+            id='1'
+            ></Game>
+        </div>
+        
     </React.Fragment>
 )};

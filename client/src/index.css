@@ -1,7 +1,7 @@
 body {
-  background: radial-gradient(circle, rgba(255,252,191,1) 40%, rgba(255,224,199,1) 100%);
+  background: radial-gradient(circle, rgb(61, 151, 179) 40%, rgb(185, 129, 218) 100%);
   /*
-  background-color: #fefbd8;
+  background: radial-gradient(circle, rgba(255,252,191,1) 40%, rgba(255,224,199,1) 100%);
   background-image: url('hogwartsLegacy.jpg');
   background-size: 100%;
   background-size: cover;

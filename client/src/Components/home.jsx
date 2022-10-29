@@ -91,7 +91,7 @@ return(
                 <h1>Lucky Game Browser</h1>
                 <div>
                     <Link to='/'><button>TO LANDING</button></Link>
-                    <Link to='/create'><button>Define New Videogame</button></Link>
+                    <Link to='/create'><button>Create</button></Link>
                 </div>
             </div>
 
