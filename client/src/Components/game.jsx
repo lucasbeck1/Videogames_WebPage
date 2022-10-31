@@ -14,11 +14,12 @@ export function Game ({name, img, genres, id}){
     
     if(genres.split(', ').length > 3){
         genres = genres.split(', ').slice(0,3).join(', ');
-    };
+    }
 
+    
 return(
     <React.Fragment>
-    <Link to={`/detail/${id}`} className={s.algo}>
+    <Link to={`/detail/${id}`} className={s.det}>
     <div className={s.card} onClick={e => detailG(e)}>
         <div className={s.title}>
             <h4>{name}</h4>

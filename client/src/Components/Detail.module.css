@@ -1,0 +1,71 @@
+.link{
+    text-decoration: none;
+}
+
+.homeButton{
+    color: #FF1cff;
+    background-color: rgb(16, 56, 129);
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 15rem;
+    margin: 1rem auto;
+}
+
+.homeButton:hover{
+    color: #FF1cff;
+    background-color: rgb(0, 228, 228);
+    box-shadow: 20px;
+}
+
+
+
+
+.page{
+    width: 60%;   
+    margin: 0 auto;
+    background-color: rgba(255, 228, 196, 0.664);
+    border-radius: 20px;
+}
+
+
+
+
+
+.upText{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    color: rgb(16, 56, 129);
+}
+
+
+.downText{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: rgb(16, 56, 129);
+    text-align: start;
+}
+
+
+
+.image{
+    width: 90%;
+    height: 32vw;
+    border: 5px solid #ffcaff;
+    border-radius: 10px;
+
+}
+
+
+
+
+.description{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: start;
+    padding-bottom: 3%;
+}

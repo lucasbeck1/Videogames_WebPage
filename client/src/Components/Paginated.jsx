@@ -1,5 +1,5 @@
 import React from "react";
-
+import s from "./Paginated.module.css"
 
 export function Paginated({games, gamesPage, pag}){
 
@@ -12,7 +12,7 @@ return(
     <React.Fragment>
         <nav>
             {pageNumber && pageNumber.map( number => { return(
-                <button onClick={()=>pag(number)}>{number}</button>
+                <button className={s.button} onClick={()=>pag(number)}>{number}</button>
             )}  )}
         </nav>
     </React.Fragment>
@@ -26,6 +26,5 @@ game per page = 15
 100/15 = 6.66 --> 7
 
 pageNumber = [1,2,3,4,5,6,7]
-
 
 */

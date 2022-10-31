@@ -88,13 +88,13 @@ return(
                     <input id='SearchInput' onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
                     <button onClick={e => handleSubmit(e)} type="submit">Search</button>
                 </div>
-                <h1>Lucky Game Browser</h1>
+                <h2>Lucky Game Browser</h2>
                 <div>
                     <Link to='/'><button>TO LANDING</button></Link>
                     <Link to='/create'><button>Create</button></Link>
                 </div>
             </div>
-
+            
             <Paginated gamesPage={gamesPerPage} games={allGames.length} pag={paged}/>
             
             <div className={s.nav}>
