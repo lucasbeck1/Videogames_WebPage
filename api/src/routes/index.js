@@ -4,7 +4,7 @@ const { Router } = require('express');
 const { Videogame, Genre } = require('../db')
 const axios = require('axios');
 const { get } = require('superagent');
-const { API_KEY}  = process.env;
+const { API_KEY }  = process.env;
 
 const router = Router();
 

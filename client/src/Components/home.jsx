@@ -94,7 +94,7 @@ return(
                     <Link to='/create'><button>Create</button></Link>
                 </div>
             </div>
-            
+            <br></br>
             <Paginated gamesPage={gamesPerPage} games={allGames.length} pag={paged}/>
             
             <div className={s.nav}>
@@ -102,14 +102,14 @@ return(
                 <h4>Filters</h4>
                 <label for='storage'>Storage</label>
                 <select id='storage' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'}>
-                    <option value='DEFAULT' disabled>Filter by storage</option>
+                    <option value='DEFAULT' disabled>Storage</option>
                     <option value='All'>All</option>
                     <option value='Api'>Api</option>
                     <option value='Db'>Library</option>
                 </select>
                 <label for='genre'>Genre</label>
                 <select id='genre' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'}>
-                    <option value='DEFAULT' disabled>Filter by genre</option>
+                    <option value='DEFAULT' disabled>Genre</option>
                     <option value='All'>All</option>
                     {allgenres?.map(element => {
                     return(<option value={element}>{element}</option>) 
@@ -118,13 +118,13 @@ return(
                 <h4>Order by</h4>
                 <label for='name'>Name</label>
                 <select id='name' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
-                    <option value='DEFAULT' disabled>Order by Name</option>
+                    <option value='DEFAULT' disabled>Alphabetical</option>
                     <option value='A-Z'>A-Z</option>
                     <option value='Z-A'>Z-A</option>
                 </select>
                 <label for='rating'>Rating</label>
                 <select id='rating' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
-                    <option value='DEFAULT' disabled>Order by Rating</option>
+                    <option value='DEFAULT' disabled>Rating</option>
                     <option value='High Rating'>High Rating</option>
                     <option value='Low Rating'>Low Rating</option>
                 </select>

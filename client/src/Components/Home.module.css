@@ -17,6 +17,7 @@
     flex-direction: column;
     padding: 3rem;
     background-color: rgba(166, 167, 114, 0.212);
+    border-radius: 3px;
     position: fixed;
     left:0%;
     width: 10%;
@@ -32,7 +33,7 @@
     justify-content: center;
     padding: 20px 0;
     right: 0px;
-    margin-left: 20rem;
+    margin-left: 20%;
 }
 
 /* No esta funcando el module */
