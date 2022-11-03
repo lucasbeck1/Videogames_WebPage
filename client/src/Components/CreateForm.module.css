@@ -1,0 +1,116 @@
+.homeButton{
+    color: #FF1cff;
+    background-color: rgb(0, 228, 228);
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 15rem;
+    margin: 1rem;
+}
+
+.homeButton:hover{
+    color: #FF1cff;
+    background-color: rgb(16, 56, 129);
+    box-shadow: 20px;
+}
+
+
+
+.submittButton1{
+    color: #FF1cff;
+    background-color: rgb(0, 228, 228);
+    border: 10px solid black;
+    border-radius: 3px;
+    width: 20rem;
+    padding: 1rem;
+}
+
+.submittButton1:hover{
+    color: #FF1cff;
+    background-color: rgb(16, 56, 129);
+    box-shadow: 20px;
+}
+
+
+.submittButton2{
+    color: #461b46;
+    background-color: rgb(113, 172, 172);
+    border: 10px solid black;
+    border-radius: 3px;
+    width: 20rem;
+    padding: 1rem;
+}
+
+
+
+
+
+.page{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+   /*  border: 4px solid rgb(63, 0, 78); */
+    border: 4px solid  #ffcaff;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 30rem;
+    padding: 1rem;
+    background-color: rgb(255, 235, 205);
+    
+}
+
+
+.form input, textarea{
+    border:none;
+    border-color: rgb(4, 102, 189);
+    border-radius: 4px;
+}
+
+.inputs1{
+    width: 20rem;
+}
+
+
+
+
+.listGenres{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8rem;
+    margin-right: 6rem;
+    padding-left: 2rem;
+}
+
+.listPlatforms{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 8rem;
+    margin-right: 6rem;
+    padding-left: 2rem;
+    color: #999
+}
+
+
+
+.error{
+    color: rgb(233, 44, 85);
+}
+
+
+
+
+.gamePreview{
+    margin: 0 auto;
+    width: 20rem;
+    padding: 1rem;
+    color: #999
+
+}
+
