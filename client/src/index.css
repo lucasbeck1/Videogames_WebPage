@@ -1,12 +1,8 @@
 body {
   background: radial-gradient(circle, rgb(61, 151, 179) 40%, rgb(185, 129, 218) 100%);
   /*
-  background: radial-gradient(circle, rgba(255,252,191,1) 40%, rgba(255,224,199,1) 100%);
-  background-image: url('hogwartsLegacy.jpg');
-  background-size: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;  */
+  background: radial-gradient(circle, rgba(255,252,191,1) 40%, rgba(255,224,199,1) 100%); 
+  */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
