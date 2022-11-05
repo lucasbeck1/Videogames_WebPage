@@ -96,7 +96,7 @@ const getPlatforms = async () => {
 router.get('/videogames', async function(req, res, next){
     const allGames = await getAllGames();
     const {name} = req.query;
-    if(!name) return res.json(allGames);
+    if(!name) return res.status(200).json(allGames);
     try {
         const gamefilter = allGames.filter(game => game.name.toLowerCase().includes(name.toLowerCase())).slice(0,15);
         if(gamefilter.length) {return res.json(gamefilter)}
@@ -127,7 +127,7 @@ router.get('/genres', async function(req, res, next){
     if(genresDB1.length > 0) return res.json(genresDB1);
 
 
-    // Si Quiero que envie el arreglo de generos en limpio (sin el id de c/u)
+    // Envía el arreglo de géneros limpio (sin el id de c/u)
     /*     
     const genresDB01 = await Genre.findAll();
     let data = JSON.stringify(genresDB01);

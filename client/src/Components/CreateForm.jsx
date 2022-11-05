@@ -2,8 +2,9 @@ import React, {useState, useEffect} from "react";
 import { createGame, getGenres,getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
+import {Game} from "./Game";
+import defaultImage from "./assets/Joy-1.jpg";
 import s from "./CreateForm.module.css";
-import {Game} from "./Game"
 
 
 export function CreateForm (){
@@ -215,7 +216,7 @@ return(
                 type='range'
                 min="1" 
                 max="5"
-                step="0.01"
+                step="1"
                 value={input.rating}
                 name='rating'
                 placeholder='From 1 to 5'
@@ -319,7 +320,7 @@ return(
         <div className={s.gamePreview}>
             <Game 
             name={input.name? <p>{input.name}</p> : <p>YOUR GAME</p>} 
-            img={input.image? (input.image) : ('https://media.istockphoto.com/vectors/glowing-neon-line-gamepad-icon-isolated-on-black-background-game-vector-id1248994605?k=20&m=1248994605&s=170667a&w=0&h=B8ZwAV5gk6jmZjRdv8GtalebM3LI50DCcUT4QQ8DEB4=')}
+            img={input.image? (input.image) : (defaultImage)}
             genres={input.genres.length > 0? (input.genres.join(', ')) : ('Genres')} 
             id='1'
             ></Game>
