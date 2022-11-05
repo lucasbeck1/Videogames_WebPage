@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { clearDetail } from "../Redux/actions";
 import { getDetail } from "../Redux/actions";
+import { Loading } from "./Loading";
 import s from "./Detail.module.css";
 
 
@@ -60,7 +61,6 @@ return(
                 <p>{detailG.released}</p>
             </div>
             <p className={s.description}>{detailG.description}</p>
-            {/* detailG.platforms?.split(', ').map(pl=>(<p>{pl}</p>)) */}
             <p className={s.description}>Available on {detailG.platforms}</p>
         </div>
 
@@ -68,7 +68,7 @@ return(
 
         : ( <div style={styleDiv}>
         <Link to={`/home`} className={s.link}><p className={s.homeButton}>Home</p></Link>
-        <h3>Loading</h3>
+        <Loading/>
         </div>)}
     </React.Fragment>
 )};

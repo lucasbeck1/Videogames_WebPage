@@ -123,9 +123,20 @@ router.get('/videogames/:idgame', async function(req, res, next){
 
 
 router.get('/genres', async function(req, res, next){
-    //const genresDB1 = await Genre.findAll();
-    //if(genresDB1.length < 0) return (genresDB1);
+    const genresDB1 = await Genre.findAll();
+    if(genresDB1.length > 0) return res.json(genresDB1);
 
+
+    // Si Quiero que envie el arreglo de generos en limpio (sin el id de c/u)
+    /*     
+    const genresDB01 = await Genre.findAll();
+    let data = JSON.stringify(genresDB01);
+    let data2 = JSON.parse(data);
+    data2 = data2.map(g=>g.name);
+    res.json(data2); 
+    */
+
+    
     const allGenres = await getGenres();
     for(let i=0; i < allGenres.length; i++){
         let gen = allGenres[i]

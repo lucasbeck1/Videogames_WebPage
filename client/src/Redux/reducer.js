@@ -11,7 +11,9 @@ export default function rootReducer(state=initialState, action){
   switch(action.type){
     case GET_VIDEOGAMES: return({...state, videogamesList: action.payload, videogamesListCOMPLETE: action.payload});
 
+
     case GET_VIDEOGAMES_BY_NAME: return({...state, videogamesList: action.payload});
+
 
     case ORDER_GAMES: 
       let games = state.videogamesList;
@@ -64,9 +66,11 @@ export default function rootReducer(state=initialState, action){
       }
       return({...state, videogamesList: games});
 
+
     case GET_GENRES: 
       const genresDB = action.payload.map(g => g.name)
       return({...state, genres: genresDB});
+
 
     case FILTER_GAMES:
       const allVideogames = state.videogamesListCOMPLETE;
@@ -82,12 +86,14 @@ export default function rootReducer(state=initialState, action){
         videogamesList: filtered
       });
 
+
     case GET_DETAIL:
       return({
         ...state,
         detail: action.payload
       })
           
+      
     case CLEAR_DETAIL:
       return({
         ...state,

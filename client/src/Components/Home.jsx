@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { getVideogames, orders, getGenres, filters, getVideogamesByName } from "../Redux/actions";
 import { Game } from "./Game";
 import { Paginated } from "./Paginated";
+import { Loading } from "./Loading";
 import s from "./Home.module.css";
 
 export function Home (){
@@ -80,8 +81,8 @@ function filterG(e){
 
 return(
     <React.Fragment>
-        {allGames.length > 0 ? (
-        <>
+        {allGames.length > 0 ? 
+        (<>
         <div>
             <div className={s.header}>
                 <div>
@@ -151,8 +152,10 @@ return(
         
         </div>
         </>)
-        : (<h3>Loading</h3>)}
-        
+        :
+        (<>
+        <Loading/>
+        </>)}
     </React.Fragment>
 )};
 

@@ -36,7 +36,7 @@
     margin-left: 20%;
 }
 
-/* No esta funcando el module */
+/* No Anda el module cuando no usamos clases o ids */
 .header button{
     color: #FF1cff;
     background-color: rgb(16, 56, 129);
@@ -56,3 +56,4 @@
 .header input{
     height: 1.5rem;
 }
+
