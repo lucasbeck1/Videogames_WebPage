@@ -6,13 +6,12 @@ import reportWebVitals from './reportWebVitals';
 
 import { Provider } from "react-redux";
 import store  from './Redux/store';
-import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
+// No envolver App en Router aqui debido a que da error en los test
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
-      <App />
-    </Router>,
+    <App />
   </Provider>,
   document.getElementById('root')
 );

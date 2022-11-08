@@ -23,8 +23,8 @@ const router = Router();
 
 const getApiInfo = async () => {
     const firstHundredGames = [];
-    for (let i = 1; i <= 3; i++) {
-        let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=40&page=${i}`)
+    for (let i = 1; i <= 1; i++) {
+        let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=40&page=${i}`);
         apiInfo.data.results.map(e => 
             firstHundredGames.push({
                 id : e.id,
@@ -69,6 +69,7 @@ const getDbInfo = async () => {
 
     return (data2);
 };
+
 const getAllGames = async () => {
     const apiGames = await getApiInfo();
     const DbGames = await getDbInfo();
@@ -99,7 +100,7 @@ router.get('/videogames', async function(req, res, next){
     if(!name) return res.status(200).json(allGames);
     try {
         const gamefilter = allGames.filter(game => game.name.toLowerCase().includes(name.toLowerCase())).slice(0,15);
-        if(gamefilter.length) {return res.json(gamefilter)}
+        if(gamefilter.length) {return res.status(200).json(gamefilter)}
         else {return res.status(404).send('Sorry, name not found')};
     }catch(e){
         res.send(e);
@@ -112,19 +113,19 @@ router.get('/videogames/:idgame', async function(req, res, next){
     const {idgame} = req.params;
     const findById = allGames.find(g => g.id.toString() === idgame);
    
-    if(!findById) return res.send('Id not found');
-    if(findById.createdInDatabase === true) return res.json(findById);
+    if(!findById) return res.status(404).send('Id not found');
+    if(findById.createdInDatabase === true) return res.status(200).json(findById);
     else {
         const detGame = await getDetailInfo(idgame);
         findById.description = detGame;
-        res.json(findById);
+        res.status(200).json(findById);
     };
 });
 
 
 router.get('/genres', async function(req, res, next){
     const genresDB1 = await Genre.findAll();
-    if(genresDB1.length > 0) return res.json(genresDB1);
+    if(genresDB1.length > 0) return res.status(200).json(genresDB1);
 
 
     // Envía el arreglo de géneros limpio (sin el id de c/u)
@@ -145,7 +146,7 @@ router.get('/genres', async function(req, res, next){
         });
     };
     const genresDB2 = await Genre.findAll();
-    res.json(genresDB2);
+    res.status(200).json(genresDB2);
 });
 
 
@@ -174,10 +175,10 @@ router.post('/videogames', async function(req, res, next){
         let gendb = await Genre.findAll({ where:{name: genres}});
         await myGame.addGenre(gendb);
 
-        res.send('The videogame was successfully created');
+        res.status(200).send('The videogame was successfully created');
     }catch(e){
         console.log(e)
-        res.send('Error in the process, sorry cheap')
+        res.status(400).send('Error in the process, sorry cheap')
     };
 });
 

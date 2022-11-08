@@ -3,7 +3,7 @@ import { createGame, getGenres,getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
 import {Game} from "./Game";
-import defaultImage from "./assets/Joy-1.jpg";
+import defaultImage from "./assets/joy-1.jpg";
 import s from "./CreateForm.module.css";
 
 
@@ -167,7 +167,7 @@ return(
                 value={input.name}
                 name='name'
                 placeholder='Game Name'
-                maxlength='100'
+                maxLength='100'
                 onChange={e => handleChange(e)}
                 className={s.inputs1}
                 />
@@ -177,14 +177,14 @@ return(
                     <br/>
                 </div>)}
 
-                <p for='desc'>Description: </p>
+                <p htmlFor='desc'>Description: </p>
                 <textarea
                 id='desc'
                 type='text'
                 placeholder='Write about the history and the mechanics of the game'
                 cols='60'
                 rows='5'
-                maxlength='1210'
+                maxLength='1210'
                 /* required */ /* Validación Html */
                 value={input.description}
                 name='description'
@@ -264,7 +264,7 @@ return(
                 <select id='SelectGenres' onChange={e=> handleSelect(e)} defaultValue={'DEFAULT'}>
                     <option value='DEFAULT' disabled>Select a genre</option>
                     {genresList.map((el)=>(
-                        <option key={el} value={el} name={el}>{el}</option>
+                        <option key={`${el}1`} value={el} name={el}>{el}</option>
                     ))}
                 </select>
                 }
@@ -280,11 +280,11 @@ return(
                 {genresList.map((gen => (
                    
                     input.genres.includes(gen) ? 
-                    (<div>
+                    (<div key={`${gen}2`}>
                         <button onClick={e => handleDeSelect(e)} value={gen}>{gen}</button>
                     </div>) 
                     : 
-                    (<div>
+                    (<div key={`${gen}2`}>
                         <button disabled onClick={e => handleDeSelect(e)} value={gen}>{gen}</button>
                     </div>)
                 
@@ -296,8 +296,8 @@ return(
                 <p>Platforms: </p>
                 <div className={s.listPlatforms}>
                     {platformsList.map((pl => (
-                        <label>
-                            <input key={pl} type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)}/>
+                        <label key={pl}>
+                            <input type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)}/>
                             {pl}
                         </label>
                     )))}

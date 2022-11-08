@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { clearDetail } from "../Redux/actions";
 import { getDetail } from "../Redux/actions";
 import { Loading } from "./Loading";
+import defaultImage from "./assets/joy-1.jpg";
 import s from "./Detail.module.css";
 
 
@@ -55,7 +56,7 @@ return(
                 <h2>{detailG.name}</h2>
                 <span>{detailG.rating}</span>
             </div>
-            <img src={detailG.image} alt="Img Not Found" className={s.image}/>
+            <img src={detailG.image? (detailG.image) : (defaultImage)} alt="Img Not Found" className={s.image}/>
             <div className={s.downText}>
                 <p>{detailG.genres}</p>
                 <p>{detailG.released}</p>

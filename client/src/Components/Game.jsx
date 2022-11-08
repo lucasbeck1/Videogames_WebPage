@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { getDetail } from "../Redux/actions";
-import defaultImage from "./assets/Joy-4.jpg";
+import defaultImage from "./assets/joy-1.jpg";
 import s from "./Game.module.css";
 
 

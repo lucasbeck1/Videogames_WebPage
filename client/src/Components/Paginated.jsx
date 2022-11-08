@@ -12,7 +12,7 @@ return(
     <React.Fragment>
         <nav>
             {pageNumber && pageNumber.map( number => { return(
-                <button className={s.button} onClick={()=>pag(number)}>{number}</button>
+                <button className={s.button} onClick={()=>pag(number)} key={number}>{number}</button>
             )}  )}
         </nav>
     </React.Fragment>

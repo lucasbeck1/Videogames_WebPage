@@ -101,29 +101,29 @@ return(
             <div className={s.nav}>
                 <button onClick={e => handleClean(e)}>Clean</button>
                 <h4>Filters</h4>
-                <label for='storage'>Storage</label>
+                <label htmlFor='storage'>Storage</label>
                 <select id='storage' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'}>
                     <option value='DEFAULT' disabled>Storage</option>
                     <option value='All'>All</option>
                     <option value='Api'>Api</option>
                     <option value='Db'>Library</option>
                 </select>
-                <label for='genre'>Genre</label>
+                <label htmlFor='genre'>Genre</label>
                 <select id='genre' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'}>
                     <option value='DEFAULT' disabled>Genre</option>
                     <option value='All'>All</option>
                     {allgenres?.map(element => {
-                    return(<option value={element}>{element}</option>) 
+                    return(<option value={element} key={element}>{element}</option>) 
                     })}
                 </select>
                 <h4>Order by</h4>
-                <label for='name'>Name</label>
+                <label htmlFor='name'>Name</label>
                 <select id='name' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
                     <option value='DEFAULT' disabled>Alphabetical</option>
                     <option value='A-Z'>A-Z</option>
                     <option value='Z-A'>Z-A</option>
                 </select>
-                <label for='rating'>Rating</label>
+                <label htmlFor='rating'>Rating</label>
                 <select id='rating' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
                     <option value='DEFAULT' disabled>Rating</option>
                     <option value='High Rating'>High Rating</option>
@@ -146,7 +146,7 @@ return(
 
             <div className={s.list}>
                 {currentGames?.map(g => {return (
-                    <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id}/>
+                    <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id} key={g.id}/>
                     )})}
             </div>
         
