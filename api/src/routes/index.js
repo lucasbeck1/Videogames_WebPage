@@ -3,9 +3,9 @@
 const { Router } = require('express');
 const { Videogame, Genre } = require('../db')
 const axios = require('axios');
-const { get } = require('superagent');
 const { API_KEY }  = process.env;
 
+// Inicializo una instancia de express
 const router = Router();
 
 // Configurar los routers
@@ -223,6 +223,17 @@ const postActivity = async (req, res) => {
  */
 
 
+
+
+
+
+
+  /* 
+  Recomendaciones
+  corto o largo ?       - indie o no indie
+  historia o rapido ?   - aventura o shooter
+  
+  */
 
 
 

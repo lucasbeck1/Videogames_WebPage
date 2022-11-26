@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getVideogames, orders, getGenres, filters, getVideogamesByName } from "../Redux/actions";
 import { Game } from "./Game";
-import { Paginated } from "./Paginated";
+import Paginated from "./Paginated";
 import { Loading } from "./Loading";
 import s from "./Home.module.css";
 

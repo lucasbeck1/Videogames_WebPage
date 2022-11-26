@@ -1,10 +1,11 @@
 import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { clearDetail } from "../Redux/actions";
-import { getDetail } from "../Redux/actions";
-import { Loading } from "./Loading";
+
+
+import { getDetail, clearDetail } from "../Redux/actions";
 import defaultImage from "./assets/joy-1.jpg";
+import { Loading } from "./Loading";
 import s from "./Detail.module.css";
 
 

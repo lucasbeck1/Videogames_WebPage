@@ -1,22 +1,23 @@
 import React from "react";
 import s from "./Paginated.module.css"
 
-export function Paginated({games, gamesPage, pag}){
+export default function Paginated({games, gamesPage, pag}){
 
-    const pageNumber = [];
+    const pageNumbers = [];
     for (let i = 1; i <= Math.ceil(games/gamesPage); i++) {
-        pageNumber.push(i)
+        pageNumbers.push(i)
     };
 
-return(
-    <React.Fragment>
-        <nav>
-            {pageNumber && pageNumber.map( number => { return(
-                <button className={s.button} onClick={()=>pag(number)} key={number}>{number}</button>
-            )}  )}
-        </nav>
-    </React.Fragment>
-)};
+    return(
+        <React.Fragment>
+            <nav>
+                {pageNumbers && pageNumbers.map( number => { return(
+                    <button className={s.button} onClick={()=>pag(number)} key={number}>{number}</button>
+                )}  )}
+            </nav>
+        </React.Fragment>
+    )
+};
 
 /* 
 

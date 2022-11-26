@@ -19,8 +19,6 @@ export function getVideogames(){
         //let info = await (axios('http://localhost:3001/videogames').data);
         //let info = await (fetch('http://localhost:3001/videogames').json());
         //let info = await (await fetch('http://localhost:3001/videogames')).json();
-        //let info1 = await (await fetch('http://localhost:3001/videogames'));
-        //let info2 = JSON.parse(info1)
         return(dispatch({
             type: GET_VIDEOGAMES,
             payload: info.data
@@ -86,3 +84,54 @@ export function createGame(payload){
        return (response);
     });
 };
+
+
+
+
+
+// AXIOS documentation
+
+/* 
+// Send a POST request
+axios({
+    method: 'post',
+    url: '/user/12345',
+    data: {
+      firstName: 'Fred',
+      lastName: 'Flintstone'
+    }
+  });
+  // GET request for remote image in node.js
+  axios({
+    method: 'get',
+    url: 'http://bit.ly/2mTM3nY',
+    responseType: 'stream'
+  })
+    .then(function (response) {
+      response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
+    });
+*/
+
+
+/* 
+
+Request method aliases
+For convenience aliases have been provided for all supported request methods.
+
+axios.request(config)
+axios.get(url[, config])
+axios.delete(url[, config])
+axios.head(url[, config])
+axios.options(url[, config])
+axios.post(url[, data[, config]])
+axios.put(url[, data[, config]])
+axios.patch(url[, data[, config]])
+NOTE
+When using the alias methods url, method, and data properties don't need to be specified in config.
+
+ */
+
+
+
+
+
