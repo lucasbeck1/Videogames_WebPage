@@ -6,6 +6,11 @@
   <img height="200" src="./videogame.png" />
 </p>
 
+<p align="right">
+  <img height="200" src="https://static.tvtropes.org/pmwiki/pub/images/videogames.png" />
+</p>
+
+
 ## Objetivos del Proyecto
 
 - Construir una App utlizando React, Redux, Node y Sequelize.

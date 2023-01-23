@@ -126,8 +126,8 @@ return(
                 <label htmlFor='rating'>Rating</label>
                 <select id='rating' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
                     <option value='DEFAULT' disabled>Rating</option>
-                    <option value='High Rating'>High Rating</option>
                     <option value='Low Rating'>Low Rating</option>
+                    <option value='High Rating'>High Rating</option>
                 </select>
                 {/*
                 <select onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
@@ -149,7 +149,7 @@ return(
                     <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id} key={g.id}/>
                     )})}
             </div>
-        
+            <p>Made by Lucas beckford | 2022 All rights reserved</p>
         </div>
         </>)
         :
