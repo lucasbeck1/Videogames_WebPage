@@ -27,7 +27,7 @@ return(
         </div>
         <div>
             <p className={s.genres}>{genres}</p>
-            <img src={img? (img) : (defaultImage)} alt="Img Not Found"/>
+            <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
         </div>
     </div>
     </Link>

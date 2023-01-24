@@ -19,9 +19,12 @@ cambiar cards
 card hover  
 añadir iconos  
 footer  
+Firma LB creations  
 añadir idioma español  
 readme  
-clases para los colores y botones
+favicon  
+controlar en form que sea imagen y el nombre exp.reg  
+clases para los colores y botones  
 colores sugeridos:  
     --chakra-colors-gray-50: #F7FAFC;  
     --chakra-colors-gray-100: #EDF2F7;  

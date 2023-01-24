@@ -9,6 +9,8 @@
     flex-direction: column;
     align-items: center;
     background-color: #969090b9;
+    /* width: 200px;
+    height: 300px; */
     width:340px;
     height: 280px
 }
@@ -19,6 +21,7 @@
     align-items: center;
     text-size-adjust: auto;
     text-align: center;
+    /* width: 200px; */
     width:340px;
     height: 50px;
     color: rgb(0, 0, 0);
@@ -28,6 +31,7 @@
 }
 
 .genres{
+    /* width: 200px; */
     width:340px;
     height: 20px;
     color:rgb(0, 0, 0);
@@ -35,7 +39,11 @@
     margin: 0%
 }
 
-img{
+.image{
+    /* object-fit: cover;
+    width: 200px;
+    height: 220px;
+    border-radius: 3px */
     width:340px; 
     height:200px;
     border-radius: 3px

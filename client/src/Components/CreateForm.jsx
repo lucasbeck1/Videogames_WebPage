@@ -104,26 +104,26 @@ function handleCheckbox(e){
 
 function validate(input){
     let error = {};
-    if(!input.name){error.name = 'Please write a name'};
-    if(input.name.length > 70){error.name = 'The name is too long'};
-    if(gamesList.some(g => g.name.toLowerCase() === input.name.toLowerCase())){error.name = 'The Game already exist'}
+    if(!input.name){error.name = 'Please write a name'}
+    else if(input.name.length > 70){error.name = 'The name is too long'}
+    else if(gamesList.some(g => g.name.toLowerCase() === input.name.toLowerCase())){error.name = 'The Game already exist'}
 
-    if(input.description.length === 0){error.description = 'Please write a description'};
-    if(input.description.length > 0 && input.description.length < 25){error.description = 'The description is too short'};
-    if(input.description.length > 1200){error.description = 'The description is too long'};
+    else if(input.description.length === 0){error.description = 'Please write a description'}
+    else if(input.description.length > 0 && input.description.length < 25){error.description = 'The description is too short'}
+    else if(input.description.length > 1200){error.description = 'The description is too long'}
 
-    if(!input.image){error.image = 'Please insert the image link'};
+    else if(!input.released){error.released = 'Please select a date of released'}
 
-    if(!input.released){error.released = 'Please select a date of released'};
-    
-    if(!input.rating){error.rating = 'Please rate the game with a score from 1 to 5'}
-    else if(input.rating < 1){error.rating = 'The minimum score is 1'};
-    if(input.rating.toString().length > 4){error.rating = 'The score can only have 2 decimal places'};
-    if(input.rating > 5){error.rating = 'The maximum score is 5'};
+    else if(!input.rating){error.rating = 'Please rate the game with a score from 1 to 5'}
+    else if(input.rating < 1){error.rating = 'The minimum score is 1'}
+    else if(input.rating.toString().length > 4){error.rating = 'The score can only have 2 decimal places'}
+    else if(input.rating > 5){error.rating = 'The maximum score is 5'}
 
-    if(!input.genres.length){error.genres = 'Select at least one genre'};
+    else if(!input.image){error.image = 'Please insert the image link'}
 
-    if(!input.platforms.length){error.platforms = 'Select at least one platform'};
+    else if(!input.genres.length){error.genres = 'Select at least one genre'}
+
+    else if(!input.platforms.length){error.platforms = 'Select at least one platform'}
     
     return (error);
 };
