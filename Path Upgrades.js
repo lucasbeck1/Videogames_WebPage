@@ -46,8 +46,7 @@ eliminar items,
 autorizacion,  
 
 
-__Deploy:__ 
-añadir static (y Back Data)  
+__Deploy:__  
 Documentación  
 BrowserRouter o HashRouter ?  
 github - solo static  
