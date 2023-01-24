@@ -1,0 +1,80 @@
+const Genres = [
+  {
+      "id": 1,
+      "name": "Strategy"
+  },
+  {
+      "id": 2,
+      "name": "Adventure"
+  },
+  {
+      "id": 3,
+      "name": "Action"
+  },
+  {
+      "id": 4,
+      "name": "Indie"
+  },
+  {
+      "id": 5,
+      "name": "RPG"
+  },
+  {
+      "id": 6,
+      "name": "Shooter"
+  },
+  {
+      "id": 7,
+      "name": "Simulation"
+  },
+  {
+      "id": 8,
+      "name": "Casual"
+  },
+  {
+      "id": 9,
+      "name": "Puzzle"
+  },
+  {
+      "id": 10,
+      "name": "Arcade"
+  },
+  {
+      "id": 11,
+      "name": "Platformer"
+  },
+  {
+      "id": 12,
+      "name": "Racing"
+  },
+  {
+      "id": 13,
+      "name": "Massively Multiplayer"
+  },
+  {
+      "id": 14,
+      "name": "Sports"
+  },
+  {
+      "id": 15,
+      "name": "Fighting"
+  },
+  {
+      "id": 16,
+      "name": "Board Games"
+  },
+  {
+      "id": 17,
+      "name": "Educational"
+  },
+  {
+      "id": 18,
+      "name": "Family"
+  },
+  {
+      "id": 19,
+      "name": "Card"
+  }
+];
+
+export default Genres;

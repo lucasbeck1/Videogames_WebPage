@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { createGame, getGenres,getVideogames } from "../Redux/actions";
+import { createGame, getGenres, getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
 import {Game} from "./Game";
@@ -145,7 +145,7 @@ function handleSubmit(e){
             genres: [],
             platforms: []
         });
-        alert('Game Created Successfully');
+        alert('Game Created Successfully, redirecting to home');
         history.push('/home');
     }
     else{

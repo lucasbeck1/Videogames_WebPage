@@ -16,7 +16,7 @@ export default function rootReducer(state=initialState, action){
 
 
     case ORDER_GAMES: 
-      let games = state.videogamesList;
+      let games = state.videogamesList.slice();
       const filter = action.payload;
           
       if(filter === 'A-Z'){

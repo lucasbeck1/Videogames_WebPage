@@ -1,4 +1,6 @@
 import axios from 'axios';
+import Games from '../Back_data/Games';
+import Genres from '../Back_data/Genres';
 
 export const GET_VIDEOGAMES = 'GET_VIDEOGAMES';
 export const ORDER_GAMES = 'ORDER_GAMES';
@@ -10,79 +12,125 @@ export const CLEAR_DETAIL = 'CLEAR_DETAIL';
 export const CREATE_VIDEOGAME = 'CREATE_VIDEOGAME'; 
 
 
+const gamesCopy = Games.slice();
+const genresCopy = Genres.slice();
+
 
 
 export function getVideogames(){
-    return(async function (dispatch){
-        let info = await (axios(`http://localhost:3001/videogames`));
-       
-        //let info = await (axios('http://localhost:3001/videogames').data);
-        //let info = await (fetch('http://localhost:3001/videogames').json());
-        //let info = await (await fetch('http://localhost:3001/videogames')).json();
-        return(dispatch({
-            type: GET_VIDEOGAMES,
-            payload: info.data
-        }));
-    });
+  return(async function (dispatch){
+    try{
+      let info = await (axios(`http://localhost:3001/videogames`));
+      return(dispatch({
+        type: GET_VIDEOGAMES,
+        payload: info.data
+      }));
+    }catch{
+      return(dispatch({
+        type: GET_VIDEOGAMES,
+        payload: gamesCopy
+      }));
+    }
+    
+  });
 };
 
 export function getVideogamesByName(name){
-    return(async function (dispatch){
-        let info = await (axios(`http://localhost:3001/videogames?name=${name}`));
-       
-        return(dispatch({
-            type: GET_VIDEOGAMES_BY_NAME,
-            payload: info.data
-        }));
-    });
+  return(async function (dispatch){
+    try{
+      let info = await (axios(`http://localhost:3001/videogames?name=${name}`));
+      return(dispatch({
+        type: GET_VIDEOGAMES_BY_NAME,
+        payload: info.data
+      }));
+    }catch{
+      let gamesByName = gamesCopy.slice().filter(g => g.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())).slice(0,15)
+      return(dispatch({
+        type: GET_VIDEOGAMES_BY_NAME,
+        payload: gamesByName
+      }));
+    }
+  });
 };
 
 export function getGenres(){
-    return(async function (dispatch){
-        let info = await (axios(`http://localhost:3001/genres`));
-        return(dispatch({
-            type: GET_GENRES,
-            payload: info.data
-        }));
-    });
+  return(async function (dispatch){
+    try{
+      let info = await (axios(`http://localhost:3001/genres`));
+      return(dispatch({
+        type: GET_GENRES,
+        payload: info.data
+      }));
+    }catch{
+      return(dispatch({
+        type: GET_GENRES,
+        payload: genresCopy
+      }));
+    }      
+  });
 };
 
 export function orders(payload){
-    return({
-        type: ORDER_GAMES,
-        payload
-    });
+  return({
+    type: ORDER_GAMES,
+    payload
+  });
 };
 
 export function filters(payload){
-    return({
-        type: FILTER_GAMES,
-        payload
-    });
+  return({
+    type: FILTER_GAMES,
+    payload
+  });
 };
 
 export function getDetail(id){
-    return(async function (dispatch) {
-        let info = await (axios(`http://localhost:3001/videogames/${id}`));
-        return(dispatch({
-            type: GET_DETAIL,
-            payload: info.data
-        }));
-    });
+  return(async function (dispatch) {
+    try{
+      let info = await (axios(`http://localhost:3001/videogames/${id}`));
+      return(dispatch({
+        type: GET_DETAIL,
+        payload: info.data
+      }));
+    }catch{
+      let gameInfo = gamesCopy.find(g => g.id.toString() === id.toString());
+      return(dispatch({
+        type: GET_DETAIL,
+        payload: gameInfo
+      }));
+    }  
+  });
 };
 
 export function clearDetail(){
-    return({
-        type: CLEAR_DETAIL,
-    });
+  return({
+    type: CLEAR_DETAIL,
+  });
 };
 
 export function createGame(payload){
-    return( async function(){
-       const response = await axios.post('http://localhost:3001/videogames', payload);
-       console.log(response);
-       return (response);
-    });
+  return( async function(){
+    try{
+      const response = await axios.post('http://localhost:3001/videogames', payload);
+      console.log(response);
+      return (response);
+    }catch{
+      let date =  Date.now();
+      let newID = Math.ceil(date / (Math.floor(Math.random()*1000)));
+      let newGame = {
+        id: newID,
+        name: payload.name,
+        description: payload.description,
+        image: payload.image,
+        released: payload.released,
+        rating: payload.rating,
+        genres: payload.genres.join(', '),
+        platforms: payload.platforms,
+        "createdInDatabase": true
+      }
+      gamesCopy.push(newGame);
+    }
+  });
 };
 
 

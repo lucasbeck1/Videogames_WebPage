@@ -33,8 +33,6 @@ function orderG(e){
     e.preventDefault();
     dispatch(orders(e.target.value));
     setCurrentPage(1);
-    setOrder(`Order ${e.target.value}`);
-    // Esto se necesita porque al aplicar un sort, a diferecia de un filter, React no detecta cambios en nuestro estado y por eso no se actualizaría
     document.getElementById('name').selectedIndex = 'DEFAULT';
     document.getElementById('rating').selectedIndex = 'DEFAULT';
 };

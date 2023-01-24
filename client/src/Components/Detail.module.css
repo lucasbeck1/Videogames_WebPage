@@ -41,6 +41,42 @@
 }
 
 
+.calification1{
+    color: rgb(16, 56, 129);
+    /* padding: 0.2rem;
+    border: 2px solid rgb(16, 56, 129);
+    border-radius: 40%; */
+}
+
+.calification2{
+    color: rgb(16, 56, 129);
+    /* padding: 0.2rem;
+    border: 2px solid rgb(16, 56, 129);
+    border-radius: 40%; */
+}
+
+.calification3{
+    color: rgb(16, 56, 129);
+    /* padding: 0.2rem;
+    border: 2px solid rgb(16, 56, 129);
+    border-radius: 40%; */
+}
+
+.calification4{
+    color: rgb(16, 56, 129);
+    /* padding: 0.2rem;
+    border: 2px solid rgb(16, 56, 129);
+    border-radius: 40%; */
+}
+
+.calification5{
+    color: rgb(16, 56, 129);
+    /* padding: 0.2rem;
+    border: 2px solid rgb(16, 56, 129);
+    border-radius: 40%; */
+}
+
+
 .downText{
     display: flex;
     justify-content: space-between;

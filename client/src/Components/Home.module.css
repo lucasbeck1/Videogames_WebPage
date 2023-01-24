@@ -21,7 +21,7 @@
     
 }
 
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 570px) {
     /* For small mobile phones: */
     .content{
         display: flex;
@@ -34,7 +34,7 @@
 .list{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     grid-gap: 1rem;
     /* gap: 2rem; */
     justify-content: center;

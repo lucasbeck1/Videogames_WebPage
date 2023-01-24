@@ -13,7 +13,7 @@ import s from "./Detail.module.css";
 export function Detail (props){
     const detailG = useSelector(state => state.detail);
     const dispatch = useDispatch();
-
+    
     /* 
     useEffect(()=>{
         dispatch(getDetail(props.match.params.id));
@@ -25,10 +25,10 @@ export function Detail (props){
     
     // Otra forma de mostrar el loading
     let idG = (detailG.id)?.toString();
-    useEffect(()=>{
-        console.log('Ruta',props.match.params.id);
-        console.log('Juego',idG);
-    },[idG, props.match.params.id]);
+    // useEffect(()=>{
+    //     console.log('Ruta',props.match.params.id);
+    //     console.log('Juego',idG);
+    // },[idG, props.match.params.id]);
     // Luego agregar el condicional:
     // {idG === props.match.params.id ?
     
@@ -55,7 +55,12 @@ return(
         <div className={s.page}>
             <div className={s.upText}>
                 <h2>{detailG.name}</h2>
-                <span>{detailG.rating}</span>
+                {detailG.rating < 2 && <span className={s.calification1}>{detailG.rating}</span>}
+                {(detailG.rating < 3 && detailG.rating >= 2) && <span className={s.calification2}>{detailG.rating}</span>}
+                {(detailG.rating < 4 && detailG.rating >= 3) && <span className={s.calification3}>{detailG.rating}</span>}
+                {(detailG.rating < 5 && detailG.rating >= 4) && <span className={s.calification4}>{detailG.rating}</span>}
+                {detailG.rating >= 5 && <span className={s.calification5}>{detailG.rating}</span>}
+                
             </div>
             <img src={detailG.image? (detailG.image) : (defaultImage)} alt="Img Not Found" className={s.image}/>
             <div className={s.downText}>

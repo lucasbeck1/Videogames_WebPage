@@ -26,14 +26,16 @@ useEffect(()=>{
 
 // Local states (paginated)
 const [currentPage, setCurrentPage] = useState(1);
-const paged = (pageNumber) => {setCurrentPage(pageNumber)};
+const changePage = (pageNumber) => {setCurrentPage(pageNumber)};
+const previousPage = () => {if(parseInt(currentPage) !== 1) setCurrentPage(parseInt(currentPage) -1)};
+const nextPage = (last) => {if(parseInt(currentPage) !== (last)) setCurrentPage(parseInt(currentPage) + 1)};
+
 const [gamesPerPage, setGamesPerPage] = useState(15);
 const indexLastGame = currentPage * gamesPerPage;
 const ixdexFirstGame = indexLastGame - gamesPerPage;
 const currentGames = allGames.slice(ixdexFirstGame, indexLastGame);
 
-// Local states (Order)
-const [order, setOrder] = useState('NO Order');
+// Local states (Search)
 const [name, setName] = useState('');
 
 
@@ -73,7 +75,14 @@ async function handleSubmit(e){
     {allGames.length > 0 ? 
     (<div>
       <br></br>
-      <Paginated gamesPage={gamesPerPage} games={allGames.length} pag={paged}/>
+      <Paginated 
+      gamesTotal={allGames.length} 
+      gamesPage={gamesPerPage} 
+      actualPage={currentPage}
+      select={changePage}
+      prevSelect={previousPage}
+      nextSelect={nextPage}
+      />
       <div className={s.content}>
         <FilterBar setCurrentPage={setCurrentPage} />
         <div className={s.list}>
