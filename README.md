@@ -2,12 +2,9 @@
 
 # Individual Project - Henry Videogames
 
-<p align="right">
-  <img height="200" src="./videogame.png" />
-</p>
-
-<p align="right">
-  <img height="200" src="https://static.tvtropes.org/pmwiki/pub/images/videogames.png" />
+<p align="center">
+  <img height="200" src="https://static.tvtropes.org/pmwiki/pub/images/videogames.png" alt="game1"/>
+  <img height="200" src="./videogame.png" alt="game2"/>
 </p>
 
 
@@ -19,9 +16,6 @@
 - Aprender y practicar el workflow de GIT.
 - Usar y practicar testing.
 
-## Horarios y Fechas
-
-El proyecto tendrá una duración máxima de tres semanas. En el caso de que completan todas las tareas antes de dicho lapso podrán avisar a su Instructor para coordinar una fecha de presentación del trabajo (DEMO).
 
 ## Comenzando
 
@@ -44,35 +38,9 @@ node -v
 npm -v
 ```
 
-__ACLARACIÓN:__ Las dependencias actuales se encuentran en las versiones que venimos trabajando durante el bootcamp.
+## Estructura
 
-Versiones:
-
-- __react__: 17.0.1
-- __react-dom__: 17.0.1
-- __react-router-dom__: 5.2.0
-- __redux__: 4.0.5
-- __react-redux__: 7.2.3
-
-Está permitido, __bajo su responsabilidad__, actualizar las dependencias a versiones más actuales.
-
-> __IMPORTANTE:__ Versiones mas actuales podrían presentar configuraciones diferentes respecto a las versiones en las que venimos trabajando durante el bootcamp.
-
-## BoilerPlate
-
-El boilerplate cuenta con dos carpetas: `api` y `client`. En estas carpetas estará el código del back-end y el front-end respectivamente.
-
-En `api` crear un archivo llamado: `.env` que tenga la siguiente forma:
-
-```env
-DB_USER=usuariodepostgres
-DB_PASSWORD=passwordDePostgres
-DB_HOST=localhost
-```
-
-Reemplazar `usuariodepostgres` y `passwordDePostgres` con tus propias credenciales para conectarte a postgres. Este archivo va ser ignorado en la subida a github, ya que contiene información sensible (las credenciales).
-
-Adicionalmente será necesario que creen desde psql una base de datos llamada `videogames`
+El Proyecto cuenta con dos carpetas: `api` y `client`. En estas carpetas estará el código del back-end y el front-end respectivamente.
 
 El contenido de `client` fue creado usando: Create React App.
 
@@ -168,7 +136,8 @@ El modelo de la base de datos deberá tener las siguientes entidades (Aquellas p
 
 La relación entre ambas entidades debe ser de muchos a muchos ya que un videojuego puede pertenecer a varios géneros en simultaneo y, a su vez, un género puede contener múltiples videojuegos distintos. Un ejemplo sería el juego `Counter Strike` pertenece a los géneros Shooter y Action al mismo tiempo. Pero a su vez existen otros videojuegos considerados como Shooter o como Action.
 
-__IMPORTANTE__: Pensar como modelar los IDs de los videojuegos en la base de datos. Existen distintas formas correctas de hacerlo pero tener en cuenta que cuando hagamos click en algun videojuego, este puede provenir de la API o de la Base de Datos por lo que cuando muestre su detalle no debería haber ambigüedad en cual se debería mostrar. Por ejemplo si en la API el videojuego `Age of Empires II: Age of Kings` tiene id = 1 y en nuestra base de datos creamos un nuevo videojuego `Age of Henry` con id = 1, ver la forma de diferenciarlos cuando querramos acceder al detalle del mismo.
+__IMPORTANTE__: Diferenciar el id de los juegos creados y de los existentes, ya que provienen de distintas fuentes y no debe haber ambigüedad en esto.
+
 
 ## Backend
 

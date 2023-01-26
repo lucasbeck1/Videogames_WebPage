@@ -1,11 +1,12 @@
 import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { getVideogames, orders, getGenres, filters, getVideogamesByName } from "../Redux/actions";
+import { getVideogames, getGenres, getVideogamesByName } from "../Redux/actions";
 import { Game } from "./Game";
 import Paginated from "./Paginated";
 import { Loading } from "./Loading";
 import { FilterBar } from "./FilterBar";
+import Vectors_React from "./assets/vectors";
 import s from "./Home.module.css";
 
 export function Home (){
@@ -14,7 +15,6 @@ export function Home (){
 const dispatch = useDispatch();
 const allGames1 = useSelector(state => state.videogamesListCOMPLETE);
 const allGames = useSelector(state => state.videogamesList);
-const allgenres = useSelector(state => state.genres);
 //const [state, dispatch] = useReducer(reducer, initialState);
 
 
@@ -64,11 +64,11 @@ async function handleSubmit(e){
     <div className={s.header}>
       <div>
         <input id='SearchInput' onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
-        <button onClick={e => handleSubmit(e)} type="submit">Search</button>
+        <button onClick={e => handleSubmit(e)} type="submit">{Vectors_React.search}</button>
       </div>
       <h2>Lucky Game Browser</h2>
       <div>
-        <Link to='/'><button>TO LANDING</button></Link>
+        <Link to='/'><button>To landing</button></Link>
         <Link to='/create'><button>Create</button></Link>
       </div>
     </div>

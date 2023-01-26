@@ -49,18 +49,18 @@ function filterG(e){
 return(
     <React.Fragment>
             <div className={s.nav}>
-                <button onClick={e => handleClean(e)}>Clean</button>
+                <button onClick={e => handleClean(e)} className={s.btn}>Clear</button>
                 <h4>Filters</h4>
                 <label htmlFor='storage'>Storage</label>
-                <select id='storage' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'}>
+                <select id='storage' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'} className={s.select}>
                     <option value='DEFAULT' disabled>Storage</option>
                     <option value='All'>All</option>
                     <option value='Api'>Api</option>
                     <option value='Db'>Library</option>
                 </select>
-                <label htmlFor='genre'>Genre</label>
-                <select id='genre' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'}>
-                    <option value='DEFAULT' disabled>Genre</option>
+                <label htmlFor='genre'>Genres</label>
+                <select id='genre' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'} className={s.select}>
+                    <option value='DEFAULT' disabled>Genres</option>
                     <option value='All'>All</option>
                     {allgenres?.map(element => {
                     return(<option value={element} key={element}>{element}</option>) 
@@ -68,17 +68,29 @@ return(
                 </select>
                 <h4>Order by</h4>
                 <label htmlFor='name'>Name</label>
-                <select id='name' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
+                <select id='name' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'} className={s.select}>
                     <option value='DEFAULT' disabled>Alphabetical</option>
                     <option value='A-Z'>A-Z</option>
                     <option value='Z-A'>Z-A</option>
                 </select>
                 <label htmlFor='rating'>Rating</label>
-                <select id='rating' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
+                <select id='rating' onChange={(e) => orderG(e)} defaultValue={'DEFAULT'} className={s.select}>
                     <option value='DEFAULT' disabled>Rating</option>
                     <option value='Low Rating'>Low Rating</option>
                     <option value='High Rating'>High Rating</option>
                 </select>
+                 {/* 
+                <div>
+                    <button onClick={e => orderG(e)} value='A-Z' className={s.btn}>A-Z</button>
+                    <button onClick={e => orderG(e)} value='Z-A' className={s.btn}>Z-A</button>
+                </div> 
+                */}
+                {/*
+                <div>
+                    <button onClick={e => orderG(e)} value='Low Rating' className={s.btn}>Low Rating</button>
+                    <button onClick={e => orderG(e)} value='High Rating' className={s.btn}>High Rating</button>
+                </div> 
+                */}
                 {/*
                 <select onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
                 <option value='DEFAULT' disabled>Select a order</option>
