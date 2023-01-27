@@ -21,8 +21,7 @@ añadir iconos
 footer  
 Firma LB creations  
 añadir idioma español  
-readme  
-favicon  
+readme   
 controlar en form que sea imagen y el nombre exp.reg  
 clases para los colores y botones  
 colores sugeridos:  
@@ -48,7 +47,7 @@ autorizacion,
 
 __Deploy:__  
 Documentación  
-BrowserRouter o HashRouter ?  
+BrowserRouter (proyectos que se dependen de un servidor) - HashRouter (proyectos estáticos)  
 github - solo static  
 vercel - Concurrent Builds (1)  
 railway - 500hs por mes  
