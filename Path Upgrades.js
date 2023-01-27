@@ -3,21 +3,20 @@
 # Project Upgrades
 
 __Front:__  
-responsive  
-estilos sideBar  
+cambiar selects de ordenamientos por botones en sideBar?  
+añadir un filtro por plataforma  
+añadir iconos  
+cambiar ancho de cards ?  
+card hover - mostrar logo de plataformas (ps, xbox, pc)  
+quitar margin title del header y centrar  
 filtros combinados (quitar)  
 si se queda sin juegos queda cargando  
-reiniciar busqueda  
-destacar pagina actual  
 mostrar de a 10 numeros  
 diseñar y animar logo landing  
 landing (waves css)  
 previsualizacion loading  
 opción de elegir default imageen form  
 mostra logos y links de plataformas (steam , xbox) en detail  
-cambiar cards  
-card hover  
-añadir iconos  
 footer  
 Firma LB creations  
 añadir idioma español  
