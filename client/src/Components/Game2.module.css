@@ -1,15 +1,17 @@
 .card{
- /*  border:2px solid rgb(72, 17, 175); */
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #969090b9;
-  /* width: 200px;
-  height: 300px; */
+  width: 240px;
+  height: 350px;
+  transition: .3s;
+  /* 
   width:340px;
   height: 250px;
-  transition: .3s;
+  border:2px solid rgb(72, 17, 175);
+  */
 }
 
 .card:hover{
@@ -29,13 +31,15 @@
   align-items: center;
   text-size-adjust: auto;
   text-align: center;
-  /* width: 200px; */
-  width:340px;
+  width: 240px;
   height: 50px;
   color: rgb(0, 0, 0);
   margin: 0px;
-  /* padding: 15px rgb(10, 64, 134);
-  border-bottom: 2px solid rgb(72, 17, 175) */
+  /*
+  width:340px;
+  padding: 15px rgb(10, 64, 134);
+  border-bottom: 2px solid rgb(72, 17, 175)
+  */
 }
 
 .genres{
@@ -44,20 +48,24 @@
   margin-top: -10px;
   padding: 0px;
 
-  /* white-space: pre; 
+  /* 
+  white-space: pre; 
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); */
+  -ms-transform: translate(-50%, -50%);
+  */
 }
 
 .image{
-  /* object-fit: cover;
-  width: 200px;
-  height: 220px;
-  border-radius: 3px */
-  width:340px; 
-  height:200px;
+  object-fit: cover;
+  width: 240px; 
+  height: 300px;
   display: block;
   border-radius: 3px
+  /* 
+  object-fit: fill;
+  width:340px; 
+  height:200px; 
+  */
 }
 
 
@@ -67,10 +75,12 @@
 
 }
 
-/* .container:hover .overlay {
+/* 
+.container:hover .overlay {
   height: 30%;
   background-color: rgba(126, 126, 126, 0.507);
-} */
+} 
+ */
 
 .overlay {
   position: absolute;
@@ -83,5 +93,3 @@
   transition: .5s ease;
   
 }
-
-
