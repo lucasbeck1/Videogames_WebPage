@@ -12,15 +12,17 @@ quitar margin title del header y centrar
 filtros combinados (quitar)  
 si se queda sin juegos queda cargando  
 mostrar de a 10 numeros  
+cambiar el boton "create" por "add"  
 diseñar y animar logo landing  
 landing (waves css)  
 previsualizacion loading  
 opción de elegir default imageen form  
 mostra logos y links de plataformas (steam , xbox) en detail  
 footer  
+cuando carga el home, incrementar el margin top del footer  
 Firma LB creations  
 añadir idioma español  
-readme   
+readme - intrucciones como montar el proyecto debajo  
 controlar en form que sea imagen y el nombre exp.reg  
 clases para los colores y botones  
 colores sugeridos:  

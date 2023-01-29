@@ -20,7 +20,8 @@ export function Game ({name, img, genres, id}){
     
 return(
     <React.Fragment>
-    <Link to={`/detail/${id}`} className={s.det}>
+
+    <Link to={`/detail/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
     <div className={s.card} onClick={e => detailG(e)}>
         <div className={s.title}>
             <h4>{name}</h4>
@@ -29,11 +30,12 @@ return(
         <div className={s.container}>
         <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
           <div className={s.overlay}>
-            <div lassName={s.genres}><p>{genres}</p></div>
+            <div className={s.genres}><p>{genres}</p></div>
           </div>
         </div>
         
     </div>
     </Link>
+
     </React.Fragment>
 )};

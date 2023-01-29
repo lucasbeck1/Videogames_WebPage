@@ -1,72 +1,63 @@
-.det{
-    text-decoration: none;
-}
-
 .card{
-   /*  border:2px solid rgb(72, 17, 175); */
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #969090b9;
-    /* width: 200px;
-    height: 300px; */
-    width:340px;
-    height: 250px
+ /*  border:2px solid rgb(72, 17, 175); */
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #969090b9;
+  /* width: 200px;
+  height: 300px; */
+  width:340px;
+  height: 250px;
+  transition: .3s;
 }
 
 .card:hover{
-    background-color:  #ba8cc9;
+  background-color:  #ba8cc9;
 }
 
 .card:hover .overlay {
-    height: 30%;
-    background-color: rgba(126, 126, 126, 0.507);
+  height: 20%;
+  background-color: rgba(126, 126, 126, 0.507);
     
-  }
+}
 
 
 .title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-size-adjust: auto;
-    text-align: center;
-    /* width: 200px; */
-    width:340px;
-    height: 50px;
-    color: rgb(0, 0, 0);
-    margin: 0px;
-    /* padding: 15px rgb(10, 64, 134);
-    border-bottom: 2px solid rgb(72, 17, 175) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-size-adjust: auto;
+  text-align: center;
+  /* width: 200px; */
+  width:340px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  margin: 0px;
+  /* padding: 15px rgb(10, 64, 134);
+  border-bottom: 2px solid rgb(72, 17, 175) */
 }
 
 .genres{
-    /* width: 200px; */
-    width:340px;
-    height: 20px;
-    color:rgb(0, 0, 0);
-    margin: 0%;
-    padding: 0px;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    bottom: 20%;
-    left: 50%;
-    /* white-space: nowrap; 
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); */
+  color: rgb(255, 255, 255);
+  margin: 0%;
+  margin-top: -10px;
+  padding: 0px;
+
+  /* white-space: pre; 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
 }
 
 .image{
-    /* object-fit: cover;
-    width: 200px;
-    height: 220px;
-    border-radius: 3px */
-    width:340px; 
-    height:200px;
-    display: block;
-    border-radius: 3px
+  /* object-fit: cover;
+  width: 200px;
+  height: 220px;
+  border-radius: 3px */
+  width:340px; 
+  height:200px;
+  display: block;
+  border-radius: 3px
 }
 
 
