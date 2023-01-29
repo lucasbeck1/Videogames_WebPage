@@ -3,6 +3,7 @@
 # Project Upgrades
 
 __Front:__  
+lucky game o gamer ?  
 cambiar selects de ordenamientos por botones en sideBar?  
 añadir un filtro por plataforma  
 añadir iconos  

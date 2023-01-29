@@ -7,35 +7,34 @@ import s from "./Game2.module.css";
 
 
 export function Game ({name, img, genres, id}){
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-    function detailG(e){
-        dispatch(getDetail(id))
-    };
+  function detailG(e){
+      dispatch(getDetail(id))
+  };
+  
+  if(genres.split(', ').length > 3){
+      genres = genres.split(', ').slice(0,3).join(', ');
+  }
+
     
-    if(genres.split(', ').length > 3){
-        genres = genres.split(', ').slice(0,3).join(', ');
-    }
-
-    
-return(
-    <React.Fragment>
-
+  return( 
+  <React.Fragment>
     <Link to={`/detail/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
-    <div className={s.card} onClick={e => detailG(e)}>
-        <div className={s.title}>
-            <h4>{name}</h4>
-        </div>
-        
-        <div className={s.container}>
-        <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
-          <div className={s.overlay}>
-            <div className={s.genres}><p>{genres}</p></div>
+      <div className={s.card} onClick={e => detailG(e)}>
+          <div className={s.title}>
+              <h4>{name}</h4>
           </div>
-        </div>
-        
-    </div>
+          
+          <div className={s.container}>
+          <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
+            <div className={s.overlay}>
+              <div className={s.genres}><p>{genres}</p></div>
+            </div>
+          </div>
+          
+      </div>
     </Link>
-
-    </React.Fragment>
-)};
+  </React.Fragment>
+  )
+};
