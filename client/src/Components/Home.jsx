@@ -66,7 +66,7 @@ async function handleSubmit(e){
         <input id='SearchInput' onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
         <button onClick={e => handleSubmit(e)} type="submit">{Vectors_React.search}</button>
       </div>
-      <h2>Lucky Game Browser</h2>
+      <h2>Lucky Gamer Browser</h2>
       <div>
         <Link to='/'><button>To landing</button></Link>
         <Link to='/create'><button>Create</button></Link>

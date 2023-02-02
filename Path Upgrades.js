@@ -2,8 +2,7 @@
 /* 
 # Project Upgrades
 
-__Front:__  
-lucky game o gamer ?  
+__Front:__    
 cambiar selects de ordenamientos por botones en sideBar?  
 añadir un filtro por plataforma  
 añadir iconos  
@@ -16,11 +15,11 @@ mostrar de a 10 numeros
 cambiar el boton "create" por "add"  
 diseñar y animar logo landing  
 landing (waves css)  
-previsualizacion loading  
 opción de elegir default imageen form  
 mostra logos y links de plataformas (steam , xbox) en detail  
 footer  
 cuando carga el home, incrementar el margin top del footer  
+previsualizacion loading  
 Firma LB creations  
 añadir idioma español  
 readme - intrucciones como montar el proyecto debajo  

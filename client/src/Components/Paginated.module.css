@@ -1,56 +1,55 @@
 .nav{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    
-    }
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
     
 .number{
-    /* 
-    border: solid 2px wheat; */
-    color: #FF1cff;
-    background-color: rgb(16, 56, 129);
-    border: solid 2px #fab5fa;
-    border-radius: 3px;
-    padding: 0.5rem;
-    width: 2rem;
-    margin: 0.2rem;
-    padding: 0.4rem;
-      
-}
+  /* 
+  border: solid 2px wheat; */
+  color: #FF1cff;
+  background-color: rgb(16, 56, 129);
+  border: solid 2px #fab5fa;
+  border-radius: 3px;
+  padding: 0.5rem;
+  width: 2rem;
+  margin: 0.2rem;
+  padding: 0.4rem;
     
+}
+  
 .number:hover{
-    color: #FF1cff;
-    background-color: rgb(0, 228, 228);
-    /*  
-    padding: 0.4rem;
-    color:rgb(0, 0, 0);
-    background-color:rgb(242, 191, 252);
-    border: solid 2px wheat; 
-    */
+  color: #FF1cff;
+  background-color: rgb(0, 228, 228);
+  /*  
+  padding: 0.4rem;
+  color:rgb(0, 0, 0);
+  background-color:rgb(242, 191, 252);
+  border: solid 2px wheat; 
+  */
 }
-    
+  
 .number:active{
-    background-color:rgb(207, 110, 226);
+  background-color:rgb(207, 110, 226);
 }
 
 
 /* 
 .number:focus{
-    width: 2.2rem;
-    border: solid 4px wheat;
-    background-color:rgb(223, 123, 243);
-    padding-left: 0.3rem;
-    padding-right: 0.3rem;
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
+  width: 2.2rem;
+  border: solid 4px wheat;
+  background-color:rgb(223, 123, 243);
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  margin-left: 0.6rem;
+  margin-right: 0.6rem;
 } 
 */
 
 
 .numberSelected{
-    width: 2.2rem;
-    border: solid 4px rgb(56, 98, 175);
-    background-color:rgb(231, 144, 248);
-    padding: 0.5rem;
-    margin: 0.2rem;
+  width: 2.2rem;
+  border: solid 4px rgb(56, 98, 175);
+  background-color:rgb(231, 144, 248);
+  padding: 0.5rem;
+  margin: 0.2rem;
 }
