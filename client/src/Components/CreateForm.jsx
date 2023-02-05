@@ -133,7 +133,8 @@ function handleSubmit(e){
     if(input.name){
         dispatch(createGame({
             ...input,
-            platforms: input.platforms.join(', ')
+            platforms: input.platforms.join(', '),
+            rating: Number(input.rating)
             }
         ));
         setInput({

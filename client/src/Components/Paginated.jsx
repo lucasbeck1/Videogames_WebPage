@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Paginated.module.css"
+import s from "./Paginated.module.css";
 
 export function Paginated({gamesTotal, gamesPage, actualPage, select, nextSelect, prevSelect}){
 

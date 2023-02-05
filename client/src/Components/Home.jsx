@@ -41,20 +41,20 @@ const [name, setName] = useState('');
 
 // Button Functions
 function handleInput(e){
-    e.preventDefault()
-    setName(e.target.value)
+  e.preventDefault()
+  setName(e.target.value)
 };
 
 async function handleSubmit(e){
-    if(allGames1.some(g=>g.name.toLowerCase().includes(name.toLowerCase()))){
-        e.preventDefault();
-        await dispatch(getVideogamesByName(name));
-        setCurrentPage(1);
-        setName('');
-        document.getElementById('SearchInput').value = '';
-    }else{
-        alert('Game not found');
-    }
+  if(allGames1.some(g=>g.name.toLowerCase().includes(name.toLowerCase()))){
+    e.preventDefault();
+    await dispatch(getVideogamesByName(name));
+    setCurrentPage(1);
+    setName('');
+    document.getElementById('SearchInput').value = '';
+  }else{
+    alert('Game not found');
+  }
 };
 
 
