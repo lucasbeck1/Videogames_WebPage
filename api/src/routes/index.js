@@ -21,11 +21,45 @@ const router = Router();
 // let apiInfo = await axios(`https://api.rawg.io/api/games`)
 
 
+const SaveApiInfo = async (games) => {
+  try{
+    for(let i=0; i<games.length; i++){
+    
+      let gameNew = {
+        name: games[i].name,
+        image: games[i].image,
+        released: games[i].released,
+        rating: games[i].rating,
+        platforms: games[i].platforms,
+        createdInDatabase: true
+      };
+      
+      const detail = await axios.get(`https://api.rawg.io/api/games/${games[i].id}?key=${API_KEY}`);
+      gameNew.description = detail.data.description_raw;
+      
+      let [instance, created]  = await Videogame.findOrCreate({
+        where: { name: gameNew.name },
+        defaults: gameNew,
+      });
+      
+      
+      if(created){
+        let gameGens = games[i].genres.split(", ");
+        let genresToAdd = await Genre.findAll({ where:{name: gameGens}});
+        await instance.addGenre(genresToAdd);
+      };
+    };
+  }catch(e){
+    console.log(e)
+  };
+};
+
+
 const getApiInfo = async () => {
   const apiGames = [];
   
   for (let i = 1; i <= 1; i++){
-    let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=40&page=${i}`);
+    let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=5&page=${i}`);
     apiInfo.data.results.map( e => 
       apiGames.push({
         id : e.id,
@@ -40,13 +74,17 @@ const getApiInfo = async () => {
     );
   };
   
-  return (apiGames)
+  //SaveApiInfo(apiGames);
+  
+  return (apiGames);
 };
+
 
 const getDetailInfo = async (id) => {
   const detail = await axios.get(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`);
   return (detail.data.description_raw);
 };
+
 
 const getDbInfo = async () => {
   const dbinfo = await Videogame.findAll({
@@ -72,6 +110,7 @@ const getDbInfo = async () => {
   return (data2);
 };
 
+
 const getAllGames = async () => {
   const apiGames =  await getApiInfo();
   const DbGames = await getDbInfo();
@@ -79,11 +118,13 @@ const getAllGames = async () => {
   return (apiGames.concat(DbGames)); 
 };
 
+
 const getGenres = async () => {
   const apiG = await axios.get(`https://api.rawg.io/api/genres?key=${API_KEY}`);
   const Genres = apiG.data.results.map(g => g.name);
   return (Genres);
 };
+
 
 const getPlatforms = async () => {
   const apiP = await axios.get(`https://api.rawg.io/api/platforms?key=${API_KEY}`);
