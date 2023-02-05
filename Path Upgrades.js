@@ -40,6 +40,7 @@ historia o rapido ?   - aventura o shooter
 
 
 __Back:__  
+Si no ejecutas Get genres depues de un reset, no agrega generos a os juegso creados  
 romper form por javascript - En static no pude  
 test  
 eliminar items,  

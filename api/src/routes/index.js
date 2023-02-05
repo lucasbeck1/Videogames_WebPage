@@ -59,7 +59,7 @@ const getApiInfo = async () => {
   const apiGames = [];
   
   for (let i = 1; i <= 1; i++){
-    let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=5&page=${i}`);
+    let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=2&page=${i}`);
     apiInfo.data.results.map( e => 
       apiGames.push({
         id : e.id,
@@ -263,6 +263,24 @@ const postActivity = async (req, res) => {
 
 router.delete('/videogames', async function(req, res, next){
   const { id } = req.body;
+  
+  if(id === "ALL"){
+    try{
+      await Videogame.destroy({
+        where: {},
+        options: {
+          truncate: true,
+          cascade:true
+        }
+      });
+      return res.status(200).send('All games were successfully deleted');
+    }catch(e){
+      console.log(e)
+      return res.status(500).send('Error in the process');
+    }; 
+  };
+  
+  
   const gameToDelete = await Videogame.findByPk(id);
   //const gameToDelete = await Videogame.findOne({ where: { id: id } });
   
