@@ -16,9 +16,7 @@ const router = Router();
 
 // ----------------- GET Functions ------------------
 // IMPORTANTE: axios por default hace un get, entonces;
-// let apiInfo = await axios.get(`https://api.rawg.io/api/games`)
-//                          ===
-// let apiInfo = await axios(`https://api.rawg.io/api/games`)
+// axios.get(`http://...`)  ===  axios(`http://....`)
 
 
 const SaveApiInfo = async (games) => {
@@ -55,11 +53,15 @@ const SaveApiInfo = async (games) => {
 };
 
 
-const getApiInfo = async () => {
+const getApiInfo = async (index=0) => {
+
+
+
+
   const apiGames = [];
   
   for (let i = 1; i <= 1; i++){
-    let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=2&page=${i}`);
+    let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=40&page=${index+i}`);
     apiInfo.data.results.map( e => 
       apiGames.push({
         id : e.id,
@@ -270,7 +272,7 @@ router.delete('/videogames', async function(req, res, next){
         where: {},
         options: {
           truncate: true,
-          cascade:true
+          cascade: true
         }
       });
       return res.status(200).send('All games were successfully deleted');

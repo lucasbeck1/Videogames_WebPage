@@ -323,7 +323,7 @@ return(
             name={input.name? <p>{input.name}</p> : <p>YOUR GAME</p>} 
             img={input.image? (input.image) : (defaultImage)}
             genres={input.genres.length > 0? (input.genres.join(', ')) : ('Genres')} 
-            id='1'
+            id='NO ID'
             ></Game>
         </div>
         

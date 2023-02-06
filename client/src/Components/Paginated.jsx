@@ -9,22 +9,27 @@ export function Paginated({gamesTotal, gamesPage, actualPage, select, nextSelect
   };
 
 
-  let firstNumbers = pageNumbers.slice(actualPage - 6, actualPage - 1);
-  let lastNumbers = pageNumbers.slice(actualPage, actualPage + 4);
+  let firstNumbers = pageNumbers.slice(actualPage - 6, actualPage - 1); // [-5,-4,-3,-2,-1]
+  let lastNumbers = pageNumbers.slice(actualPage, actualPage + 4); // [+1,+2,+3,+4]
   
   if (actualPage < 6){
-    firstNumbers = pageNumbers.slice(0, actualPage - 1)
-    const long = 9 - firstNumbers.length
+    firstNumbers = pageNumbers.slice(0, actualPage - 1);
+    const long = 9 - firstNumbers.length;
     lastNumbers = pageNumbers.slice(actualPage, actualPage + long);
   }
-  else if (lastNumbers.length < 5){
-    const long = lastNumbers.length - 10
+  else if(lastNumbers.length < 5 && pageNumbers.length < 10){
+    const long = lastNumbers.length - pageNumbers.length;
+    firstNumbers = pageNumbers.slice(actualPage + long, actualPage - 1);
+  }
+  else if (lastNumbers.length < 5 && pageNumbers.length >= 10){
+    const long = lastNumbers.length - 10;
     firstNumbers = pageNumbers.slice(actualPage + long, actualPage - 1);
   };
   
+  
   let pagesNumbers = [...firstNumbers, actualPage, ...lastNumbers];
-  
-  
+
+
   
   return(
   <React.Fragment>
