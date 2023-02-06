@@ -34,6 +34,10 @@ module.exports = (s) => {
     createdInDatabase:{
       type: DataTypes.BOOLEAN,
       defaultValue: true
+    },
+    owner:{
+      type: DataTypes.STRING,
+      defaultValue: "User"
     }
   },{
     timestamps: false

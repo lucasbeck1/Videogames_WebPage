@@ -84,7 +84,7 @@ async function handleSubmit(e){
       nextSelect={nextPage}
       />
       <div className={s.content}>
-        <FilterBar setCurrentPage={setCurrentPage} />
+        <FilterBar setCurrentPage={setCurrentPage} setGamesPerPage={setGamesPerPage} />
         <div className={s.list}>
           {currentGames?.map(g => {return (
           <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id} key={g.id}/>

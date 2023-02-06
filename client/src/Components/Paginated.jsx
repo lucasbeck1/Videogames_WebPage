@@ -39,6 +39,7 @@ export function Paginated({gamesTotal, gamesPage, actualPage, select, nextSelect
         <button onClick={()=>select(number)} key={number} className={number === actualPage? (s.numberSelected) : (s.number)}>{number}</button>
       )})}
       <button onClick={()=>nextSelect(pageNumbers[pageNumbers.length-1])} className={s.number}>{'>'}</button>
+      <p>Page {actualPage} / {pageNumbers.length}</p>
     </nav>
   </React.Fragment>
   )

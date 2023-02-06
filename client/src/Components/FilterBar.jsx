@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { getVideogames, orders, getGenres, filters } from "../Redux/actions";
 import s from "./FilterBar.module.css";
 
-export function FilterBar ({setCurrentPage}){
+export function FilterBar ({setCurrentPage, setGamesPerPage}){
 
 // Global states
 const dispatch = useDispatch();
@@ -16,9 +16,6 @@ useEffect(()=>{
     dispatch(getVideogames())
 },[dispatch]);
 
-
-// Local states (Order)
-const [order, setOrder] = useState('NO Order');
 
 
 // Button Functions
@@ -43,6 +40,12 @@ function filterG(e){
     setCurrentPage(1);
     document.getElementById('storage').selectedIndex = 'DEFAULT';
     document.getElementById('genre').selectedIndex = 'DEFAULT';
+};
+
+function sizePage(e){
+    e.preventDefault();
+    setGamesPerPage(parseInt(e.target.value));
+    document.getElementById('size').selectedIndex = 'DEFAULT';
 };
 
 
@@ -104,6 +107,16 @@ return(
                 </optgroup>
                 </select>
                 */}
+                
+                <label htmlFor='size'>Size</label>
+                <select id='size' onChange={(e) => sizePage(e)} defaultValue={'DEFAULT'} className={s.select}>
+                    <option value='DEFAULT' disabled>Size</option>
+                    <option value='5'>5</option>
+                    <option value='10'>10</option>
+                    <option value='15'>15</option>
+                </select>
+                
+                
             </div>
 
     </React.Fragment>

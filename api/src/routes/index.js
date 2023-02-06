@@ -29,7 +29,8 @@ const SaveApiInfo = async (games) => {
         released: games[i].released,
         rating: games[i].rating,
         platforms: games[i].platforms,
-        createdInDatabase: true
+        createdInDatabase: true,
+        owner: "Admin"
       };
       
       const detail = await axios.get(`https://api.rawg.io/api/games/${games[i].id}?key=${API_KEY}`);
@@ -39,7 +40,6 @@ const SaveApiInfo = async (games) => {
         where: { name: gameNew.name },
         defaults: gameNew,
       });
-      
       
       if(created){
         let gameGens = games[i].genres.split(", ");
@@ -54,9 +54,6 @@ const SaveApiInfo = async (games) => {
 
 
 const getApiInfo = async (index=0) => {
-
-
-
 
   const apiGames = [];
   
@@ -76,7 +73,8 @@ const getApiInfo = async (index=0) => {
     );
   };
   
-  //SaveApiInfo(apiGames);
+  // Descomentar para guardado progresivo de juegos en db
+  // SaveApiInfo(apiGames);
   
   return (apiGames);
 };
@@ -114,10 +112,14 @@ const getDbInfo = async () => {
 
 
 const getAllGames = async () => {
-  const apiGames =  await getApiInfo();
   const DbGames = await getDbInfo();
   
-  return (apiGames.concat(DbGames)); 
+  const adminGames = DbGames.filter(g => g.owner === "Admin")
+  const page = Math.floor((adminGames.length) / 40);
+  
+  const apiGames = await getApiInfo(page);
+  
+  return (DbGames.concat(apiGames)); 
 };
 
 

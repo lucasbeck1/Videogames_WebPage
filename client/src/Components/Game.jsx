@@ -24,30 +24,32 @@ export function Game ({name, img, genres, id}){
       (
       <Link to={`/detail/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
         <div className={s.card} onClick={e => detailG(e)}>
-            <div className={s.title}>
-                <h4>{name}</h4>
-            </div>
-            
-            <div className={s.container}>
-            <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
-              <div className={s.overlay}>
-                <div className={s.genres}><p>{genres}</p></div>
+          <div className={s.title}>
+            <h4>{name}</h4>
+          </div>
+          
+          <div className={s.container}>
+          <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
+            <div className={s.overlay}>
+              <div className={s.genres}>
+                <p>{genres}</p>
               </div>
             </div>
+          </div>
         </div>
       </Link>
-      ) 
-      : 
-      (
+      ) : (
       <div className={s.card} onClick={e => detailG(e)}>
         <div className={s.title}>
-            <h4>{name}</h4>
+          <h4>{name}</h4>
         </div>
         
         <div className={s.container}>
-        <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
+          <img src={img? (img) : (defaultImage)} alt="Img Not Found" className={s.image}/>
           <div className={s.overlay}>
-            <div className={s.genres}><p>{genres}</p></div>
+            <div className={s.genres}>
+              <p>{genres}</p>
+            </div>
           </div>
         </div>
       </div>
