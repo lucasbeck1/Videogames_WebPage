@@ -37,7 +37,8 @@ const currentGames = allGames.slice(ixdexFirstGame, indexLastGame);
 
 // Local states (Search)
 const [name, setName] = useState('');
-
+const [open1, setOpen1] = useState(false);
+const [open2, setOpen2] = useState(false);
 
 // Button Functions
 function handleInput(e){
@@ -72,6 +73,26 @@ async function handleSubmit(e){
         <Link to='/create'><button>Create</button></Link>
       </div>
     </div>
+    
+    <button onClick={(e) => {e.preventDefault(); setOpen1(true)}}>Recomendation 1</button>
+    <dialog open={open1}>
+      <p>ESTO ES UN DIALOGO</p>
+      <p>ARRIBA LAS MANOS</p>
+      <button onClick={(e) => {e.preventDefault(); setOpen1(false)}}>Cerrar</button>
+    </dialog>
+    
+    <br/>
+    <button onClick={(e) => {e.preventDefault(); setOpen2(true)}}>Recomendation 2</button>
+      
+    { open2 && (
+      <div>
+        <p>ESTO otro DIALOGO</p>
+        <p>ARRIBA LAS MANOS</p>
+        <button onClick={(e) => {e.preventDefault(); setOpen2(false)}}>Cerrar</button>
+      </div>
+    )}
+    
+    
     {allGames.length > 0 ? 
     (<div>
       <br></br>
