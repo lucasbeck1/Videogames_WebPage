@@ -282,11 +282,11 @@ return(
                    
                     input.genres.includes(gen) ? 
                     (<div key={`${gen}2`}>
-                        <button onClick={e => handleDeSelect(e)} value={gen}>{gen}</button>
+                        <button onClick={e => handleDeSelect(e)} value={gen} className={s.genreSelected}>{gen}</button>
                     </div>) 
                     : 
                     (<div key={`${gen}2`}>
-                        <button disabled onClick={e => handleDeSelect(e)} value={gen}>{gen}</button>
+                        <button disabled onClick={e => handleDeSelect(e)} value={gen} className={s.genreUnselected}>{gen}</button>
                     </div>)
                 
                 )))}
@@ -296,12 +296,21 @@ return(
 
                 <p>Platforms: </p>
                 <div className={s.listPlatforms}>
-                    {platformsList.map((pl => (
-                        <label key={pl}>
-                            <input type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)}/>
-                            {pl}
-                        </label>
-                    )))}
+                    {platformsList.map((pl => {return(
+                    <>
+                            {input.platforms.includes(pl) ? (
+                                <label key={pl} className={s.selectedPlatform}>
+                                <input type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)} />
+                                {pl}
+                                </label>
+                            ) : (
+                                <label key={pl} className={s.unSelectedPlatform}>
+                                <input type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)} />
+                                {pl}
+                                </label>
+                            )}
+                    </>       
+                    )}))}
                 </div>
                 {error.platforms ? (<p className={s.error}>{error.platforms}</p>) :
                 (<div>

@@ -6,6 +6,7 @@ import { Game } from "./Game";
 import { Paginated } from "./Paginated";
 import { Loading } from "./Loading";
 import { FilterBar } from "./FilterBar";
+import { Modal1 } from "./Modal1";
 import Vectors_React from "./assets/vectors";
 import s from "./Home.module.css";
 
@@ -37,8 +38,7 @@ const currentGames = allGames.slice(ixdexFirstGame, indexLastGame);
 
 // Local states (Search)
 const [name, setName] = useState('');
-const [open1, setOpen1] = useState(false);
-const [open2, setOpen2] = useState(false);
+const [open, setOpen] = useState(false);
 
 // Button Functions
 function handleInput(e){
@@ -67,31 +67,19 @@ async function handleSubmit(e){
         <input id='SearchInput' onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
         <button onClick={e => handleSubmit(e)} type="submit">{Vectors_React.search}</button>
       </div>
-      <h2>Lucky Gamer Browser</h2>
+      <Link to='/'><h2>Lucky Gamer Browser</h2></Link>
       <div>
-        <Link to='/'><button>To landing</button></Link>
+        {/* <Link to='/'><button>To landing</button></Link> */}
+        <button onClick={(e) => {e.preventDefault(); setOpen(true)}}>Recomendation</button>
         <Link to='/create'><button>Create</button></Link>
       </div>
     </div>
     
-    <button onClick={(e) => {e.preventDefault(); setOpen1(true)}}>Recomendation 1</button>
-    <dialog open={open1}>
-      <p>ESTO ES UN DIALOGO</p>
-      <p>ARRIBA LAS MANOS</p>
-      <button onClick={(e) => {e.preventDefault(); setOpen1(false)}}>Cerrar</button>
-    </dialog>
     
-    <br/>
-    <button onClick={(e) => {e.preventDefault(); setOpen2(true)}}>Recomendation 2</button>
-      
-    { open2 && (
-      <div>
-        <p>ESTO otro DIALOGO</p>
-        <p>ARRIBA LAS MANOS</p>
-        <button onClick={(e) => {e.preventDefault(); setOpen2(false)}}>Cerrar</button>
-      </div>
-    )}
-    
+    { open ? 
+    (<Modal1 open={open} setOpen={setOpen}/>) 
+    : (
+    <>
     
     {allGames.length > 0 ? 
     (<div>
@@ -117,6 +105,15 @@ async function handleSubmit(e){
     (<>
     <Loading/>
     </>)}
+    
+    
+    
+    </>
+    )}
+    
+    
+    
+    
     <p>Made by Lucas beckford | 2022 All rights reserved</p>
   </React.Fragment>
   )
