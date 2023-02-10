@@ -157,7 +157,9 @@ function handleSubmit(e){
 
   return(
   <React.Fragment>
-  <Link to='/home'><button className={s.homeButton}>Back Home</button></Link>
+  <Link to={`/home`} className={s.link} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+    <p className={s.homeButton}>Home</p>
+  </Link>
   <h3>Create Your GAME !</h3>
 
   <div className={s.form}>

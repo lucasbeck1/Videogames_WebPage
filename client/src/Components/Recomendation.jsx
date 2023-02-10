@@ -22,7 +22,9 @@ export function Recomendation(){
 
   return(
   <React.Fragment>
-  <Link to='/home'><button className={s.btn}>Home</button></Link>
+  <Link to='/home' style={{ color: 'inherit', textDecoration: 'inherit'}}>
+    <p className={s.btn}>Home</p>
+  </Link>
   <div className={s.modal}>
     <p>You don't know what do you play ?</p>
     <p>See a random recommendation</p>

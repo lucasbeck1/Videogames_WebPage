@@ -14,15 +14,15 @@ diseñar y animar logo landing
 landing (waves css)  
 opción de elegir default image form  
 mostra logos y links de plataformas (steam , xbox) en detail  
-footer  
 cuando carga el home, incrementar el margin top del footer  
 previsualizacion loading  
+footer  
 Firma LB creations  
 añadir idioma español  
 readme - intrucciones como montar el proyecto debajo  
-controlar en form que sea imagen y el nombre exp.reg  
 estado global para filtros, ord, y pagina actual  
-agregar icono de x en los generos seleccionados  
+controlar en form que sea imagen y el nombre exp.reg  
+en el form agregar icono de x en los generos seleccionados  
 clases para los colores y botones  
 colores sugeridos:  
   --chakra-colors-gray-50: #F7FAFC;  
@@ -36,9 +36,6 @@ colores sugeridos:
   --chakra-colors-gray-800: #1A202C;  
   --chakra-colors-gray-900: #171923;  
 tema oscuro (switch)  
-Recomendaciones  
-corto o largo ?       - indie o no indie
-historia o rapido ?   - aventura o shooter
 
 
 __Back:__  

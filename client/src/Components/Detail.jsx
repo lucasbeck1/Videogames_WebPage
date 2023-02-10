@@ -50,7 +50,9 @@ return(
         {/* {Object.keys(detailG).length > 0 ? */}
         {idG === props.match.params.id ?
         (<div style={styleDiv}>
-        <Link to={`/home`} className={s.link}><p className={s.homeButton}>Home</p></Link>
+        <Link to={`/home`} className={s.link} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+            <p className={s.homeButton}>Home</p>
+        </Link>
 
         <div className={s.page}>
             <div className={s.upText}>

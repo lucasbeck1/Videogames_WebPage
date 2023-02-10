@@ -71,10 +71,10 @@ async function handleSubmit(e){
         <h2>Lucky Gamer Browser</h2>
       </Link>
       <div>
-        <Link to='/recomendation'>
+        <Link to='/recomendation' style={{ color: 'inherit', textDecoration: 'inherit'}}>
           <button>Recomendation</button>
         </Link>
-        <Link to='/create'>
+        <Link to='/create' style={{ color: 'inherit', textDecoration: 'inherit'}}>
           <button>Create</button>
         </Link>
       </div>
