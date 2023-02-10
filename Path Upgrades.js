@@ -22,6 +22,7 @@ añadir idioma español
 readme - intrucciones como montar el proyecto debajo  
 controlar en form que sea imagen y el nombre exp.reg  
 estado global para filtros, ord, y pagina actual  
+agregar icono de x en los generos seleccionados  
 clases para los colores y botones  
 colores sugeridos:  
   --chakra-colors-gray-50: #F7FAFC;  

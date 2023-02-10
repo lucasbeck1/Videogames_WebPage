@@ -6,9 +6,10 @@ import { Game } from "./Game";
 import { Paginated } from "./Paginated";
 import { Loading } from "./Loading";
 import { FilterBar } from "./FilterBar";
-import { Modal1 } from "./Modal1";
 import Vectors_React from "./assets/vectors";
 import s from "./Home.module.css";
+
+
 
 export function Home (){
 
@@ -20,8 +21,8 @@ const allGames = useSelector(state => state.videogamesList);
 
 
 useEffect(()=>{
-    dispatch(getGenres())
-    dispatch(getVideogames())
+  dispatch(getGenres())
+  dispatch(getVideogames())
 },[dispatch]);
 
 
@@ -38,7 +39,6 @@ const currentGames = allGames.slice(ixdexFirstGame, indexLastGame);
 
 // Local states (Search)
 const [name, setName] = useState('');
-const [open, setOpen] = useState(false);
 
 // Button Functions
 function handleInput(e){
@@ -69,17 +69,13 @@ async function handleSubmit(e){
       </div>
       <Link to='/'><h2>Lucky Gamer Browser</h2></Link>
       <div>
-        {/* <Link to='/'><button>To landing</button></Link> */}
-        <button onClick={(e) => {e.preventDefault(); setOpen(true)}}>Recomendation</button>
+        <Link to='/recomendation'><button>Recomendation</button></Link>
         <Link to='/create'><button>Create</button></Link>
       </div>
     </div>
     
     
-    { open ? 
-    (<Modal1 open={open} setOpen={setOpen}/>) 
-    : (
-    <>
+    
     
     {allGames.length > 0 ? 
     (<div>
@@ -105,11 +101,6 @@ async function handleSubmit(e){
     (<>
     <Loading/>
     </>)}
-    
-    
-    
-    </>
-    )}
     
     
     

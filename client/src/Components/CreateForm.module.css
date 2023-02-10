@@ -91,12 +91,13 @@
 .genreSelected{
     border:none;
     background-color: rgb(255, 202, 255);
+    width: 10rem;
 }
 
 
 .genreUnselected{
     border:none;
-
+    width: 10rem;
 }
 
 

@@ -7,6 +7,7 @@ import { Landing } from './Components/Landing';
 import { Home } from './Components/Home';
 import { Detail } from './Components/Detail';
 import { CreateForm } from './Components/CreateForm';
+import { Recomendation } from './Components/Recomendation';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route exact path='/' component={Landing}/>
       <Route exact path='/home' component={Home}/>
       <Route exact path='/create' component={CreateForm}/>
+      <Route exact path='/recomendation' component={Recomendation}/>
       <Route exact path='/detail/:id' component={Detail}/>
     </div>
     </Router>
