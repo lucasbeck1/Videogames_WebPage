@@ -11,18 +11,17 @@
 
 
 .btn{
-  /* 
-  border: solid 2px wheat; */
+  /* border: solid 2px #fab5fa;*/
   color: #FF1cff;
   background-color: rgb(16, 56, 129);
-  border: solid 2px #fab5fa;
+  border: none;
   border-radius: 3px;
   padding: 0.5rem;
-
-  margin: 0.2rem;
-  padding: 0.4rem;
-    
+  width: 15rem;
+  margin: 1rem auto;
+  padding: 0.5rem;
 }
+
   
 .btn:hover{
   color: #FF1cff;

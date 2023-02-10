@@ -7,7 +7,7 @@ const Games = [
 			"rating": 4.47,
 			"platforms": "PlayStation 5, Xbox Series S/X, PlayStation 4, PC, PlayStation 3, Xbox 360, Xbox One",
 			"image": "https://media.rawg.io/media/games/456/456dea5e1c7e3cd07060c14e96612001.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -19,7 +19,7 @@ const Games = [
 			"rating": 4.66,
 			"platforms": "Xbox Series S/X, PlayStation 4, Nintendo Switch, PC, Xbox One, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -31,7 +31,7 @@ const Games = [
 			"rating": 4.62,
 			"platforms": "Xbox 360, Linux, macOS, PlayStation 3, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/328/3283617cb7d75d67257fc58339188742.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Shooter, Puzzle"
 	},
@@ -43,7 +43,7 @@ const Games = [
 			"rating": 4.05,
 			"platforms": "PlayStation 4, macOS, PC, Xbox One, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -55,7 +55,7 @@ const Games = [
 			"rating": 3.56,
 			"platforms": "PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -67,7 +67,7 @@ const Games = [
 			"rating": 4.51,
 			"platforms": "Android, PlayStation 3, Xbox 360, Linux, macOS, PC, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Puzzle"
 	},
@@ -79,7 +79,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "macOS, Linux, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/d58/d588947d4286e7b5e0e12e1bea7d9844.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -91,7 +91,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "PC, Nintendo Switch, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -103,7 +103,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PlayStation 4, Xbox 360, Nintendo Switch, Linux, PC, PlayStation 3, Xbox One",
 			"image": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -115,7 +115,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PlayStation 3, macOS, PC, Android, Linux, PS Vita, Xbox 360",
 			"image": "https://media.rawg.io/media/games/49c/49c3dfa4ce2f6f140cc4825868e858cb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -127,7 +127,7 @@ const Games = [
 			"rating": 4.11,
 			"platforms": "PC, Linux, PlayStation 3, macOS, iOS, Xbox 360, Android, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure"
 	},
@@ -139,7 +139,7 @@ const Games = [
 			"rating": 4.59,
 			"platforms": "PC, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/511/5118aff5091cb3efec399c808f8c598f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -151,7 +151,7 @@ const Games = [
 			"rating": 4.5,
 			"platforms": "PC, Xbox 360, Linux, Xbox, Android, macOS",
 			"image": "https://media.rawg.io/media/games/b8c/b8c243eaa0fbac8115e0cdccac3f91dc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -163,7 +163,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "PlayStation 3, macOS, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -175,7 +175,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "Linux, PS Vita, Android, Xbox One, Nintendo Switch, iOS, PC, macOS, Xbox 360, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Puzzle, Platformer"
 	},
@@ -187,7 +187,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Xbox One, PC, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/c4b/c4b0cab189e73432de3a250d8cf1c84e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -199,7 +199,7 @@ const Games = [
 			"rating": 3.8,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/d82/d82990b9c67ba0d2d09d4e6fa88885a7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -211,7 +211,7 @@ const Games = [
 			"rating": 4.59,
 			"platforms": "PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/4be/4be6a6ad0364751a96229c56bf69be59.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -223,7 +223,7 @@ const Games = [
 			"rating": 3.56,
 			"platforms": "Xbox One, PC, PlayStation 4, Web, Xbox Series S/X, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/34b/34b1f1850a1c06fd971bc6ab3ac0ce0e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter, Massively Multiplayer"
 	},
@@ -235,7 +235,7 @@ const Games = [
 			"rating": 3.67,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/46d/46d98e6910fbc0706e2948a7cc9b10c5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -247,7 +247,7 @@ const Games = [
 			"rating": 3.51,
 			"platforms": "Linux, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/73e/73eecb8909e0c39fb246f457b5d6cbbe.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -259,7 +259,7 @@ const Games = [
 			"rating": 4.31,
 			"platforms": "PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/b7d/b7d3f1715fa8381a4e780173a197a615.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -271,7 +271,7 @@ const Games = [
 			"rating": 4.26,
 			"platforms": "Xbox 360, PlayStation 3, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -283,7 +283,7 @@ const Games = [
 			"rating": 3.96,
 			"platforms": "Nintendo Switch, Linux, macOS, Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Racing, Sports"
 	},
@@ -295,7 +295,7 @@ const Games = [
 			"rating": 3.05,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/6fc/6fcf4cd3b17c288821388e6085bb0fc9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Massively Multiplayer"
 	},
@@ -307,7 +307,7 @@ const Games = [
 			"rating": 4.05,
 			"platforms": "Xbox 360, Wii U, Nintendo 3DS, Xbox One, PlayStation 4, iOS, PC, macOS, Linux, Nintendo Switch, PlayStation 3, PS Vita, Android",
 			"image": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -319,7 +319,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "PlayStation 4, PC, Xbox Series S/X, PlayStation 5, Xbox One",
 			"image": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -331,7 +331,7 @@ const Games = [
 			"rating": 3.42,
 			"platforms": "Xbox Series S/X, PlayStation 5, PlayStation 4, Xbox One, Nintendo Switch, PC",
 			"image": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Massively Multiplayer"
 	},
@@ -343,7 +343,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/120/1201a40e4364557b124392ee50317b99.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -355,7 +355,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "Xbox One, PlayStation 3, PlayStation 4, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -367,7 +367,7 @@ const Games = [
 			"rating": 4.03,
 			"platforms": "Xbox One, PC, macOS, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/b45/b45575f34285f2c4479c9a5f719d972e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -379,7 +379,7 @@ const Games = [
 			"rating": 4.23,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -391,7 +391,7 @@ const Games = [
 			"rating": 4.33,
 			"platforms": "macOS, PC, iOS, Android, PS Vita, PlayStation 4, PlayStation 3, Xbox 360, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -403,7 +403,7 @@ const Games = [
 			"rating": 4.17,
 			"platforms": "macOS, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/6cd/6cd653e0aaef5ff8bbd295bf4bcb12eb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -415,7 +415,7 @@ const Games = [
 			"rating": 3.45,
 			"platforms": "macOS, Linux, PC",
 			"image": "https://media.rawg.io/media/games/b7b/b7b8381707152afc7d91f5d95de70e39.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -427,7 +427,7 @@ const Games = [
 			"rating": 3.89,
 			"platforms": "Linux, Xbox One, Xbox 360, PlayStation 3, PlayStation 4, macOS, PC",
 			"image": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -439,7 +439,7 @@ const Games = [
 			"rating": 4.51,
 			"platforms": "Xbox One, Android, Xbox, iOS, PC, macOS, Xbox 360, PlayStation 2, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/960/960b601d9541cec776c5fa42a00bf6c4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -451,7 +451,7 @@ const Games = [
 			"rating": 4.07,
 			"platforms": "PC, macOS",
 			"image": "https://media.rawg.io/media/games/ee3/ee3e10193aafc3230ba1cae426967d10.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -463,7 +463,7 @@ const Games = [
 			"rating": 4.07,
 			"platforms": "PlayStation 4, Xbox One, Nintendo Switch, PC, macOS, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/157/15742f2f67eacff546738e1ab5c19d20.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -475,7 +475,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Linux, PC, Xbox 360, Android, macOS",
 			"image": "https://media.rawg.io/media/games/7a2/7a2500ee8b2c0e1ff268bb4479463dea.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -487,7 +487,7 @@ const Games = [
 			"rating": 4.45,
 			"platforms": "Xbox 360, Android, macOS, Linux, PC",
 			"image": "https://media.rawg.io/media/games/198/1988a337305e008b41d7f536ce9b73f6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Puzzle"
 	},
@@ -499,7 +499,7 @@ const Games = [
 			"rating": 3.92,
 			"platforms": "PlayStation 4, Linux, macOS, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/16b/16b1b7b36e2042d1128d5a3e852b3b2f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Simulation"
 	},
@@ -511,7 +511,7 @@ const Games = [
 			"rating": 3.67,
 			"platforms": "PlayStation 4, Nintendo Switch, macOS, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/b72/b7233d5d5b1e75e86bb860ccc7aeca85.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter, Massively Multiplayer"
 	},
@@ -523,7 +523,7 @@ const Games = [
 			"rating": 4.41,
 			"platforms": "Nintendo Switch, Xbox One, PS Vita, PC, macOS, Linux, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -535,7 +535,7 @@ const Games = [
 			"rating": 4.07,
 			"platforms": "Xbox 360, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/8e4/8e4de3f54ac659e08a7ba6a2b731682a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -547,7 +547,7 @@ const Games = [
 			"rating": 4.05,
 			"platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Platformer"
 	},
@@ -559,7 +559,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Linux, Nintendo Switch, Xbox One, PlayStation 4, PS Vita, PC",
 			"image": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter, Arcade"
 	},
@@ -571,7 +571,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/da1/da1b267764d77221f07a4386b6548e5a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -583,7 +583,7 @@ const Games = [
 			"rating": 3.72,
 			"platforms": "Xbox One, PlayStation 4, Nintendo Switch, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -595,7 +595,7 @@ const Games = [
 			"rating": 3.97,
 			"platforms": "Xbox One, Linux, macOS, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/c24/c24ec439abf4a2e92f3429dfa83f7f94.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -607,7 +607,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "Xbox 360, PlayStation 3, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -619,7 +619,7 @@ const Games = [
 			"rating": 4.24,
 			"platforms": "PlayStation 4, Nintendo Switch, macOS, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Shooter"
 	},
@@ -631,7 +631,7 @@ const Games = [
 			"rating": 4.46,
 			"platforms": "PC, PlayStation 5, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/9aa/9aa42d16d425fa6f179fc9dc2f763647.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -643,7 +643,7 @@ const Games = [
 			"rating": 4.24,
 			"platforms": "Xbox One, Xbox 360, PlayStation 3, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/15c/15c95a4915f88a3e89c821526afe05fc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -655,7 +655,7 @@ const Games = [
 			"rating": 3.65,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/b54/b54598d1d5cc31899f4f0a7e3122a7b0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -667,7 +667,7 @@ const Games = [
 			"rating": 4.11,
 			"platforms": "Xbox 360, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/5c0/5c0dd63002cb23f804aab327d40ef119.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -679,7 +679,7 @@ const Games = [
 			"rating": 3.27,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/ec3/ec3a7db7b8ab5a71aad622fe7c62632f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -691,7 +691,7 @@ const Games = [
 			"rating": 3.95,
 			"platforms": "PC, Xbox One, Xbox 360, PlayStation 3, Linux",
 			"image": "https://media.rawg.io/media/games/d69/d69810315bd7e226ea2d21f9156af629.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -703,7 +703,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "PlayStation 2, PC, macOS, Linux, Dreamcast",
 			"image": "https://media.rawg.io/media/games/6c5/6c55e22185876626881b76c11922b073.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Puzzle, Platformer"
 	},
@@ -715,7 +715,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "Xbox 360, PlayStation 3, Xbox One, Nintendo Switch, PC",
 			"image": "https://media.rawg.io/media/games/c6b/c6bfece1daf8d06bc0a60632ac78e5bf.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -727,7 +727,7 @@ const Games = [
 			"rating": 4.19,
 			"platforms": "Xbox One, PC, Xbox 360, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/c80/c80bcf321da44d69b18a06c04d942662.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -739,7 +739,7 @@ const Games = [
 			"rating": 4.51,
 			"platforms": "PlayStation 4, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/709/709bf81f874ce5d25d625b37b014cb63.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -751,7 +751,7 @@ const Games = [
 			"rating": 4.29,
 			"platforms": "PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/951/951572a3dd1e42544bd39a5d5b42d234.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -763,7 +763,7 @@ const Games = [
 			"rating": 3.65,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/d0f/d0f91fe1d92332147e5db74e207cfc7a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Massively Multiplayer"
 	},
@@ -775,7 +775,7 @@ const Games = [
 			"rating": 4.28,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/e6d/e6de699bd788497f4b52e2f41f9698f2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -787,7 +787,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "PlayStation 4, PlayStation 3, Xbox 360, PC, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -799,7 +799,7 @@ const Games = [
 			"rating": 4.41,
 			"platforms": "Nintendo Switch, Xbox One, PC, iOS, macOS, Linux, PlayStation 4, PS Vita, Android",
 			"image": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Simulation"
 	},
@@ -811,7 +811,7 @@ const Games = [
 			"rating": 3.97,
 			"platforms": "Linux, Nintendo Switch, Wii U, Xbox 360, PlayStation 4, PS Vita, Android, Web, PC, macOS",
 			"image": "https://media.rawg.io/media/games/e04/e04963f3ac4c4fa83a1dc0b9231e50db.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Platformer"
 	},
@@ -823,7 +823,7 @@ const Games = [
 			"rating": 3.52,
 			"platforms": "PlayStation 4, PS Vita, PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/234/23410661770ae13eac11066980834367.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Arcade, Fighting"
 	},
@@ -835,7 +835,7 @@ const Games = [
 			"rating": 3.78,
 			"platforms": "Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/48c/48cb04ca483be865e3a83119c94e6097.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Casual, Simulation"
 	},
@@ -847,7 +847,7 @@ const Games = [
 			"rating": 3.29,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/1bd/1bd2657b81eb0c99338120ad444b24ff.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Massively Multiplayer"
 	},
@@ -859,7 +859,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Xbox 360, PC, Xbox One, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/ebd/ebdbb7eb52bd58b0e7fa4538d9757b60.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -871,7 +871,7 @@ const Games = [
 			"rating": 4.28,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/55e/55ee6432ac2bf224610fa17e4c652107.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -883,7 +883,7 @@ const Games = [
 			"rating": 3.3,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/4e0/4e0e7b6d6906a131307c94266e5c9a1c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Massively Multiplayer"
 	},
@@ -895,7 +895,7 @@ const Games = [
 			"rating": 4.44,
 			"platforms": "Xbox One, PlayStation 4, PlayStation 3, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/995/9951d9d55323d08967640f7b9ab3e342.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Shooter"
 	},
@@ -907,7 +907,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "Xbox 360, Xbox One, PC, Nintendo Switch, Wii U, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -919,7 +919,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "PlayStation 4, PC, macOS, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/d46/d46373f39458670305704ef089387520.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -931,7 +931,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "PlayStation 4, PlayStation 3, Xbox 360, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/4e6/4e6e8e7f50c237d76f38f3c885dae3d2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -943,7 +943,7 @@ const Games = [
 			"rating": 3.08,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/0bd/0bd5646a3d8ee0ac3314bced91ea306d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -955,7 +955,7 @@ const Games = [
 			"rating": 4.48,
 			"platforms": "PC, Xbox One, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/3cf/3cff89996570cf29a10eb9cd967dcf73.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -967,7 +967,7 @@ const Games = [
 			"rating": 4.69,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/364/3642d850efb217c58feab80b8affaa89.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -979,7 +979,7 @@ const Games = [
 			"rating": 4.25,
 			"platforms": "Xbox One, Nintendo Switch, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -991,7 +991,7 @@ const Games = [
 			"rating": 4.26,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/f6b/f6bed028b02369d4cab548f4f9337e81.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1003,7 +1003,7 @@ const Games = [
 			"rating": 4.45,
 			"platforms": "macOS, PS Vita, PC, iOS, Android, PlayStation 2, Xbox",
 			"image": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1015,7 +1015,7 @@ const Games = [
 			"rating": 4.46,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/62c/62c7c8b28a27b83680b22fb9d33fc619.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1027,7 +1027,7 @@ const Games = [
 			"rating": 3.23,
 			"platforms": "macOS, Linux, PC",
 			"image": "https://media.rawg.io/media/games/174/174fabfca02d5730531bab2153a7dfcb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -1039,7 +1039,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "Xbox Series S/X, PlayStation 5, Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/253/2534a46f3da7fa7c315f1387515ca393.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -1051,7 +1051,7 @@ const Games = [
 			"rating": 4.34,
 			"platforms": "PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/2ad/2ad87a4a69b1104f02435c14c5196095.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1063,7 +1063,7 @@ const Games = [
 			"rating": 3.89,
 			"platforms": "PlayStation 3, PlayStation 4, PC, Xbox One, Xbox 360",
 			"image": "https://media.rawg.io/media/games/7ac/7aca7ccf0e70cd0974cb899ab9e5158e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1075,7 +1075,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "PlayStation 4, PC, PlayStation 5, Xbox One",
 			"image": "https://media.rawg.io/media/games/559/559bc0768f656ad0c63c54b80a82d680.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1087,7 +1087,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "Xbox One, Xbox 360, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/a6c/a6ccd34125c594abf1a9c9821b9a715d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1099,7 +1099,7 @@ const Games = [
 			"rating": 3.55,
 			"platforms": "PlayStation 3, Xbox 360, PlayStation 4, Nintendo Switch, PC, Linux, Android, macOS",
 			"image": "https://media.rawg.io/media/games/530/5302dd22a190e664531236ca724e8726.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -1111,7 +1111,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/214/214b29aeff13a0ae6a70fc4426e85991.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1123,7 +1123,7 @@ const Games = [
 			"rating": 3.78,
 			"platforms": "Linux, Xbox One, PlayStation 4, macOS, PC",
 			"image": "https://media.rawg.io/media/games/dd5/dd50d4266915d56dd5b63ae1bf72606a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Simulation"
 	},
@@ -1135,7 +1135,7 @@ const Games = [
 			"rating": 3.38,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/5bb/5bb55ccb8205aadbb6a144cf6d8963f1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1147,7 +1147,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/48e/48e63bbddeddbe9ba81942772b156664.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Shooter"
 	},
@@ -1159,7 +1159,7 @@ const Games = [
 			"rating": 3.86,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/aa3/aa36ba4b486a03ddfaef274fb4f5afd4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Fighting"
 	},
@@ -1171,7 +1171,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "PlayStation 4, PS Vita, Xbox One, PC, iOS, Linux, Nintendo Switch, Xbox 360, macOS",
 			"image": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, RPG"
 	},
@@ -1183,7 +1183,7 @@ const Games = [
 			"rating": 4.33,
 			"platforms": "PC, iOS, PlayStation 4, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Family"
 	},
@@ -1195,7 +1195,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "Nintendo Switch, PC, Linux, Xbox One, PlayStation 4, macOS",
 			"image": "https://media.rawg.io/media/games/7a4/7a45e4cdc5b07f316d49cf147b083b27.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1207,7 +1207,7 @@ const Games = [
 			"rating": 3.61,
 			"platforms": "Xbox 360, PlayStation 3, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/a3c/a3c529a12c896c0ef02db5b4741de2ba.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1219,7 +1219,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "macOS, PC, Linux, Xbox",
 			"image": "https://media.rawg.io/media/games/9c4/9c47f320eb73c9a02d462e12f6206b26.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1231,7 +1231,7 @@ const Games = [
 			"rating": 3.76,
 			"platforms": "Xbox One, PlayStation 4, Xbox 360, Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/d7d/d7d33daa1892e2468cd0263d5dfc957e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1243,7 +1243,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "PC, Xbox 360, macOS",
 			"image": "https://media.rawg.io/media/games/476/476178ef18ab0534771d099f51cdc694.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1255,7 +1255,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PlayStation 4, macOS, PC, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/7c4/7c448374df84b607f67ce9182a3a3ca7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1267,7 +1267,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "PlayStation 4, Xbox One, Nintendo Switch, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/4fb/4fb548e4816c84d1d70f1a228fb167cc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1279,7 +1279,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/21c/21cc15d233117c6809ec86870559e105.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -1291,7 +1291,7 @@ const Games = [
 			"rating": 4.2,
 			"platforms": "PC, Android, iOS, Xbox 360, PlayStation 3, macOS",
 			"image": "https://media.rawg.io/media/games/238/2383a172b4d50a7b44e07980eb7141ea.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -1303,7 +1303,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/5a4/5a44112251d70a25291cc33757220fce.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1315,7 +1315,7 @@ const Games = [
 			"rating": 3.65,
 			"platforms": "Xbox 360, PlayStation 3, Xbox One, iOS, PC, Linux, macOS",
 			"image": "https://media.rawg.io/media/games/af7/af7a831001c5c32c46e950cc883b8cb7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Strategy"
 	},
@@ -1327,7 +1327,7 @@ const Games = [
 			"rating": 4.19,
 			"platforms": "PlayStation 3, Xbox One, iOS, Nintendo Switch, Xbox 360, PlayStation 4, Android, PC",
 			"image": "https://media.rawg.io/media/games/b6b/b6b20bfc4b34e312dbc8aac53c95a348.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -1339,7 +1339,7 @@ const Games = [
 			"rating": 3.74,
 			"platforms": "Xbox One, PlayStation 4, PC, Nintendo Switch, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/5eb/5eb49eb2fa0738fdb5bacea557b1bc57.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Casual, Massively Multiplayer, Sports"
 	},
@@ -1351,7 +1351,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "PlayStation 4, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/0af/0af85e8edddfa55368e47c539914a220.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1363,7 +1363,7 @@ const Games = [
 			"rating": 4.32,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/569/56978b5a77f13aa2ec5d09ec81d01cad.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1375,7 +1375,7 @@ const Games = [
 			"rating": 4.32,
 			"platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/cee/cee577e2097a59b77193fe2bce94667d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -1387,7 +1387,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PlayStation 4, Xbox 360, Xbox One, PlayStation 3, macOS, PC",
 			"image": "https://media.rawg.io/media/games/c50/c5085506fe4b5e20fc7aa5ace842c20b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1399,7 +1399,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "PlayStation 3, Xbox One, iOS, PC, macOS, Linux, Xbox 360, PlayStation 2, PlayStation 4, Xbox",
 			"image": "https://media.rawg.io/media/games/c89/c89ca70716080733d03724277df2c6c7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Platformer"
 	},
@@ -1411,7 +1411,7 @@ const Games = [
 			"rating": 4.14,
 			"platforms": "Xbox One, PC, macOS, Linux, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/25c/25c4776ab5723d5d735d8bf617ca12d9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -1423,7 +1423,7 @@ const Games = [
 			"rating": 4.21,
 			"platforms": "PlayStation 3, Xbox 360, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/9e5/9e5b274c7e3aa5e30beba31b834b0e7e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1435,7 +1435,7 @@ const Games = [
 			"rating": 3.01,
 			"platforms": "PlayStation 4, macOS, Linux, Xbox One, Nintendo Switch, PC",
 			"image": "https://media.rawg.io/media/games/0fd/0fd84d36596a83ef2e5a35f63a072218.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Fighting, Platformer"
 	},
@@ -1447,7 +1447,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "Android, PS Vita, PlayStation 4, PlayStation 3, Xbox 360, Nintendo 3DS, Nintendo Switch, macOS, PC, iOS, Wii U, Xbox One, Linux",
 			"image": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Simulation, Arcade, Massively Multiplayer"
 	},
@@ -1459,7 +1459,7 @@ const Games = [
 			"rating": 4.25,
 			"platforms": "PC, Xbox 360, PlayStation 3, macOS",
 			"image": "https://media.rawg.io/media/games/5bf/5bf88a28de96321c86561a65ee48e6c2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1471,7 +1471,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Xbox 360, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/fd8/fd882c8267a44621a0de6f9cec77ae90.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Platformer"
 	},
@@ -1483,7 +1483,7 @@ const Games = [
 			"rating": 3.56,
 			"platforms": "Xbox One, Wii U, Xbox 360, PlayStation 3, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/879/879c930f9c6787c920153fa2df452eb3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1495,7 +1495,7 @@ const Games = [
 			"rating": 3.85,
 			"platforms": "PC, Xbox One, PlayStation 4, Android",
 			"image": "https://media.rawg.io/media/games/21a/21ad672cedee9b4378abb6c2d2e626ee.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1507,7 +1507,7 @@ const Games = [
 			"rating": 3.1,
 			"platforms": "PlayStation 4, Xbox One, Nintendo Switch, macOS, PC",
 			"image": "https://media.rawg.io/media/screenshots/88b/88b5f27f07d6ca2f8a3cd0b36e03a670.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1519,7 +1519,7 @@ const Games = [
 			"rating": 3.71,
 			"platforms": "PC, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/bce/bce62fbc7cf74bf6a1a37340993ec148.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1531,7 +1531,7 @@ const Games = [
 			"rating": 3.71,
 			"platforms": "PlayStation 3, macOS, PC, Xbox 360, Xbox One",
 			"image": "https://media.rawg.io/media/games/744/744adc36e6573dd67a0cb0e373738d19.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -1543,7 +1543,7 @@ const Games = [
 			"rating": 4.21,
 			"platforms": "PC, macOS, Classic Macintosh",
 			"image": "https://media.rawg.io/media/games/14a/14a83c56ff668baaced6e8c8704b6391.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -1555,7 +1555,7 @@ const Games = [
 			"rating": 4.31,
 			"platforms": "macOS, Linux, Nintendo Switch, PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/0be/0bea0a08a4d954337305391b778a7f37.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -1567,7 +1567,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "Nintendo Switch, PC, iOS, macOS, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/d5a/d5a24f9f71315427fa6e966fdd98dfa6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Puzzle, Platformer"
 	},
@@ -1579,7 +1579,7 @@ const Games = [
 			"rating": 3.76,
 			"platforms": "PlayStation 3, Xbox One, Xbox 360, Nintendo Switch, PC",
 			"image": "https://media.rawg.io/media/games/8d4/8d46786ca86b1d95f3dc7e700e2dc4dd.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -1591,7 +1591,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "PlayStation 3, PC, Xbox One, PlayStation 4, Xbox 360, Linux",
 			"image": "https://media.rawg.io/media/games/e3d/e3ddc524c6292a435d01d97cc5f42ea7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1603,7 +1603,7 @@ const Games = [
 			"rating": 3.89,
 			"platforms": "Xbox One, PC, PlayStation 4, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/7f6/7f6cd70ba2ad57053b4847c13569f2d8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1615,7 +1615,7 @@ const Games = [
 			"rating": 4.19,
 			"platforms": "Nintendo Switch, PlayStation 4, PC, iOS, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/d1f/d1f872a48286b6b751670817d5c1e1be.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG"
 	},
@@ -1627,7 +1627,7 @@ const Games = [
 			"rating": 4.2,
 			"platforms": "PC, Xbox One, Nintendo Switch, Android, iOS, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/daa/daaee07fcb40744d90cf8142f94a241f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1639,7 +1639,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "Xbox 360, PlayStation 3, Xbox One, PC, macOS, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/1be/1bed7fae69d1004c09dfe1101d5a3a94.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -1651,7 +1651,7 @@ const Games = [
 			"rating": 4.35,
 			"platforms": "Xbox Series S/X, Nintendo Switch, Xbox One, PC, macOS, Linux, PlayStation 4, PS Vita",
 			"image": "https://media.rawg.io/media/games/ffe/ffed87105b14f5beff72ff44a7793fd5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG"
 	},
@@ -1663,7 +1663,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "Xbox One, PC, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/c6b/c6bd26767c1053fef2b10bb852943559.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1675,7 +1675,7 @@ const Games = [
 			"rating": 4.47,
 			"platforms": "PlayStation 5, Xbox One, Nintendo Switch, PlayStation 4, PC, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/1f4/1f47a270b8f241e4676b14d39ec620f7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, RPG"
 	},
@@ -1687,7 +1687,7 @@ const Games = [
 			"rating": 2.65,
 			"platforms": "Android, Linux, macOS, PC, iOS",
 			"image": "https://media.rawg.io/media/games/095/0953bf01cd4e4dd204aba85489ac9868.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Strategy, Massively Multiplayer"
 	},
@@ -1699,7 +1699,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/858/858c016de0cf7bc21a57dcc698a04a0c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1711,7 +1711,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PlayStation 3, PC, Android, Xbox 360",
 			"image": "https://media.rawg.io/media/games/fc3/fc30790a3b3c738d7a271b02c1e26dc2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -1723,7 +1723,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/67f/67f62d1f062a6164f57575e0604ee9f6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1735,7 +1735,7 @@ const Games = [
 			"rating": 3.92,
 			"platforms": "Xbox One, PC, PlayStation 4, Xbox Series S/X, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/b34/b3419c2706f8f8dbe40d08e23642ad06.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1747,7 +1747,7 @@ const Games = [
 			"rating": 3.53,
 			"platforms": "Nintendo Switch, Linux, PlayStation 4, PC, Xbox One, iOS, macOS",
 			"image": "https://media.rawg.io/media/games/6a2/6a2e48933245e2cd3c92248c75c925e1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -1759,7 +1759,7 @@ const Games = [
 			"rating": 3.99,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/336/336c6bd63d83cf8e59937ab8895d1240.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1771,7 +1771,7 @@ const Games = [
 			"rating": 3.28,
 			"platforms": "PlayStation 3, Xbox 360, macOS, PC",
 			"image": "https://media.rawg.io/media/games/27b/27b02ffaab6b250cc31bf43baca1fc34.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Racing"
 	},
@@ -1783,7 +1783,7 @@ const Games = [
 			"rating": 3.66,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/5be/5bec14622f6faf804a592176577c1347.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -1795,7 +1795,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PlayStation 4, Nintendo Switch, Xbox One, macOS, PC",
 			"image": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -1807,7 +1807,7 @@ const Games = [
 			"rating": 3.82,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/998/9980c4296f311d8bcc5b451ca51e4fe1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1819,7 +1819,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PS Vita, PlayStation 4, Xbox One, iOS, PC, Android, Xbox 360, macOS",
 			"image": "https://media.rawg.io/media/games/be0/be084b850302abe81675bc4ffc08a0d0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure"
 	},
@@ -1831,7 +1831,7 @@ const Games = [
 			"rating": 3.81,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/33d/33df5a032898b8ab7e3773c7a5f1d336.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1843,7 +1843,7 @@ const Games = [
 			"rating": 2.7,
 			"platforms": "PlayStation 4, Linux, macOS, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/93e/93ee6101e1c943732f06080dddb0fe4c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1855,7 +1855,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/152/152e788b7504aa2753c86dae912fb34c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1867,7 +1867,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/screenshots/8f0/8f0b94922ad5e59968852649697b2643.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -1879,7 +1879,7 @@ const Games = [
 			"rating": 3.81,
 			"platforms": "PlayStation 4, PlayStation 3, PC, Xbox One, Xbox 360",
 			"image": "https://media.rawg.io/media/games/b39/b396dac1f3e0f538841aa0355dd066d3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Shooter"
 	},
@@ -1891,7 +1891,7 @@ const Games = [
 			"rating": 3.68,
 			"platforms": "Nintendo Switch, Xbox One, PC, PlayStation 4, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/174/1743b3dd185bda4a7be349347d4064df.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, RPG, Simulation, Massively Multiplayer"
 	},
@@ -1903,7 +1903,7 @@ const Games = [
 			"rating": 3.58,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/c22/c22d804ac753c72f2617b3708a625dec.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -1915,7 +1915,7 @@ const Games = [
 			"rating": 4.3,
 			"platforms": "Wii U, PC, macOS, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/a12/a12f806432cb385bc286f0935c49cd14.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -1927,7 +1927,7 @@ const Games = [
 			"rating": 3.22,
 			"platforms": "Xbox One, PC, macOS, Linux, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/d07/d0790809a13027251b6d0f4dc7538c58.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Massively Multiplayer"
 	},
@@ -1939,7 +1939,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "PlayStation 4, Nintendo Switch, PC, Linux, macOS",
 			"image": "https://media.rawg.io/media/screenshots/c97/c97b943741f5fbc936fe054d9d58851d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Puzzle, Platformer"
 	},
@@ -1951,7 +1951,7 @@ const Games = [
 			"rating": 3.06,
 			"platforms": "Nintendo Switch, Xbox One, PlayStation 4, Linux, macOS, PC, iOS",
 			"image": "https://media.rawg.io/media/games/58a/58ac7f6569259dcc0b60b921869b19fc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, RPG, Massively Multiplayer"
 	},
@@ -1963,7 +1963,7 @@ const Games = [
 			"rating": 4.26,
 			"platforms": "Xbox 360, Xbox One, PC, macOS, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/9af/9af24c1886e2c7b52a4a2c65aa874638.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1975,7 +1975,7 @@ const Games = [
 			"rating": 3.81,
 			"platforms": "Xbox One, Xbox 360, PC, Nintendo Switch, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/974/974342a3959981a17bdbbff2fd7f97b0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -1987,7 +1987,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "Wii U, Xbox 360, PlayStation 3, Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/275/2759da6fcaa8f81f21800926168c85f6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -1999,7 +1999,7 @@ const Games = [
 			"rating": 3.57,
 			"platforms": "PlayStation 3, Xbox 360, PC, Linux, Xbox One",
 			"image": "https://media.rawg.io/media/games/10d/10d19e52e5e8415d16a4d344fe711874.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2011,7 +2011,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "Nintendo Switch, macOS, PC, PlayStation 4, Linux",
 			"image": "https://media.rawg.io/media/games/9bf/9bfac18ff678f41a4674250fa0e04a52.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Strategy"
 	},
@@ -2023,7 +2023,7 @@ const Games = [
 			"rating": 3.41,
 			"platforms": "macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/1a1/1a17e9b6286edb7e1f1e510110ccb0c0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -2035,7 +2035,7 @@ const Games = [
 			"rating": 2.59,
 			"platforms": "macOS, PC",
 			"image": "https://media.rawg.io/media/screenshots/f2f/f2f3c93d6153da7aee590f3ab8ccd803.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Simulation"
 	},
@@ -2047,7 +2047,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "Xbox One, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/686/686909717c3aa01518bc42ae2bf4259e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2059,7 +2059,7 @@ const Games = [
 			"rating": 3.23,
 			"platforms": "Xbox One, Android, iOS, PC, macOS, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Casual, Fighting"
 	},
@@ -2071,7 +2071,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/3ea/3ea3c9bbd940b6cb7f2139e42d3d443f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2083,7 +2083,7 @@ const Games = [
 			"rating": 4.43,
 			"platforms": "Xbox One, PC, Nintendo Switch, Xbox 360",
 			"image": "https://media.rawg.io/media/games/04a/04a7e7e185fb51493bdcbe1693a8b3dc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Platformer"
 	},
@@ -2095,7 +2095,7 @@ const Games = [
 			"rating": 4.17,
 			"platforms": "PlayStation 4, Xbox One, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/149/149bbed9d90dc09328ba79bbacfda3c8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -2107,7 +2107,7 @@ const Games = [
 			"rating": 3.5,
 			"platforms": "PC, macOS, Android, Linux, iOS",
 			"image": "https://media.rawg.io/media/games/d4b/d4bcd78873edd9992d93aff9cc8db0c8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Strategy"
 	},
@@ -2119,7 +2119,7 @@ const Games = [
 			"rating": 3.72,
 			"platforms": "Xbox One, PC, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/e1f/e1ffbeb1bac25b19749ad285ca29e158.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -2131,7 +2131,7 @@ const Games = [
 			"rating": 3.25,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/d9f/d9f982e042df6263684ba1fdea3efc1c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -2143,7 +2143,7 @@ const Games = [
 			"rating": 3.6,
 			"platforms": "macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/be9/be9cf02720c9326e11d0fda14518554f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -2155,7 +2155,7 @@ const Games = [
 			"rating": 3.25,
 			"platforms": "PlayStation 4, PlayStation 3, Xbox 360, Xbox One, macOS, PC",
 			"image": "https://media.rawg.io/media/games/59a/59a3ebcba3d08c51532c6ca877aff256.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2167,7 +2167,7 @@ const Games = [
 			"rating": 4,
 			"platforms": "Nintendo Switch, PlayStation 3, Xbox 360, PlayStation 4, PS Vita, iOS, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/4cb/4cb855e8ef1578415a928e53c9f51867.png",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Puzzle, Platformer"
 	},
@@ -2179,7 +2179,7 @@ const Games = [
 			"rating": 3.15,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/8bd/8bd24e3c15354a9555bb1437fe555a69.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -2191,7 +2191,7 @@ const Games = [
 			"rating": 3.47,
 			"platforms": "PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/56e/56ed40948bebaf1968234aa6e3c74771.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -2203,7 +2203,7 @@ const Games = [
 			"rating": 3.24,
 			"platforms": "Xbox 360, Xbox One, PlayStation 3, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/fd6/fd6a1eecd3ec0f875f1924f3656b7dd9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2215,7 +2215,7 @@ const Games = [
 			"rating": 3.85,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/f52/f52cf6ba08089cd5f1a9c8f7fcc93d1f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2227,7 +2227,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "Android, macOS, PC, iOS, PS Vita, PlayStation 4, PlayStation 2, Xbox",
 			"image": "https://media.rawg.io/media/games/5fa/5fae5fec3c943179e09da67a4427d68f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2239,7 +2239,7 @@ const Games = [
 			"rating": 4.41,
 			"platforms": "PlayStation 4, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/909/909974d1c7863c2027241e265fe7011f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -2251,7 +2251,7 @@ const Games = [
 			"rating": 3.82,
 			"platforms": "Android, PC",
 			"image": "https://media.rawg.io/media/games/c7a/c7a71a0531a9518236d99d0d60abe447.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -2263,7 +2263,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/a0e/a0ef08621301a1eab5e04fa5c96978fa.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2275,7 +2275,7 @@ const Games = [
 			"rating": 3.69,
 			"platforms": "Xbox One, PC, Nintendo Switch, Wii U, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/1f1/1f1888e1308959dfd3be4c144a81d19c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -2287,7 +2287,7 @@ const Games = [
 			"rating": 3.12,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/1fb/1fb1c5f7a71d771f440b27ce7f71e7eb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Puzzle"
 	},
@@ -2299,7 +2299,7 @@ const Games = [
 			"rating": 3.45,
 			"platforms": "PC, Linux, macOS",
 			"image": "https://media.rawg.io/media/games/806/8060a7663364ac23e15480728938d6f3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -2311,7 +2311,7 @@ const Games = [
 			"rating": 4.57,
 			"platforms": "PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/a5a/a5a7fb8d9cb8063a8b42ee002b410db6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2323,7 +2323,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/589/589fc47c5ae34160d65c4682e21fed66.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2335,7 +2335,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "Xbox 360, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/f8c/f8c6a262ead4c16b47e1219310210eb3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Platformer"
 	},
@@ -2347,7 +2347,7 @@ const Games = [
 			"rating": 4.43,
 			"platforms": "macOS, Xbox One, PC, Nintendo Switch, PlayStation 4, Xbox Series S/X, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/840/8408ad3811289a6a5830cae60fb0b62a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, RPG"
 	},
@@ -2359,7 +2359,7 @@ const Games = [
 			"rating": 4.06,
 			"platforms": "Android, PS Vita, Nintendo Switch, Linux, macOS, PC, iOS",
 			"image": "https://media.rawg.io/media/games/283/283e7e600366b0da7021883d27159b27.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Simulation"
 	},
@@ -2371,7 +2371,7 @@ const Games = [
 			"rating": 4.41,
 			"platforms": "Xbox 360, Xbox One, macOS, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/dc0/dc0926d3f84ffbcc00968fe8a6f0aed3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -2383,7 +2383,7 @@ const Games = [
 			"rating": 4.03,
 			"platforms": "iOS, Nintendo DS, PlayStation 3, macOS, PC, Xbox One, Wii, Xbox 360",
 			"image": "https://media.rawg.io/media/games/410/41033a495ce8f7fd4b0934bdb975f12a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2395,7 +2395,7 @@ const Games = [
 			"rating": 3.85,
 			"platforms": "Android, Nintendo Switch, PC, iOS, Xbox One",
 			"image": "https://media.rawg.io/media/games/e74/e74458058b35e01c1ae3feeb39a3f724.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Casual, Simulation"
 	},
@@ -2407,7 +2407,7 @@ const Games = [
 			"rating": 4.22,
 			"platforms": "Xbox One, PlayStation 4, PlayStation 3, PC, Nintendo Switch, Xbox 360",
 			"image": "https://media.rawg.io/media/games/8ca/8ca40b562a755d6a0e30d48e6c74b178.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, RPG"
 	},
@@ -2419,7 +2419,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "Xbox One, Xbox 360, PlayStation 3, PC, Nintendo Switch, Wii U, PlayStation 4, PS Vita",
 			"image": "https://media.rawg.io/media/games/85c/85c8ae70e7cdf0105f06ef6bdce63b8b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Platformer"
 	},
@@ -2431,7 +2431,7 @@ const Games = [
 			"rating": 3.69,
 			"platforms": "PlayStation 4, PC, macOS, Xbox One, Linux",
 			"image": "https://media.rawg.io/media/games/78d/78dfae12fb8c5b16cd78648553071e0a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Simulation, Racing, Sports"
 	},
@@ -2443,7 +2443,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "Linux, macOS, PC, iOS, Android, PS Vita",
 			"image": "https://media.rawg.io/media/games/6d3/6d33014a4ed48a19c30a77ead5a0f62e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Simulation, Puzzle, Educational"
 	},
@@ -2455,7 +2455,7 @@ const Games = [
 			"rating": 3.4,
 			"platforms": "PC, Xbox One, Xbox 360, PlayStation 3, PlayStation 4, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/7f0/7f021d4a3577ac9d591a628a431fc2e5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -2467,7 +2467,7 @@ const Games = [
 			"rating": 3.26,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/fba/fbae1bcfae1feffda6a11fbc1c939420.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2479,7 +2479,7 @@ const Games = [
 			"rating": 4.03,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/d8f/d8f3b28fc747ed6f92943cdd33fb91b5.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -2491,7 +2491,7 @@ const Games = [
 			"rating": 3.03,
 			"platforms": "Xbox 360, PC, PlayStation 3, macOS",
 			"image": "https://media.rawg.io/media/games/5cc/5cc765484c6df567ed9207c1781b88cb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2503,7 +2503,7 @@ const Games = [
 			"rating": 4.39,
 			"platforms": "Xbox 360, Xbox, Nintendo Switch, Xbox One, Android, iOS, PC, macOS",
 			"image": "https://media.rawg.io/media/games/6e0/6e0c19bb111bd4fa20cf0eb72a049519.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -2515,7 +2515,7 @@ const Games = [
 			"rating": 3.84,
 			"platforms": "Xbox 360, Xbox One, PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/a86/a86ce0afaf2d5ec2b0f048989f01795e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2527,7 +2527,7 @@ const Games = [
 			"rating": 3.59,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/59f/59fc1c5de1d29cb9234741c97d250150.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -2539,7 +2539,7 @@ const Games = [
 			"rating": 3.9,
 			"platforms": "PlayStation 3, Xbox 360, Nintendo Switch, PC, macOS",
 			"image": "https://media.rawg.io/media/games/d1a/d1a1202a378607b6c635c8f18ace95dd.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -2551,7 +2551,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "iOS, PC, macOS, PlayStation 4, Xbox One, Nintendo Switch, Linux",
 			"image": "https://media.rawg.io/media/games/997/997ab4d67e96fb20a4092383477d4463.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -2563,7 +2563,7 @@ const Games = [
 			"rating": 3.9,
 			"platforms": "macOS, PC",
 			"image": "https://media.rawg.io/media/games/cef/cefedf18016cbab466861eb698daf988.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG"
 	},
@@ -2575,7 +2575,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PlayStation 3, PC, Xbox One, PlayStation 4, Xbox 360",
 			"image": "https://media.rawg.io/media/games/295/295eb868c241e6ad32ac033b8e6a2ede.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2587,7 +2587,7 @@ const Games = [
 			"rating": 4.26,
 			"platforms": "PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/c24/c24f4434882ae9c2c8d9d38de82cb7a5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2599,7 +2599,7 @@ const Games = [
 			"rating": 4.36,
 			"platforms": "Xbox 360, PC, Xbox One, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/ae1/ae1518c3dc1e847344661905fd2a8d16.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2611,7 +2611,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "GameCube, Android, PlayStation 4, PlayStation 2, Xbox 360, Wii, Wii U, Nintendo Switch, PC, iOS, PlayStation 3, Xbox One",
 			"image": "https://media.rawg.io/media/games/fee/fee0100afd87b52bfbd33e26689fa26c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -2623,7 +2623,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "Xbox 360, Xbox One, PC, macOS, Wii U, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/b5a/b5a1226bfd971284a735a4a0969086b3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2635,7 +2635,7 @@ const Games = [
 			"rating": 4.25,
 			"platforms": "Xbox One, Nintendo Switch, PlayStation 4, macOS, Linux, iOS, PC",
 			"image": "https://media.rawg.io/media/games/f90/f90ee1a4239247a822771c40488e68c5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Platformer"
 	},
@@ -2647,7 +2647,7 @@ const Games = [
 			"rating": 4.08,
 			"platforms": "Xbox 360, Xbox One, PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/5a4/5a4e70bb8a862829dbaa398aa5f66afc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Shooter"
 	},
@@ -2659,7 +2659,7 @@ const Games = [
 			"rating": 3.86,
 			"platforms": "PlayStation 3, PS Vita, Linux, Wii U, Xbox One, PC, macOS, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/f3e/f3eec35c6218dcfd93a537751e6bfa61.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie"
 	},
@@ -2671,7 +2671,7 @@ const Games = [
 			"rating": 4.21,
 			"platforms": "PC, macOS, Nintendo Switch, Linux, PS Vita, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/fd9/fd92f105dcd6491bc5d61135033d1f19.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Strategy"
 	},
@@ -2683,7 +2683,7 @@ const Games = [
 			"rating": 3.72,
 			"platforms": "Dreamcast, Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/4cb/4cb463b5588adc672124fb041f09e91c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -2695,7 +2695,7 @@ const Games = [
 			"rating": 3.85,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/110/1106ebafac87cc573161f1f4f16e84cf.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -2707,7 +2707,7 @@ const Games = [
 			"rating": 3.92,
 			"platforms": "Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/a28/a289e23b4d4d84f26ab59125e3be4483.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2719,7 +2719,7 @@ const Games = [
 			"rating": 4.24,
 			"platforms": "PlayStation 4, Xbox Series S/X, PC, macOS, Nintendo Switch, Xbox One, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/739/73990e3ec9f43a9e8ecafe207fa4f368.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -2731,7 +2731,7 @@ const Games = [
 			"rating": 4,
 			"platforms": "PC, PlayStation 4, PS Vita, Xbox One, Nintendo Switch, iOS, Linux, macOS, Android",
 			"image": "https://media.rawg.io/media/games/df2/df20fd77db56ae7b0a26a7ff4baa9ccc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Puzzle"
 	},
@@ -2743,7 +2743,7 @@ const Games = [
 			"rating": 3.94,
 			"platforms": "Android, Xbox 360, Nintendo DS, macOS, PC, iOS, Nintendo Switch, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/852/8522935d8ab27b610a254b52de0da212.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Puzzle"
 	},
@@ -2755,7 +2755,7 @@ const Games = [
 			"rating": 3.43,
 			"platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch, Android, iOS",
 			"image": "https://media.rawg.io/media/games/a91/a911f0a91991469e398fa70091507a5b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Simulation"
 	},
@@ -2767,7 +2767,7 @@ const Games = [
 			"rating": 4.41,
 			"platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/424/424facd40f4eb1f2794fe4b4bb28a277.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Strategy"
 	},
@@ -2779,7 +2779,7 @@ const Games = [
 			"rating": 3.77,
 			"platforms": "PlayStation 3, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/07a/07a74470a2618fd71945db0619602baf.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2791,7 +2791,7 @@ const Games = [
 			"rating": 3.14,
 			"platforms": "PC, macOS, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/a34/a348e613424260bc7e034fb6031c762e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2803,7 +2803,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "Xbox One, iOS, PC, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/34e/34e100b1f648de99f32d477065f04653.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -2815,7 +2815,7 @@ const Games = [
 			"rating": 3.92,
 			"platforms": "Xbox One, PlayStation 4, PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/ac7/ac7b8327343da12c971cfc418f390a11.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2827,7 +2827,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "PC, Xbox Series S/X, PlayStation 4, PlayStation 5, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/b4a/b4adf80c36e267b35acc3497ed2af19c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -2839,7 +2839,7 @@ const Games = [
 			"rating": 2.93,
 			"platforms": "Xbox 360, PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/657/657574cd437df9102f511b3be095b0ea.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2851,7 +2851,7 @@ const Games = [
 			"rating": 3.85,
 			"platforms": "PC, PlayStation 4, Nintendo Switch, Xbox One, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/c06/c06d88c35785c8003147cb53c84af033.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -2863,7 +2863,7 @@ const Games = [
 			"rating": 3.52,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/1e5/1e5e33b88be978f451196a751424a72e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2875,7 +2875,7 @@ const Games = [
 			"rating": 3.18,
 			"platforms": "Xbox One, Xbox 360, PlayStation 3, PlayStation 4, Android, iOS, macOS, Linux, PC",
 			"image": "https://media.rawg.io/media/games/a44/a444a7628bdb49b24d06a7672f805814.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Casual, Simulation"
 	},
@@ -2887,7 +2887,7 @@ const Games = [
 			"rating": 3.56,
 			"platforms": "PlayStation 4, Xbox 360, Wii U, Nintendo Switch, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/fc8/fc838d98c9b944e6a15176eabf40bee8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -2899,7 +2899,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PC, Android, Xbox One, PlayStation 4, macOS, iOS",
 			"image": "https://media.rawg.io/media/screenshots/9d2/9d22689a1c2a7ced9d1690e0c5c66871.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Puzzle"
 	},
@@ -2911,7 +2911,7 @@ const Games = [
 			"rating": 2.97,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/651/651ae84f2d5e36206aad90976a453329.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Strategy, Simulation, Massively Multiplayer"
 	},
@@ -2923,7 +2923,7 @@ const Games = [
 			"rating": 4.05,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/d30/d30ef0c7dd4878161b1f781e297ae6a0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -2935,7 +2935,7 @@ const Games = [
 			"rating": 3.41,
 			"platforms": "Wii U, Xbox 360, PlayStation 3, Nintendo Switch, PC",
 			"image": "https://media.rawg.io/media/games/03d/03d17d237f9541b67a13f9425ced4ca4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -2947,7 +2947,7 @@ const Games = [
 			"rating": 4.23,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/9fb/9fbf956a16249def7625ab5dc3d09515.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -2959,7 +2959,7 @@ const Games = [
 			"rating": 4.01,
 			"platforms": "Nintendo Switch, PlayStation 4, Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/9cc/9cc11e2e81403186c7fa9c00c143d6e4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -2971,7 +2971,7 @@ const Games = [
 			"rating": 4.26,
 			"platforms": "PC, Linux, iOS, macOS",
 			"image": "https://media.rawg.io/media/games/5f4/5f4780690dbf04900cbac5f05b9305f3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Simulation"
 	},
@@ -2983,7 +2983,7 @@ const Games = [
 			"rating": 4.22,
 			"platforms": "PlayStation 4, Nintendo Switch, macOS, Xbox One, Linux, Web, PC",
 			"image": "https://media.rawg.io/media/screenshots/ad4/ad445a12ee46543d4d117f3893041ebf.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -2995,7 +2995,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "Xbox One, PC, macOS, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/bd7/bd7cfccfececba1ec2b97a120a40373f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3007,7 +3007,7 @@ const Games = [
 			"rating": 3.9,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/be2/be239d5eb4d0bf02bf722aff51e694ad.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -3019,7 +3019,7 @@ const Games = [
 			"rating": 4.36,
 			"platforms": "PlayStation 3, Xbox One, PC, macOS, Xbox 360",
 			"image": "https://media.rawg.io/media/games/81e/81e6c6819d4322caf375b6735c3043ec.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3031,7 +3031,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "PlayStation 4, PlayStation 3, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/ca1/ca16da30f86d8f4d36261de45fb35430.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3043,7 +3043,7 @@ const Games = [
 			"rating": 4.12,
 			"platforms": "PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/3d9/3d9bac98d79bcd2d445f829e8d6be902.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3055,7 +3055,7 @@ const Games = [
 			"rating": 3.8,
 			"platforms": "Xbox 360, PlayStation 3, PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/260/26023c855f1769a93411d6a7ea084632.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Strategy"
 	},
@@ -3067,7 +3067,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "macOS, Xbox One, PlayStation 4, PC, Linux",
 			"image": "https://media.rawg.io/media/games/c11/c11a0b92b4c28f2e0db489f430142653.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3079,7 +3079,7 @@ const Games = [
 			"rating": 3.76,
 			"platforms": "PC, macOS, Wii, Xbox 360, PlayStation 3, iOS, Xbox One",
 			"image": "https://media.rawg.io/media/games/e9c/e9c042d14515eb3ff7cb4db9fe78e435.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3091,7 +3091,7 @@ const Games = [
 			"rating": 4.03,
 			"platforms": "Xbox 360, PlayStation 4, Xbox One, PC, macOS, iOS, Nintendo Switch, PlayStation 3, PS Vita, Android",
 			"image": "https://media.rawg.io/media/games/471/4712c9ac591f556f553556b864a7e92b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3103,7 +3103,7 @@ const Games = [
 			"rating": 3.7,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/c73/c73c4ffebfe968ba0982a56c2b5020ef.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -3115,7 +3115,7 @@ const Games = [
 			"rating": 3.15,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/37a/37a9536e92cf8fe3b60045aa75dbd41f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Casual, Arcade, Platformer"
 	},
@@ -3127,7 +3127,7 @@ const Games = [
 			"rating": 4.31,
 			"platforms": "PlayStation 3, Xbox 360, Wii U, PC, PlayStation 4, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/bee/bee483efadcf9d7e657e52184316a34e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -3139,7 +3139,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Xbox Series S/X, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/786/7863e587bac630de82fca50d799236a9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Racing, Massively Multiplayer"
 	},
@@ -3151,7 +3151,7 @@ const Games = [
 			"rating": 4.55,
 			"platforms": "Nintendo Switch, Wii U",
 			"image": "https://media.rawg.io/media/games/cc1/cc196a5ad763955d6532cdba236f730c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -3163,7 +3163,7 @@ const Games = [
 			"rating": 3.89,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/2a2/2a2f9a0035544500e59a171c7038ec3a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Shooter"
 	},
@@ -3175,7 +3175,7 @@ const Games = [
 			"rating": 2.95,
 			"platforms": "macOS, Linux, PC",
 			"image": "https://media.rawg.io/media/games/abd/abdb7e589f0a8ccd36c0582673120b1e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -3187,7 +3187,7 @@ const Games = [
 			"rating": 4.22,
 			"platforms": "Android, Xbox One, PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/8e6/8e699e91cf77c2060b6d515e2135b1b1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -3199,7 +3199,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/1f5/1f5ddf7199f2778ff83663b93b5cb330.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Simulation"
 	},
@@ -3211,7 +3211,7 @@ const Games = [
 			"rating": 4.12,
 			"platforms": "macOS, PlayStation 2, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/screenshots/67e/67e5be6ad7a555248f50bd367e9a071c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -3223,7 +3223,7 @@ const Games = [
 			"rating": 3.53,
 			"platforms": "PC, PlayStation 5, PlayStation 4, PlayStation",
 			"image": "https://media.rawg.io/media/games/2ae/2aedae90b1377a0f3e5ce54d24f8e41a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Platformer"
 	},
@@ -3235,7 +3235,7 @@ const Games = [
 			"rating": 2.49,
 			"platforms": "PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/a1f/a1f93b9b287a0808161a35952635867e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Fighting"
 	},
@@ -3247,7 +3247,7 @@ const Games = [
 			"rating": 3.18,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/cd7/cd78e63236e86f97f4b2e45f3843eb3d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3259,7 +3259,7 @@ const Games = [
 			"rating": 3.05,
 			"platforms": "iOS, PC, macOS, Linux, Android",
 			"image": "https://media.rawg.io/media/games/66e/66e90c9d7b9a17335b310ceb294e9365.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Casual, Board Games"
 	},
@@ -3271,7 +3271,7 @@ const Games = [
 			"rating": 3.9,
 			"platforms": "PC, Xbox One, Nintendo Switch, PlayStation 4, Android, iOS",
 			"image": "https://media.rawg.io/media/games/910/910d547965a5c4928ca19112778a1b4f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3283,7 +3283,7 @@ const Games = [
 			"rating": 4.07,
 			"platforms": "PlayStation 5, PC, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/018/01857c5ff9579c48fa8bd76b4d83a946.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3295,7 +3295,7 @@ const Games = [
 			"rating": 3.43,
 			"platforms": "PlayStation 4, iOS, PC, macOS, Linux, Nintendo Switch, Android",
 			"image": "https://media.rawg.io/media/screenshots/ca8/ca840f2a8ebfc74aac1688367dc1f903.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Simulation, Educational"
 	},
@@ -3307,7 +3307,7 @@ const Games = [
 			"rating": 3.32,
 			"platforms": "Xbox 360, PlayStation 2, Xbox, PC",
 			"image": "https://media.rawg.io/media/games/e60/e601c02ec49ef4f1d5ef147994b3935f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3319,7 +3319,7 @@ const Games = [
 			"rating": 3.98,
 			"platforms": "Android, iOS, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/3b5/3b56220d6038b8b1ad66c4d05ef95215.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie"
 	},
@@ -3331,7 +3331,7 @@ const Games = [
 			"rating": 3.5,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/0b2/0b240149610b8b20eac098b8071f575a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -3343,7 +3343,7 @@ const Games = [
 			"rating": 3.82,
 			"platforms": "Nintendo Switch, Nintendo 3DS, Xbox One, PC, macOS, Linux, Wii U, PlayStation 4, PS Vita",
 			"image": "https://media.rawg.io/media/games/e07/e07737df8469bf32d132ba9eaffc3461.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Puzzle, Platformer"
 	},
@@ -3355,7 +3355,7 @@ const Games = [
 			"rating": 3.75,
 			"platforms": "Android, PS Vita, PlayStation 4, PlayStation 3, Wii U, macOS, PC, iOS, Xbox One, Linux, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/6c8/6c8cb4780ce30b76b944cf656e8fff49.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Family"
 	},
@@ -3367,7 +3367,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "Xbox One, Nintendo Switch, macOS, PC",
 			"image": "https://media.rawg.io/media/games/d37/d37e110ddcc0bd52d99f0f647b737a0a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -3379,7 +3379,7 @@ const Games = [
 			"rating": 3.82,
 			"platforms": "PlayStation 3, Nintendo 3DS, Nintendo DS, Xbox One, iOS, PC, macOS, Wii U, Xbox 360, PlayStation 4, PS Vita, Android",
 			"image": "https://media.rawg.io/media/games/a87/a8743bdee8627c55bb9f2f01b9136ac1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Family"
 	},
@@ -3391,7 +3391,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "Xbox One, PlayStation 4, Nintendo Switch, Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/d11/d11470677a829e34562e95a4002c2c7f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Casual"
 	},
@@ -3403,7 +3403,7 @@ const Games = [
 			"rating": 3.48,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/1dc/1dc45435c09f844b24eb96cd66eb6325.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -3415,7 +3415,7 @@ const Games = [
 			"rating": 3.63,
 			"platforms": "PC, iOS, Xbox One, PlayStation 4, Linux, macOS",
 			"image": "https://media.rawg.io/media/games/907/90757eaa9dc7c5cf7c47bf4960843999.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3427,7 +3427,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/cc5/cc576aa274780702ef93463f5410031e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Sports, Fighting"
 	},
@@ -3439,7 +3439,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PC, Xbox 360",
 			"image": "https://media.rawg.io/media/screenshots/d07/d07a7e2f7be2428c51ad26326c84e21d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -3451,7 +3451,7 @@ const Games = [
 			"rating": 3.69,
 			"platforms": "Xbox One, Nintendo Switch, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/5aa/5aa4c12a53bc5f606bf8d92461ec747d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Puzzle"
 	},
@@ -3463,7 +3463,7 @@ const Games = [
 			"rating": 3.77,
 			"platforms": "PC, macOS, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/956/95640d5ea0288c187dbce849a4254a41.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3475,7 +3475,7 @@ const Games = [
 			"rating": 3.75,
 			"platforms": "Xbox One, PC, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/90c/90caf1fcb836cad70013452f6f239008.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -3487,7 +3487,7 @@ const Games = [
 			"rating": 4.36,
 			"platforms": "Xbox One, Nintendo Switch, PC, PlayStation 4, Xbox Series S/X, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/708/7080e6c87e0825cb02888bf3c44b3889.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -3499,7 +3499,7 @@ const Games = [
 			"rating": 2.79,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/c88/c88463dcf1b3fc79c54a59c30076344a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -3511,7 +3511,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/f0e/f0e050dc774d4ae3afced76b33516295.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -3523,7 +3523,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "PC, Xbox One, macOS, Linux, Nintendo Switch, PlayStation 4, Android, iOS",
 			"image": "https://media.rawg.io/media/games/fa3/fa3dd043cba3a9cbfe3085e75d92bf7e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Strategy"
 	},
@@ -3535,7 +3535,7 @@ const Games = [
 			"rating": 4.36,
 			"platforms": "PlayStation 4, Linux, macOS, Android, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/ccd/ccd40e8f86c0ae10a082b610d31d4475.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Strategy"
 	},
@@ -3547,7 +3547,7 @@ const Games = [
 			"rating": 3.95,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/0e6/0e60075818860647a1e6a9f9a8ebfada.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -3559,7 +3559,7 @@ const Games = [
 			"rating": 4.08,
 			"platforms": "Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/071/0715f91a89d634d9183e2f23c0cb1a98.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -3571,7 +3571,7 @@ const Games = [
 			"rating": 3.47,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/257/257c497aa4060f4a697ccbf5e99ec230.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Platformer"
 	},
@@ -3583,7 +3583,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/5c0/5c03ff69b5fd6cb87e52824f847b45f4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3607,7 +3607,7 @@ const Games = [
 			"rating": 3.84,
 			"platforms": "PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/f84/f84c7c45e074117fb81fecf427f8b41f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3619,7 +3619,7 @@ const Games = [
 			"rating": 3.99,
 			"platforms": "Xbox One, iOS, PC, macOS, Linux, Nintendo Switch, PlayStation 4, PS Vita",
 			"image": "https://media.rawg.io/media/games/70a/70a7a7b21d8fdf5f19622e5e14599bcd.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG"
 	},
@@ -3631,7 +3631,7 @@ const Games = [
 			"rating": 3.65,
 			"platforms": "PlayStation 4, PC, macOS, Linux, Xbox 360",
 			"image": "https://media.rawg.io/media/games/3c9/3c994986d767f56e7b72a124a35d4c3c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Strategy, Simulation"
 	},
@@ -3643,7 +3643,7 @@ const Games = [
 			"rating": 4.22,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/c07/c07e1c1e6908a2eeebd5dad0708abd01.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -3655,7 +3655,7 @@ const Games = [
 			"rating": 3.44,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/cb7/cb770f3f9871e1130f40812b05e401b2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -3667,7 +3667,7 @@ const Games = [
 			"rating": 4.27,
 			"platforms": "Android, PS Vita, PlayStation 4, PlayStation 3, Linux, macOS, PC, Nintendo Switch, iOS",
 			"image": "https://media.rawg.io/media/games/003/0031c0067559d41df19cf98ad87e02aa.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter, Arcade"
 	},
@@ -3679,7 +3679,7 @@ const Games = [
 			"rating": 3.41,
 			"platforms": "Web, Nintendo Switch, PC, Xbox One, PlayStation 4, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/f6f/f6f39c5b56413f7f4513b25989a1b747.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -3691,7 +3691,7 @@ const Games = [
 			"rating": 4.39,
 			"platforms": "PC, Xbox One, PlayStation 4, Xbox Series S/X, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/5ec/5ecac5cb026ec26a56efcc546364e348.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3703,7 +3703,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/a79/a79d2fc90c4dbf07a8580b19600fd61d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3715,7 +3715,7 @@ const Games = [
 			"rating": 3.89,
 			"platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/704/704f831d2d132e9614931f1c4eab9e86.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Shooter"
 	},
@@ -3727,7 +3727,7 @@ const Games = [
 			"rating": 3.37,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/e40/e40cc9d1957b0a0ed7e389834457b524.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Simulation"
 	},
@@ -3739,7 +3739,7 @@ const Games = [
 			"rating": 4.34,
 			"platforms": "Dreamcast, GameCube, Nintendo 64, PC, PlayStation",
 			"image": "https://media.rawg.io/media/games/d64/d646810b629081cc12aec49ed9f49441.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3751,7 +3751,7 @@ const Games = [
 			"rating": 3.4,
 			"platforms": "Xbox 360, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/0b3/0b34647c42271600399b93d19b10f1aa.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3763,7 +3763,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "PlayStation 4, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/d64/d6443375f9971152866ea76bff97d6d6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3775,7 +3775,7 @@ const Games = [
 			"rating": 3.32,
 			"platforms": "PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/546/546cf59a24b0ae308e311a07611ca22f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3787,7 +3787,7 @@ const Games = [
 			"rating": 4.28,
 			"platforms": "Nintendo Switch, PC, Android, Linux, iOS, macOS",
 			"image": "https://media.rawg.io/media/games/fae/faebf3c8cbf30db3f46bfbecf6ada3d6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, RPG"
 	},
@@ -3799,7 +3799,7 @@ const Games = [
 			"rating": 3.88,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/2ee/2eeed8524931b4fae1e4a40d0e5443b5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -3811,7 +3811,7 @@ const Games = [
 			"rating": 4.08,
 			"platforms": "PlayStation 4, Nintendo Switch, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/270/270b412b66688081497b3d70c100b208.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Casual, Simulation, Arcade"
 	},
@@ -3823,7 +3823,7 @@ const Games = [
 			"rating": 4.41,
 			"platforms": "Xbox One, PC, macOS, PlayStation 3, PlayStation 4, Xbox 360",
 			"image": "https://media.rawg.io/media/games/d56/d564ee964eb3c17892b3b35dd607f836.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -3835,7 +3835,7 @@ const Games = [
 			"rating": 3.44,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/ac2/ac25b5cef220bf5b8d052e0978451cab.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3847,7 +3847,7 @@ const Games = [
 			"rating": 3.94,
 			"platforms": "Wii U, Xbox One, Xbox 360, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/8ee/8eed88e297441ef9202b5d1d35d7d86f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -3859,7 +3859,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "Xbox, Android, PlayStation 3, PlayStation 2, Nintendo Switch, macOS, PC, iOS, Xbox 360",
 			"image": "https://media.rawg.io/media/games/c00/c003705c0eaed100397ae408b7b89e90.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Puzzle"
 	},
@@ -3871,7 +3871,7 @@ const Games = [
 			"rating": 4.47,
 			"platforms": "Xbox One, PC, Nintendo Switch, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/718/71891d2484a592d871e91dc826707e1c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Platformer"
 	},
@@ -3883,7 +3883,7 @@ const Games = [
 			"rating": 3.58,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/f54/f54e9fb2f4aac37810ea1a69a3e4480a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -3895,7 +3895,7 @@ const Games = [
 			"rating": 3.51,
 			"platforms": "PlayStation 4, Xbox One, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/08b/08b2eee52a9876a48b955e5149affe5b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -3907,7 +3907,7 @@ const Games = [
 			"rating": 2.94,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/f95/f95ec06eddda5c5bf206618c49cd3e68.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Strategy"
 	},
@@ -3919,7 +3919,7 @@ const Games = [
 			"rating": 4.36,
 			"platforms": "Xbox 360, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/511/5116b4524cea34c6b3f12e0ca027d850.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3931,7 +3931,7 @@ const Games = [
 			"rating": 3.68,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/9f1/9f189c639f70f91166df415811a8b525.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -3943,7 +3943,7 @@ const Games = [
 			"rating": 3.81,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/df9/df988191048e92cf86dabd2987c47b62.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -3955,7 +3955,7 @@ const Games = [
 			"rating": 3.64,
 			"platforms": "PC, iOS",
 			"image": "https://media.rawg.io/media/games/0fa/0fadc446fd1e9ae9e23a32793d9a5406.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -3967,7 +3967,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/8fc/8fc59e74133fd8a8a436b7e2d0fb36c2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -3979,7 +3979,7 @@ const Games = [
 			"rating": 3.08,
 			"platforms": "PlayStation 4, Nintendo Switch, Xbox One, macOS, PC",
 			"image": "https://media.rawg.io/media/games/cc7/cc77035eb972f179f5090ee2a0fabd99.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -3991,7 +3991,7 @@ const Games = [
 			"rating": 4.31,
 			"platforms": "Xbox 360, PlayStation 4, PC, PlayStation 2, PlayStation 3, Xbox",
 			"image": "https://media.rawg.io/media/games/233/233cdc08cce0228f6f35222eca3bff92.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -4003,7 +4003,7 @@ const Games = [
 			"rating": 4.11,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/473/473bd9a5e9522629d6cb28b701fb836a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -4015,7 +4015,7 @@ const Games = [
 			"rating": 3.78,
 			"platforms": "Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/d54/d54f0267a042f44c032d8ca264584ecf.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -4027,7 +4027,7 @@ const Games = [
 			"rating": 3.63,
 			"platforms": "Xbox 360, Nintendo DS, PC, PlayStation 3, Xbox One",
 			"image": "https://media.rawg.io/media/games/fc0/fc076b974197660a582abd34ebccc27f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Racing"
 	},
@@ -4039,7 +4039,7 @@ const Games = [
 			"rating": 4.34,
 			"platforms": "PC, Linux",
 			"image": "https://media.rawg.io/media/games/009/009e4e84975d6a60173ec1199db25aa3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -4051,7 +4051,7 @@ const Games = [
 			"rating": 3.49,
 			"platforms": "PC, Xbox 360, Xbox One, macOS",
 			"image": "https://media.rawg.io/media/games/d1e/d1e70ce3762efcfc170c6bd067d7e9e3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -4063,7 +4063,7 @@ const Games = [
 			"rating": 3.9,
 			"platforms": "Xbox One, PlayStation 4, PlayStation 5, Xbox Series S/X, PC",
 			"image": "https://media.rawg.io/media/games/9f1/9f1891779cb20f44de93cef33b067e50.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Shooter"
 	},
@@ -4075,7 +4075,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "Xbox One, PC, macOS, Nintendo Switch, PlayStation 4, Linux",
 			"image": "https://media.rawg.io/media/games/594/59487800889ebac294c7c2c070d02356.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Platformer"
 	},
@@ -4087,7 +4087,7 @@ const Games = [
 			"rating": 3.49,
 			"platforms": "Nintendo DS, PC, PlayStation 3, Nintendo 3DS, Xbox 360, Wii, PS Vita, Android, iOS",
 			"image": "https://media.rawg.io/media/games/89a/89a700d3c6a76bd0610ca89ccd20da54.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Casual, Platformer, Family"
 	},
@@ -4099,7 +4099,7 @@ const Games = [
 			"rating": 2.61,
 			"platforms": "Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/179/179245a3693049a11a25b900ab18f8f7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Simulation"
 	},
@@ -4111,7 +4111,7 @@ const Games = [
 			"rating": 3.37,
 			"platforms": "PlayStation 4, PS Vita, PC, macOS",
 			"image": "https://media.rawg.io/media/screenshots/2fc/2fc6994425146f9dba3133400b414e29.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -4123,7 +4123,7 @@ const Games = [
 			"rating": 4.48,
 			"platforms": "PlayStation 4, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/f24/f2493ea338fe7bd3c7d73750a85a0959.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -4135,7 +4135,7 @@ const Games = [
 			"rating": 3.74,
 			"platforms": "PC, Wii U, PlayStation 3, Nintendo Switch, Xbox 360",
 			"image": "https://media.rawg.io/media/games/848/8482235332f4518da363c3cb4e5cd075.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -4147,7 +4147,7 @@ const Games = [
 			"rating": 4.17,
 			"platforms": "PlayStation 3, Xbox One, iOS, PC, macOS, Linux, Xbox 360",
 			"image": "https://media.rawg.io/media/games/a5a/a5abaa1b5cc1567b026fa3aa9fbd828e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Arcade, Puzzle, Platformer"
 	},
@@ -4159,7 +4159,7 @@ const Games = [
 			"rating": 3.39,
 			"platforms": "PlayStation 4, Xbox One, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/447/4470c1e76f01acfaf5af9c207d1c1c92.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Shooter, Massively Multiplayer"
 	},
@@ -4171,7 +4171,7 @@ const Games = [
 			"rating": 3.69,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/054/0549f1a0a5e782d4e81cdf8d022073fa.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -4183,7 +4183,7 @@ const Games = [
 			"rating": 2.28,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/363/36306deef81e7955a5d0f5c3b43fccee.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade"
 	},
@@ -4195,7 +4195,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "Android, Linux, macOS, PC, iOS, PlayStation 4, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/74d/74dafeb9a442b87b9dd4a1d4a2faa37b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Puzzle"
 	},
@@ -4207,7 +4207,7 @@ const Games = [
 			"rating": 3.06,
 			"platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One, Linux, macOS",
 			"image": "https://media.rawg.io/media/games/032/0329db96e252aa41e672da2ba16f914c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -4219,7 +4219,7 @@ const Games = [
 			"rating": 4,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/f14/f1422eacab98c5f85a5123da4e9d9e89.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -4231,7 +4231,7 @@ const Games = [
 			"rating": 3.57,
 			"platforms": "Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/736/736c0eaec96d848d7824b33298a182f2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -4243,7 +4243,7 @@ const Games = [
 			"rating": 4.28,
 			"platforms": "PC, Linux, macOS, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/33b/33b825c76382931df0fd8ecddf5caebe.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG"
 	},
@@ -4255,7 +4255,7 @@ const Games = [
 			"rating": 3.69,
 			"platforms": "PlayStation 4, macOS, PC, Xbox One, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/e44/e445335e611b4ccf03af71fffcbd30a4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Casual, Simulation"
 	},
@@ -4267,7 +4267,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PlayStation 4, Xbox One, Nintendo Switch, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/fd2/fd20a68d7ef195855588c937865dd0a7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Simulation"
 	},
@@ -4279,7 +4279,7 @@ const Games = [
 			"rating": 4.32,
 			"platforms": "Xbox One, macOS, Linux, Nintendo Switch, Nintendo 3DS, Wii U, PlayStation 4, PS Vita, iOS, PC",
 			"image": "https://media.rawg.io/media/games/926/926928beb8a9f9b31cf202965aa4cbbc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -4291,7 +4291,7 @@ const Games = [
 			"rating": 4.39,
 			"platforms": "PlayStation 2, Xbox, PC",
 			"image": "https://media.rawg.io/media/games/74c/74ca0ec569682a150f3c6f9f661fb6a5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -4303,7 +4303,7 @@ const Games = [
 			"rating": 4.31,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/348/348640e78a7fcd4bb7dcad4fea014eeb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Shooter"
 	},
@@ -4315,7 +4315,7 @@ const Games = [
 			"rating": 3.47,
 			"platforms": "Xbox One, PC, PlayStation 4, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/54a/54a3e4c617217848dc43c4de9989fe37.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -4327,7 +4327,7 @@ const Games = [
 			"rating": 3.78,
 			"platforms": "PlayStation 4, Xbox One, Nintendo Switch, PC",
 			"image": "https://media.rawg.io/media/games/cfe/cfe5960b5caca432f3575fc7d8ff736b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -4339,7 +4339,7 @@ const Games = [
 			"rating": 3.25,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/bff/bff077fb7c3b037bd5ed920bf447c863.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -4351,7 +4351,7 @@ const Games = [
 			"rating": 2.94,
 			"platforms": "Xbox One, iOS, PC, PlayStation 4, Android",
 			"image": "https://media.rawg.io/media/games/d09/d096ad37b7f522e11c02848252213a9a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -4363,7 +4363,7 @@ const Games = [
 			"rating": 3.21,
 			"platforms": "Xbox 360, PlayStation 3, Xbox One, PlayStation 4, Android, PC, macOS, iOS",
 			"image": "https://media.rawg.io/media/games/c81/c812e158129e00c9b0f096ae8a0bb7d6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -4375,7 +4375,7 @@ const Games = [
 			"rating": 4.18,
 			"platforms": "Xbox One, Nintendo Switch, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/a88/a886c37bf112d009e318b106db9d420a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -4387,7 +4387,7 @@ const Games = [
 			"rating": 3.5,
 			"platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/e11/e11325e2f89151d31f612e38dee3b6a0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -4399,7 +4399,7 @@ const Games = [
 			"rating": 3.42,
 			"platforms": "PlayStation 4, Xbox One, PC, macOS",
 			"image": "https://media.rawg.io/media/screenshots/b20/b20a20205954f9765e82298dbd41e48a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Casual"
 	},
@@ -4411,7 +4411,7 @@ const Games = [
 			"rating": 4.39,
 			"platforms": "Xbox, Xbox 360, Linux, macOS, PC, Nintendo Switch, Android",
 			"image": "https://media.rawg.io/media/games/046/0464f4a36cd975a37c95b93b06058855.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, RPG"
 	},
@@ -4423,7 +4423,7 @@ const Games = [
 			"rating": 3.69,
 			"platforms": "PlayStation 3, PlayStation 4, Xbox 360, Xbox One",
 			"image": "https://media.rawg.io/media/games/062/062420d85c7143f72ad3557f32c41ead.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -4435,7 +4435,7 @@ const Games = [
 			"rating": 3.99,
 			"platforms": "Nintendo Switch, PC, Linux, macOS, Xbox 360",
 			"image": "https://media.rawg.io/media/games/b17/b17485d757ca36b5f1ad376b6b096885.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -4447,7 +4447,7 @@ const Games = [
 			"rating": 3.97,
 			"platforms": "PlayStation 3, PlayStation 4, Xbox 360, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/157/1570121f5c4d240504f1eae5c3854733.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -4459,7 +4459,7 @@ const Games = [
 			"rating": 3.16,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/23b/23b69bfef2a1ce2e3dcdf1aa8ef1150b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Simulation"
 	},
@@ -4471,7 +4471,7 @@ const Games = [
 			"rating": 4.47,
 			"platforms": "Xbox, Classic Macintosh, PC, PlayStation 3, PlayStation 2, Xbox 360, PlayStation 4, PS Vita",
 			"image": "https://media.rawg.io/media/games/2f5/2f5eb72fe45540e93ac2726877551a20.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -4483,7 +4483,7 @@ const Games = [
 			"rating": 3.68,
 			"platforms": "Xbox Series S/X, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/539/53911178036df07d518dd492ddc25289.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Massively Multiplayer"
 	},
@@ -4495,7 +4495,7 @@ const Games = [
 			"rating": 3.07,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/21b/21babfc41e2a6972290833d1b860f13e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -4507,7 +4507,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "Nintendo Switch, PlayStation 4, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/e0f/e0f05a97ff926acf4c8f43e0849b6832.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Arcade, Platformer"
 	},
@@ -4519,7 +4519,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "Xbox One, PC, macOS, Linux, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/6bc/6bc79f5bc023b1e6938f6eaf9926f073.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Simulation"
 	},
@@ -4531,7 +4531,7 @@ const Games = [
 			"rating": 3.42,
 			"platforms": "iOS, Xbox 360, Android, Game Boy Advance, Dreamcast, PlayStation 3, PS Vita, PC",
 			"image": "https://media.rawg.io/media/games/fd7/fd794a9f0ffe816038d981b3acc3eec9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Sports, Platformer"
 	},
@@ -4543,7 +4543,7 @@ const Games = [
 			"rating": 3.87,
 			"platforms": "PlayStation 3, PlayStation 4, PS Vita, Wii U, Xbox 360, Xbox One, PC, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/c47/c4796c4c49e7e06ad328e07aa8944cdd.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG"
 	},
@@ -4555,7 +4555,7 @@ const Games = [
 			"rating": 4.06,
 			"platforms": "Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/972/972aea3c9eb253e893947bec2d2cfbb9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -4567,7 +4567,7 @@ const Games = [
 			"rating": 4.19,
 			"platforms": "Xbox One, PlayStation 3, PlayStation 4, PC, Xbox 360, GameCube, PlayStation, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/510/51039d0ec5dc8c3e08ae4374dfceecec.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -4579,7 +4579,7 @@ const Games = [
 			"rating": 4.01,
 			"platforms": "PlayStation 3, PC, Xbox 360, Xbox One",
 			"image": "https://media.rawg.io/media/games/5e4/5e4bff02098b2b6f824c68286d5da1a6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Shooter"
 	},
@@ -4591,7 +4591,7 @@ const Games = [
 			"rating": 3.89,
 			"platforms": "Xbox 360, PC, Xbox One, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/0bc/0bcc108295a244b488d5c25f7d867220.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -4603,7 +4603,7 @@ const Games = [
 			"rating": 3.99,
 			"platforms": "Nintendo Switch, Xbox One, PC, PlayStation 4, Xbox Series S/X, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/eb5/eb514db62d397c64288160d5bd8fd67a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Fighting"
 	},
@@ -4615,7 +4615,7 @@ const Games = [
 			"rating": 3.14,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/de4/de4b7cb80b39d95943f2931093b46932.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -4627,7 +4627,7 @@ const Games = [
 			"rating": 3.33,
 			"platforms": "Wii, Xbox One, PC, PlayStation 3, PlayStation 4, Xbox 360",
 			"image": "https://media.rawg.io/media/screenshots/12e/12ee2600684863837596c0dbb1923fca.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Arcade"
 	},
@@ -4639,7 +4639,7 @@ const Games = [
 			"rating": 3.95,
 			"platforms": "PlayStation 4, Xbox 360, Nintendo Switch, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/cfe/cfe114c081281960bd79ace5209c0a4a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Arcade, Puzzle, Platformer"
 	},
@@ -4651,7 +4651,7 @@ const Games = [
 			"rating": 3.53,
 			"platforms": "PlayStation 3, PlayStation 4, Xbox 360, Nintendo Switch, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/fe6/fe68940746007261e34da4d9cce81423.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -4663,7 +4663,7 @@ const Games = [
 			"rating": 3.55,
 			"platforms": "PlayStation 3, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/8b9/8b9e77be7f0f7941b11ae4b21ca2db43.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -4675,7 +4675,7 @@ const Games = [
 			"rating": 3.76,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/e43/e43f9f0a1429bd9332020ac5876bc693.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -4687,7 +4687,7 @@ const Games = [
 			"rating": 4.18,
 			"platforms": "Linux, macOS, PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/bda/bdab2603c0dc67268d0610449bc7df16.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Simulation"
 	},
@@ -4699,7 +4699,7 @@ const Games = [
 			"rating": 2.92,
 			"platforms": "PlayStation 4, PC, Xbox 360, Xbox One",
 			"image": "https://media.rawg.io/media/games/c3b/c3be1d5f55cb9324c97ccb7aaaf42ad4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Massively Multiplayer"
 	},
@@ -4711,7 +4711,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "Xbox One, Xbox 360, PC, macOS, Linux, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/bfb/bfb2bf7a0413443b1fcf0be7c3244053.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -4723,7 +4723,7 @@ const Games = [
 			"rating": 2.82,
 			"platforms": "PlayStation 4, iOS, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/476/4767c380895fd35a4f1b59016dc45967.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Strategy, Simulation"
 	},
@@ -4735,7 +4735,7 @@ const Games = [
 			"rating": 3.85,
 			"platforms": "Linux, macOS, PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/b56/b56853f28ecdc04b44f552f7b9c8ea69.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -4747,7 +4747,7 @@ const Games = [
 			"rating": 4.32,
 			"platforms": "Nintendo DS, Nintendo DSi, Xbox 360, PlayStation 3, PlayStation 4, PS Vita, Android, iOS, PC, macOS",
 			"image": "https://media.rawg.io/media/games/096/0962642c3f74cd6306ad8bfdfd3d6150.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -4759,7 +4759,7 @@ const Games = [
 			"rating": 3.22,
 			"platforms": "PC, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/396/3963e0df75c22d5995368ec43dacc19e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -4771,7 +4771,7 @@ const Games = [
 			"rating": 3.97,
 			"platforms": "PC, Xbox Series S/X, Xbox One",
 			"image": "https://media.rawg.io/media/games/920/92039cd19460532b76f6244b2bb3e4ac.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG"
 	},
@@ -4783,7 +4783,7 @@ const Games = [
 			"rating": 3.76,
 			"platforms": "PlayStation 3, PlayStation 4, PC, Xbox One, Xbox 360",
 			"image": "https://media.rawg.io/media/games/b74/b74b15a48ac7bc37fbb42ee4afcc0b91.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -4795,7 +4795,7 @@ const Games = [
 			"rating": 3.42,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/fcf/fcf81e19683092d40d519a6d6a9bcf6e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Strategy"
 	},
@@ -4807,7 +4807,7 @@ const Games = [
 			"rating": 3.2,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/a57/a57e3c73ca46cbf55b526c828e3545c0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Racing"
 	},
@@ -4819,7 +4819,7 @@ const Games = [
 			"rating": 3.61,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/72e/72e0e063c817e90c696b2da3ea78abaa.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Massively Multiplayer"
 	},
@@ -4831,7 +4831,7 @@ const Games = [
 			"rating": 4.44,
 			"platforms": "Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/267/267bd0dbc496f52692487d07d014c061.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Platformer"
 	},
@@ -4843,7 +4843,7 @@ const Games = [
 			"rating": 3.35,
 			"platforms": "Xbox One, PlayStation 4, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/5cb/5cbbc5cd24677331c85253f961cad72a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Shooter"
 	},
@@ -4855,7 +4855,7 @@ const Games = [
 			"rating": 2.95,
 			"platforms": "macOS, Linux, PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/963/963815b2a1a88475a31f311b591e70fb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Strategy, Shooter"
 	},
@@ -4867,7 +4867,7 @@ const Games = [
 			"rating": 3.76,
 			"platforms": "PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/1be/1be575aa6de86de328433a63fb534d9a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -4879,7 +4879,7 @@ const Games = [
 			"rating": 3.47,
 			"platforms": "PlayStation 3, Xbox 360, Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/12e/12ea6b35b65df38258e25885a0a392a6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -4891,7 +4891,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "PC, PlayStation 5, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/d89/d89bd0cf4fcdc10820892980cbba0f49.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -4903,7 +4903,7 @@ const Games = [
 			"rating": 4.48,
 			"platforms": "PlayStation 4, PC, PlayStation 5, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/053/053fc543bf488349610f1ae2d0c1b51b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -4915,7 +4915,7 @@ const Games = [
 			"rating": 2.95,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/26b/26b27e1da9e3727fcb12e3e4e86c8c19.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Massively Multiplayer"
 	},
@@ -4927,7 +4927,7 @@ const Games = [
 			"rating": 3.66,
 			"platforms": "PlayStation 4, PS Vita, Xbox One, Android, iOS, PC, macOS, Linux, Nintendo Switch",
 			"image": "https://media.rawg.io/media/screenshots/6ac/6ac143af704c95c774af432785ff9762.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Casual, Puzzle, Family"
 	},
@@ -4939,7 +4939,7 @@ const Games = [
 			"rating": 3.13,
 			"platforms": "PC, macOS",
 			"image": "https://media.rawg.io/media/screenshots/bf7/bf71c819eace914e6c42ae3ecb667308.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -4951,7 +4951,7 @@ const Games = [
 			"rating": 4.46,
 			"platforms": "Nintendo Switch, PC, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/29c/29c6c21cc0c78cff6f45d23631cc82f4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -4963,7 +4963,7 @@ const Games = [
 			"rating": 4.36,
 			"platforms": "macOS, PC",
 			"image": "https://media.rawg.io/media/games/218/218167ff4011acc825c844d0070940a0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -4975,7 +4975,7 @@ const Games = [
 			"rating": 3.66,
 			"platforms": "PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/569/569ea25d2b56bd05c7fa309ddabe81ff.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Platformer"
 	},
@@ -4987,7 +4987,7 @@ const Games = [
 			"rating": 3.81,
 			"platforms": "Nintendo Switch, iOS, Xbox One, PC, macOS, Linux, PlayStation 4, Android",
 			"image": "https://media.rawg.io/media/games/40a/40ab95c1639aa1d7ec04d4cd523af6b1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, RPG, Strategy"
 	},
@@ -4999,7 +4999,7 @@ const Games = [
 			"rating": 3.84,
 			"platforms": "Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/6d9/6d92d50affeebf2eb3894d178eb1117e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Casual"
 	},
@@ -5011,7 +5011,7 @@ const Games = [
 			"rating": 2.35,
 			"platforms": "Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/e4a/e4ab7f784bdc38c76ce6e4cef9715d18.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Strategy"
 	},
@@ -5023,7 +5023,7 @@ const Games = [
 			"rating": 3.67,
 			"platforms": "Nintendo Switch, Xbox One, Xbox 360, PlayStation 3, PlayStation 4, PS Vita, PC",
 			"image": "https://media.rawg.io/media/games/ea3/ea3228b5c6c749019a9ed42e90a4e7c6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -5035,7 +5035,7 @@ const Games = [
 			"rating": 4.27,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/89a/89a8378d49732505cdb28babe505df9e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5047,7 +5047,7 @@ const Games = [
 			"rating": 3.51,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/192/1921ec949024a5fbd1e1c7008f54b5af.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -5059,7 +5059,7 @@ const Games = [
 			"rating": 3.85,
 			"platforms": "Xbox 360, Xbox One, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/388/388935d851846f8ec747fffc7c765800.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Casual, Platformer"
 	},
@@ -5071,7 +5071,7 @@ const Games = [
 			"rating": 4.19,
 			"platforms": "PlayStation 4, Xbox 360, PlayStation 3, macOS, PC, iOS, Xbox One",
 			"image": "https://media.rawg.io/media/games/264/2642b17a7885f7abc4fd018e98943242.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure"
 	},
@@ -5083,7 +5083,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "Nintendo Switch, Linux, macOS, PC, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/3be/3be0e624424d3453005019799a760af2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Shooter"
 	},
@@ -5095,7 +5095,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PlayStation 4, Nintendo Switch, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/ba9/ba9ad92b6d04825bd15a407c6059db94.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Simulation"
 	},
@@ -5107,7 +5107,7 @@ const Games = [
 			"rating": 3.29,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/bd2/bd2cc7714e0b9b1adad1ba1b2400d436.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Strategy, Shooter"
 	},
@@ -5119,7 +5119,7 @@ const Games = [
 			"rating": 3.41,
 			"platforms": "PlayStation 3, Nintendo 3DS, Xbox 360, Xbox One, Wii U, PlayStation 4, PS Vita, macOS, PC",
 			"image": "https://media.rawg.io/media/games/e4f/e4fb3fd188f61fabec48dca22e6ef28a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Family"
 	},
@@ -5131,7 +5131,7 @@ const Games = [
 			"rating": 3.5,
 			"platforms": "macOS, PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/596/596a48ef3b62b63b4cc59633e28be903.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Massively Multiplayer"
 	},
@@ -5143,7 +5143,7 @@ const Games = [
 			"rating": 2.85,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/screenshots/9fd/9fd128fef547eb630182a1995b1edeb5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Shooter"
 	},
@@ -5155,7 +5155,7 @@ const Games = [
 			"rating": 3.92,
 			"platforms": "Nintendo Switch, Xbox One, PlayStation 4, iOS, PC, Linux, Android, macOS",
 			"image": "https://media.rawg.io/media/games/7ba/7baf4663962bad7197e2470d59a6e322.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, RPG"
 	},
@@ -5167,7 +5167,7 @@ const Games = [
 			"rating": 3.28,
 			"platforms": "Android, iOS, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/2e1/2e187b31e5cee21c110bd16798d75fab.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Simulation, Puzzle"
 	},
@@ -5179,7 +5179,7 @@ const Games = [
 			"rating": 4.19,
 			"platforms": "Android, PC",
 			"image": "https://media.rawg.io/media/screenshots/5a7/5a72aed79451d8fbd6a7b82f784002bd.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Casual"
 	},
@@ -5191,7 +5191,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "Xbox 360, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/e53/e5372e767149bc88106e1da0ae7e9104.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -5203,7 +5203,7 @@ const Games = [
 			"rating": 4.25,
 			"platforms": "PlayStation 3, Xbox 360, Xbox One, PlayStation 4, PC, macOS",
 			"image": "https://media.rawg.io/media/games/116/116b93c6876a361a96b2eee3ee58ab13.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -5215,7 +5215,7 @@ const Games = [
 			"rating": 3.45,
 			"platforms": "PC, PlayStation 3, Xbox One, Xbox 360",
 			"image": "https://media.rawg.io/media/games/511/5115617b4180a4e4505e0de09e62c6a0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5227,7 +5227,7 @@ const Games = [
 			"rating": 3.19,
 			"platforms": "macOS, PlayStation 4, Xbox One, iOS, PC, Android, Xbox Series S/X, PlayStation 5, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/dcb/dcbb67f371a9a28ea38ffd73ee0f53f3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5239,7 +5239,7 @@ const Games = [
 			"rating": 3.86,
 			"platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/bbf/bbf8d74ab64440ad76294cff2f4d9cfa.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Casual, Platformer"
 	},
@@ -5251,7 +5251,7 @@ const Games = [
 			"rating": 3.02,
 			"platforms": "PC, Xbox 360, macOS, Linux",
 			"image": "https://media.rawg.io/media/screenshots/4f4/4f4722571e32954af43a4508607c1748.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Strategy, Casual"
 	},
@@ -5263,7 +5263,7 @@ const Games = [
 			"rating": 2.91,
 			"platforms": "macOS, Xbox One, Nintendo Switch, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/87a/87a29bcc56b6b6082ead1dd5e2510aaa.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Simulation"
 	},
@@ -5275,7 +5275,7 @@ const Games = [
 			"rating": 3.42,
 			"platforms": "PC, PlayStation 3, Xbox 360, Android, iOS",
 			"image": "https://media.rawg.io/media/games/a92/a92272ea5cfc35b8ad6317fbd81ce0f6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -5287,7 +5287,7 @@ const Games = [
 			"rating": 3.63,
 			"platforms": "Xbox 360, iOS, PC, macOS, Linux, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/c40/c40f9f0a3d1b4601a7a44d230c95f126.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Platformer"
 	},
@@ -5299,7 +5299,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "PlayStation 3, Xbox One, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/8bd/8bda6d876f3e241c6024022299553efd.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5311,7 +5311,7 @@ const Games = [
 			"rating": 3.86,
 			"platforms": "PlayStation 4, Xbox 360, PC, iOS, PlayStation 3, PS Vita, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/598/59851e152a6898c8bf79069b5bf2f4db.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Platformer"
 	},
@@ -5323,7 +5323,7 @@ const Games = [
 			"rating": 3.21,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/345/34589f72fe291f0f38f12488f28c8f43.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -5335,7 +5335,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/3ea/3ea0e57ede873970c0f1130e30d88749.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -5347,7 +5347,7 @@ const Games = [
 			"rating": 3.34,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/1da/1da9a7af524e81d257f972fbc06baefd.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5359,7 +5359,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "Xbox One, PlayStation 4, Nintendo Switch, PC",
 			"image": "https://media.rawg.io/media/games/4a5/4a5ce21f529cf8fd4670b4c3188b25df.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -5371,7 +5371,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "Android, PlayStation 3, Xbox 360, Nintendo Switch, PC, iOS, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/39a/39a8aa7798b685f9625e857bc394259d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Puzzle"
 	},
@@ -5383,7 +5383,7 @@ const Games = [
 			"rating": 3.29,
 			"platforms": "Xbox 360, PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/23d/23d78acedbb5f40c9fb64e73af5af65d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Racing"
 	},
@@ -5395,7 +5395,7 @@ const Games = [
 			"rating": 4.27,
 			"platforms": "PlayStation 3",
 			"image": "https://media.rawg.io/media/games/6ac/6ac602e70c837ababdf025e997391d9c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -5407,7 +5407,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "Nintendo Switch, iOS, PC, macOS, PlayStation 4, Xbox One, Linux",
 			"image": "https://media.rawg.io/media/games/c2e/c2e6ad5c838d551aeff376f1f3d9d65e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, RPG, Puzzle"
 	},
@@ -5419,7 +5419,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/d1d/d1dd46e2ef7f8a1ee946d3ab779c3754.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5431,7 +5431,7 @@ const Games = [
 			"rating": 3.95,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/7cf/7cf38d2d80267c121c6d0d361e9429ce.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Racing"
 	},
@@ -5443,7 +5443,7 @@ const Games = [
 			"rating": 3.69,
 			"platforms": "PlayStation 3, Xbox 360, PC, PlayStation 4, PS Vita",
 			"image": "https://media.rawg.io/media/games/fad/fadc4be043ed07904012d47cd02671e4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Platformer"
 	},
@@ -5455,7 +5455,7 @@ const Games = [
 			"rating": 3.8,
 			"platforms": "macOS, Linux, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/d1c/d1cd8a226cb224357c1f59605577cbf2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -5467,7 +5467,7 @@ const Games = [
 			"rating": 3.71,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/1ed/1edaaa9e24e0072772244633d01642f4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -5479,7 +5479,7 @@ const Games = [
 			"rating": 3.48,
 			"platforms": "PlayStation 4, PC, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/23b/23b42b7a896140f4ce1d0df8c42fa012.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -5491,7 +5491,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "Xbox One, PlayStation 4, iOS, PC, macOS, Linux, Nintendo Switch, Android",
 			"image": "https://media.rawg.io/media/games/948/948fe7f00b6cba8472f5ecd07a455077.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Puzzle"
 	},
@@ -5503,7 +5503,7 @@ const Games = [
 			"rating": 3.52,
 			"platforms": "Wii U, Xbox One, macOS, PS Vita, PC, Linux, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/6fc/6fcb1c529c764700d55f3bbc1b0fbb5b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Puzzle, Platformer"
 	},
@@ -5515,7 +5515,7 @@ const Games = [
 			"rating": 3.92,
 			"platforms": "Xbox One, PC, Nintendo Switch, Xbox 360, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/639/639ce7d7fecbb9f0717e9fbc1180f8f8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -5527,7 +5527,7 @@ const Games = [
 			"rating": 3.25,
 			"platforms": "PlayStation 3, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/106/1069e754e7e6012b0cf42b4b04704792.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5539,7 +5539,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Xbox 360, Xbox, PC",
 			"image": "https://media.rawg.io/media/games/ccf/ccf26f6e3d553a04f0033a8107a521b8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -5551,7 +5551,7 @@ const Games = [
 			"rating": 3.02,
 			"platforms": "PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/2fd/2fd1b58116b10cc1f4442bee5593ca7c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Massively Multiplayer"
 	},
@@ -5563,7 +5563,7 @@ const Games = [
 			"rating": 3.82,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/d73/d7364906c530ccc2d89b0b5d8695e03c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -5575,7 +5575,7 @@ const Games = [
 			"rating": 4.12,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/92b/92bbf8a451e2742ab812a580546e593a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -5587,7 +5587,7 @@ const Games = [
 			"rating": 4.18,
 			"platforms": "PlayStation 4, macOS, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/963/9639183ff27251b0b686acaa6aac0297.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Strategy"
 	},
@@ -5599,7 +5599,7 @@ const Games = [
 			"rating": 3.56,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/bcd/bcd9896b7c3b9fa80e5dcb67c961e2be.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5611,7 +5611,7 @@ const Games = [
 			"rating": 3.28,
 			"platforms": "Xbox One, Nintendo Switch, macOS, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/eeb/eeb9e668da5fd07bab9f655acfbbe579.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Casual"
 	},
@@ -5623,7 +5623,7 @@ const Games = [
 			"rating": 3.62,
 			"platforms": "Xbox One, iOS, PC, PlayStation 4, Android",
 			"image": "https://media.rawg.io/media/games/742/7424c1f7d0a8da9ae29cd866f985698b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Strategy, Board Games, Card"
 	},
@@ -5635,7 +5635,7 @@ const Games = [
 			"rating": 4.21,
 			"platforms": "Xbox, PSP, PlayStation 2, PC",
 			"image": "https://media.rawg.io/media/games/662/6625a20ca1d13699ee7c191b20a02408.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5647,7 +5647,7 @@ const Games = [
 			"rating": 3.52,
 			"platforms": "PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/45b/45b57ed59de4b84effd8f6bc4b7bf515.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter, Massively Multiplayer"
 	},
@@ -5659,7 +5659,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "Xbox One, iOS, PC, macOS, Linux, Nintendo Switch, PlayStation 4, Android",
 			"image": "https://media.rawg.io/media/games/f52/f5206d55f918edf8ee07803101106fa6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Strategy, Card"
 	},
@@ -5671,7 +5671,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "PlayStation 3, Xbox One, PC, Wii U, Xbox 360",
 			"image": "https://media.rawg.io/media/games/315/3156817d3ac1f341da73de6495fb28f5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -5683,7 +5683,7 @@ const Games = [
 			"rating": 3.97,
 			"platforms": "PlayStation 4, Xbox One, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/789/7896837ec22a83e4007018ddd55e8c9a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -5695,7 +5695,7 @@ const Games = [
 			"rating": 3.66,
 			"platforms": "Xbox 360, PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/94a/94a59c5136a9b90eef5f23fea7bf997c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5707,7 +5707,7 @@ const Games = [
 			"rating": 3.96,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/509/509c81a5da92a8d0645d9e160d155017.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5719,7 +5719,7 @@ const Games = [
 			"rating": 2.8,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/98c/98cd77a9f61b31a6ddab1670b079c841.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter, Massively Multiplayer"
 	},
@@ -5731,7 +5731,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "PC, Nintendo Switch, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/444/4440f674e2bcb257e249a9ab595d8ab6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Platformer"
 	},
@@ -5743,7 +5743,7 @@ const Games = [
 			"rating": 3.68,
 			"platforms": "Xbox 360, Wii, macOS, Nintendo DS, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/341/3413d7275fb1e919f00a925df8288b77.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -5755,7 +5755,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PlayStation 4, PC, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/a4b/a4bb55f42fe837ae7bf1307e7b41cc85.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -5767,7 +5767,7 @@ const Games = [
 			"rating": 4.16,
 			"platforms": "PlayStation 3, PlayStation 4, PS Vita, Xbox One, iOS, PC, Android, Linux, Nintendo Switch, macOS",
 			"image": "https://media.rawg.io/media/games/8cd/8cd179c85bd3de8f79bef245b15075fb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Puzzle, Family"
 	},
@@ -5779,7 +5779,7 @@ const Games = [
 			"rating": 3.42,
 			"platforms": "PlayStation 3, PC, Xbox 360, Xbox One",
 			"image": "https://media.rawg.io/media/games/8a7/8a75028028592f9323d1e6e86668bb91.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5791,7 +5791,7 @@ const Games = [
 			"rating": 3.94,
 			"platforms": "Xbox Series S/X, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/121/1213f8b9b0a26307e672cf51f34882f8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5803,7 +5803,7 @@ const Games = [
 			"rating": 4.21,
 			"platforms": "macOS, PC, iOS, Android, PlayStation 4, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/51c/51c430f1795c79b78f863a9f22dc422d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Puzzle, Platformer"
 	},
@@ -5815,7 +5815,7 @@ const Games = [
 			"rating": 3.97,
 			"platforms": "Xbox 360, PlayStation 4, Xbox One, PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/193/19390fa5e75e9048b22c9a736cf9992f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -5827,7 +5827,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/90f/90fd5e569bc4c4a666c588a732124908.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5839,7 +5839,7 @@ const Games = [
 			"rating": 3.58,
 			"platforms": "PC, PlayStation 4, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/2fe/2feec1ba840f467a2280061b9e665c6e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -5851,7 +5851,7 @@ const Games = [
 			"rating": 2.61,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/64e/64e4fc48c5d977188e8c47287f2a2cef.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -5863,7 +5863,7 @@ const Games = [
 			"rating": 2.75,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/65c/65c9c15e274705b5fe343e424ce76ec8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy"
 	},
@@ -5875,7 +5875,7 @@ const Games = [
 			"rating": 4.43,
 			"platforms": "Xbox 360, Xbox, PC, PlayStation 2",
 			"image": "https://media.rawg.io/media/games/6fd/6fd971ffa72faa1758960d25ef6196bc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5887,7 +5887,7 @@ const Games = [
 			"rating": 4.01,
 			"platforms": "Android, iOS, PC, macOS, Linux, Nintendo Switch, Wii",
 			"image": "https://media.rawg.io/media/games/d03/d030347839f74454afcd1008248b08ae.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Puzzle, Family, Educational"
 	},
@@ -5899,7 +5899,7 @@ const Games = [
 			"rating": 4.06,
 			"platforms": "PlayStation 4, Xbox One, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/fbb/fbbd9fe21317bde9134114e2b1306069.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Fighting"
 	},
@@ -5911,7 +5911,7 @@ const Games = [
 			"rating": 3.94,
 			"platforms": "Xbox 360, PlayStation 3, Nintendo DS, PC, Xbox One, Wii",
 			"image": "https://media.rawg.io/media/games/da1/da15524e850ee9791b32973b748e08d5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5923,7 +5923,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "Nintendo Switch, iOS, PlayStation 4, PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/9e5/9e5b91a6d02e66b8d450a977a59ae123.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -5935,7 +5935,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/b1f/b1f1eeee149ef49c008a2258ee6c0d78.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -5947,7 +5947,7 @@ const Games = [
 			"rating": 3.68,
 			"platforms": "Linux, macOS, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/516/516c6bfe36ddb498d860f68927448a75.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -5959,7 +5959,7 @@ const Games = [
 			"rating": 3.21,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/bff/bff7d82316cddea9541261a045ba008a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -5971,7 +5971,7 @@ const Games = [
 			"rating": 3.94,
 			"platforms": "PlayStation 2, PC, PlayStation 3, Xbox 360, Xbox, GameCube",
 			"image": "https://media.rawg.io/media/games/683/6833fbb183fd72a61c032501e3bc6d36.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Simulation"
 	},
@@ -5983,7 +5983,7 @@ const Games = [
 			"rating": 2.99,
 			"platforms": "PlayStation 4, Nintendo Switch, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/f60/f607e3212c540e3d25c2418c2edb6306.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -5995,7 +5995,7 @@ const Games = [
 			"rating": 2.65,
 			"platforms": "PC, Linux, macOS",
 			"image": "https://media.rawg.io/media/screenshots/73d/73db1d042b77430a7aeaf0726d36d6fb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Strategy"
 	},
@@ -6007,7 +6007,7 @@ const Games = [
 			"rating": 3.03,
 			"platforms": "PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/395/395ad028483d6cd9076b746a3eec993d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -6019,7 +6019,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "Android, Xbox One, iOS, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/2c8/2c89e43515ed12aee51becc3dcfd8e7e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Fighting"
 	},
@@ -6031,7 +6031,7 @@ const Games = [
 			"rating": 4.3,
 			"platforms": "PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/886/8868f9ea0c91d45316319ebf5dd4fc64.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -6043,7 +6043,7 @@ const Games = [
 			"rating": 3.62,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/efd/efd6b2cb621c41a2b6580d8ac260b8ba.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure"
 	},
@@ -6055,7 +6055,7 @@ const Games = [
 			"rating": 3.66,
 			"platforms": "Linux, PC, macOS, iOS",
 			"image": "https://media.rawg.io/media/games/99d/99d7fadd2342f575d238a4e1f5c542b6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, RPG"
 	},
@@ -6067,7 +6067,7 @@ const Games = [
 			"rating": 3.72,
 			"platforms": "Xbox 360, Xbox One, Linux, PC, macOS",
 			"image": "https://media.rawg.io/media/games/b17/b175178f8842276b8b18b339fe3146a1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -6079,7 +6079,7 @@ const Games = [
 			"rating": 3.95,
 			"platforms": "PlayStation 4, Xbox One, iOS, macOS, Linux, Android, PC",
 			"image": "https://media.rawg.io/media/games/214/2140885d34e3a3398b45036e5d870971.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure"
 	},
@@ -6091,7 +6091,7 @@ const Games = [
 			"rating": 4.28,
 			"platforms": "PlayStation 4, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/560/56056a71c74f751552c9baedebf8f317.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6103,7 +6103,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "Xbox One, PlayStation 4, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/c35/c354856af9151dc63844be4f9843d2c2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy"
 	},
@@ -6115,7 +6115,7 @@ const Games = [
 			"rating": 3.31,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/a65/a65e9f01832997a4d913b3ea86319af4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -6127,7 +6127,7 @@ const Games = [
 			"rating": 3.48,
 			"platforms": "PlayStation 4, PlayStation 3, Wii U, Linux, macOS, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/23a/23acbd56da0c30bca0227967a5720c96.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Casual"
 	},
@@ -6139,7 +6139,7 @@ const Games = [
 			"rating": 3.31,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/screenshots/f7e/f7e70957c14ead1fa187a616dfa83e09.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -6151,7 +6151,7 @@ const Games = [
 			"rating": 3.18,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/11f/11fd681c312c14644ab360888dba3486.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Casual, Simulation, Massively Multiplayer, Sports"
 	},
@@ -6163,7 +6163,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/4b6/4b67558bf04c7211aabeff179271bdd8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6175,7 +6175,7 @@ const Games = [
 			"rating": 4.29,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/5ad/5adab016a307c2902a82b60d487fe287.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Shooter"
 	},
@@ -6187,7 +6187,7 @@ const Games = [
 			"rating": 3.92,
 			"platforms": "PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/c2e/c2eb6021a2596644b437e943612af25c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -6199,7 +6199,7 @@ const Games = [
 			"rating": 4.41,
 			"platforms": "PC, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/de6/de66bc4c72b45c3bb906c85d0628112d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6211,7 +6211,7 @@ const Games = [
 			"rating": 3.5,
 			"platforms": "PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/a32/a32c9c299488ca99afc3fcea605a7718.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Fighting"
 	},
@@ -6223,7 +6223,7 @@ const Games = [
 			"rating": 4.06,
 			"platforms": "Linux, macOS, PC",
 			"image": "https://media.rawg.io/media/games/f86/f869253c68b38fa789f58cc5be2cb996.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, RPG, Strategy, Casual, Simulation"
 	},
@@ -6235,7 +6235,7 @@ const Games = [
 			"rating": 4.34,
 			"platforms": "PC, Xbox One, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/082/082365507ff04d456c700157072d35db.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Racing, Sports"
 	},
@@ -6247,7 +6247,7 @@ const Games = [
 			"rating": 3.62,
 			"platforms": "PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/595/59556e1839b2e79b6f11f2c68a197663.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -6259,7 +6259,7 @@ const Games = [
 			"rating": 3.8,
 			"platforms": "PlayStation 4, Linux, macOS, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/883/883bc3050f9a4115d1968ece56bddfc2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure"
 	},
@@ -6271,7 +6271,7 @@ const Games = [
 			"rating": 3.83,
 			"platforms": "Nintendo Switch, iOS, PC, macOS, Linux, Android",
 			"image": "https://media.rawg.io/media/screenshots/7f8/7f8b58994fc420fefaa5fb9992335a11.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, RPG, Strategy"
 	},
@@ -6283,7 +6283,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "PC, PlayStation 4, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/c92/c9207a31f0eeb9904a840fc26eae6afb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -6295,7 +6295,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/65f/65f661f1487395055ba05e0a95fc0330.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Shooter"
 	},
@@ -6307,7 +6307,7 @@ const Games = [
 			"rating": 3.05,
 			"platforms": "PlayStation 3, Xbox 360, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/screenshots/4df/4df0b0812fd89af2285e683fb78f1323.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Strategy, Platformer"
 	},
@@ -6319,7 +6319,7 @@ const Games = [
 			"rating": 4.22,
 			"platforms": "PlayStation 5, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/cd3/cd3c9c7d3e95cb1608fd6250f1b90b7a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Simulation, Puzzle, Platformer"
 	},
@@ -6331,7 +6331,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/68e/68e34eb2122fe9e23f634e0b5f5ea6ae.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Shooter"
 	},
@@ -6343,7 +6343,7 @@ const Games = [
 			"rating": 2.83,
 			"platforms": "macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/ccc/ccc0d5396e3331d58e5eb58a6a1fa1b7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -6355,7 +6355,7 @@ const Games = [
 			"rating": 3.7,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/725/725eb4171c8aacee030a2d050ebf9fad.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Strategy"
 	},
@@ -6367,7 +6367,7 @@ const Games = [
 			"rating": 2.9,
 			"platforms": "PlayStation 3, Xbox 360, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/games/f80/f805774c679cca1a1a472d9ac39c78b7.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Platformer"
 	},
@@ -6379,7 +6379,7 @@ const Games = [
 			"rating": 4.37,
 			"platforms": "PlayStation 4, Nintendo Switch, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/9f4/9f418898f5415668ca47b5f4ab1ecfeb.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Puzzle"
 	},
@@ -6391,7 +6391,7 @@ const Games = [
 			"rating": 4.39,
 			"platforms": "PlayStation 5, Xbox Series S/X, PC, Nintendo Switch, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/6cc/6cc23249972a427f697a3d10eb57a820.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6403,7 +6403,7 @@ const Games = [
 			"rating": 3.77,
 			"platforms": "Xbox One, Xbox 360, Nintendo 3DS, Wii U, PlayStation 3, Nintendo Switch, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/89a/89ac2742fcfeba3b95ac94457af766ef.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6415,7 +6415,7 @@ const Games = [
 			"rating": 3.88,
 			"platforms": "PC, Nintendo 3DS, Xbox 360, PlayStation 3, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/9a1/9a18c226cf379272c698f26d2b79b3da.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Arcade, Platformer, Family"
 	},
@@ -6427,7 +6427,7 @@ const Games = [
 			"rating": 2.44,
 			"platforms": "PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/screenshots/3f1/3f1c417b405a86ed7d92b903e0fcfd0c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Arcade, Platformer"
 	},
@@ -6439,7 +6439,7 @@ const Games = [
 			"rating": 4.24,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/345/3452d9d4483686c602372e0e6b3bb4cc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6451,7 +6451,7 @@ const Games = [
 			"rating": 4.34,
 			"platforms": "Xbox 360, Xbox One, PC, macOS, Nintendo Switch, PlayStation 4, Xbox",
 			"image": "https://media.rawg.io/media/games/7e8/7e8890a662539b1bdefcf57409aef765.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -6463,7 +6463,7 @@ const Games = [
 			"rating": 2.43,
 			"platforms": "macOS, Linux, PC",
 			"image": "https://media.rawg.io/media/screenshots/120/120d930368bc171c42f9caab94e33c65.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -6475,7 +6475,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "Wii, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/37a/37adf971ee0732869c431e4936bb2080.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6487,7 +6487,7 @@ const Games = [
 			"rating": 2.67,
 			"platforms": "Xbox One, Nintendo Switch, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/813/813f9dab418a3d549f8b9ad8ef2f3d9c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Simulation"
 	},
@@ -6499,7 +6499,7 @@ const Games = [
 			"rating": 2.87,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/f06/f06f0698c0d75fa7381ff1d8c0dd4506.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Strategy, Simulation"
 	},
@@ -6511,7 +6511,7 @@ const Games = [
 			"rating": 3.21,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/1aa/1aaf454e0d3809ba1c34df4514492237.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Platformer"
 	},
@@ -6523,7 +6523,7 @@ const Games = [
 			"rating": 2.77,
 			"platforms": "macOS, Linux, PC",
 			"image": "https://media.rawg.io/media/screenshots/b04/b042f8a7d3d9f8fe61d5af5d47ab6088.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -6535,7 +6535,7 @@ const Games = [
 			"rating": 2.98,
 			"platforms": "PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/31b/31b1a1a45ad7103e52eed8ef658209a2.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -6547,7 +6547,7 @@ const Games = [
 			"rating": 4.42,
 			"platforms": "PC, iOS, Android, Nintendo Switch, PlayStation, PlayStation 4, Xbox One",
 			"image": "https://media.rawg.io/media/games/6c0/6c00ee85d1344f58c469e8e47fd8ae7c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -6559,7 +6559,7 @@ const Games = [
 			"rating": 3.68,
 			"platforms": "Xbox One, PlayStation 4, PC, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/880/880f6aa65fe9d786f1a455963df76180.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -6571,7 +6571,7 @@ const Games = [
 			"rating": 2.62,
 			"platforms": "macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/screenshots/2b9/2b9a49e89c1ba892a648620194dcf327.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Simulation, Massively Multiplayer"
 	},
@@ -6583,7 +6583,7 @@ const Games = [
 			"rating": 4.12,
 			"platforms": "Xbox 360, PlayStation 3, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/e8f/e8f923180ecb9614ec564a15937cfd9e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -6595,7 +6595,7 @@ const Games = [
 			"rating": 4.09,
 			"platforms": "PlayStation 3, PC, Xbox 360",
 			"image": "https://media.rawg.io/media/games/470/470d21d6971de8f13ec0e1664a120cc0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6607,7 +6607,7 @@ const Games = [
 			"rating": 3.22,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/a9b/a9be26838e6d54d8fb008ffc70e0d59a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -6619,7 +6619,7 @@ const Games = [
 			"rating": 4.55,
 			"platforms": "PlayStation 5, Xbox Series S/X, PC, Nintendo Switch, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/d47/d479582ed0a46496ad34f65c7099d7e5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Platformer"
 	},
@@ -6631,7 +6631,7 @@ const Games = [
 			"rating": 3.49,
 			"platforms": "Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/b22/b227810b1a1bcbe9cf3dda22534c686e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Simulation, Sports"
 	},
@@ -6643,7 +6643,7 @@ const Games = [
 			"rating": 4.39,
 			"platforms": "Nintendo DS, PC, Xbox One, macOS, Wii, Xbox 360, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/9fb/9fbaea2168caea1f806546dfdaaeb1da.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -6655,7 +6655,7 @@ const Games = [
 			"rating": 2.65,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/3d8/3d8e76154123ef352d8d3216da061a2d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -6667,7 +6667,7 @@ const Games = [
 			"rating": 4.4,
 			"platforms": "PlayStation 4, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/74b/74b239f6ef0216a2f66e652d54abb2e6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -6679,7 +6679,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "Xbox One, PlayStation 4, PC, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/a50/a505bccdcfdc79970a93574c747f6e0d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6691,7 +6691,7 @@ const Games = [
 			"rating": 3.91,
 			"platforms": "GameCube, Xbox, PSP, PlayStation 3, PlayStation 2, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/53f/53f65f1a0988374c18b5ee3dddbf0399.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6703,7 +6703,7 @@ const Games = [
 			"rating": 3.76,
 			"platforms": "PS Vita, PlayStation 4, Nintendo Switch, Nintendo 3DS, macOS, Linux, iOS, Android, PC",
 			"image": "https://media.rawg.io/media/screenshots/6fe/6fe228662a253cd929cc78a103541ee0.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Casual, Arcade, Puzzle, Platformer"
 	},
@@ -6715,7 +6715,7 @@ const Games = [
 			"rating": 3.45,
 			"platforms": "Xbox One, Xbox 360, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/games/943/9432de383089b0a427a3cdf3687b2b73.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG"
 	},
@@ -6727,7 +6727,7 @@ const Games = [
 			"rating": 4.1,
 			"platforms": "PlayStation 3, Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/297/297a51aa1f0999016d5a35e2e1d6d8ab.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Fighting"
 	},
@@ -6739,7 +6739,7 @@ const Games = [
 			"rating": 3.24,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/54f/54fcf1a626faa92afa3f5d2834dbc5ce.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -6751,7 +6751,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/d5f/d5fd2f970f48d0877a53aec98825faba.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -6763,7 +6763,7 @@ const Games = [
 			"rating": 3.06,
 			"platforms": "PC, Xbox",
 			"image": "https://media.rawg.io/media/screenshots/ca0/ca06700d8184f451b99396c23b4ffbe4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -6775,7 +6775,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/f2e/f2e6dcf9c27d99ba2551f1094ad41756.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6787,7 +6787,7 @@ const Games = [
 			"rating": 3.81,
 			"platforms": "Xbox One, PlayStation 5, PC, PlayStation 4, Xbox Series S/X",
 			"image": "https://media.rawg.io/media/games/934/9346092ae11bf7582c883869468171cc.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -6799,7 +6799,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "PC, Linux",
 			"image": "https://media.rawg.io/media/games/adb/adb59be81367b19c2544457424bcf086.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -6811,7 +6811,7 @@ const Games = [
 			"rating": 3.15,
 			"platforms": "Linux, PC, Xbox One, PlayStation 3, PlayStation 4, Xbox 360",
 			"image": "https://media.rawg.io/media/games/1ad/1ad3737af2c4a4ff8e7f5540b5dcade8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6823,7 +6823,7 @@ const Games = [
 			"rating": 2.66,
 			"platforms": "Xbox One, PlayStation 4, Android, PC, iOS, macOS",
 			"image": "https://media.rawg.io/media/screenshots/054/054bf49d9e736edfda5aa8e9015faf9b.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, RPG, Strategy, Casual, Simulation"
 	},
@@ -6835,7 +6835,7 @@ const Games = [
 			"rating": 2.71,
 			"platforms": "Xbox One, PlayStation 4, PC, Linux",
 			"image": "https://media.rawg.io/media/games/ff6/ff66ce127716df74175961831ad3a23a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Racing, Sports"
 	},
@@ -6847,7 +6847,7 @@ const Games = [
 			"rating": 3.75,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/c5b/c5b3b6aa220050f7f504f4477cb51d3b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6859,7 +6859,7 @@ const Games = [
 			"rating": 2.57,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/28a/28a895c2e05e508dca8fd73c51492d59.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -6871,7 +6871,7 @@ const Games = [
 			"rating": 2.68,
 			"platforms": "PlayStation 4, Xbox One, PC, macOS",
 			"image": "https://media.rawg.io/media/screenshots/d68/d684c5ec81b8ea46bfd4b5c3bae4007f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Casual, Massively Multiplayer"
 	},
@@ -6883,7 +6883,7 @@ const Games = [
 			"rating": 3.91,
 			"platforms": "PC, PlayStation 4, Xbox One, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/556/556157feed9ee1f55f2b12b2973e30a3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Arcade"
 	},
@@ -6895,7 +6895,7 @@ const Games = [
 			"rating": 4.21,
 			"platforms": "PC, Android, iOS, Xbox One, Web",
 			"image": "https://media.rawg.io/media/games/501/501e7019925a3c692bf1c8062f07abe6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Casual"
 	},
@@ -6907,7 +6907,7 @@ const Games = [
 			"rating": 3.96,
 			"platforms": "PSP, PlayStation 2, Xbox 360, Wii, macOS, PC, iOS",
 			"image": "https://media.rawg.io/media/games/e6b/e6b025951f9a72673f41c0588fb85758.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -6919,7 +6919,7 @@ const Games = [
 			"rating": 3.52,
 			"platforms": "Xbox One, PC, Xbox 360, PlayStation 3, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/7e7/7e79e3296a7f64e7535c9e5bb5aa4b53.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -6931,7 +6931,7 @@ const Games = [
 			"rating": 2.35,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/848/848253347dc93c762bfd51c7e4989b8f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Massively Multiplayer"
 	},
@@ -6943,7 +6943,7 @@ const Games = [
 			"rating": 3.5,
 			"platforms": "PlayStation 4, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/570/570c1e66b2a17c2dcb862252f7e64226.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Puzzle, Platformer"
 	},
@@ -6955,7 +6955,7 @@ const Games = [
 			"rating": 3.35,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/19a/19a512a8c1293c22894b7364e1405ec1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Racing"
 	},
@@ -6967,7 +6967,7 @@ const Games = [
 			"rating": 4.17,
 			"platforms": "Nintendo Switch, PC, Xbox One, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/4ea/4ea507ceebeabb43edbc09468f5aaac6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Casual, Massively Multiplayer"
 	},
@@ -6979,7 +6979,7 @@ const Games = [
 			"rating": 4.21,
 			"platforms": "Nintendo Switch, PC, macOS, PlayStation 4, Classic Macintosh, Xbox, GameCube",
 			"image": "https://media.rawg.io/media/games/0a5/0a56e2bb9ce95359e69ff9689c553a45.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, Shooter"
 	},
@@ -6991,7 +6991,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/742/74276457ebb9466e11d75a2be7722265.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -7003,7 +7003,7 @@ const Games = [
 			"rating": 3.58,
 			"platforms": "PlayStation 5, Android, PlayStation 4, Nintendo Switch, PC, iOS",
 			"image": "https://media.rawg.io/media/games/c38/c38bdb5da139005777176d33c463d70f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -7015,7 +7015,7 @@ const Games = [
 			"rating": 3.94,
 			"platforms": "Xbox One, PC, macOS, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/b69/b69a67833630dd96d8eee9d2c8c27574.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG, Simulation, Massively Multiplayer"
 	},
@@ -7027,7 +7027,7 @@ const Games = [
 			"rating": 4.13,
 			"platforms": "Nintendo 3DS, Wii, PC, macOS, PlayStation 3, PS Vita, Xbox One, iOS, Xbox 360",
 			"image": "https://media.rawg.io/media/screenshots/375/375f84d018242d7519a230f623981217.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Arcade, Platformer, Family"
 	},
@@ -7039,7 +7039,7 @@ const Games = [
 			"rating": 3.53,
 			"platforms": "macOS, PC",
 			"image": "https://media.rawg.io/media/screenshots/604/6046ad65ac38adfe0553823489bb7ed4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -7051,7 +7051,7 @@ const Games = [
 			"rating": 3.11,
 			"platforms": "Android, macOS, PC, Linux",
 			"image": "https://media.rawg.io/media/screenshots/95a/95a557d6dfa6430dd662a136d71e5915.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Simulation, Puzzle"
 	},
@@ -7063,7 +7063,7 @@ const Games = [
 			"rating": 3.63,
 			"platforms": "PlayStation, Commodore / Amiga, PC",
 			"image": "https://media.rawg.io/media/screenshots/010/0101f021b2dc123c98969fda7e4bcd92.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy"
 	},
@@ -7075,7 +7075,7 @@ const Games = [
 			"rating": 3.74,
 			"platforms": "PlayStation 4, PC, macOS, Linux, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/games/9e5/9e52a797f049e701d4eee84774a99007.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Casual, Racing, Sports"
 	},
@@ -7087,7 +7087,7 @@ const Games = [
 			"rating": 3.88,
 			"platforms": "PlayStation 5, Xbox Series S/X, Xbox One, PC, Nintendo Switch, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/957/957154d665ae676b00c0859551c733b1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -7099,7 +7099,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PlayStation 4, PS Vita, Linux, macOS, Nintendo Switch, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/f62/f62eb0901c7017776e0a5c6a94f979d5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Platformer"
 	},
@@ -7111,7 +7111,7 @@ const Games = [
 			"rating": 3.62,
 			"platforms": "PC, Wii U, Nintendo 3DS, Android, iOS",
 			"image": "https://media.rawg.io/media/screenshots/42d/42d770eb49f2ba01cd4045e0d92af7a9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, Strategy, Casual, Puzzle"
 	},
@@ -7123,7 +7123,7 @@ const Games = [
 			"rating": 4.07,
 			"platforms": "PlayStation 3, Xbox 360, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/b42/b42b05096de6668833bbab38f6099c6a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -7135,7 +7135,7 @@ const Games = [
 			"rating": 3.15,
 			"platforms": "Xbox One, Wii U, PlayStation 3, PlayStation 4, PS Vita, PC, Web, macOS, Linux, iOS",
 			"image": "https://media.rawg.io/media/games/a01/a01b34c722ceec784817381eb1824fa5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Arcade, Racing"
 	},
@@ -7147,7 +7147,7 @@ const Games = [
 			"rating": 3.44,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/8b5/8b591049784d961016852873bdcb5b2d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -7159,7 +7159,7 @@ const Games = [
 			"rating": 3.18,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/c38/c38595cc04bdddaa84ed8feae5319849.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Strategy, Simulation"
 	},
@@ -7171,7 +7171,7 @@ const Games = [
 			"rating": 3.86,
 			"platforms": "Android, PlayStation 3, Xbox 360, PC, iOS, Nintendo Switch, Wii",
 			"image": "https://media.rawg.io/media/games/367/367463d43c2a1465f27e830b5b1334ee.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Racing"
 	},
@@ -7183,7 +7183,7 @@ const Games = [
 			"rating": 3.57,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/119/119bb59e64c7956171a33df0d35aee6b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -7195,7 +7195,7 @@ const Games = [
 			"rating": 4.02,
 			"platforms": "Xbox One, Nintendo Switch, PlayStation 4, PC, Linux, macOS",
 			"image": "https://media.rawg.io/media/games/b01/b01aa6b2d6d4f683203e9471a8b8d5b5.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Platformer"
 	},
@@ -7207,7 +7207,7 @@ const Games = [
 			"rating": 2.47,
 			"platforms": "PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/560/560847de3a0fd510bbe6c305abca0f0f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -7219,7 +7219,7 @@ const Games = [
 			"rating": 2.29,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/d87/d87268c4b7b33b278cbc1f152db39729.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, RPG, Strategy"
 	},
@@ -7231,7 +7231,7 @@ const Games = [
 			"rating": 4.29,
 			"platforms": "Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/330/330952c1726bbb56fc3b9f8a8c83ab1d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -7243,7 +7243,7 @@ const Games = [
 			"rating": 3.24,
 			"platforms": "Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/b28/b28a135fa6133e17b228f46902a4fda4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure"
 	},
@@ -7255,7 +7255,7 @@ const Games = [
 			"rating": 3.8,
 			"platforms": "Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/155/155a7d8f464ef6029e11cc6a9c0f763d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -7267,7 +7267,7 @@ const Games = [
 			"rating": 2.81,
 			"platforms": "PlayStation 4, Xbox One, PC",
 			"image": "https://media.rawg.io/media/games/151/151e79f397328419c64aabe93d9d5a31.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure, RPG"
 	},
@@ -7279,7 +7279,7 @@ const Games = [
 			"rating": 2.88,
 			"platforms": "Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/screenshots/6d3/6d367773c06886535620f2d7fb1cb866.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Massively Multiplayer"
 	},
@@ -7291,7 +7291,7 @@ const Games = [
 			"rating": 3.62,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/015/015988a097b5a0e78b4ecd631e85daba.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure"
 	},
@@ -7303,7 +7303,7 @@ const Games = [
 			"rating": 3.98,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/934/934db575e66d63f2a6e86a2c688c141b.jpeg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Simulation"
 	},
@@ -7315,7 +7315,7 @@ const Games = [
 			"rating": 2.75,
 			"platforms": "PC, macOS",
 			"image": "https://media.rawg.io/media/screenshots/72c/72c1405b3524e40c44c7860f2b5fa7f9.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure"
 	},
@@ -7327,7 +7327,7 @@ const Games = [
 			"rating": 3.54,
 			"platforms": "Xbox One, Wii U, PS Vita, PlayStation 3, PlayStation 4, Nintendo Switch, PC, macOS, Linux, Android, iOS",
 			"image": "https://media.rawg.io/media/games/ba0/ba006ef12175ad4773e5964c320099c4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Platformer"
 	},
@@ -7339,7 +7339,7 @@ const Games = [
 			"rating": 2.71,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/616/616437f375a1080756c917b1437404f3.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -7351,7 +7351,7 @@ const Games = [
 			"rating": 3.89,
 			"platforms": "Android, Linux, macOS, PC, iOS, Xbox One, PlayStation 4, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/6cc/6cc68fa183b905ac9d85efb9797776f6.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Strategy, Simulation"
 	},
@@ -7363,7 +7363,7 @@ const Games = [
 			"rating": 3.32,
 			"platforms": "Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/d49/d4974f5eb9e6c47794f681f149280d9d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Strategy, Simulation"
 	},
@@ -7375,7 +7375,7 @@ const Games = [
 			"rating": 3.37,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/27c/27c86ebfba2281ebe3ea8ca6c9e752f1.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "RPG, Strategy"
 	},
@@ -7387,7 +7387,7 @@ const Games = [
 			"rating": 4.15,
 			"platforms": "Nintendo Switch, Xbox One, PC, PlayStation 4, iOS, macOS, Linux",
 			"image": "https://media.rawg.io/media/games/578/57885b9590c9a9f80ceea34d147a34c4.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, RPG"
 	},
@@ -7399,7 +7399,7 @@ const Games = [
 			"rating": 4.03,
 			"platforms": "PC, PlayStation 3, Xbox One, Xbox 360",
 			"image": "https://media.rawg.io/media/games/88a/88af17cc08783ccdd1608ae63c47eeac.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Shooter"
 	},
@@ -7411,7 +7411,7 @@ const Games = [
 			"rating": 3.88,
 			"platforms": "PlayStation 4, Xbox One, iOS, PC, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/21d/21dfa5f7f5c0fa2b85f418c4e1c6ab1b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Shooter, Arcade"
 	},
@@ -7423,7 +7423,7 @@ const Games = [
 			"rating": 3.73,
 			"platforms": "Xbox One, PlayStation 4, Linux, PC, Nintendo Switch, macOS",
 			"image": "https://media.rawg.io/media/games/489/4899fe1e7b65e550ea619db02006ca6c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -7435,7 +7435,7 @@ const Games = [
 			"rating": 2.74,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/screenshots/2a2/2a2a162a08f2bba053334ecfda25228d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Adventure, Strategy, Simulation"
 	},
@@ -7447,7 +7447,7 @@ const Games = [
 			"rating": 3.45,
 			"platforms": "PlayStation 4, Xbox One, PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/e05/e053aae547e0978ad90280a1a3d8f177.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -7459,7 +7459,7 @@ const Games = [
 			"rating": 4.14,
 			"platforms": "Nintendo Switch, Xbox One, PlayStation 4, PC",
 			"image": "https://media.rawg.io/media/games/238/238e2b2b24c9838626700c69cacf1e3a.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter, Arcade"
 	},
@@ -7471,7 +7471,7 @@ const Games = [
 			"rating": 3.98,
 			"platforms": "PlayStation 4, PC, macOS, Linux, Nintendo Switch, Xbox One",
 			"image": "https://media.rawg.io/media/screenshots/8be/8be6b02800b2e657e1d17fddfd285a25.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Casual, Simulation"
 	},
@@ -7483,7 +7483,7 @@ const Games = [
 			"rating": 4.04,
 			"platforms": "PlayStation 4, Xbox One, PC, Nintendo Switch",
 			"image": "https://media.rawg.io/media/games/63c/63cb04333dea1726e90b38dc3d10258f.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Adventure, RPG"
 	},
@@ -7495,7 +7495,7 @@ const Games = [
 			"rating": 2.9,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/screenshots/f34/f34c86335d0c51baa582aa93fa2d3f55.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie"
 	},
@@ -7507,7 +7507,7 @@ const Games = [
 			"rating": 3.38,
 			"platforms": "PC, Linux, macOS",
 			"image": "https://media.rawg.io/media/games/82b/82be203e68d737762846203811165933.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG, Strategy, Massively Multiplayer"
 	},
@@ -7519,7 +7519,7 @@ const Games = [
 			"rating": 3.71,
 			"platforms": "Xbox 360, PC",
 			"image": "https://media.rawg.io/media/games/417/4176298c1b22ccd338ce3dfc34eb7e28.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Strategy"
 	},
@@ -7531,7 +7531,7 @@ const Games = [
 			"rating": 4.33,
 			"platforms": "Xbox 360, PC, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/582/582b5518a52f5086d15dde128264b94d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -7543,7 +7543,7 @@ const Games = [
 			"rating": 3.74,
 			"platforms": "PlayStation 4",
 			"image": "https://media.rawg.io/media/games/3bd/3bd37baee6dc6e15c278a83c787ebd8d.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -7555,7 +7555,7 @@ const Games = [
 			"rating": 3.22,
 			"platforms": "PlayStation 4, PC, Xbox One",
 			"image": "https://media.rawg.io/media/games/370/3703c683968a54f09630dcf03366ea35.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Arcade, Racing"
 	},
@@ -7567,7 +7567,7 @@ const Games = [
 			"rating": 4.38,
 			"platforms": "PC",
 			"image": "https://media.rawg.io/media/games/0bb/0bbceedd3e1420df0fdaf66a2e373b2b.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -7579,7 +7579,7 @@ const Games = [
 			"rating": 3.6,
 			"platforms": "PlayStation 4, PlayStation 3, PC",
 			"image": "https://media.rawg.io/media/screenshots/c37/c3739a39b6c595cfeb1301af7604a609.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action"
 	},
@@ -7591,7 +7591,7 @@ const Games = [
 			"rating": 3.9,
 			"platforms": "Xbox 360, PC",
 			"image": "https://media.rawg.io/media/screenshots/46a/46ac84997152eaf4f760257a60099231.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Indie, Shooter"
 	},
@@ -7603,7 +7603,7 @@ const Games = [
 			"rating": 3.35,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/f32/f3240d0b7a9e6523c8d708129c512ac8.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -7615,7 +7615,7 @@ const Games = [
 			"rating": 3.22,
 			"platforms": "PC, Xbox 360, PlayStation 3",
 			"image": "https://media.rawg.io/media/games/b50/b501727147644474562935f19a60134e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -7627,7 +7627,7 @@ const Games = [
 			"rating": 4.33,
 			"platforms": "PC, PlayStation 4, PlayStation 5",
 			"image": "https://media.rawg.io/media/games/048/048b46cdc66cbc7e235e1f359c2a77ec.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -7639,7 +7639,7 @@ const Games = [
 			"rating": 3.42,
 			"platforms": "PC, PlayStation 3, Xbox 360",
 			"image": "https://media.rawg.io/media/games/224/224bc150dfb159caf58ae504f507847e.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, RPG"
 	},
@@ -7651,7 +7651,7 @@ const Games = [
 			"rating": 3.26,
 			"platforms": "Nintendo Switch, Xbox One, PC, PlayStation 4",
 			"image": "https://media.rawg.io/media/games/f15/f15e1dbda32b588a981bbc6b222a4b4c.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Adventure, Casual, Simulation, Puzzle"
 	},
@@ -7663,7 +7663,7 @@ const Games = [
 			"rating": 3.82,
 			"platforms": "PlayStation 3, Xbox One, Android, PC, macOS, Xbox 360",
 			"image": "https://media.rawg.io/media/games/366/366e521df82c81218984915203aa3644.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Adventure"
 	},
@@ -7675,7 +7675,7 @@ const Games = [
 			"rating": 3.93,
 			"platforms": "PlayStation 4, Xbox One, Linux, macOS, Nintendo Switch, Xbox, PC",
 			"image": "https://media.rawg.io/media/games/3b0/3b01313965c19adc6b6c37a3d9d33576.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Action, Shooter"
 	},
@@ -7687,7 +7687,7 @@ const Games = [
 			"rating": 3.81,
 			"platforms": "PC, macOS, Linux",
 			"image": "https://media.rawg.io/media/screenshots/570/5704316c673fab6994db582e0f43f924.jpg",
-			"createdInDatabase": true,
+			"createdInDatabase": false,
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Simulation"
 	}

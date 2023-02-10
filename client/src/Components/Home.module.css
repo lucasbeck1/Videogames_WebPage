@@ -23,6 +23,31 @@ si solo ponemos la etiqueta modificará todo el proyecto
     border-radius: 3px;
 }
 
+
+.header button{
+    color: #FF1cff;
+    background-color: rgb(16, 56, 129);
+    border-radius: 3px;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    border: none;
+}
+
+
+.header button:hover{
+    color: #FF1cff;
+    background-color: rgb(0, 228, 228);
+    box-shadow: 20px;
+}
+
+
+.header input{
+    height: 1.5rem;
+}
+
+
+
+
 .content{
     display: flex;
     flex-direction: row;
@@ -50,25 +75,4 @@ si solo ponemos la etiqueta modificará todo el proyecto
     right: 0px;
     grid-gap: 1rem;
     /* gap: 2rem; */
-}
-
-
-.header button{
-    color: #FF1cff;
-    background-color: rgb(16, 56, 129);
-    border-radius: 3px;
-    padding: 0.5rem;
-    margin: 0.1rem;
-}
-
-
-.header button:hover{
-    color: #FF1cff;
-    background-color: rgb(0, 228, 228);
-    box-shadow: 20px;
-}
-
-
-.header input{
-    height: 1.5rem;
 }

@@ -1,30 +1,31 @@
 .link{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .homeButton{
-    color: #FF1cff;
-    background-color: rgb(16, 56, 129);
-    border-radius: 3px;
-    padding: 0.5rem;
-    width: 15rem;
-    margin: 1rem auto;
+	/* border: solid 2px #fab5fa;*/
+  color: #FF1cff;
+  background-color: rgb(16, 56, 129);
+  border-radius: 3px;
+  padding: 0.5rem;
+  width: 15rem;
+  margin: 1rem auto;
 }
 
 .homeButton:hover{
-    color: #FF1cff;
-    background-color: rgb(0, 228, 228);
-    box-shadow: 20px;
+  color: #FF1cff;
+  background-color: rgb(0, 228, 228);
+  box-shadow: 20px;
 }
 
 
 
 
 .page{
-    width: 60%;   
-    margin: 0 auto;
-    background-color: rgba(255, 228, 196, 0.664);
-    border-radius: 20px;
+  width: 60%;   
+  margin: 0 auto;
+  background-color: rgba(255, 228, 196, 0.664);
+  border-radius: 20px;
 }
 
 
@@ -32,76 +33,75 @@
 
 
 .upText{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    align-items: center;
-    color: rgb(16, 56, 129);
+  display: flex;
+  justify-content: space-between;
+	margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+  color: rgb(16, 56, 129);
 }
 
 
 .calification1{
-    color: rgb(16, 56, 129);
-    /* padding: 0.2rem;
-    border: 2px solid rgb(16, 56, 129);
-    border-radius: 40%; */
+  color: rgb(16, 56, 129);
+  /* padding: 0.2rem;
+  border: 2px solid rgb(16, 56, 129);
+  border-radius: 40%; */
 }
 
 .calification2{
-    color: rgb(16, 56, 129);
-    /* padding: 0.2rem;
-    border: 2px solid rgb(16, 56, 129);
-    border-radius: 40%; */
+  color: rgb(16, 56, 129);
+  /* padding: 0.2rem;
+  border: 2px solid rgb(16, 56, 129);
+  border-radius: 40%; */
 }
 
 .calification3{
-    color: rgb(16, 56, 129);
-    /* padding: 0.2rem;
-    border: 2px solid rgb(16, 56, 129);
-    border-radius: 40%; */
+  color: rgb(16, 56, 129);
+  /* padding: 0.2rem;
+  border: 2px solid rgb(16, 56, 129);
+  border-radius: 40%; */
 }
 
 .calification4{
-    color: rgb(16, 56, 129);
-    /* padding: 0.2rem;
-    border: 2px solid rgb(16, 56, 129);
-    border-radius: 40%; */
+  color: rgb(16, 56, 129);
+  /* padding: 0.2rem;
+  border: 2px solid rgb(16, 56, 129);
+  border-radius: 40%; */
 }
 
 .calification5{
-    color: rgb(16, 56, 129);
-    /* padding: 0.2rem;
-    border: 2px solid rgb(16, 56, 129);
-    border-radius: 40%; */
+  color: rgb(16, 56, 129);
+  /* padding: 0.2rem;
+  border: 2px solid rgb(16, 56, 129);
+  border-radius: 40%; */
 }
 
 
 .downText{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: rgb(16, 56, 129);
-    text-align: start;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: rgb(16, 56, 129);
+  text-align: start;
 }
 
 
 
 .image{
-    width: 90%;
-    height: 32vw;
-    border: 5px solid #ffcaff;
-    border-radius: 10px;
-
+  width: 90%;
+	height: 32vw;
+  border: 5px solid #ffcaff;
+  border-radius: 10px;
 }
 
 
 
 
 .description{
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: start;
-    padding-bottom: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: start;
+  padding-bottom: 3%;
 }

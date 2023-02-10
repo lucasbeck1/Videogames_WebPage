@@ -67,10 +67,16 @@ async function handleSubmit(e){
         <input id='SearchInput' onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
         <button onClick={e => handleSubmit(e)} type="submit">{Vectors_React.search}</button>
       </div>
-      <Link to='/'><h2>Lucky Gamer Browser</h2></Link>
+      <Link to='/' style={{ color: 'inherit', textDecoration: 'inherit'}}>
+        <h2>Lucky Gamer Browser</h2>
+      </Link>
       <div>
-        <Link to='/recomendation'><button>Recomendation</button></Link>
-        <Link to='/create'><button>Create</button></Link>
+        <Link to='/recomendation'>
+          <button>Recomendation</button>
+        </Link>
+        <Link to='/create'>
+          <button>Create</button>
+        </Link>
       </div>
     </div>
     

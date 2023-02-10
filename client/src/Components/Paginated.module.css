@@ -8,11 +8,10 @@
 }
     
 .number{
-  /* 
-  border: solid 2px wheat; */
   color: #FF1cff;
   background-color: rgb(16, 56, 129);
-  border: solid 2px #fab5fa;
+  /* border: solid 2px #fab5fa; */
+  border: none;
   border-radius: 3px;
   padding: 0.5rem;
   width: 2rem;
