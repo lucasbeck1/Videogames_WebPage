@@ -6,14 +6,8 @@ const { Videogame, conn } = require('../../src/db.js');
 
 const agent = session(app);
 
-const videogameForTEST = {
-  id: '10b44b9b-626a-4940-ba86-3c80796b9b27',
-  name: 'Super Mario Bros',
-  description: 'A good old game',
-  platforms: 'Nes'
-};
 
-const videogameForTEST2 = {
+const videogameForTEST = {
   id: '10b44b9b-626a-4940-ba86-3c80796b9b24',
   name: 'Super Mario Bros 2',
   description: 'A good old game',
@@ -28,17 +22,18 @@ describe('Videogame routes', () => {
   })),
 
   beforeEach(() => Videogame.sync({ force: true })
-    .then(() => Videogame.create(videogameForTEST)));
+    //.then(() => Videogame.create(videogameForTEST))
+    );
 
   describe('GET /videogames', () => {
-    it('get 200 (No query parameters)', (done) => {
+    it('Get all games (No query parameters)', (done) => {
       agent.get('/videogames')
       .expect(200)
       .expect('Content-Type', /json/)
       done()
     });
 
-    it('get 200 (W/ query paraneters)', (done) => {
+    it('Get games by name (W/ query paraneters)', (done) => {
     agent.get('/videogames?name=mario')
     .expect(200)
     .expect('Content-Type', /json/)
@@ -47,8 +42,8 @@ describe('Videogame routes', () => {
   });
 
   describe('GET /videogames:idgame', () => {
-    it('get 200 (Mario testing)', (done) => {
-      agent.get('/videogames/10b44b9b-626a-4940-ba86-3c80796b9b27')
+    it('Get Testing game', (done) => {
+      agent.get('/videogames/10b44b9b-626a-4940-ba86-3c80796b9b24')
       .expect(200)
       .expect('Content-Type', /json/)
       done()
@@ -56,9 +51,10 @@ describe('Videogame routes', () => {
   });
 
   describe('GET /genres', () => {
-    it('get 200', (done) => {
+    it('Get genres', (done) => {
       agent.get('/genres')
       .expect(200)
+      .expect('Content-Type', /json/)
       done()
     });
   });

@@ -36,14 +36,16 @@ colores sugeridos:
   --chakra-colors-gray-800: #1A202C;  
   --chakra-colors-gray-900: #171923;  
 tema oscuro (switch)  
+cambiar el filtro en storage de CIDB por owner  
 
 
 __Back:__  
 Si no ejecutas Get genres depues de un reset, no agrega generos a os juegso creados  
 romper form por javascript - En static no pude  
-test  
 eliminar items,  
 autorizacion,  
+TEST: Anptar que se requiere probar  
+Tener genres y juegos hardcodeados en json para alimentar por primera vez la db en caso de reset  
 
 
 __Deploy:__  
