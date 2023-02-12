@@ -44,7 +44,7 @@ Si no ejecutas Get genres depues de un reset, no agrega generos a os juegso crea
 romper form por javascript - En static no pude  
 eliminar items,  
 autorizacion,  
-TEST: Anptar que se requiere probar  
+TEST: Anotar que se requiere probar  
 Tener genres y juegos hardcodeados en json para alimentar por primera vez la db en caso de reset  
 
 

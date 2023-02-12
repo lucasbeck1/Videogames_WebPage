@@ -4,13 +4,13 @@ const { expect } = require('chai');
 
 const videogameForTEST = {
   id: '10b44b9b-626a-4940-ba86-3c80796b9b27',
-  name: 'Super Mario Bros for Test',
+  name: 'GAME FOR TEST',
   description: 'A good old game',
   platforms: 'Nes'
 };
 
 const genreForTEST = {
-  name: 'Spacial Adventure'
+  name: 'GENRE FOR TEST'
 };
 
 
@@ -20,17 +20,23 @@ describe('Videogame model', () => {
   .catch((err) => {
     console.error('Unable to connect to the database:', err);
   }));
- 
-  beforeEach(() => Videogame.sync({ force: true }));
+  beforeEach(() => Videogame.sync({ force: false }));
   
   describe('CREATE', () => {
+    after(() => {
+      Videogame.findByPk('10b44b9b-626a-4940-ba86-3c80796b9b27')
+      .then((game) => {
+        game.destroy({force: true})
+        done();
+      })
+    });
     it('Throw an error if name is null', (done) => {
       Videogame.create({})
         .then(() => done(new Error('It requires a valid name')))
         .catch(() => done());
     });
     it('Throw an error if missing data', (done) => {
-      Videogame.create({ name: 'Super Mario Bros for Test' })
+      Videogame.create({ name: 'GAME FOR TEST' })
       .then(() => done(new Error('Other data require')))
       .catch(() => done());
     });
@@ -46,7 +52,7 @@ describe('Videogame model', () => {
         console.log('GAME: ', game.dataValues);
         console.log('GAME: ', game.dataValues.name);
         console.log('TYPE: ', typeof game); */
-        expect(game.dataValues.name).to.equal('Super Mario Bros for Test');
+        expect(game.dataValues.name).to.equal('GAME FOR TEST');
         done();
       })
       .catch((err) => done(err));
@@ -67,12 +73,7 @@ describe('Videogame model', () => {
       .catch((err) => done(err));
     });
   });
-
-
 });
-
-
-
 
 
 describe('Genre model', () => {
@@ -80,18 +81,24 @@ describe('Genre model', () => {
   .catch((err) => {
     console.error('Unable to connect to the database:', err);
   }));
- 
-  beforeEach(() => Genre.sync({ force: true }));
+  beforeEach(() => Genre.sync({ force: false }));
   
   describe('CREATE', () => {
-    it('Should create a genre', (done) => {
+    after(() => {
+      Genre.findOne({ where: { name: 'GENRE FOR TEST' } })
+      .then((genre) => {
+        genre.destroy({force: true})
+        done();
+      })
+    });
+    it('Should create a genre on database', (done) => {
       Genre.create(genreForTEST)
       .then(() => {
-        let gameTest = Genre.findOne({ where: { name: 'Spacial Adventure' } }); 
+        let gameTest = Genre.findOne({ where: { name: 'GENRE FOR TEST' } }); 
         return (gameTest);
       })
       .then((genre) => {
-        expect(genre.dataValues.name).to.equal('Spacial Adventure');
+        expect(genre.dataValues.name).to.equal('GENRE FOR TEST');
         done();
       })
       .catch((err) => done(err));
@@ -102,7 +109,7 @@ describe('Genre model', () => {
     it('Should delete a genre from database', (done) => {
       Genre.create(genreForTEST)
       .then(() => {
-        let genreTest = Genre.findOne({ where: { name: 'Spacial Adventure' } });
+        let genreTest = Genre.findOne({ where: { name: 'GENRE FOR TEST' } });
         return (genreTest);
       })
       .then((genre) => {
@@ -112,6 +119,4 @@ describe('Genre model', () => {
       .catch((err) => done(err));
     });
   });
-
-
 });
