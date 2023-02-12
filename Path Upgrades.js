@@ -1,4 +1,4 @@
-// To Transform this js in md, change the file extension and uncomment.
+// To Transform this js to md, change the file extension and uncomment.
 /* 
 # Project Upgrades
 
@@ -37,6 +37,9 @@ colores sugeridos:
   --chakra-colors-gray-900: #171923;  
 tema oscuro (switch)  
 cambiar el filtro en storage de CIDB por owner  
+pagina actual esta resaltada con un marco no redondo  
+pedir dlcs del juego en details ?  
+pedir guia de logros mediante url personalizadam troppgy guides, xbox achievementes, etc  
 
 
 __Back:__  

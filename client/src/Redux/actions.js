@@ -84,10 +84,10 @@ export function filters(payload){
   });
 };
 
-export function getDetail(id){
+export function getDetail(id, CIDB){
   return(async function (dispatch) {
     try{
-      let info = await (axios(`http://localhost:3001/videogames/${id}`));
+      let info = await (axios.get(`http://localhost:3001/videogames/${id}?CIDB=${CIDB}`));
       return(dispatch({
         type: GET_DETAIL,
         payload: info.data
@@ -112,7 +112,6 @@ export function createGame(payload){
   return( async function(){
     try{
       const response = await axios.post('http://localhost:3001/videogames', payload);
-      console.log(response);
       return (response);
     }catch{
       let date =  Date.now();

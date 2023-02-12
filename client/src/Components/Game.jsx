@@ -6,11 +6,11 @@ import defaultImage from "./assets/joy-1.jpg";
 import s from "./Game.module.css";
 
 
-export function Game ({name, img, genres, id}){
+export function Game ({name, img, genres, CIDB, id}){
   const dispatch = useDispatch();
 
   function detailG(e){
-      dispatch(getDetail(id))
+    dispatch(getDetail(id, CIDB))
   };
   
   if(genres.split(', ').length > 3){

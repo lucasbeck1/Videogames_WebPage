@@ -24,21 +24,6 @@ const videogameForTEST2 = {
   genres:["Action"]
 };
 
-const videogameForTEST3 = {
-  id: '10b44b9b-626a-4940-ba86-3c80796b9b23',
-  name: 'TEST GAME 3',
-  description: 'A good old game',
-  platforms: 'Nes',
-  genres:["Action"]
-};
-
-const videogameForTEST4 = {
-  id: '10b44b9b-626a-4940-ba86-3c80796b9b24',
-  name: 'TEST GAME 4',
-  description: 'A good old game',
-  platforms: 'Nes',
-  genres:["Action"]
-};
 
 
 describe('Videogame routes', () => {
@@ -50,16 +35,10 @@ describe('Videogame routes', () => {
   beforeEach(() => Videogame.sync({ force: false }));
 
   describe('GET /videogames', () => {
-    before(()=> {
-      Videogame.create(videogameForTEST1) 
-      .then(() => done())
-    }) 
+    before(()=> Videogame.create(videogameForTEST1)) 
     after(() => {
       Videogame.findByPk('10b44b9b-626a-4940-ba86-3c80796b9b21')
-      .then((game) => {
-        game.destroy({force: true})
-        done();
-      })
+      .then((game) => game.destroy({force: true}))
     })
     
     it('Get all games (No query parameters)', (done) => {
@@ -85,47 +64,63 @@ describe('Videogame routes', () => {
   });
 
   describe('GET /videogames:idgame', () => {
-    before(()=> {
-      Videogame.create(videogameForTEST2) 
-      .then(() => done())
-    })  
+    before(()=> Videogame.create(videogameForTEST1) )  
     after(() => {
-      Videogame.findByPk('10b44b9b-626a-4940-ba86-3c80796b9b22')
-      .then((game) => {
-        game.destroy({force: true})
-        done();
-      })
+      Videogame.findByPk('10b44b9b-626a-4940-ba86-3c80796b9b21')
+      .then((game) => game.destroy({force: true}))
     });
     
     it('Get Testing game', (done) => {
-      agent.get('/videogames/10b44b9b-626a-4940-ba86-3c80796b9b22')
-      .expect(200)
-      .expect('Content-Type', /json/)
-      done()
+      agent.get('/videogames/10b44b9b-626a-4940-ba86-3c80796b9b21?CIDB=true')
+      .then((res) =>{
+        expect(res.status).equal(200)
+        expect(res.type).to.match(/json/)
+        expect(res.body.name).equal('TEST GAME 1')
+        expect(res.body.owner).equal('User')
+        expect(res.body.genres.length).equal(0)
+        expect(res.body.genres).to.have.lengthOf(0)
+        
+        // console.log(res.body)
+        // let gameLOG = {
+        //   id: '10b44b9b-626a-4940-ba86-3c80796b9b22',
+        //   name: 'TEST GAME 2',
+        //   description: 'A good old game',
+        //   released: null,
+        //   rating: null,
+        //   platforms: 'Nes',
+        //   image: null,
+        //   createdInDatabase: true,
+        //   owner: 'User',
+        //   genres: ''
+        // }
+        done()
+      })
+      .catch((err => done(err)))
     });
   });
 
   describe('GET /genres', () => {
     it('Get genres', (done) => {
       agent.get('/genres')
-      .expect(200)
-      .expect('Content-Type', /json/)
-      done()
+      .then((res) =>{
+        expect(res.status).equal(200)
+        expect(res.type).to.match(/json/)
+        done()
+      })
+      .catch((err => done(err)))
     });
   });
 
   
   describe('POST /videogames', function () {
     after(() => {
-      Videogame.findOne({ where: { name: 'TEST GAME 3' } }) 
-      .then((game) => {
-        game.destroy({force: true})
-        done();
-      })
+      Videogame.findOne({ where: { name: 'TEST GAME 1' } }) 
+      .then((game) => game.destroy({force: true}))
     });
+    
     it('post game', (done) => {
       agent.post('/videogames')
-      .send(videogameForTEST3)
+      .send(videogameForTEST1)
       .then((res) => {
         expect(res.status).equal(200)
         expect(res.text).equal('The videogame was successfully created')
@@ -136,21 +131,17 @@ describe('Videogame routes', () => {
   });
   
   describe('DELETE /videogames', function () {
-    before(() => {
-      Videogame.create(videogameForTEST4)
-      .then(() => done())
-    });
+    before(() => Videogame.create(videogameForTEST1));
+    
     it('delete a game', (done) => {
       agent.delete('/videogames')
-      .send({id: "10b44b9b-626a-4940-ba86-3c80796b9b24"})
+      .send({id: "10b44b9b-626a-4940-ba86-3c80796b9b21"})
       .then((res) => {
         expect(res.status).equal(200)
         expect(res.text).equal('Game deleted succesfully')
         done()
       })
-      .catch((err => done(err)))
-     
-      
+      .catch((err => done(err)))   
     });
   });
 });
