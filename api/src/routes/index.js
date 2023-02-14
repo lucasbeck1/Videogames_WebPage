@@ -73,7 +73,7 @@ const getApiInfo = async (index=0) => {
     );
   };
   
-  // Descomentar para guardado progresivo de juegos en db
+  // Guardado progresivo de juegos en db
   // SaveApiInfo(apiGames);
   
   return (apiGames);

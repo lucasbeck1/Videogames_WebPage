@@ -44,6 +44,7 @@ function filterG(e){
 
 function sizePage(e){
   e.preventDefault();
+  setCurrentPage(1);
   setGamesPerPage(parseInt(e.target.value));
   document.getElementById('size').selectedIndex = 'DEFAULT';
 };

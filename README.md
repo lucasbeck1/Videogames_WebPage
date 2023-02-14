@@ -16,9 +16,9 @@
 
 - Aprender mejores prácticas.
 
-- Practicar testing.
-
 - Practicar documentación.
+
+- Practicar testing.
 
 ## Del Sitio
 
