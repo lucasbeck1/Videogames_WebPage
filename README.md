@@ -1,169 +1,95 @@
-![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
-
-# Individual Project - Henry Videogames
-
-<p align="center">
-  <img height="200" src="https://static.tvtropes.org/pmwiki/pub/images/videogames.png" alt="game1"/>
-  <img height="200" src="./videogame.png" alt="game2"/>
+<p align='left'>
+    <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
 </p>
 
+## Individual Project - Henry Videogames
 
-## Objetivos del Proyecto
+# Objetivos
+
+## Del Proyecto
 
 - Construir una App utlizando React, Redux, Node y Sequelize.
-- Afirmar y conectar los conceptos aprendidos en la carrera.
+
+- Conectar frontend, backend y base de datos.
+
+- Mejorar el workflow de GIT.
+
 - Aprender mejores prácticas.
-- Aprender y practicar el workflow de GIT.
-- Usar y practicar testing.
+
+- Practicar testing.
+
+- Practicar documentación.
+
+## Del Sitio
+
+Crear una aplicación web donde se puedan encontrar diferentes tipos de juegos, utilizando una API externa (https://api.rawg.io/docs/) que, entre otras cosas, permita:
+
+✅ Buscar Juegos
+
+✅ Filtrarlos por genero y origen
+
+✅ Ordenarlos por puntaje ⭐ y por orden alfabetico, de manera ascendente ⏫ y descendente ⏬
+
+✅ Obtener una recomendación aleatoria
+  
+✅ Añadir nuevos juegos  🎮 🕹 👾
+
+# Tecnologias utilizadas 💻
+
+Frontend: React, redux, css  
+
+Backend: Node, Express, Seuqelize  
+
+DataBase: Postgresql  
+
+Extras: Miro, Svg Generator
+
+# Instancias
+
+_ Actualmente se encuentra deployado y podes visitarlo en el link a continuación.
+<a href="https://lucky-gamer.glitch.me/#/" target="_blank">Link deploy</a>
+
+_ Otra opción es que descargues este repositorio y sigas las  siguientes instrucciones.
 
 
-## Comenzando
+## Requisitos para ejecutar localmente ⚙
 
- 1. Forkear el repositorio para tener una copia del mismo en sus cuentas
- 2. Clonar el repositorio en sus computadoras para comenzar a trabajar
+### Instalacion y referencia de la base de datos
 
-Tendrán un `boilerplate` con la estructura general tanto del servidor como de cliente.
+1. Instalar PostgreSQL
+2. Crear una base de datos con el nombre "videogames"
+3. Dentro de ./api cree un archivo .env con sus credenciales, como se muestra a continuacion
 
-__IMPORTANTE:__ Es necesario contar minimamente con la última versión estable de Node y NPM. Asegurarse de contar con ella para poder instalar correctamente las dependecias necesarias para correr el proyecto.
-
-Actualmente las versiónes necesarias son:
-
-- __Node__: 12.18.3 o mayor
-- __NPM__: 6.14.16 o mayor
-
-Para verificar que versión tienen instalada:
-
-```bash
-node -v
-npm -v
+```Javascript
+DB_USER=usuariodepostgres
+DB_PASSWORD=passwordDePostgres
+DB_HOST=localhost
+API_KEY=yourApiKey
 ```
 
-## Estructura
+Reemplazar `usuariodepostgres`, `passwordDePostgres` y `DB_HOST` con tus propias credenciales para conectarte a postgres. 
 
-El Proyecto cuenta con dos carpetas: `api` y `client`. En estas carpetas estará el código del back-end y el front-end respectivamente.
+Reemplazar `API_KEY` con una key de rawg.io, la cual se le otorga al usuario de manera gratuita un vez se registra en el sitio. Tener en cuenta que se pueder hacer hasta 10 000 llamadas a esta api por mes, luego éste valor se renueva.
 
-El contenido de `client` fue creado usando: Create React App.
+### Instalacion de paquetes
 
-## Enunciado
+Utilice el administrador de paquetes de su preferencia para instalar, en este npm. Recuerde ejecutar este comando dentro de /client y dentro de /api
 
-La idea general es crear una aplicación en la cual se puedan ver los distintos videojuegos disponibles junto con información relevante de los mismos utilizando la api externa [rawg](https://rawg.io/apidocs) y a partir de ella poder, entre otras cosas:
+```Javascript
+npm install ⚙
+```
 
-- Buscar videjuegos
-- Filtrarlos / Ordenarlos
-- Agregar nuevos videojuegos
+### Ejecutar local
+_ FrontEnd: Dentro ./client
 
-__IMPORTANTE__: Para poder utilizar esta API externa es necesario crearse una cuenta para obtener una API Key que luego debera ser incluida en todos los request que hagamos a rawg simplemente agregando `?key={YOUR_API_KEY}` al final de cada endpoint. Agregar la clave en el archivo `.env` para que la misma no se suba al repositorio por cuestiones de seguridad y utilizarla desde allí.
+```Javascript
+npm start
+```
 
-__IMPORTANTE__: Para las funcionalidades de filtrado y ordenamiento NO pueden utilizar los endpoints de la API externa que ya devuelven los resultados filtrados u ordenados sino que deben realizarlo ustedes mismos. En particular alguno de los ordenamientos o filtrados debe si o si realizarse desde el frontend.
+_ BackEnd: Dentro de ./client
 
-### Únicos Endpoints/Flags que pueden utilizar
+```Javascript
+npm start
+```
 
-- GET <https://api.rawg.io/api/games>
-- GET <https://api.rawg.io/api/games?search={game}>
-- GET <https://api.rawg.io/api/genres>
-- GET <https://api.rawg.io/api/games/{id}>
-
-### Requerimientos mínimos
-
-A continuación se detallaran los requerimientos mínimos para la aprobación del proyecto individial. Aquellos que deseen agregar más funcionalidades podrán hacerlo. En cuanto al diseño visual no va a haber wireframes ni prototipos prefijados sino que tendrán libertad de hacerlo a su gusto pero tienen que aplicar los conocimientos de estilos vistos en el curso para que quede agradable a la vista.
-
-__IMPORTANTE__: No se permitirá utilizar librerías externas para aplicar estilos a la aplicación. Tendrán que utilizar CSS con algunas de las opciones que vimos en dicha clase (CSS puro, CSS Modules o Styled Components)
-
-#### Tecnologías necesarias
-
-- [ ] React
-- [ ] Redux
-- [ ] Express
-- [ ] Sequelize - Postgres
-
-## Frontend
-
-Se debe desarrollar una aplicación de React/Redux que contenga las siguientes pantallas/rutas.
-
-__Pagina inicial__: deben armar una landing page con
-
-- [ ] Alguna imagen de fondo representativa al proyecto
-- [ ] Botón para ingresar al home (`Ruta principal`)
-
-__Ruta principal__: debe contener
-
-- [ ] Input de búsqueda para encontrar videojuegos por nombre
-- [ ] Área donde se verá el listado de videojuegos. Deberá mostrar su:
-  - Imagen
-  - Nombre
-  - Géneros
-- [ ] Botones/Opciones para filtrar por género y por videojuego existente o agregado por nosotros
-- [ ] Botones/Opciones para ordenar tanto ascendentemente como descendentemente los videojuegos por orden alfabético y por rating
-- [ ] Paginado para ir buscando y mostrando los siguientes videojuegos, 15 juegos por pagina, mostrando los primeros 15 en la primer pagina.
-
-__IMPORTANTE__: Dentro de la Ruta Principal se deben mostrar tanto los videjuegos traidos desde la API como así también los de la base de datos. Debido a que en la API existen alrededor de 500 mil juegos, por cuestiones de performance pueden tomar la simplificación de obtener y paginar los primeras 100.
-
-__Ruta de detalle de videojuego__: debe contener
-
-- [ ] Los campos mostrados en la ruta principal para cada videojuegos (imagen, nombre, y géneros)
-- [ ] Descripción
-- [ ] Fecha de lanzamiento
-- [ ] Rating
-- [ ] Plataformas
-
-__Ruta de creación de videojuegos__: debe contener
-
-- [ ] Un formulario __controlado con JavaScript__ con los siguientes campos:
-  - Nombre
-  - Descripción
-  - Fecha de lanzamiento
-  - Rating
-- [ ] Posibilidad de seleccionar/agregar varios géneros
-- [ ] Posibilidad de seleccionar/agregar varias plataformas
-- [ ] Botón/Opción para crear un nuevo videojuego
-
-> Es requisito que el formulario de creación esté validado con JavaScript y no sólo con validaciones HTML. Pueden agregar las validaciones que consideren. Por ejemplo: Que el nombre del juego no pueda contener algunos símbolos, que el rating no pueda exceder determinado valor, etc.
-
-## Base de datos
-
-El modelo de la base de datos deberá tener las siguientes entidades (Aquellas propiedades marcadas con asterísco deben ser obligatorias):
-
-- [ ] Videojuego con las siguientes propiedades:
-  - ID: * No puede ser un ID de un videojuego ya existente en la API rawg
-  - Nombre *
-  - Descripción *
-  - Fecha de lanzamiento
-  - Rating
-  - Plataformas *
-- [ ] Genero con las siguientes propiedades:
-  - ID
-  - Nombre
-
-La relación entre ambas entidades debe ser de muchos a muchos ya que un videojuego puede pertenecer a varios géneros en simultaneo y, a su vez, un género puede contener múltiples videojuegos distintos. Un ejemplo sería el juego `Counter Strike` pertenece a los géneros Shooter y Action al mismo tiempo. Pero a su vez existen otros videojuegos considerados como Shooter o como Action.
-
-__IMPORTANTE__: Diferenciar el id de los juegos creados y de los existentes, ya que provienen de distintas fuentes y no debe haber ambigüedad en esto.
-
-
-## Backend
-
-Se debe desarrollar un servidor en Node/Express con las siguientes rutas:
-
-__IMPORTANTE__: No está permitido utilizar los filtrados, ordenamientos y paginados brindados por la API externa, todas estas funcionalidades tienen que implementarlas ustedes.
-
-- [ ] __GET /videogames__:
-  - Obtener un listado de los videojuegos
-  - Debe devolver solo los datos necesarios para la ruta principal
-- [ ] __GET /videogames?name="..."__:
-  - Obtener un listado de las primeros 15 videojuegos que contengan la palabra ingresada como query parameter
-  - Si no existe ningún videojuego mostrar un mensaje adecuado
-- [ ] __GET /videogame/{idVideogame}__:
-  - Obtener el detalle de un videojuego en particular
-  - Debe traer solo los datos pedidos en la ruta de detalle de videojuego
-  - Incluir los géneros asociados
-- [ ] __POST /videogames__:
-  - Recibe los datos recolectados desde el formulario controlado de la ruta de creación de videojuego por body
-  - Crea un videojuego en la base de datos, relacionado a sus géneros.
-- [ ] __GET /genres__:
-  - Obtener todos los tipos de géneros de videojuegos posibles
-  - En una primera instancia deberán traerlos desde rawg y guardarlos en su propia base de datos y luego ya utilizarlos desde allí
-
-## Testing
-
-- [ ] Al menos tener un componente del frontend con sus tests respectivos
-- [ ] Al menos tener una ruta del backend con sus tests respectivos
-- [ ] Al menos tener un modelo de la base de datos con sus tests respectivos
+## A buscar juegos se ha dicho !!! 🎮
