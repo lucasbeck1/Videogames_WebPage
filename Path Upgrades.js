@@ -6,14 +6,17 @@ __Front:__
 cambiar selects de ordenamientos por botones en sideBar?  
 añadir un filtro por plataforma  
 añadir iconos  
+mostrar iconos y links de plataformas (steam , xbox) en detail  
+pedir dlcs del juego en details ?  
+pedir guia de logros mediante url personalizadam troppgy guides, xbox achievementes, etc  
 cambiar ancho de cards ?  
 card hover - mostrar logo de plataformas (ps, xbox, pc)  
+responsive image: width: 100%; max-width: 400px; height: auto;  
 quitar margin title del header y centrar  
 si se queda sin juegos queda cargando    
 diseñar y animar logo landing  
 landing (waves css)  
 opción de elegir default image form  
-mostra logos y links de plataformas (steam , xbox) en detail  
 cuando carga el home, incrementar el margin top del footer  
 previsualizacion loading  
 footer  
@@ -24,35 +27,38 @@ estado global para filtros, ord, y pagina actual
 controlar en form que sea imagen y el nombre exp.reg  
 en el form agregar icono de x en los generos seleccionados  
 clases para los colores y botones  
-colores sugeridos:  
-  --chakra-colors-gray-50: #F7FAFC;  
-  --chakra-colors-gray-100: #EDF2F7;  
-  --chakra-colors-gray-200: #E2E8F0;  
-  --chakra-colors-gray-300: #CBD5E0;  
-  --chakra-colors-gray-400: #A0AEC0;  
-  --chakra-colors-gray-500: #718096;  
-  --chakra-colors-gray-600: #4A5568;  
-  --chakra-colors-gray-700: #2D3748;  
-  --chakra-colors-gray-800: #1A202C;  
-  --chakra-colors-gray-900: #171923;  
-tema oscuro (switch)  
 cambiar el filtro en storage de CIDB por owner  
 pagina actual esta resaltada con un marco no redondo  
-pedir dlcs del juego en details ?  
-pedir guia de logros mediante url personalizadam troppgy guides, xbox achievementes, etc  
+tema oscuro (switch)  ( * )  
 
 
 __Back:__  
-Si no ejecutas Get genres depues de un reset, no agrega generos a os juegso creados  
-romper form por javascript - En static no pude  
-eliminar items,  
-autorizacion,  
-TEST: Anotar que se requiere probar  
+Documentación  
+Mejorar rendimiento en detail (llenar el detail por front haciendo un filter) y requieriendo solo los datos necesarios  
+Si no ejecutas Get genres depues de un reset, no agrega generos a los juegso creados  
 Tener genres y juegos hardcodeados en json para alimentar por primera vez la db en caso de reset  
+eliminar items,  
+autorizacion,   
+romper form por javascript - En static no pude  
+
+
+
+
+
+__( * ) colores sugeridos: __ 
+--chakra-colors-gray-50: #F7FAFC;  
+--chakra-colors-gray-100: #EDF2F7;  
+--chakra-colors-gray-200: #E2E8F0;  
+--chakra-colors-gray-300: #CBD5E0;  
+--chakra-colors-gray-400: #A0AEC0;  
+--chakra-colors-gray-500: #718096;  
+--chakra-colors-gray-600: #4A5568;  
+--chakra-colors-gray-700: #2D3748;  
+--chakra-colors-gray-800: #1A202C;  
+--chakra-colors-gray-900: #171923;  
 
 
 __Deploy:__  
-Documentación  
 BrowserRouter (proyectos que se dependen de un servidor) - HashRouter (proyectos estáticos)  
 github - solo static  
 vercel - Concurrent Builds (1)  
@@ -60,14 +66,14 @@ railway - 500hs por mes
 render - a los 90 dias se cae la db y hay que crear una nueva - 1 solo proyecto 750hs/mes  
 netlify - Concurrent Builds (1)  
 glitch.io - 120hs de uso y mientras se edita activamente ?  
-*/
 
 
 
-/* 
+__Metodos interesantes:__ 
 navigator
 navigator.language
 window.navigator.language
+navigator.browserLanguage  --->  undefined
 
-navigator.browserLanguage    ---> undefined
+
 */
