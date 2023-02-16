@@ -3,17 +3,10 @@
 # Project Upgrades
 
 __Front:__    
-cambiar selects de ordenamientos por botones en sideBar?  
-añadir un filtro por plataforma  
-añadir iconos  
-mostrar iconos y links de plataformas (steam , xbox) en detail  
-pedir dlcs del juego en details ?  
-pedir guia de logros mediante url personalizadam troppgy guides, xbox achievementes, etc  
 cambiar ancho de cards ?  
 card hover - mostrar logo de plataformas (ps, xbox, pc)  
 responsive image: width: 100%; max-width: 400px; height: auto;  
-quitar margin title del header y centrar  
-si se queda sin juegos queda cargando    
+quitar margin title del header y centrar   
 diseñar y animar logo landing  
 landing (waves css)  
 opción de elegir default image form  
@@ -30,6 +23,13 @@ clases para los colores y botones
 cambiar el filtro en storage de CIDB por owner  
 pagina actual esta resaltada con un marco no redondo  
 tema oscuro (switch)  ( * )  
+cambiar selects de ordenamientos por botones en sideBar?  
+añadir un filtro por plataforma  
+añadir iconos  
+mostrar iconos y links de plataformas (steam , xbox) en detail  
+pedir dlcs del juego en details ?  
+https://www.google.com/search?q=S.T.A.L.K.E.R.%3A+Call+of+Pripyat
+pedir guia de logros mediante url personalizadam troppgy guides, xbox achievementes, etc  
 
 
 __Back:__  

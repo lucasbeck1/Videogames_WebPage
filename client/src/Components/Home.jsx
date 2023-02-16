@@ -15,8 +15,8 @@ export function Home (){
 
 // Global states
 const dispatch = useDispatch();
-const allGames1 = useSelector(state => state.videogamesListCOMPLETE);
-const allGames = useSelector(state => state.videogamesList);
+const allGames = useSelector(state => state.videogamesListCOMPLETE);
+const actualGames = useSelector(state => state.videogamesList);
 //const [state, dispatch] = useReducer(reducer, initialState);
 
 
@@ -35,7 +35,7 @@ const nextPage = (last) => {if(parseInt(currentPage) !== (last)) setCurrentPage(
 const [gamesPerPage, setGamesPerPage] = useState(15);
 const indexLastGame = currentPage * gamesPerPage;
 const ixdexFirstGame = indexLastGame - gamesPerPage;
-const currentGames = allGames.slice(ixdexFirstGame, indexLastGame);
+const currentGames = actualGames.slice(ixdexFirstGame, indexLastGame);
 
 // Local states (Search)
 const [name, setName] = useState('');
@@ -47,7 +47,7 @@ function handleInput(e){
 };
 
 async function handleSubmit(e){
-  if(allGames1.some(g=>g.name.toLowerCase().includes(name.toLowerCase()))){
+  if(allGames.some(g=>g.name.toLowerCase().includes(name.toLowerCase()))){
     e.preventDefault();
     await dispatch(getVideogamesByName(name));
     setCurrentPage(1);
@@ -83,30 +83,37 @@ async function handleSubmit(e){
     
     
     
-    {allGames.length > 0 ? 
-    (<div>
-      <br></br>
-      <Paginated 
-      gamesTotal={allGames.length} 
-      gamesPage={gamesPerPage} 
-      actualPage={currentPage}
-      select={changePage}
-      prevSelect={previousPage}
-      nextSelect={nextPage}
-      />
-      <div className={s.content}>
-        <FilterBar setCurrentPage={setCurrentPage} setGamesPerPage={setGamesPerPage} />
-        <div className={s.list}>
-          {currentGames?.map(g => {return (
-          <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id} key={g.id}/>
-          )})}
+    {allGames.length > 0 ? (
+      currentGames.length > 0 ? (
+      <div>
+        <br></br>
+        <Paginated 
+        gamesTotal={actualGames.length} 
+        gamesPage={gamesPerPage} 
+        actualPage={currentPage}
+        select={changePage}
+        prevSelect={previousPage}
+        nextSelect={nextPage}
+        />
+        <div className={s.content}>
+          <FilterBar setCurrentPage={setCurrentPage} setGamesPerPage={setGamesPerPage} />
+          <div className={s.list}>
+            {currentGames?.map(g => {return (
+            <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id} key={g.id}/>
+            )})}
+          </div>
         </div>
       </div>
-    </div>)
-    :
-    (<>
-    <Loading/>
-    </>)}
+      ) : (
+      <>
+        <p>No games found. Keep searching</p>
+      </>
+      )
+    ) : (
+    <>
+      <Loading/>
+    </>
+    )}
     
     
     
