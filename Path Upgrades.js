@@ -15,21 +15,19 @@ previsualizacion loading
 footer  
 Firma LB creations  
 añadir idioma español  
-readme - intrucciones como montar el proyecto debajo  
-estado global para filtros, ord, y pagina actual  
-controlar en form que sea imagen y el nombre exp.reg  
+estado global para filtros, ord, y pagina actual   
 en el form agregar icono de x en los generos seleccionados  
-clases para los colores y botones  
-cambiar el filtro en storage de CIDB por owner  
-pagina actual esta resaltada con un marco no redondo  
-tema oscuro (switch)  ( * )  
+cambiar el filtro en storage de CIDB por owner    
+clases para los colores y botones  ( * )  
+tema oscuro (switch)  
 cambiar selects de ordenamientos por botones en sideBar?  
 añadir un filtro por plataforma  
 añadir iconos  
 mostrar iconos y links de plataformas (steam , xbox) en detail  
 pedir dlcs del juego en details ?  
 https://www.google.com/search?q=S.T.A.L.K.E.R.%3A+Call+of+Pripyat
-pedir guia de logros mediante url personalizadam troppgy guides, xbox achievementes, etc  
+pedir guia de logros mediante url personalizada en troppgy guides, xbox achievementes, etc  
+pedir gameplay mediante url personalizada en youtube
 
 
 __Back:__  

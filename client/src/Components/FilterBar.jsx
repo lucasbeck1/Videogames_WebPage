@@ -59,8 +59,8 @@ function sizePage(e){
     <select id='storage' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'} className={s.select}>
       <option value='DEFAULT' disabled>Storage</option>
       <option value='All'>All</option>
-      <option value='Api'>Api</option>
-      <option value='Db'>Library</option>
+      <option value='Api'>Library</option>
+      <option value='Db'>Added</option>
     </select>
     <label htmlFor='genre'>Genres</label>
     <select id='genre' onChange={(e) => filterG(e)} defaultValue={'DEFAULT'} className={s.select}>

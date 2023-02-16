@@ -15,12 +15,13 @@ export const CREATE_VIDEOGAME = 'CREATE_VIDEOGAME';
 const gamesCopy = Games.slice();
 const genresCopy = Genres.slice();
 
+const localhost = "http://localhost:3001"
 
 
 export function getVideogames(){
   return(async function (dispatch){
     try{
-      let info = await (axios(`http://localhost:3001/videogames`));
+      let info = await (axios(`${localhost}/videogames`));
       return(dispatch({
         type: GET_VIDEOGAMES,
         payload: info.data
@@ -38,7 +39,7 @@ export function getVideogames(){
 export function getVideogamesByName(name){
   return(async function (dispatch){
     try{
-      let info = await (axios(`http://localhost:3001/videogames?name=${name}`));
+      let info = await (axios(`${localhost}/videogames?name=${name}`));
       return(dispatch({
         type: GET_VIDEOGAMES_BY_NAME,
         payload: info.data
@@ -56,7 +57,7 @@ export function getVideogamesByName(name){
 export function getGenres(){
   return(async function (dispatch){
     try{
-      let info = await (axios(`http://localhost:3001/genres`));
+      let info = await (axios(`${localhost}/genres`));
       return(dispatch({
         type: GET_GENRES,
         payload: info.data
@@ -87,7 +88,7 @@ export function filters(payload){
 export function getDetail(id, CIDB){
   return(async function (dispatch) {
     try{
-      let info = await (axios.get(`http://localhost:3001/videogames/${id}?CIDB=${CIDB}`));
+      let info = await (axios.get(`${localhost}/videogames/${id}?CIDB=${CIDB}`));
       return(dispatch({
         type: GET_DETAIL,
         payload: info.data
@@ -111,7 +112,7 @@ export function clearDetail(){
 export function createGame(payload){
   return( async function(){
     try{
-      const response = await axios.post('http://localhost:3001/videogames', payload);
+      const response = await axios.post(`${localhost}/videogames`, payload);
       return (response);
     }catch{
       let date =  Date.now();

@@ -68,7 +68,7 @@ export default function rootReducer(state=initialState, action){
 
 
     case GET_GENRES: 
-      const genresDB = action.payload.map(g => g.name)
+      const genresDB = action.payload.map(g => g.name).sort()
       return({...state, genres: genresDB});
 
 

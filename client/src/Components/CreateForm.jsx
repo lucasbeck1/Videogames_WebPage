@@ -37,7 +37,7 @@ const [error, setError] = useState({});
 
 
 const platformsList = ['PC', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5', 'Xbox 360', 'Xbox One' ,'Xbox Series S/X', 'Nintendo Switch'];
-//const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web'];
+//const platformsListAUX = ['PC', 'XBOX', 'XBOX 360', 'XBOX ONE', 'XBOX SERIES S/X', 'SEGA DreamCast', 'Nintendo 64', 'Nintendo Gamecube', 'Nintendo Wii', 'Nintendo Wii U', 'Nintendo Switch', 'Nintendo DS', 'Nintendo 2Ds', 'Nintendo 3Ds', 'PlayStation', 'PlayStation 2', 'PlayStation 3', 'PlayStation 4', 'PlayStation 5' , 'PlayStation Portable', 'PlayStation Vita', 'Android', 'iOS', 'KaiOS', 'Web', 'Sega Genesis'];
 
 
 // Functions
@@ -46,8 +46,6 @@ function handleChange(e){
     ...input,
     [e.target.name]: e.target.value
   });
-  // console.log(input)
-  // Como la actualizacion del estado es algo asincrónico lo voy a ver reflejado "tarde" a los cambios
   setError(validate({
     ...input,
     [e.target.name]: e.target.value
@@ -104,13 +102,17 @@ function handleCheckbox(e){
 
 function validate(input){
   let error = {};
+  let RegEXP = /[`ª!@#$%^'*_+\=\[\]{};"\\|,<>\/~]/;
+  
   if(!input.name){error.name = 'Please write a name'}
+  else if (RegEXP.test(input.name)) {error.name = "Special characters are not accepted"}
   else if(input.name.length > 70){error.name = 'The name is too long'}
   else if(gamesList.some(g => g.name.toLowerCase() === input.name.toLowerCase())){error.name = 'The Game already exist'}
 
   else if(input.description.length === 0){error.description = 'Please write a description'}
   else if(input.description.length > 0 && input.description.length < 25){error.description = 'The description is too short'}
   else if(input.description.length > 1200){error.description = 'The description is too long'}
+  else if (RegEXP.test(input.description)) {error.description = "Special characters are not accepted"}
 
   else if(!input.released){error.released = 'Please select a date of released'}
 
@@ -120,6 +122,18 @@ function validate(input){
   else if(input.rating > 5){error.rating = 'The maximum score is 5'}
 
   else if(!input.image){error.image = 'Please insert the image link'}
+  else if(input.image.slice(0,4) !== 'http') {error.image = 'Invalid direction link, it must start with "http"'}
+  else if(
+    input.image.slice(-3) !== 'bmp' &&
+    input.image.slice(-3) !== 'jpg' &&
+    input.image.slice(-4) !== 'jpeg' &&
+    input.image.slice(-3) !== 'jpg' &&
+    input.image.slice(-3) !== 'tif' &&
+    input.image.slice(-4) !== 'tiff' &&
+    input.image.slice(-3) !== 'png' &&
+    input.image.slice(-3) !== 'svg'
+  ) {error.image = 'This link is not a valid image'}
+  
 
   else if(!input.genres.length){error.genres = 'Select at least one genre'}
 
@@ -284,10 +298,10 @@ function handleSubmit(e){
 
       input.genres.includes(gen) ?
       (<div key={`${gen}2`}>
-        <button onClick={e => handleDeSelect(e)} value={gen} className={s.genreSelected}>{gen}</button>
+        <button onClick={e => handleDeSelect(e)} value={gen} className={s.genreSelected} type="button">{gen}</button>
       </div>)
         :
-      (<div key={`${gen}2`}>
+      (<div key={`${gen}3`}>
         <button disabled onClick={e => handleDeSelect(e)} value={gen} className={s.genreUnselected}>{gen}</button>
       </div>)
 
@@ -320,7 +334,7 @@ function handleSubmit(e){
       <br/>
     </div>)}
 
-    {Object.keys(error).length ?
+    {Object.keys(error).length || !input.name.length ?
       (<input type="submit" disabled name="Send" className={s.submittButton2}/>)
       :
       (<input type="submit" name="Send" className={s.submittButton1}/>)

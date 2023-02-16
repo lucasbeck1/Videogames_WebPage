@@ -232,7 +232,7 @@ router.get('/genres', async function(req, res, next){
     });
   };
   const genresDB2 = await Genre.findAll();
-  res.status(200).json(genresDB2);
+  return res.status(200).json(genresDB2);
 });
 
 

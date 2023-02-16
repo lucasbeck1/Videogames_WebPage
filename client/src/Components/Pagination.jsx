@@ -1,7 +1,7 @@
 import React from "react";
-import s from "./Paginated.module.css";
+import s from "./Pagination.module.css";
 
-export function Paginated({gamesTotal, gamesPage, actualPage, select, nextSelect, prevSelect}){
+export function Pagination({gamesTotal, gamesPage, actualPage, select, nextSelect, prevSelect}){
 
   const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(gamesTotal/gamesPage); i++) {

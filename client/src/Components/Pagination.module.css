@@ -22,12 +22,6 @@
 .number:hover{
   color: #FF1cff;
   background-color: rgb(0, 228, 228);
-  /*  
-  padding: 0.4rem;
-  color:rgb(0, 0, 0);
-  background-color:rgb(242, 191, 252);
-  border: solid 2px wheat; 
-  */
 }
   
 .number:active{
@@ -35,24 +29,11 @@
 }
 
 
-/* 
-.number:focus{
-  width: 2.2rem;
-  border: solid 4px wheat;
-  background-color:rgb(223, 123, 243);
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
-  margin-left: 0.6rem;
-  margin-right: 0.6rem;
-} 
-*/
-
-
 .numberSelected{
   background-color:rgb(231, 144, 248);
   border: solid 4px rgb(56, 98, 175);
-  /* border: none;
-  border-radius: 3px; */
+  /* border: none; */
+  border-radius: 3px;
   min-width: 2.2rem;
   padding: 0.5rem;
   margin: 0.2rem;

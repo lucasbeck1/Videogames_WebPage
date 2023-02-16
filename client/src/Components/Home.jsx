@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getVideogames, getGenres, getVideogamesByName } from "../Redux/actions";
 import { Game } from "./Game";
-import { Paginated } from "./Paginated";
+import { Pagination } from "./Pagination";
 import { Loading } from "./Loading";
 import { FilterBar } from "./FilterBar";
 import Vectors_React from "./assets/vectors";
@@ -26,7 +26,7 @@ useEffect(()=>{
 },[dispatch]);
 
 
-// Local states (paginated)
+// Local states (pagination)
 const [currentPage, setCurrentPage] = useState(1);
 const changePage = (pageNumber) => {setCurrentPage(pageNumber)};
 const previousPage = () => {if(parseInt(currentPage) !== 1) setCurrentPage(parseInt(currentPage) -1)};
@@ -52,10 +52,10 @@ async function handleSubmit(e){
     await dispatch(getVideogamesByName(name));
     setCurrentPage(1);
     setName('');
-    document.getElementById('SearchInput').value = '';
   }else{
     alert('Game not found');
   }
+  document.getElementById('SearchInput').value = '';
 };
 
 
@@ -87,7 +87,7 @@ async function handleSubmit(e){
       currentGames.length > 0 ? (
       <div>
         <br></br>
-        <Paginated 
+        <Pagination 
         gamesTotal={actualGames.length} 
         gamesPage={gamesPerPage} 
         actualPage={currentPage}

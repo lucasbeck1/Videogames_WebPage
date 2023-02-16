@@ -73,7 +73,7 @@ Reemplazar `API_KEY` con una key de rawg.io, la cual se le otorga al usuario de 
 
 ### Instalacion de paquetes
 
-Utilice el administrador de paquetes de su preferencia para instalar, en este npm. Recuerde ejecutar este comando dentro de /client y dentro de /api
+Utilice el administrador de paquetes de su preferencia para instalar, aqui se muestra con npm. Recuerde ejecutar este comando dentro de /client y dentro de /api
 
 ```Javascript
 npm install ⚙

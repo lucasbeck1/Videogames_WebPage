@@ -67,9 +67,8 @@
 }
 
 
-.form input, textarea{
+.form input, textarea, select{
   border:none;
-  border-color: rgb(4, 102, 189);
   border-radius: 4px;
 }
 
