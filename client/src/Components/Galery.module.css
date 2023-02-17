@@ -1,0 +1,21 @@
+.galery{
+  display: flex;
+  margin: 2rem auto;
+  width: 600px;
+  height: 430px;
+}
+
+.image{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+.image:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}

@@ -19,8 +19,7 @@ estado global para filtros, ord, y pagina actual
 en el form agregar icono de x en los generos seleccionados  
 cambiar el filtro en storage de CIDB por owner    
 clases para los colores y botones  ( * )  
-tema oscuro (switch)  
-cambiar selects de ordenamientos por botones en sideBar?  
+tema oscuro (switch)    
 añadir un filtro por plataforma  
 añadir iconos  
 mostrar iconos y links de plataformas (steam , xbox) en detail  

@@ -193,23 +193,6 @@ router.get('/videogames/:idgame', async function(req, res, next){
 
 
 
-/* 
-router.get('/videogames/:idgame', async function(req, res, next){
-  
-  const allGames = await getAllGames();
-  const {idgame} = req.params;
-  const findById = allGames.find(g => g.id.toString() === idgame);
- 
-  if(!findById) return res.status(404).send('Id not found');
-  if(findById.createdInDatabase === true) return res.status(200).json(findById);
-  else {
-    const detGame = await getDetailInfo(idgame);
-    findById.description = detGame;
-    res.status(200).json(findById);
-  };
-});
-*/
-
 
 router.get('/genres', async function(req, res, next){
   const genresDB1 = await Genre.findAll();

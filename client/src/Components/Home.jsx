@@ -6,6 +6,7 @@ import { Game } from "./Game";
 import { Pagination } from "./Pagination";
 import { Loading } from "./Loading";
 import { FilterBar } from "./FilterBar";
+import { Galery } from "./Galery";
 import Vectors_React from "./assets/vectors";
 import s from "./Home.module.css";
 
@@ -103,7 +104,14 @@ async function handleSubmit(e){
             )})}
           </div>
         </div>
+        
+        <div className={s.galery}>
+          <h4>Most wanted</h4>
+          <Galery/>
+        </div>
       </div>
+      
+      
       ) : (
       <>
         <p>No games found. Keep searching</p>

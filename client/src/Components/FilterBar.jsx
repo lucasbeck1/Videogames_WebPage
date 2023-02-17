@@ -83,18 +83,7 @@ function sizePage(e){
       <option value='Low Rating'>Low Rating</option>
       <option value='High Rating'>High Rating</option>
     </select>
-    
-   {/*  
-    <div>
-        <button onClick={e => orderG(e)} value='A-Z' className={s.btn}>A-Z</button>
-        <button onClick={e => orderG(e)} value='Z-A' className={s.btn}>Z-A</button>
-    </div> 
-    <div>
-        <button onClick={e => orderG(e)} value='Low Rating' className={s.btn}>Low Rating</button>
-        <button onClick={e => orderG(e)} value='High Rating' className={s.btn}>High Rating</button>
-    </div> 
-    */}
-    
+
     {/*
     <select onChange={(e) => orderG(e)} defaultValue={'DEFAULT'}>
     <option value='DEFAULT' disabled>Select a order</option>
@@ -108,6 +97,7 @@ function sizePage(e){
     </optgroup>
     </select>
     */}
+    
     <h4>Show</h4>
     <label htmlFor='size'>Items on page</label>
     <select id='size' onChange={(e) => sizePage(e)} defaultValue={'DEFAULT'} className={s.select}>
@@ -115,12 +105,8 @@ function sizePage(e){
       <option value='5'>5</option>
       <option value='10'>10</option>
       <option value='15'>15</option>
-    </select>
-            
-            
+    </select>         
   </div>
-
   </React.Fragment>
   )
 };
-
