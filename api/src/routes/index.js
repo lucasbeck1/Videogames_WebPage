@@ -156,6 +156,7 @@ router.get('/videogames', async function(req, res, next){
 });
 
 
+
 router.get('/videogames/:idgame', async function(req, res, next){
   const localGame = req.query.CIDB
   const {idgame} = req.params;
@@ -193,7 +194,6 @@ router.get('/videogames/:idgame', async function(req, res, next){
 
 
 
-
 router.get('/genres', async function(req, res, next){
   const genresDB1 = await Genre.findAll();
   if(genresDB1.length > 0) return res.status(200).json(genresDB1);
@@ -219,73 +219,39 @@ router.get('/genres', async function(req, res, next){
 });
 
 
+
+router.get('/platforms', async function(req, res, next){
+  try{
+    const platforms = await getPlatforms();
+    return res.status(200).json(platforms);
+  }catch{
+    return res.status(500).send('Error to send platforms list');
+  }
+});
+
+
+
 router.post('/videogames', async function(req, res, next){
   const {name, description, released, rating, platforms, image, genres} = req.body;
-  //const gameNew = {description, released, rating, platforms, image};
 
   try{
-    /* 
-    let myGame = await Videogame.findOrCreate({
-      where:{name},
+    let [instance, created] = await Videogame.findOrCreate({
+      where:{name: name},
       defaults:{description, released, rating, platforms, image}
-      //defaults:{gameNew}
     });
-    */
     
-    /*   
-    for(let i=0; i<genres.length; i++){
-      let gendb = await Genre.findOne({ where:{name: genres[i]}});
-      myGame.addGenre(gendb);
+    if(created){
+      let gendb = await Genre.findAll({ where:{name: genres}});
+      instance.addGenre(gendb); 
     };
-    */
-
-    let myGame = await Videogame.create({name, description, released, rating, platforms, image});
-
-    let gendb = await Genre.findAll({ where:{name: genres}});
-    await myGame.addGenre(gendb);
-
-    res.status(200).send('The videogame was successfully created');
+    return res.status(200).send('The videogame was successfully created');
+    
   }catch(e){
     console.log(e)
-    res.status(400).send('Error in the process, sorry cheap')
+    return res.status(400).send('Error in the process, sorry cheap')
   };
 });
 
-/* 
-const postActivity = async (req, res) => {
-  const { name, difficulty, duration, season, relatedCountries } = req.body;
-  if (!name  !difficulty  !duration  !season  !relatedCountries) 
-      return res.status(404).send({msg: 'No se obtuvieron los datos correspondientes'})
-  try {
-  const [instance, created] = await Activity.findOrCreate({
-      where: {
-          name: name,
-      },
-      defaults: {
-          name: name,
-          difficulty: difficulty,
-          duration: duration,
-          season: season,
-      }
-  });
-  if(created) {
-    let relateCountries = await Country.findAll({
-        where: {
-          name: {
-            [Op.in]: relatedCountries
-          }
-        }}
-    )
-    relateCountries?.forEach(c => c.addActivity(instance));
-    return res.send({msg: 'Actividad creada con éxito'})
-  } else {
-      return res.send({msg: "Ya existe una actividad con el mismo nombre"});
-  }
-  } catch (error) {
-  console.log(error)
-  }
-}
-*/
 
 
 router.delete('/videogames', async function(req, res, next){
@@ -307,7 +273,6 @@ router.delete('/videogames', async function(req, res, next){
     }; 
   };
   
-  
   const gameToDelete = await Videogame.findByPk(id);
   //const gameToDelete = await Videogame.findOne({ where: { id: id } });
   
@@ -322,9 +287,6 @@ router.delete('/videogames', async function(req, res, next){
     return res.status(500).send('Error in the process');
   }; 
 });
-
-
-
 
 
 

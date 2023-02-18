@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-//const { expect } = require('chai');
 const session = require('supertest-session');
 const app = require('../../src/app.js');
 const { Videogame, conn } = require('../../src/db.js');
@@ -34,6 +33,8 @@ describe('Videogame routes', () => {
 
   beforeEach(() => Videogame.sync({ force: false }));
 
+
+
   describe('GET /videogames', () => {
     before(()=> Videogame.create(videogameForTEST1)) 
     after(() => {
@@ -63,41 +64,45 @@ describe('Videogame routes', () => {
       });
   });
 
+
+
   describe('GET /videogames:idgame', () => {
-    before(()=> Videogame.create(videogameForTEST1) )  
+    before(()=> Videogame.create(videogameForTEST2) )  
     after(() => {
-      Videogame.findByPk('10b44b9b-626a-4940-ba86-3c80796b9b21')
+      Videogame.findByPk('10b44b9b-626a-4940-ba86-3c80796b9b22')
       .then((game) => game.destroy({force: true}))
     });
     
     it('Get Testing game', (done) => {
-      agent.get('/videogames/10b44b9b-626a-4940-ba86-3c80796b9b21?CIDB=true')
+      agent.get('/videogames/10b44b9b-626a-4940-ba86-3c80796b9b22?CIDB=true')
       .then((res) =>{
         expect(res.status).equal(200)
         expect(res.type).to.match(/json/)
-        expect(res.body.name).equal('TEST GAME 1')
+        expect(res.body.name).equal('TEST GAME 2')
         expect(res.body.owner).equal('User')
         expect(res.body.genres.length).equal(0)
         expect(res.body.genres).to.have.lengthOf(0)
-        
-        // console.log(res.body)
-        // let gameLOG = {
-        //   id: '10b44b9b-626a-4940-ba86-3c80796b9b22',
-        //   name: 'TEST GAME 2',
-        //   description: 'A good old game',
-        //   released: null,
-        //   rating: null,
-        //   platforms: 'Nes',
-        //   image: null,
-        //   createdInDatabase: true,
-        //   owner: 'User',
-        //   genres: ''
-        // }
+        done()
+      })
+    });
+  });
+  
+  
+  
+  describe('GET /platforms', () => {
+    it('Get platforms', (done) => {
+      agent.get('/platforms')
+      .then((res) =>{
+        expect(res.status).equal(200)
+        expect(res.type).to.match(/json/)
+        expect(res.body).to.have.lengthOf.above(0);
         done()
       })
       .catch((err => done(err)))
     });
   });
+  
+
 
   describe('GET /genres', () => {
     it('Get genres', (done) => {
@@ -111,6 +116,7 @@ describe('Videogame routes', () => {
     });
   });
 
+  
   
   describe('POST /videogames', function () {
     after(() => {
@@ -129,6 +135,8 @@ describe('Videogame routes', () => {
       .catch((err => done(err)))
     });
   });
+  
+  
   
   describe('DELETE /videogames', function () {
     before(() => Videogame.create(videogameForTEST1));

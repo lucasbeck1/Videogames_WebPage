@@ -74,5 +74,15 @@ navigator.language
 window.navigator.language
 navigator.browserLanguage  --->  undefined
 
+METER TAG
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+
+PROGRESS TAG
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
 
 */
