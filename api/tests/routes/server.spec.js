@@ -44,24 +44,31 @@ describe('Videogame routes', () => {
     
     it('Get all games (No query parameters)', (done) => {
       agent.get('/videogames')
-      .expect(200)
-      .expect('Content-Type', /application\/json/)
-      done()
+      .then((res) =>{
+        expect(res.status).equal(200)
+        expect(res.type).to.match(/json/)
+        expect(res.body).to.have.lengthOf.above(0);
+        done()
+      })
     });
 
     it('Get games by name (W/ query paraneters)', (done) => {
-    agent.get('/videogames?name=test')
-    .expect(200)
-    .expect('Content-Type', /json/)
-    done()
+      agent.get('/videogames?name=test')
+      .then((res) =>{
+        expect(res.status).equal(200)
+        expect(res.type).to.match(/json/)
+        expect(res.body).to.have.lengthOf.above(0);
+        done()
+      })
     });
     
     it('Get no games by name (W/ query paraneters)', (done) => {
       agent.get('/videogames?name=estejuegonodeberiaexistir')
-      .expect(200)
-      .expect('Content-Type', /json/)
-      done()
-      });
+      .then((res) =>{
+        expect(res.status).equal(404)
+        done()
+      })
+    });
   });
 
 
@@ -110,6 +117,7 @@ describe('Videogame routes', () => {
       .then((res) =>{
         expect(res.status).equal(200)
         expect(res.type).to.match(/json/)
+        expect(res.body).to.have.lengthOf.above(0);
         done()
       })
       .catch((err => done(err)))
