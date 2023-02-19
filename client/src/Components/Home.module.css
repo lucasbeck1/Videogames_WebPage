@@ -82,6 +82,5 @@ si solo ponemos la etiqueta modificará todo el proyecto
   color: rgb(16, 56, 129);
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  text-align:left;
 }

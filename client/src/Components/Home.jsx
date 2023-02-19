@@ -106,7 +106,7 @@ async function handleSubmit(e){
         </div>
         
         <div className={s.galery}>
-          <h4>Most wanted</h4>
+          <h4>Recent & Most wanted</h4>
           <Galery/>
         </div>
       </div>

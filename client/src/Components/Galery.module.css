@@ -1,8 +1,8 @@
 .galery{
   display: flex;
   margin: 2rem auto;
-  width: 600px;
-  height: 430px;
+  width: 90%;
+  height: 330px;
 }
 
 .image{
@@ -10,7 +10,7 @@
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
-  transition: .5s ease;
+  transition: .8s ease;
 }
 
 .image:hover{
