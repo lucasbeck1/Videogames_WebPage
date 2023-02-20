@@ -140,7 +140,10 @@ const getPlatforms = async () => {
 
 
 // ---------------------- Routes ----------------------
-
+router.get('/conn', async function(req, res, next){
+  //setTimeout(() => res.status(200).send("Connection stablished"), 2000)
+  return res.status(200).send("Connection stablished");
+});
 
 router.get('/videogames', async function(req, res, next){
   const allGames = await getAllGames();

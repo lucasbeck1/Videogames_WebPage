@@ -50,6 +50,7 @@ describe('Videogame routes', () => {
         expect(res.body).to.have.lengthOf.above(0);
         done()
       })
+      .catch((err) => done(err))
     });
 
     it('Get games by name (W/ query paraneters)', (done) => {
@@ -60,6 +61,7 @@ describe('Videogame routes', () => {
         expect(res.body).to.have.lengthOf.above(0);
         done()
       })
+      .catch((err) => done(err))
     });
     
     it('Get no games by name (W/ query paraneters)', (done) => {
@@ -68,6 +70,7 @@ describe('Videogame routes', () => {
         expect(res.status).equal(404)
         done()
       })
+      .catch((err) => done(err))
     });
   });
 
@@ -91,6 +94,7 @@ describe('Videogame routes', () => {
         expect(res.body.genres).to.have.lengthOf(0)
         done()
       })
+      .catch((err) => done(err))
     });
   });
   

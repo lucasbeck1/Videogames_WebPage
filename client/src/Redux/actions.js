@@ -15,60 +15,146 @@ export const CREATE_VIDEOGAME = 'CREATE_VIDEOGAME';
 const gamesCopy = Games.slice();
 const genresCopy = Genres.slice();
 
-const localhost = "http://localhost:3001"
+const mainURL = "http://localhost:3001";
+let dbConnection = false;
+
+function conn(){
+  axios(`${mainURL}/conn`)
+  .then(() => dbConnection = true)
+  .catch(() => dbConnection = false)
+};
 
 
+
+// Functions data from Local (Back_data)
+function gamesLocal(dispatch){
+  return(dispatch({
+    type: GET_VIDEOGAMES,
+    payload: gamesCopy
+  }));
+};
+
+function gamesByNameLocal(dispatch, name){
+  let gamesByName = gamesCopy.slice().filter(g => g.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())).slice(0,15);
+  return(dispatch({
+    type: GET_VIDEOGAMES_BY_NAME,
+    payload: gamesByName
+  }));
+};
+
+function genresLocal(dispatch){
+  return(dispatch({
+    type: GET_GENRES,
+    payload: genresCopy
+  }));
+};
+
+function detailLocal(dispatch, id){
+  let gameInfo = gamesCopy.find(g => g.id.toString() === id.toString());
+  return(dispatch({
+    type: GET_DETAIL,
+    payload: gameInfo
+  }));
+};
+
+function newGameLocal(dispatch, payload){
+  let date =  Date.now();
+  let newID = Math.ceil(date / (Math.floor(Math.random()*1000)));
+  let newGame = {
+    id: newID,
+    name: payload.name,
+    description: payload.description,
+    image: payload.image,
+    released: payload.released,
+    rating: payload.rating,
+    genres: payload.genres.join(', '),
+    platforms: payload.platforms,
+    "createdInDatabase": true
+  }
+  gamesCopy.push(newGame);
+}
+
+
+
+// Functions data from DB
+async function gamesDb(dispatch){
+  let info = await (axios(`${mainURL}/videogames`));
+  return(dispatch({
+    type: GET_VIDEOGAMES,
+    payload: info.data
+  }));
+};
+
+async function gamesByNameDb(dispatch, name){
+  let info = await (axios(`${mainURL}/videogames?name=${name}`));
+  return(dispatch({
+    type: GET_VIDEOGAMES_BY_NAME,
+    payload: info.data
+  }));
+};
+
+async function genresDb(dispatch){
+  let info = await (axios(`${mainURL}/genres`));
+  return(dispatch({
+    type: GET_GENRES,
+    payload: info.data
+  }));
+};
+
+async function detailDB(dispatch, id, CIDB){
+  let info = await (axios.get(`${mainURL}/videogames/${id}?CIDB=${CIDB}`));
+  return(dispatch({
+    type: GET_DETAIL,
+    payload: info.data
+  }));
+};
+
+async function newGameDB(dispatch, payload){
+  const response = await axios.post(`${mainURL}/videogames`, payload);
+  return (response);
+};
+
+
+
+// Dispatch Functions
 export function getVideogames(){
-  return(async function (dispatch){
-    try{
-      let info = await (axios(`${localhost}/videogames`));
-      return(dispatch({
-        type: GET_VIDEOGAMES,
-        payload: info.data
-      }));
-    }catch{
-      return(dispatch({
-        type: GET_VIDEOGAMES,
-        payload: gamesCopy
-      }));
-    }
-    
-  });
+  if(dbConnection){
+    return async (dispatch) => gamesDb(dispatch)
+  }else{
+    return async (dispatch) => gamesLocal(dispatch)
+  }
 };
 
 export function getVideogamesByName(name){
-  return(async function (dispatch){
-    try{
-      let info = await (axios(`${localhost}/videogames?name=${name}`));
-      return(dispatch({
-        type: GET_VIDEOGAMES_BY_NAME,
-        payload: info.data
-      }));
-    }catch{
-      let gamesByName = gamesCopy.slice().filter(g => g.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())).slice(0,15)
-      return(dispatch({
-        type: GET_VIDEOGAMES_BY_NAME,
-        payload: gamesByName
-      }));
-    }
-  });
+  if(dbConnection){
+    return async (dispatch) => gamesByNameDb(dispatch, name)
+  }else{
+    return async (dispatch) => gamesByNameLocal(dispatch, name)
+  }
 };
 
 export function getGenres(){
-  return(async function (dispatch){
-    try{
-      let info = await (axios(`${localhost}/genres`));
-      return(dispatch({
-        type: GET_GENRES,
-        payload: info.data
-      }));
-    }catch{
-      return(dispatch({
-        type: GET_GENRES,
-        payload: genresCopy
-      }));
-    }      
-  });
+  if(dbConnection){
+    return async (dispatch) => genresDb(dispatch)
+  }else{
+    return async (dispatch) => genresLocal(dispatch)
+  }
+};
+
+export function getDetail(id, CIDB){
+  if(dbConnection){
+    return async (dispatch) => detailDB(dispatch, id, CIDB)
+  }else{
+    return async (dispatch) => detailLocal(dispatch, id, CIDB)
+  }
+};
+
+export function createGame(payload){
+  if(dbConnection){
+    return async (dispatch) => newGameDB(dispatch, payload)
+  }else{
+    return async (dispatch) => newGameLocal(dispatch, payload)
+  }
 };
 
 export function orders(payload){
@@ -85,53 +171,14 @@ export function filters(payload){
   });
 };
 
-export function getDetail(id, CIDB){
-  return(async function (dispatch) {
-    try{
-      let info = await (axios.get(`${localhost}/videogames/${id}?CIDB=${CIDB}`));
-      return(dispatch({
-        type: GET_DETAIL,
-        payload: info.data
-      }));
-    }catch{
-      let gameInfo = gamesCopy.find(g => g.id.toString() === id.toString());
-      return(dispatch({
-        type: GET_DETAIL,
-        payload: gameInfo
-      }));
-    }  
-  });
-};
-
 export function clearDetail(){
   return({
     type: CLEAR_DETAIL,
   });
 };
 
-export function createGame(payload){
-  return( async function(){
-    try{
-      const response = await axios.post(`${localhost}/videogames`, payload);
-      return (response);
-    }catch{
-      let date =  Date.now();
-      let newID = Math.ceil(date / (Math.floor(Math.random()*1000)));
-      let newGame = {
-        id: newID,
-        name: payload.name,
-        description: payload.description,
-        image: payload.image,
-        released: payload.released,
-        rating: payload.rating,
-        genres: payload.genres.join(', '),
-        platforms: payload.platforms,
-        "createdInDatabase": true
-      }
-      gamesCopy.push(newGame);
-    }
-  });
-};
+
+
 
 
 
@@ -161,23 +208,6 @@ axios({
 */
 
 
-/* 
-
-Request method aliases
-For convenience aliases have been provided for all supported request methods.
-
-axios.request(config)
-axios.get(url[, config])
-axios.delete(url[, config])
-axios.head(url[, config])
-axios.options(url[, config])
-axios.post(url[, data[, config]])
-axios.put(url[, data[, config]])
-axios.patch(url[, data[, config]])
-NOTE
-When using the alias methods url, method, and data properties don't need to be specified in config.
-
- */
 
 
 
