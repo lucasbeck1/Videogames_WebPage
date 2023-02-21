@@ -43,9 +43,9 @@ export function Galery (){
   <section className={s.galery}>
     {images.map((i)=> {
       return(
-      <>
-      <img src={i.image} alt="Img Not Found" className={s.image} title={i.name}/>
-      </>
+      < React.Fragment key={i.id}>
+        <img src={i.image} alt="Img Not Found" className={s.image} title={i.name} key={i.id}/>
+      </React.Fragment>
       )
     })}
   

@@ -4,7 +4,7 @@
 
 ## Individual Project - Henry Videogames
 
-# Objetivos
+# Objetivos 🎯
 
 ## Del Proyecto
 

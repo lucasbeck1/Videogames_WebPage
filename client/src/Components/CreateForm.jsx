@@ -313,19 +313,19 @@ function handleSubmit(e){
     <p>Platforms: </p>
     <div className={s.listPlatforms}>
       {platformsList.map((pl => {return(
-      <>
+      <React.Fragment key={pl}>
         {input.platforms.includes(pl) ? (
-        <label key={pl} className={s.selectedPlatform}>
+        <label className={s.selectedPlatform}>
         <input type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)} />
           {pl}
         </label>
         ) : (
-        <label key={pl} className={s.unSelectedPlatform}>
+        <label className={s.unSelectedPlatform}>
         <input type='checkbox' name={pl} value={pl} onChange={e => handleCheckbox(e)} />
           {pl}
         </label>
         )}
-      </>
+      </React.Fragment>
       )}))}
     </div>
     {error.platforms ? (<p className={s.error}>{error.platforms}</p>) :

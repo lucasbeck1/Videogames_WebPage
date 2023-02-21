@@ -16,13 +16,13 @@ const gamesCopy = Games.slice();
 const genresCopy = Genres.slice();
 
 const mainURL = "http://localhost:3001";
-let dbConnection = false;
+let dbConnection = null;
 
-function conn(){
-  axios(`${mainURL}/conn`)
-  .then(() => dbConnection = true)
-  .catch(() => dbConnection = false)
-};
+
+axios(`${mainURL}/conn`)
+.then(() => dbConnection = true)
+.catch(() => dbConnection = false)
+
 
 
 
@@ -118,43 +118,28 @@ async function newGameDB(dispatch, payload){
 
 // Dispatch Functions
 export function getVideogames(){
-  if(dbConnection){
-    return async (dispatch) => gamesDb(dispatch)
-  }else{
-    return async (dispatch) => gamesLocal(dispatch)
-  }
+  if(dbConnection === true) return async (dispatch) => gamesDb(dispatch);
+  return async (dispatch) => gamesLocal(dispatch); 
 };
 
 export function getVideogamesByName(name){
-  if(dbConnection){
-    return async (dispatch) => gamesByNameDb(dispatch, name)
-  }else{
-    return async (dispatch) => gamesByNameLocal(dispatch, name)
-  }
+  if(dbConnection) return async (dispatch) => gamesByNameDb(dispatch, name);
+  return async (dispatch) => gamesByNameLocal(dispatch, name);
 };
 
 export function getGenres(){
-  if(dbConnection){
-    return async (dispatch) => genresDb(dispatch)
-  }else{
-    return async (dispatch) => genresLocal(dispatch)
-  }
+  if(dbConnection) return async (dispatch) => genresDb(dispatch);
+  return async (dispatch) => genresLocal(dispatch);
 };
 
 export function getDetail(id, CIDB){
-  if(dbConnection){
-    return async (dispatch) => detailDB(dispatch, id, CIDB)
-  }else{
-    return async (dispatch) => detailLocal(dispatch, id, CIDB)
-  }
+  if(dbConnection) return async (dispatch) => detailDB(dispatch, id, CIDB);
+  return async (dispatch) => detailLocal(dispatch, id, CIDB);
 };
 
 export function createGame(payload){
-  if(dbConnection){
-    return async (dispatch) => newGameDB(dispatch, payload)
-  }else{
-    return async (dispatch) => newGameLocal(dispatch, payload)
-  }
+  if(dbConnection) return async (dispatch) => newGameDB(dispatch, payload);
+  return async (dispatch) => newGameLocal(dispatch, payload);
 };
 
 export function orders(payload){
