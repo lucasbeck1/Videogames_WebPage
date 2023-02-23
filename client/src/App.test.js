@@ -13,6 +13,7 @@ import { CreateForm } from './Components/CreateForm';
 
 test('Render START button', () => {
   render(<App />);
+  
   const homeButton = screen.getByText(/START/i);
   expect(homeButton).toBeInTheDocument();
 });
@@ -20,6 +21,7 @@ test('Render START button', () => {
 
 test('Render Loading text', () => {
   render(<Loading />);
+  
   const loadText = screen.getByText(/Loading/i);
   expect(loadText).toBeInTheDocument();
 });
@@ -33,6 +35,7 @@ test('Render title header', () => {
     </Router>
   </Provider>
   );
+  
   const loadText = screen.getByText(/Lucky Gamer/i);
   expect(loadText).toBeInTheDocument();
 });
@@ -46,6 +49,7 @@ test('Render Card Game', () => {
     </Router>
   </Provider>
   );
+  
   const titleGame = screen.getByText(/gameName/i);
   expect(titleGame).toBeInTheDocument();
   
@@ -65,6 +69,7 @@ test('Render recomendation texts', () => {
     </Router>
   </Provider>
   );
+  
   const homeButton = screen.getByText(/Home/i);
   expect(homeButton).toBeInTheDocument();
   
@@ -81,6 +86,7 @@ test('Render Filter elements', () => {
     </Router>
   </Provider>
   );
+  
   const filterText = screen.getByText(/Filters/i);
   expect(filterText).toBeInTheDocument();
   
@@ -118,14 +124,19 @@ test('Render Form texts', () => {
     </Router>
   </Provider>
   );
+  
   const homeButton = screen.getByText(/Home/i);
   expect(homeButton).toBeInTheDocument();
   
   const nameText = screen.getByText(/Name:/i);
   expect(nameText).toBeInTheDocument();
   
-  // const descId = screen.getByTestId(/desc/i);
-  // expect(descId).toBeInTheDocument();
+  const descriptionText = screen.getByText(/Description/i);
+  expect(descriptionText).toBeInTheDocument();
   
+  const genreDefault = screen.getByDisplayValue(/Select a genre/i);
+  expect(genreDefault).toBeInTheDocument();
   
+  const namePlaceHolder = screen.getByPlaceholderText(/Game Name/i);
+  expect(namePlaceHolder).toBeInTheDocument();
 });
