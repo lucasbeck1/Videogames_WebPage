@@ -13,13 +13,11 @@ opción de elegir default image form
 cuando carga el home, incrementar el margin top del footer  
 previsualizacion loading  
 footer  
-Firma LB creations  
-añadir idioma español  
+Firma LB creations   
 estado global para filtros, ord, y pagina actual   
 en el form agregar icono de x en los generos seleccionados  
 cambiar el filtro en storage de CIDB por owner    
-clases para los colores y botones  ( * )  
-tema oscuro (switch)    
+clases para los colores y botones  ( * )     
 añadir un filtro por plataforma  
 añadir iconos  
 mostrar iconos y links de plataformas (steam , xbox) en detail  
@@ -38,20 +36,6 @@ autorizacion,
 romper form por javascript - En static no pude  
 
 
-
-
-
-__( * ) colores sugeridos: __ 
---chakra-colors-gray-50: #F7FAFC;  
---chakra-colors-gray-100: #EDF2F7;  
---chakra-colors-gray-200: #E2E8F0;  
---chakra-colors-gray-300: #CBD5E0;  
---chakra-colors-gray-400: #A0AEC0;  
---chakra-colors-gray-500: #718096;  
---chakra-colors-gray-600: #4A5568;  
---chakra-colors-gray-700: #2D3748;  
---chakra-colors-gray-800: #1A202C;  
---chakra-colors-gray-900: #171923;  
 
 
 __Deploy:__  

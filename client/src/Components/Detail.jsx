@@ -10,9 +10,9 @@ import s from "./Detail.module.css";
 
 export function Detail (props){
   const detailG = useSelector(state => state.detail);
-  const dispatch = useDispatch();
   
   /* 
+  const dispatch = useDispatch();
   useEffect(()=>{
       dispatch(getDetail(props.match.params.id));
       return () => {dispatch(clearDetail())}
