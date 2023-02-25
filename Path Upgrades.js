@@ -29,14 +29,11 @@ pedir guia de logros mediante url personalizada en troppgy guides, xbox achievem
 pedir gameplay mediante url personalizada en youtube
 
 
-__Back:__  
-Quitar try catch de redux actions y reemplazarlo por una variable booleana dependiendo si carga  
-Modificar back data y luegos los filtros en el front, propiedad cibd de cada juego   
+__Back:__   
 En los test de rutas modificar el timeout 2000ms de mocha porque da error a veces 
 Optimizar datos proporcionados en llamado detail (llenar el detail por front haciendo un filter) y requieriendo solo los datos necesarios de los juegos externos 
 Si no ejecutas Get genres depues de un reset, no agrega generos a los juegso creados  
-Tener genres y juegos hardcodeados en json para alimentar por primera vez la db en caso de reset  
-eliminar items,  
+Tener genres y juegos hardcodeados en json para alimentar por primera vez la db en caso de reset   
 autorizacion,  
 romper form por javascript - En static no pude  
 

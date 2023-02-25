@@ -150,6 +150,30 @@ describe('Videogame routes', () => {
   
   
   
+  describe('PUT /videogames', function () {
+    before(() => Videogame.create(videogameForTEST2));
+    after(() => {
+      Videogame.findByPk("10b44b9b-626a-4940-ba86-3c80796b9b22") 
+      .then((game) => game.destroy({force: true}))
+    });
+    
+    it('Modify game', (done) => {
+      agent.put('/videogames')
+      .send({
+        id: "10b44b9b-626a-4940-ba86-3c80796b9b22",
+        name: "TEST SUCCES"
+      })
+      .then((res) => {
+        expect(res.status).equal(200)
+        expect(res.text).equal('Videogame successfully updated')
+        done()
+      })
+      .catch((err => done(err)))
+    });
+  });
+  
+  
+  
   describe('DELETE /videogames', function () {
     before(() => Videogame.create(videogameForTEST1));
     

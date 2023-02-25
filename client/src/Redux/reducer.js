@@ -77,8 +77,8 @@ export default function rootReducer(state=initialState, action){
       const filter1 = action.payload;
       let filtered = allVideogames;
       let genres = state.genres;
-      if(filter1 === 'Api'){filtered = allVideogames.filter(g => g.createdInDatabase === false)}
-      else if(filter1 === 'Db'){filtered = allVideogames.filter(g => g.createdInDatabase === true)}
+      if(filter1 === 'Api'){filtered = allVideogames.filter(g => g.owner === "Admin")}
+      else if(filter1 === 'Db'){filtered = allVideogames.filter(g => g.owner !== "Admin")}
       else if(genres.includes(filter1)){filtered = allVideogames.filter(g => g.genres.includes(filter1))}
 
       return({

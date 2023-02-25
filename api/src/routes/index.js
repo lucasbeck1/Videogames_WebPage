@@ -68,7 +68,8 @@ const getApiInfo = async (index=0) => {
         rating: e.rating,
         genres: e.genres.map(e => e.name).join(', '),
         platforms: e.platforms.map((e) => e.platform.name).join(', '),
-        createdInDatabase: false
+        createdInDatabase: false,
+        owner: "Admin"
       })
     );
   };

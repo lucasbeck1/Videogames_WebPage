@@ -6,12 +6,13 @@ module.exports = (s) => {
   s.define('videogame', {
     id:{
       type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4, 
+      defaultValue: DataTypes.UUIDV4,
       alowNull: false,
       primaryKey: true 
     },
     name:{
       type: DataTypes.STRING,
+      unique: true,
       allowNull: false
     },
     description:{

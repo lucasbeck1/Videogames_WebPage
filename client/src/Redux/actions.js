@@ -26,7 +26,7 @@ axios(`${mainURL}/conn`)
 
 
 
-// Functions data from Local (Back_data)
+// Functions data from Local: Back_data.js (dbConnection = false)
 function gamesLocal(dispatch){
   return(dispatch({
     type: GET_VIDEOGAMES,
@@ -69,14 +69,15 @@ function newGameLocal(dispatch, payload){
     rating: payload.rating,
     genres: payload.genres.join(', '),
     platforms: payload.platforms,
-    "createdInDatabase": true
+    "createdInDatabase": true,
+    owner: "User"
   }
-  gamesCopy.push(newGame);
+  gamesCopy.unshift(newGame);
 }
 
 
 
-// Functions data from DB
+// Functions data from DB (dbConnection = true)
 async function gamesDb(dispatch){
   let info = await (axios(`${mainURL}/videogames`));
   return(dispatch({
@@ -118,7 +119,7 @@ async function newGameDB(dispatch, payload){
 
 // Dispatch Functions
 export function getVideogames(){
-  if(dbConnection === true) return async (dispatch) => gamesDb(dispatch);
+  if(dbConnection) return async (dispatch) => gamesDb(dispatch);
   return async (dispatch) => gamesLocal(dispatch); 
 };
 
