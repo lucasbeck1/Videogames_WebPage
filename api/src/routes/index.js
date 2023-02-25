@@ -145,6 +145,8 @@ router.get('/conn', async function(req, res, next){
   return res.status(200).send("Connection stablished");
 });
 
+
+
 router.get('/videogames', async function(req, res, next){
   const allGames = await getAllGames();
   const {name} = req.query;
@@ -234,6 +236,12 @@ router.get('/platforms', async function(req, res, next){
 
 
 
+router.get('/:content', async function(req, res, next){
+  return res.status(404).send('The content does not exist');
+});
+
+
+
 router.post('/videogames', async function(req, res, next){
   const {name, description, released, rating, platforms, image, genres} = req.body;
 
@@ -252,6 +260,50 @@ router.post('/videogames', async function(req, res, next){
   }catch(e){
     console.log(e)
     return res.status(400).send('Error in the process, sorry cheap')
+  };
+});
+
+
+
+router.put('/videogames', async function(req, res, next){
+  
+  try{
+  const { id, name, description, released, rating, platforms, image, genres } = req.body;
+  
+  const values = {
+    name,
+    description,
+    released,
+    rating,
+    platforms,
+    image
+  };
+  
+  for (const property in values) {
+    if(!values[property] || typeof values[property] !== "string"){
+      delete values[property];
+    }
+  };
+  
+  await Videogame.update(
+    values, 
+    {where: {id: id}}
+  );
+  
+  if(genres && genres.length){
+  
+    const game = await Videogame.findByPk(id);
+    await game.removeGenres();
+    let gendb = await Genre.findAll({ where:{name: genres}});
+    //await game.addGenre(gendb);
+    await game.setGenres(gendb);
+  }
+  
+  return res.status(200).send('Videogame successfully updated');
+  
+  }catch(e){
+    console.log(e);
+    return res.status(500).send('Error in the process, sorry cheap');
   };
 });
 
