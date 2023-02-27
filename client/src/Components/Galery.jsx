@@ -7,7 +7,7 @@ import s from "./Galery.module.css";
 
 
 export function Galery (){
-
+ 
   let allGames = useSelector(state => state.videogamesListCOMPLETE).slice();
   
   allGames = allGames.sort(function (a, b) {
@@ -18,13 +18,14 @@ export function Galery (){
       return -1;
     }
     return 0;
-});
-  
+  });
+
   const images = [
     allGames[0],
     allGames[1],
     allGames[2],
     allGames[3],
+    allGames[4],
     allGames[5],
     allGames[6],
     allGames[7],
@@ -36,7 +37,33 @@ export function Galery (){
     allGames[13],
     allGames[14],
     allGames[15],
-  ]
+  ];
+  
+  if(window.screen.width < 920){
+    images.pop();
+    images.pop();
+  };
+  
+  if(window.screen.width < 870){
+    images.pop();
+    images.pop();
+  };
+  
+  if(window.screen.width < 750){
+    images.pop();
+    images.pop();
+  };
+  
+  if(window.screen.width < 520){
+    images.pop();
+    images.pop();
+    images.pop();
+  };
+  
+  if(window.screen.width < 420){
+    images.pop();
+    images.pop();
+  };
 
   return(
   <React.Fragment>
@@ -48,7 +75,6 @@ export function Galery (){
       </React.Fragment>
       )
     })}
-  
   </section>
   </React.Fragment>
   )

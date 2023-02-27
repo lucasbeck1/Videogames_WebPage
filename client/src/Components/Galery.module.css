@@ -1,6 +1,6 @@
 .galery{
   display: flex;
-  margin: 2rem auto;
+  margin: auto;
   width: 90%;
   height: 330px;
 }

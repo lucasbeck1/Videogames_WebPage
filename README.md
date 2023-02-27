@@ -38,7 +38,7 @@ Crear una aplicación web donde se puedan encontrar diferentes tipos de juegos, 
 
 Frontend: React, redux, css  
 
-Backend: Node, Express, Seuqelize  
+Backend: Node, Express, Sequelize  
 
 DataBase: Postgresql  
 
@@ -79,7 +79,7 @@ Utilice el administrador de paquetes de su preferencia para instalar, aqui se mu
 npm install ⚙
 ```
 
-### Ejecutar local
+### Ejecución local
 _ FrontEnd: Dentro ./client
 
 ```Javascript

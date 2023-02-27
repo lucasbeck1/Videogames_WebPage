@@ -28,8 +28,11 @@
   border-radius: 20px;
 }
 
-
-
+@media only screen and (max-width: 520px) {
+  .page{
+    width: 90%;
+  }
+}
 
 
 .upText{
