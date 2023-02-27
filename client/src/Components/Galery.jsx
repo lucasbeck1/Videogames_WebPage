@@ -39,28 +39,28 @@ export function Galery (){
     allGames[15],
   ];
   
-  if(window.screen.width < 920){
+  if(window.screen.availWidth < 920){
     images.pop();
     images.pop();
   };
   
-  if(window.screen.width < 870){
+  if(window.screen.availWidth < 870){
     images.pop();
     images.pop();
   };
   
-  if(window.screen.width < 750){
+  if(window.screen.availWidth < 750){
     images.pop();
     images.pop();
   };
   
-  if(window.screen.width < 520){
+  if(window.screen.availWidth < 520){
     images.pop();
     images.pop();
     images.pop();
   };
   
-  if(window.screen.width < 420){
+  if(window.screen.availWidth < 420){
     images.pop();
     images.pop();
   };

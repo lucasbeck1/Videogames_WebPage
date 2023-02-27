@@ -93,3 +93,11 @@ npm start
 ```
 
 ## A buscar juegos se ha dicho !!! 🎮
+
+¿ Qué es lo que voy a visualizar una vez entro en el sitio ?
+
+- Página de bienvenida y entrada al Home.
+- Pagina Principal donde se visualizan los juegos
+- El detalle de cada juego
+- Formulario de creación de items (juegos)
+- Sección para pedir una recomendación aleatoria

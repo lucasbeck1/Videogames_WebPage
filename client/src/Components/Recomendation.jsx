@@ -25,14 +25,14 @@ export function Recomendation(){
   <Link to='/home' style={{ color: 'inherit', textDecoration: 'inherit'}}>
     <p className={s.btn}>Home</p>
   </Link>
-  <div className={s.modal}>
+  <div className={s.modal1}>
     <p>You don't know what do you play ?</p>
     <p>See a random recommendation</p>
     <button className={s.btn} onClick={e => random(e)}>Pick One</button>
   </div>
   
   { picked && 
-  <div className={s.modal}>
+  <div className={s.modal2}>
     <Game name={game.name} img={game.image} genres={game.genres} CIDB={game.createdInDatabase} id={game.id} key={game.id}/>
   </div>
   }

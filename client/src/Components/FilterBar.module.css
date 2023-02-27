@@ -11,6 +11,27 @@
   /* background-color: rgba(166, 167, 114, 0.212); */
 }
 
+
+.navHide1{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 3px;
+  position: relative;
+ /*  position: fixed;
+  background-color: black; */
+  left:0%;
+  width: 7rem;
+  margin-top: 1rem;
+  height: 32.5rem;
+  /* background-color: rgba(166, 167, 114, 0.212); */
+}
+
+.navHide2{
+  display: none;
+}
+
+
 .btn{
   color: #FF1cff;
   background-color: rgb(16, 56, 129);
