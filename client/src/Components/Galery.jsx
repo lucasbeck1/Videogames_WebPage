@@ -1,8 +1,8 @@
 import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import Vectors_React from "./assets/vectors";
-import s from "./Galery.module.css";
+import Vectors_React from "../assets/vectors";
+import s from "./styles/Galery.module.css";
 
 
 

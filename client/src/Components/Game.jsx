@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { getDetail } from "../Redux/actions";
-import defaultImage from "./assets/joy-1.jpg";
-import s from "./Game.module.css";
+import defaultImage from "../assets/joy-1.jpg";
+import s from "./styles/Game.module.css";
 
 
 export function Game ({name, img, genres, CIDB, id}){

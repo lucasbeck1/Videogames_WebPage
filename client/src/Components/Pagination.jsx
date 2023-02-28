@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Pagination.module.css";
+import s from "./styles/Pagination.module.css";
 
 export function Pagination({gamesTotal, gamesPage, actualPage, select, nextSelect, prevSelect}){
 

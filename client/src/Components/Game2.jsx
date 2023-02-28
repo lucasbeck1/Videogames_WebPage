@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { getDetail } from "../Redux/actions";
 import defaultImage from "./assets/joy-1.jpg";
-import s from "./Game2.module.css";
+import s from "./styles/Game2.module.css";
 
 
 export function Game ({name, img, genres, id}){

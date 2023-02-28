@@ -4,7 +4,8 @@
 
 __Front:__    
 cambiar ancho de cards ?  
-card hover - mostrar logo de plataformas (ps, xbox, pc)  
+card hover - mostrar logo de plataformas (ps, xbox, pc) en lugar de generos  
+y los generos mostrarlos con el atributo title para cad card  
 responsive image: width: 100%; max-width: 400px; height: auto;  
 quitar margin title del header y centrar   
 diseñar y animar logo landing  

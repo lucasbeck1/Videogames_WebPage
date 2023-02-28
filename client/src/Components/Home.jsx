@@ -7,59 +7,70 @@ import { Pagination } from "./Pagination";
 import { Loading } from "./Loading";
 import { FilterBar } from "./FilterBar";
 import { Galery } from "./Galery";
-import Vectors_React from "./assets/vectors";
-import s from "./Home.module.css";
+import Vectors_React from "../assets/vectors";
+import s from "./styles/Home.module.css";
 
 
 
 export function Home (){
-
-// Global states
-const dispatch = useDispatch();
-const allGames = useSelector(state => state.videogamesListCOMPLETE);
-const actualGames = useSelector(state => state.videogamesList);
-//const [state, dispatch] = useReducer(reducer, initialState);
-
-
-useEffect(()=>{
-  dispatch(getGenres())
-  dispatch(getVideogames())
-},[dispatch]);
-
-
-// Local states (pagination)
-const [currentPage, setCurrentPage] = useState(1);
-const changePage = (pageNumber) => {setCurrentPage(pageNumber)};
-const previousPage = () => {if(parseInt(currentPage) !== 1) setCurrentPage(parseInt(currentPage) -1)};
-const nextPage = (last) => {if(parseInt(currentPage) !== (last)) setCurrentPage(parseInt(currentPage) + 1)};
-
-const [gamesPerPage, setGamesPerPage] = useState(15);
-const indexLastGame = currentPage * gamesPerPage;
-const ixdexFirstGame = indexLastGame - gamesPerPage;
-const currentGames = actualGames.slice(ixdexFirstGame, indexLastGame);
-
-// Local states (Search)
-const [name, setName] = useState('');
-
-// Button Functions
-function handleInput(e){
-  e.preventDefault()
-  setName(e.target.value)
-};
-
-async function handleSubmit(e){
-  if(allGames.some(g=>g.name.toLowerCase().includes(name.toLowerCase()))){
-    e.preventDefault();
-    await dispatch(getVideogamesByName(name));
-    setCurrentPage(1);
-    setName('');
-  }else{
-    alert('Game not found');
-  }
-  document.getElementById('SearchInput').value = '';
-};
-
-
+  
+  // Global states
+  const dispatch = useDispatch();
+  const allGames = useSelector(state => state.videogamesListCOMPLETE);
+  const actualGames = useSelector(state => state.videogamesList);
+  //const [state, dispatch] = useReducer(reducer, initialState);
+  
+  
+  useEffect(()=>{
+    dispatch(getGenres())
+    dispatch(getVideogames())
+  },[dispatch]);
+  
+  
+  // Local states (pagination)
+  const [currentPage, setCurrentPage] = useState(1);
+  const changePage = (pageNumber) => {setCurrentPage(pageNumber)};
+  const previousPage = () => {if(parseInt(currentPage) !== 1) setCurrentPage(parseInt(currentPage) -1)};
+  const nextPage = (last) => {if(parseInt(currentPage) !== (last)) setCurrentPage(parseInt(currentPage) + 1)};
+  
+  const [gamesPerPage, setGamesPerPage] = useState(15);
+  
+  
+  // if(window.screen.availWidth <= 520){
+  //   setGamesPerPage(5);
+  // }
+  
+  // else if(window.innerWidth <= 720){
+  //   setGamesPerPage(10);
+  // }
+  
+  const indexLastGame = currentPage * gamesPerPage;
+  const ixdexFirstGame = indexLastGame - gamesPerPage;
+  const currentGames = actualGames.slice(ixdexFirstGame, indexLastGame);
+  
+  // Local states (Search)
+  const [name, setName] = useState('');
+  
+  // Button Functions
+  function handleInput(e){
+    e.preventDefault()
+    setName(e.target.value)
+  };
+  
+  async function handleSubmit(e){
+    if(allGames.some(g=>g.name.toLowerCase().includes(name.toLowerCase()))){
+      e.preventDefault();
+      await dispatch(getVideogamesByName(name));
+      setCurrentPage(1);
+      setName('');
+    }else{
+      alert('Game not found');
+    }
+    document.getElementById('SearchInput').value = '';
+  };
+  
+  
+  
 
   return(
   <React.Fragment>

@@ -2,7 +2,7 @@ import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { getVideogames, orders, getGenres, filters } from "../Redux/actions";
-import s from "./FilterBar.module.css";
+import s from "./styles/FilterBar.module.css";
 
 export function FilterBar ({setCurrentPage, setGamesPerPage}){
 
