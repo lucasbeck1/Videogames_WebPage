@@ -1,33 +1,62 @@
 .page{
-    background-image: url('../../assets/gif-2.webp');
-    background-size: cover;
-    background-position: center;
-    /* background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    padding: 0%; */
+  background-image: url('../../assets/gif-2.webp');
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0%; */
 }
 
 .page2{
-   /*  background-color: rgba(141, 141, 141, 0.178); */
-    width: 100vw;
-    height: 100vh;
+ /*  background-color: rgba(141, 141, 141, 0.178); */
+  width: 100vw;
+  height: 100vh;
+}
+
+.block1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+}
+
+.block2{
+  /* background-color: rgb(255, 127, 217); */
+  background:  linear-gradient(rgb(61, 151, 179, 0.5) 40%, rgba(185, 129, 218, 0.5) 100%);
+  margin-top: 10rem;
+  padding: 4rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2rem;
+  
+  
 }
 
 .btnStart{
-    margin-top: 10rem;
-    color: #FF1cff;
-    background-color: rgb(16, 56, 129);
-    border: 4px solid rgb(180, 47, 169);
-    border-radius: 5px;
-    padding: 0.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+  color: #FF1cff;
+  background-color: rgb(16, 56, 129);
+  border: 4px solid rgb(180, 47, 169);
+  border-radius: 5px;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: .5s ease;
 }
 
 .btnStart:hover{
-    color: #FF1cff;
-    background-color: rgb(0, 228, 228);
-    border: 4px solid rgb(247, 77, 232);
+  color: #FF1cff;
+  background-color: rgb(0, 228, 228);
+  border: 4px solid rgb(247, 77, 232);
+  scale: 1.2;
+}
+
+.image{
+  width: 130px;
+  height: 100px;
 }
