@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getDetail, clearDetail } from "../Redux/actions";
-import defaultImage from "../assets/joy-1.png";
+import defaultImage from "../assets/gamer-1.png";
 import { Loading } from "./Loading";
 import s from "./styles/Detail.module.css";
 

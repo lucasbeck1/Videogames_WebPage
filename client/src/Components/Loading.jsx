@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./styles/Loading.module.css";
-import gifLoad from "../assets/loader-5.gif";
+import gifLoad from "../assets/loader-1.gif";
 
 export function Loading (){
   return(

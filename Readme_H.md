@@ -3,7 +3,7 @@
 # Individual Project - Henry Videogames
 
 <p align="center">
-  <img height="200" src="./client/src/assets/joy-readme.png" alt="game"/>
+  <img height="200" src="./client/src/assets/joy-3.png" alt="game"/>
 </p>
 
 
