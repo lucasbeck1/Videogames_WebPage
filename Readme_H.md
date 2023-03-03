@@ -3,8 +3,7 @@
 # Individual Project - Henry Videogames
 
 <p align="center">
-  <img height="200" src="https://static.tvtropes.org/pmwiki/pub/images/videogames.png" alt="game1"/>
-  <img height="200" src="./videogame.png" alt="game2"/>
+  <img height="200" src="./client/src/assets/joy-readme.png" alt="game"/>
 </p>
 
 

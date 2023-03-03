@@ -3,7 +3,7 @@ import { createGame, getGenres, getVideogames } from "../Redux/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory, Link } from "react-router-dom";
 import {Game} from "./Game";
-import defaultImage from "../assets/joy-1.jpg";
+import defaultImage from "../assets/joy-1.png";
 import s from "./styles/CreateForm.module.css";
 
 

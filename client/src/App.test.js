@@ -14,8 +14,15 @@ import { CreateForm } from './Components/CreateForm';
 test('Render START button', () => {
   render(<App />);
   
-  const homeButton = screen.getByText(/START/i);
-  expect(homeButton).toBeInTheDocument();
+  const homeButton = screen.getAllByText(/START/i);
+  expect(homeButton).toHaveLength(2)
+  
+  // expect(homeButton).toBeInTheDocument()
+  // ERROR
+  // expect(received).toBeInTheDocument()
+  // received value must be an HTMLElement or an SVGElement.
+  // Received has type:  array
+  // Received has value: [<button class="btnStart">START</button>, <p>Press start to continue</p>]
 });
 
 
@@ -23,11 +30,11 @@ test('Render Loading text', () => {
   render(<Loading />);
   
   const loadText = screen.getByText(/Loading/i);
-  expect(loadText).toBeInTheDocument();
+  expect(loadText).toBeInTheDocument(); 
 });
 
 
-test('Render title header', () => {
+test('Render Title header', () => {
   render(
   <Provider store={store}>
     <Router>
@@ -61,7 +68,7 @@ test('Render Card Game', () => {
 });
 
 
-test('Render recomendation texts', () => {
+test('Render Recomendation texts', () => {
   render(
   <Provider store={store}>
     <Router>
@@ -87,8 +94,8 @@ test('Render Filter elements', () => {
   </Provider>
   );
   
-  const filterText = screen.getByText(/Filters/i);
-  expect(filterText).toBeInTheDocument();
+  const filterText = screen.getAllByText(/Filters/i);
+  expect(filterText).toHaveLength(2);
   
   const storageLabel = screen.getByLabelText(/Storage/i);
   expect(storageLabel).toBeInTheDocument();

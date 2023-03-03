@@ -12,8 +12,8 @@ return(
       <div className={s.page2}>
         <div className={s.block1}>
           <div className={s.block2}>
-            <h1>WELCOME TO LUCKY GAMER</h1>
-            <img src={image} alt="no" className={s.image}/>
+            <h1 className={s.title}>WELCOME TO LUCKY GAMER</h1>
+            <img src={image} alt="joystck" className={s.image}/>
             <Link to='/home' >
               <button className={s.btnStart}>START</button>
             </Link>

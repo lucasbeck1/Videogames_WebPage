@@ -137,7 +137,7 @@ export function Home (){
     
     
     
-    <p>Made by Lucas beckford | 2022 All rights reserved</p>
+    <p>2023 licenced proyect</p>
   </React.Fragment>
   )
 };

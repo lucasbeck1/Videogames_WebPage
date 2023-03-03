@@ -27,6 +27,7 @@
   /* background-color: rgb(255, 127, 217); */
   background:  linear-gradient(rgb(61, 151, 179, 0.5) 40%, rgba(185, 129, 218, 0.5) 100%);
   margin-top: 10rem;
+  /* margin-top: 8%; */
   padding: 4rem;
   border-radius: 4rem;
   display: flex;
@@ -34,9 +35,15 @@
   align-items: center;
   justify-content: center;
   gap:2rem;
-  
-  
 }
+
+.title{
+  color: rgb(0, 0, 0);
+  text-shadow: 
+  -1px -1px 1px #c843e9, 
+  2px 2px 1px #fbf7fc;
+}
+ 
 
 .btnStart{
   color: #FF1cff;
@@ -59,4 +66,18 @@
 .image{
   width: 130px;
   height: 100px;
+}
+
+.image:hover{
+  animation-name: movement;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+  0%   {transform: rotate(0deg);}
+  25%  {transform: rotate(20deg) translate(10px,-30px);}
+  50%  {transform: rotate(0deg);}
+  75%  {transform: rotate(-20deg) translate(-10px,-30px);}
+  100% {transform: rotate(0deg); }
 }
