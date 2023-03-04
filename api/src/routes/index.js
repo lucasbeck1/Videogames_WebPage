@@ -75,7 +75,7 @@ const getApiInfo = async (index=0) => {
   };
   
   // Guardado progresivo de juegos en db
-  // SaveApiInfo(apiGames);
+  SaveApiInfo(apiGames);
   
   return (apiGames);
 };
@@ -83,7 +83,22 @@ const getApiInfo = async (index=0) => {
 
 const getDetailInfo = async (id) => {
   const detail = await axios.get(`https://api.rawg.io/api/games/${id}?key=${API_KEY}`);
-  return (detail.data.description_raw);
+  
+  const gameInfo = {
+    id : detail.data.id,
+    name: detail.data.name,
+    image: detail.data.background_image,
+    released: detail.data.released,
+    rating: detail.data.rating,
+    genres: detail.data.genres.map(e => e.name).join(', '),
+    platforms: detail.data.platforms.map((e) => e.platform.name).join(', '),
+    createdInDatabase: false,
+    owner: "Admin",
+    
+    description: detail.data.description_raw
+  };
+  
+  return (gameInfo);
 };
 
 
@@ -119,8 +134,19 @@ const getAllGames = async () => {
   const page = Math.floor((adminGames.length) / 40);
   
   const apiGames = await getApiInfo(page);
+  const allGames = DbGames.concat(apiGames);
   
-  return (DbGames.concat(apiGames)); 
+  
+  const deleteDuplicateGames = (arr) => {
+    const gamesMap = arr.map(game => {
+      return [game.name, game]
+    });
+  
+    return [...new Map(gamesMap).values()];
+  }
+  const noRepeatedGames = deleteDuplicateGames(allGames)
+ 
+  return (noRepeatedGames); 
 };
 
 
@@ -188,13 +214,12 @@ router.get('/videogames/:idgame', async function(req, res, next){
     }; 
     if(!findById) return res.status(404).send('Id not found');
     return res.status(200).json(findById);
+    
   }else{
-    const apiGames = await getApiInfo();
-    const findById = apiGames.find(g => g.id.toString() === idgame);
-    if(!findById) return res.status(404).send('Id not found');
-    const detGame = await getDetailInfo(idgame);
-    findById.description = detGame;
-    res.status(200).json(findById);
+    const gameDetailApi = await getDetailInfo(idgame);
+    
+    if(!gameDetailApi) return res.status(404).send('Id not found');
+    return res.status(200).json(gameDetailApi);
   };
 });
 
