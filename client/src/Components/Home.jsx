@@ -68,17 +68,17 @@ export function Home (){
     }
     document.getElementById('SearchInput').value = '';
   };
-  
-  
-  
+ 
+ 
+
 
   return(
   <React.Fragment>
     <div className={s.header}>
-      <div>
+      <form>
         <input id='SearchInput' onChange={e => handleInput(e)} type='text' placeholder="Search..."/>
         <button onClick={e => handleSubmit(e)} type="submit">{Vectors_React.search}</button>
-      </div>
+      </form>
       <Link to='/' style={{ color: 'inherit', textDecoration: 'inherit'}}>
         <h2>Lucky Gamer Browser</h2>
       </Link>
@@ -111,7 +111,7 @@ export function Home (){
           <FilterBar setCurrentPage={setCurrentPage} setGamesPerPage={setGamesPerPage} />
           <div className={s.list}>
             {currentGames?.map(g => {return (
-            <Game name={g.name} img={g.image} genres={g.genres} CIDB={g.createdInDatabase} id={g.id} key={g.id}/>
+            <Game game={g} key={g.id}/>
             )})}
           </div>
         </div>

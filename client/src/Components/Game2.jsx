@@ -6,11 +6,18 @@ import defaultImage from "./assets/gamer-1.png";
 import s from "./styles/Game2.module.css";
 
 
-export function Game ({name, img, genres, id}){
+export function Game ({game}){
   const dispatch = useDispatch();
-
+  
+  const id = game.id;
+  const name = game.name;
+  const img = game.image;
+  const CIDB = game.createdInDatabase;
+  let genres = game.genres;
+  
+  
   function detailG(e){
-      dispatch(getDetail(id))
+    dispatch(getDetail(id, CIDB))
   };
   
   if(genres.split(', ').length > 3){

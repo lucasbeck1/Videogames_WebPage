@@ -33,7 +33,7 @@ export function Recomendation(){
   
   { picked && 
   <div className={s.modal2}>
-    <Game name={game.name} img={game.image} genres={game.genres} CIDB={game.createdInDatabase} id={game.id} key={game.id}/>
+    <Game game={game} key={game.id}/>
   </div>
   }
   </React.Fragment>

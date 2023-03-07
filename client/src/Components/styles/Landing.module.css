@@ -25,9 +25,9 @@
 
 .block2{
   /* background-color: rgb(255, 127, 217); */
+  /* margin-top: 10rem; */
   background:  linear-gradient(rgb(61, 151, 179, 0.5) 40%, rgba(185, 129, 218, 0.5) 100%);
-  margin-top: 10rem;
-  /* margin-top: 8%; */
+  margin-top: 10vh;
   padding: 4rem;
   border-radius: 4rem;
   display: flex;
