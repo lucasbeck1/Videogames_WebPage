@@ -1,6 +1,7 @@
 import axios from 'axios';
-import Games from '../Back_data/Games';
-import Genres from '../Back_data/Genres';
+import Games from '../Back_data/GamesParcial.json';
+import Genres from '../Back_data/Genres.json'
+
 
 export const GET_VIDEOGAMES = 'GET_VIDEOGAMES';
 export const ORDER_GAMES = 'ORDER_GAMES';
@@ -12,8 +13,6 @@ export const CLEAR_DETAIL = 'CLEAR_DETAIL';
 export const CREATE_VIDEOGAME = 'CREATE_VIDEOGAME'; 
 
 
-const gamesCopy = Games.slice();
-const genresCopy = Genres.slice();
 
 const mainURL = "http://localhost:3001";
 let dbConnection = null;
@@ -30,12 +29,12 @@ axios(`${mainURL}/conn`)
 function gamesLocal(dispatch){
   return(dispatch({
     type: GET_VIDEOGAMES,
-    payload: gamesCopy
+    payload: Games
   }));
 };
 
 function gamesByNameLocal(dispatch, name){
-  let gamesByName = gamesCopy.slice().filter(g => g.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())).slice(0,15);
+  let gamesByName = Games.slice().filter(g => g.name.toLocaleLowerCase().includes(name.toLocaleLowerCase())).slice(0,15);
   return(dispatch({
     type: GET_VIDEOGAMES_BY_NAME,
     payload: gamesByName
@@ -45,12 +44,12 @@ function gamesByNameLocal(dispatch, name){
 function genresLocal(dispatch){
   return(dispatch({
     type: GET_GENRES,
-    payload: genresCopy
+    payload: Genres
   }));
 };
 
 function detailLocal(dispatch, id){
-  let gameInfo = gamesCopy.find(g => g.id.toString() === id.toString());
+  let gameInfo = Games.find(g => g.id.toString() === id.toString());
   return(dispatch({
     type: GET_DETAIL,
     payload: gameInfo
@@ -72,7 +71,7 @@ function newGameLocal(dispatch, payload){
     "createdInDatabase": true,
     owner: "User"
   }
-  gamesCopy.unshift(newGame);
+  Games.unshift(newGame);
 }
 
 

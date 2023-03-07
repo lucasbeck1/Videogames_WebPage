@@ -1,4 +1,4 @@
-const Games = [
+[
 	{
 			"id": "62994e5b-7d4b-4513-bc17-cc0d61bb5637",
 			"name": "Grand Theft Auto V",
@@ -7691,6 +7691,4 @@ const Games = [
 			"owner": "Admin",
 			"genres": "Indie, Strategy, Simulation"
 	}
-];
-
-export default Games;
+]

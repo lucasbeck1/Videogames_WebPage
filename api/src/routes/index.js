@@ -47,8 +47,8 @@ const SaveApiInfo = async (games) => {
         await instance.addGenre(genresToAdd);
       };
     };
-  }catch(e){
-    console.log(e)
+  }catch(error){
+    console.log(error.response.data);
   };
 };
 
@@ -57,22 +57,27 @@ const getApiInfo = async (index=0) => {
 
   const apiGames = [];
   
-  for (let i = 1; i <= 1; i++){
-    let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=40&page=${index+i}`);
-    apiInfo.data.results.map( e => 
-      apiGames.push({
-        id : e.id,
-        name: e.name,
-        image: e.background_image,
-        released: e.released,
-        rating: e.rating,
-        genres: e.genres.map(e => e.name).join(', '),
-        platforms: e.platforms.map((e) => e.platform.name).join(', '),
-        createdInDatabase: false,
-        owner: "Admin"
-      })
-    );
-  };
+  try{
+    for (let i = 1; i <= 1; i++){
+      let apiInfo = await axios.get(`https://api.rawg.io/api/games?key=${API_KEY}&page_size=40&page=${index+i}`);
+      apiInfo.data.results.map( e => 
+        apiGames.push({
+          id : e.id,
+          name: e.name,
+          image: e.background_image,
+          released: e.released,
+          rating: e.rating,
+          genres: e.genres.map(e => e.name).join(', '),
+          platforms: e.platforms.map((e) => e.platform.name).join(', '),
+          createdInDatabase: false,
+          owner: "Admin"
+        })
+      );
+    };
+  }catch(error){
+    console.log(error.response.data);
+  }
+  
   
   // Guardado progresivo de juegos en db
   SaveApiInfo(apiGames);
