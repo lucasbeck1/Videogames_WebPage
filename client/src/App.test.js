@@ -52,7 +52,7 @@ test('Render Card Game', () => {
   render(
   <Provider store={store}>
     <Router>
-      <Game name={"gameName"} img={"IMAGE"} genres={"Action"} CIDB={false} id={"000000"} key={"000000"}/>
+      <Game game={{name:"gameName", img:"IMAGE", genres:"Action", CIDB:false, id:"000000"}} key={"000000"}/>
     </Router>
   </Provider>
   );

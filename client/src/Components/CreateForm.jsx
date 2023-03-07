@@ -345,10 +345,13 @@ function handleSubmit(e){
 
     <div className={s.gamePreview}>
       <Game
-        name={input.name? <p>{input.name}</p> : <p>YOUR GAME</p>}
-        img={input.image? (input.image) : (defaultImage)}
-        genres={input.genres.length > 0? (input.genres.join(', ')) : ('Genres')}
-        id='NO ID'
+        game={{
+          name: input.name? (input.name) : ("YOUR GAME"),
+          img: input.image? (input.image) : (defaultImage),
+          genres: input.genres.length > 0? (input.genres.join(', ')) : ('Genres'),
+          id: "NO ID"
+        }}
+        
       ></Game>
     </div>
 
