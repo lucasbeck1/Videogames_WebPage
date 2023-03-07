@@ -35,12 +35,14 @@ export function Home (){
   
   const [gamesPerPage, setGamesPerPage] = useState(15);
   
+  const [start, setStart] = useState(true);
   
-  // if(window.screen.availWidth <= 520){
-  //   setGamesPerPage(5);
-  // }
+  if(window.screen.availWidth <= 520 && gamesPerPage !== 5 && start === true){
+    setGamesPerPage(5);
+    setStart(false);
+  };
   
-  // else if(window.innerWidth <= 720){
+  // else if(window.innerWidth <= 720 && gamesPerPage !== 10){
   //   setGamesPerPage(10);
   // }
   

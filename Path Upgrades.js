@@ -12,6 +12,7 @@ landing (waves css)
 opción de elegir default image form  
 cuando carga el home, incrementar el margin top del footer  
 previsualizacion loading  
+poner un onload a la imagen para que se muestre cuando esté cargada  
 footer  
 Firma LB creations   
 estado global para filtros, ord, y pagina actual   
