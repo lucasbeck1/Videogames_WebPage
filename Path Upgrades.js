@@ -16,8 +16,7 @@ poner un onload a la imagen para que se muestre cuando esté cargada
 footer  
 Firma LB creations   
 estado global para filtros, ord, y pagina actual   
-en el form agregar icono de x en los generos seleccionados  
-cambiar el filtro en storage de CIDB por owner    
+en el form agregar icono de x en los generos seleccionados     
 clases para los colores y botones  ( * )     
 añadir un filtro por plataforma  
 añadir iconos  

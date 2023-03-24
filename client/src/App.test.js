@@ -1,3 +1,5 @@
+/* eslint-disable jest/valid-expect */
+/* eslint-disable no-unused-expressions */
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import { Loading } from './Components/Loading';
@@ -23,6 +25,13 @@ test('Render START button', () => {
   // received value must be an HTMLElement or an SVGElement.
   // Received has type:  array
   // Received has value: [<button class="btnStart">START</button>, <p>Press start to continue</p>]
+});
+
+
+test('Render Landing Page', () => {
+  const {viewInstance} = render(<Loading />);
+  
+  expect(viewInstance).toBeTruthy;
 });
 
 

@@ -7,6 +7,7 @@ import { Pagination } from "./Pagination";
 import { Loading } from "./Loading";
 import { FilterBar } from "./FilterBar";
 import { Galery } from "./Galery";
+import { Footer } from "./Footer";
 import Vectors_React from "../assets/vectors";
 import s from "./styles/Home.module.css";
 
@@ -136,10 +137,7 @@ export function Home (){
     </>
     )}
     
-    
-    
-    
-    <p>2023 licenced proyect</p>
+    <Footer/>
   </React.Fragment>
   )
 };
