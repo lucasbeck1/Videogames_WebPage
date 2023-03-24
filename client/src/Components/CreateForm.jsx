@@ -311,6 +311,7 @@ function handleSubmit(e){
 
 
     <p>Platforms: </p>
+    <div className={s.listPlatformsDad}>
     <div className={s.listPlatforms}>
       {platformsList.map((pl => {return(
       <React.Fragment key={pl}>
@@ -327,6 +328,7 @@ function handleSubmit(e){
         )}
       </React.Fragment>
       )}))}
+    </div>
     </div>
     {error.platforms ? (<p className={s.error}>{error.platforms}</p>) :
     (<div>

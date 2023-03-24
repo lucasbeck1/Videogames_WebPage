@@ -60,7 +60,7 @@
   border: 4px solid  rgb(255, 202, 255);
   border-radius: 10px;
   margin: 0 auto;
-  width: 30rem;
+  max-width: 30rem;
   padding: 1rem;
   background-color: rgb(255, 235, 205);
   
@@ -82,10 +82,9 @@
 .listGenres{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-left: 8rem;
-  margin-right: 6rem;
-  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+
 }
 
 
@@ -101,14 +100,17 @@
   width: 10rem;
 }
 
+.listPlatformsDad{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .listPlatforms{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 8rem;
-  margin-right: 6rem;
-  padding-left: 2rem;
+  justify-content: center;
 }
 
 
@@ -130,8 +132,9 @@
 
 
 .gamePreview{
-  margin: 0 auto;
-  width: 20rem;
-  padding: 1rem;
-  color: #999
+  margin: 2rem auto;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
