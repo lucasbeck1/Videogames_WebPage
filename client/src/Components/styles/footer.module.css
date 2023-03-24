@@ -1,8 +1,54 @@
-.banner{
-  background-color: rgba(125, 126, 97, 0.555);
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 7.6rem;
+  /* margin-top: 19.3rem; */
+  margin-bottom: 0vh;
+  padding-bottom: 0vh;
+  color: rgb(16, 56, 129);
+  text-decoration: none;
+  background-color: rgba(125, 126, 97, 0.404);
+  position: relative;
+  width: auto;
 }
-.banner p{
-  margin-bottom: 0px;
+
+
+.footer svg{
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer a:link, a:visited {
+  color:  rgb(57, 102, 187);
+  text-decoration: none;
+}
+
+.footer a:link:active, a:visited:active {
+  color: #FF1cff;
+}
+
+.links{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.text{
+  padding-top: 0px;
+  margin-top: 0.8rem;
+}
+
+.textBold{
+  color:  #fab5fa;
+  font-weight: 600;
+  padding-top: 0px;
+  margin-top: 0.8rem;
 }

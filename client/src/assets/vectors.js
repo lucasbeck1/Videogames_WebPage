@@ -1,5 +1,5 @@
 // The diference Vectors_React works ony in react and not in HTML 
-// because has changed "stroke-width" to "strokeWidth"
+// because has changed the property "stroke-width" to "strokeWidth"
 
 const Vectors_React = {
   add: (
