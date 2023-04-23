@@ -80,7 +80,7 @@ const getApiInfo = async (index=0) => {
   
   
   // Guardado progresivo de juegos en db
-  SaveApiInfo(apiGames);
+  // SaveApiInfo(apiGames);
   
   return (apiGames);
 };

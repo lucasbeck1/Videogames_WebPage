@@ -8,8 +8,6 @@ card hover - mostrar logo de plataformas (ps, xbox, pc) en lugar de generos
 y los generos mostrarlos con el atributo title para cada card  
 responsive image: width: 100%; max-width: 400px; height: auto;   
 responsive form  
-diseñar y animar logo landing  
-landing (waves css)  
 opción de elegir default image form  
 cuando carga el home, incrementar el margin top del footer  
 previsualizacion loading  

@@ -53,7 +53,7 @@ describe('Videogame routes', () => {
       .catch((err) => done(err))
     });
 
-    it('Get games by name (W/ query paraneters)', (done) => {
+    it('Get games by name (W/ query parameters)', (done) => {
       agent.get('/videogames?name=test')
       .then((res) =>{
         expect(res.status).equal(200)
@@ -64,7 +64,7 @@ describe('Videogame routes', () => {
       .catch((err) => done(err))
     });
     
-    it('Get no games by name (W/ query paraneters)', (done) => {
+    it('Get no games by name (W/ query parameters)', (done) => {
       agent.get('/videogames?name=estejuegonodeberiaexistir')
       .then((res) =>{
         expect(res.status).equal(404)
