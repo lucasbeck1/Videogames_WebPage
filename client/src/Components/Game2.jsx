@@ -27,45 +27,33 @@ export function Game ({game}){
 
   const [loaded, setLoaded] = useState(false);
 
-
+  const card =(
+    <div className={s.card} onClick={e => detailG(e)}>
+      <div className={s.title}>
+        <h4>{name}</h4>
+      </div>
+      
+      <div className={s.container}>
+        <img src={img} alt={game.name} className={loaded ? (s.image) : (s.hidden)} onLoad={()=> setLoaded(true)}/>
+        <img src={loader} alt={game.name} className={loaded ? (s.hidden) : (s.imageLoader)}/>
+        <div className={s.overlay}>
+          <div className={s.genres}>
+            <p>{genres}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
     
   return( 
   <React.Fragment>
     {id !== "NO ID" ?
       (
       <Link to={`/detail/${id}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
-        <div className={s.card} onClick={e => detailG(e)}>
-          <div className={s.title}>
-            <h4>{name}</h4>
-          </div>
-          
-          <div className={s.container}>
-          <img src={img} alt="Img Not Found" className={loaded ? (s.image) : (s.hidden)} onLoad={()=> setLoaded(true)}/>
-          <img src={loader} alt="Img Not Found" className={loaded ? (s.hidden) : (s.imageLoader)}/>
-            <div className={s.overlay}>
-              <div className={s.genres}>
-                <p>{genres}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+       {card}
       </Link>
       ) : (
-      <div className={s.card} onClick={e => detailG(e)}>
-        <div className={s.title}>
-          <h4>{name}</h4>
-        </div>
-        
-        <div className={s.container}>
-        <img src={img} alt="Img Not Found" className={loaded ? (s.image) : (s.hidden)} onLoad={()=> setLoaded(true)}/>
-          <img src={loader} alt="Img Not Found" className={loaded ? (s.hidden) : (s.imageLoader)}/>
-          <div className={s.overlay}>
-            <div className={s.genres}>
-              <p>{genres}</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      card
       )
     }
   </React.Fragment>

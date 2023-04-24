@@ -51,6 +51,7 @@
 
 .image{
   object-fit: cover;
+  object-position:center;
   width: 240px; 
   height: 300px;
   display: block;
@@ -59,10 +60,10 @@
 
 
 .imageLoader{
-  padding-top: 50px;
-  height: 60px;
-  width: 60px;
   object-position: center;
+  padding-top: 65px;
+  height: 30px;
+  width: 30px;
 }
 
 

@@ -59,10 +59,10 @@
 
 
 .imageLoader{
-  padding-top: 50px;
-  height: 60px;
-  width: 60px;
   object-position: center;
+  padding-top: 65px;
+  height: 30px;
+  width: 30px;
 }
 
 
