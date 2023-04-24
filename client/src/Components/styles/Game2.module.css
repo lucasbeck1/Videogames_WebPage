@@ -58,6 +58,18 @@
 }
 
 
+.imageLoader{
+  padding-top: 50px;
+  height: 60px;
+  width: 60px;
+  object-position: center;
+}
+
+
+.hidden{
+  display: none;
+}
+
 
 .container {
   position: relative;

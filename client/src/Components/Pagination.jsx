@@ -34,11 +34,11 @@ export function Pagination({gamesTotal, gamesPage, actualPage, select, nextSelec
   return(
   <React.Fragment>
     <nav className={s.nav}>
-      <button onClick={()=>prevSelect()} className={s.number}>{'<'}</button>
+      <button onClick={()=>prevSelect()} className={s.number} title="previous">{'<'}</button>
       {pagesNumbers && pagesNumbers.map( number => { return(
         <button onClick={()=>select(number)} key={number} className={number === actualPage? (s.numberSelected) : (s.number)}>{number}</button>
       )})}
-      <button onClick={()=>nextSelect(pageNumbers[pageNumbers.length-1])} className={s.number}>{'>'}</button>
+      <button onClick={()=>nextSelect(pageNumbers[pageNumbers.length-1])} className={s.number} title="next">{'>'}</button>
       <p>Page {actualPage} / {pageNumbers.length}</p>
     </nav>
   </React.Fragment>
