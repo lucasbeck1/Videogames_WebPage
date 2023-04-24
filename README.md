@@ -1,8 +1,6 @@
-<p align='left'>
-    <img src='https://static.wixstatic.com/media/85087f_0d84cbeaeb824fca8f7ff18d7c9eaafd~mv2.png/v1/fill/w_160,h_30,al_c,q_85,usm_0.66_1.00_0.01/Logo_completo_Color_1PNG.webp' </img>
-</p>
+# Individual Project - Henry Videogames
 
-## Individual Project - Henry Videogames
+![Lucky gamer - Home](./sample.png)
 
 # Objetivos 🎯
 
@@ -22,9 +20,9 @@
 
 ## Del Sitio
 
-Crear una aplicación web donde se puedan encontrar diferentes tipos de juegos, utilizando una API externa (https://api.rawg.io/docs/) que, entre otras cosas, permita:
+Crear una aplicación web donde se puedan encontrar diferentes tipos de juegos, utilizando una API externa (Source: https://api.rawg.io/docs/ - Webpage: [Rawg.io](https://rawg.io/)) que, entre otras cosas, permita:
 
-✅ Buscar Juegos
+✅ Buscar Juegos 🔍
 
 ✅ Filtrarlos por genero y origen
 
@@ -61,22 +59,22 @@ _ Otra opción es que descargues este repositorio y sigas las  siguientes instru
 3. Dentro de ./api cree un archivo .env con sus credenciales, como se muestra a continuacion
 
 ```Javascript
-DB_USER=usuariodepostgres
-DB_PASSWORD=passwordDePostgres
+DB_USER=usuario_de_postgres
+DB_PASSWORD=password_de_postgres
 DB_HOST=localhost
-API_KEY=yourApiKey
+API_KEY=your_Api_Key
 ```
 
 Reemplazar `usuariodepostgres`, `passwordDePostgres` y `DB_HOST` con tus propias credenciales para conectarte a postgres. 
 
-Reemplazar `API_KEY` con una key de rawg.io, la cual se le otorga al usuario de manera gratuita un vez se registra en el sitio. Tener en cuenta que se pueder hacer hasta 10 000 llamadas a esta api por mes, luego éste valor se renueva.
+Reemplazar `API_KEY` con una key de rawg.io, la cual se le otorga al usuario de manera gratuita un vez se registra en el sitio. Tener en cuenta que se pueder hacer hasta 10 000 llamadas a esta api por mes, luego de dicho periodo, este valor se renueva.
 
 ### Instalacion de paquetes
 
 Utilice el administrador de paquetes de su preferencia para instalar, aqui se muestra con npm. Recuerde ejecutar este comando dentro de /client y dentro de /api
 
 ```Javascript
-npm install ⚙
+npm install
 ```
 
 ### Ejecución local
@@ -96,7 +94,7 @@ npm start
 
 ¿ Qué es lo que voy a visualizar una vez entro en el sitio ?
 
-- Página de bienvenida y entrada al Home.
+- Página de bienvenida y entrada al Home
 - Pagina Principal donde se visualizan los juegos
 - El detalle de cada juego
 - Formulario de creación de items (juegos)
