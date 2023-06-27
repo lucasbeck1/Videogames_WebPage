@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { getDetail } from "../Redux/actions";
 import defaultImage from "../assets/gamer-1.png";
-import loader from "../assets/loader-2.gif"
 import s from "./styles/Game2.module.css";
 
 
@@ -25,7 +24,6 @@ export function Game ({game}){
       genres = genres.split(', ').slice(0,3).join(', ');
   };
 
-  const [loaded, setLoaded] = useState(false);
 
   const card =(
     <div className={s.card} onClick={e => detailG(e)}>
@@ -34,8 +32,7 @@ export function Game ({game}){
       </div>
       
       <div className={s.container}>
-        <img src={img} alt={game.name} className={loaded ? (s.image) : (s.hidden)} onLoad={()=> setLoaded(true)}/>
-        <img src={loader} alt={game.name} className={loaded ? (s.hidden) : (s.imageLoader)}/>
+      <img src={img} alt={game.name} className={s.image} />
         <div className={s.overlay}>
           <div className={s.genres}>
             <p>{genres}</p>

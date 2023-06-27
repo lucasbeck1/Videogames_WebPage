@@ -6,7 +6,8 @@ __Front:__
 cambiar ancho de cards ?  
 card hover - mostrar logo de plataformas (ps, xbox, pc) en lugar de generos  
 y los generos mostrarlos con el atributo title para cada card  
-responsive image: width: 100%; max-width: 400px; height: auto;   
+responsive image: width: 100%; max-width: 400px; height: auto;  
+https://codepen.io/scoooooooby/pen/DLqWYP
 responsive form  
 opción de elegir default image form  
 cuando carga el home, incrementar el margin top del footer  
